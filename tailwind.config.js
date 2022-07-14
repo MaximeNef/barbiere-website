@@ -15,6 +15,11 @@ module.exports = {
       colors: {
         default: "#646464",
       },
+      boxShadow: {
+        cardcta: "3px 4px 20px rgba(76, 73, 85, 0.2)",
+        cardinfo: "3px 4px 20px rgba(76, 73, 85, 0.2)",
+        cardAvis: " 2px 4px 10px 2px rgba(55, 71, 79, 0.3)",
+      },
     },
   },
   plugins: [],

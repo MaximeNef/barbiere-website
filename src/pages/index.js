@@ -9,10 +9,13 @@ import P from "../components/shared/p";
 import Btn3 from "../components/shared/btn3";
 import Btn2 from "../components/shared/btn2";
 import CardCTA from "../components/shared/card-Cta";
+import CardInfo from "../components/shared/card-Info";
+import CardTeam from "../components/shared/card-team";
+import CardAvis from "../components/shared/cardAvis";
 
 export default function Home() {
   return (
-    <div className='space-y-5 bg-teal-100 text-[#37474F] px-5'>
+    <div className='space-y-5 bg-teal-100 text-[#37474F] px-5 py-10'>
       <H1> Biens à vendre</H1>
       <H2> hey </H2>
 
@@ -37,6 +40,30 @@ export default function Home() {
         text3={"Je m’inscris  "}
         src='/pages'
       />
+      <CardInfo
+        img='/assets/serviceVendre.svg'
+        h2={"Vendre"}
+        p={
+          "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !"
+        }
+        btn={"En savoir plus"}
+      />
+      <CardInfo
+        h2={"Louer"}
+        p={
+          "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !"
+        }
+        btn={"En savoir plus"}
+      />
+      <CardTeam
+        img={"/assets/barbiere.svg"}
+        nom={"François Barbière "}
+        post={"Agent Immobilier - Gérant"}
+        ipi={"Nr d’agréation IPI : 506259"}
+        tel={"0493/193.003"}
+        mail={"fb@barbiere.be"}
+      />
+      <CardAvis />
     </div>
   );
 }

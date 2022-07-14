@@ -7,7 +7,7 @@ import P from "../p";
 const CardCTA = (props) => {
   console.log(props);
   return (
-    <Container className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] space-y-[20px] py-5 relative px-5'>
+    <Container className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] space-y-[20px] py-5 relative px-5 shadow-cardcta'>
       <Container className='absolute h-full w-full mx-auto '>
         <MyImage
           source='/assets/logo.svg'
