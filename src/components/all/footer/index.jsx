@@ -6,7 +6,7 @@ import MyImage from "../../shared/myimage";
 const Footer = () => {
   return (
     <Container className='bg-[#41B8B8]/10'>
-      <Container className=' pt-10 ' />
+      <Container className=' pt-20 ' />
       <Container className='bg-[#41B8B8]  m-auto w-full text-center pb-2 rounded-tl-[25px] rounded-tr-[25px] border-t-[3px] border-[#41B8B8]'>
         {/* btn contact us  */}
         <Flex justify='center' className='  mt-[-28px] mb-5 '>

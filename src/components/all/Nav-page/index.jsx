@@ -6,9 +6,9 @@ import Header from "../header";
 const NavPage = ({ children, current }) => {
   return (
     <Container className=''>
-      <Page className='font-family text-[#37474F] '>
+      <Page className='font-family text-[#7A767C] '>
         <Header current={current} />
-        {children}
+        <Container className='mx-5'>{children}</Container>
       </Page>{" "}
       <Footer />
     </Container>

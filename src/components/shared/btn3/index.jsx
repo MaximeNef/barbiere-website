@@ -19,7 +19,7 @@ export default function Btn3(props) {
   }
 
   return (
-    <div className='w-full flex flex-col justify-center '>
+    <div className=' flex flex-col justify-center '>
       {" "}
       <Link href={props.src} passHref>
         <a className='flex flex-col items-center '>
@@ -28,7 +28,7 @@ export default function Btn3(props) {
             id={props.id}
             className={` w-fit ${
               props.className
-            } justify-center  items-center ${findColorClass()} relative font-light  `}
+            } justify-center  items-center ${findColorClass()} relative font-light whitespace-nowrap  `}
             style={{
               ...(props.fitHeight && { height: "fit-content" }),
               ...props.style,

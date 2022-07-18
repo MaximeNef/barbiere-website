@@ -1,5 +1,6 @@
 import Btn2 from "../btn2";
 import Container from "../container";
+import Flex from "../flex";
 import H2 from "../h2";
 import MyImage from "../myimage";
 import P from "../p";
@@ -7,8 +8,8 @@ import P from "../p";
 const CardCTA = (props) => {
   console.log(props);
   return (
-    <Container className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] space-y-[20px] py-5 relative px-5 shadow-cardcta'>
-      <Container className='absolute h-full w-full mx-auto '>
+    <Container className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px]  py-5 relative  shadow-cardcta w-full h-full text-center '>
+      <Container className='absolute h-full w-full  my-auto top-0 '>
         <MyImage
           source='/assets/logo.svg'
           w={"200"}
@@ -16,9 +17,11 @@ const CardCTA = (props) => {
           objectFit={"contain"}
         />
       </Container>{" "}
-      <H2 className='text-white '> {props.text1}</H2>{" "}
-      <P className='text-white'>{props.text2}</P>{" "}
-      <Btn2 src={props.src} color='white' text={props.text3} />{" "}
+      <Flex type='col' justify='between' className='space-y-[20px]'>
+        <H2 className='text-white px-5    '> {props.text1}</H2>{" "}
+        <P className='text-white px-5 '>{props.text2}</P>{" "}
+        <Btn2 src={props.src} color='white' text={props.text3} />{" "}
+      </Flex>
     </Container>
   );
 };

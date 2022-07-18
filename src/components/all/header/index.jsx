@@ -13,7 +13,7 @@ const Header = ({ current }) => {
   ]);
 
   return (
-    <Container>
+    <Container className='mb-20'>
       <Container className='z-50 hidden lg:inline-flex'>
         <MenuDesktop current={current} link={link} />
       </Container>
