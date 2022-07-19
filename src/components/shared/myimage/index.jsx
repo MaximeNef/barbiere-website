@@ -16,6 +16,7 @@ const MyImage = ({ source, h, w, className, objectFit, layout }) => {
       unoptimized={true}
       className={className}
       objectFit={objectFit}
+      layout={layout}
     />
   );
 };

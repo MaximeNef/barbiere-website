@@ -28,7 +28,7 @@ export default function Services() {
     },
   ];
   return (
-    <NavPage>
+    <NavPage current={"Services"}>
       <H1>{"Nos Services"}</H1>
       <H3 className='mt-12'>
         {

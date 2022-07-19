@@ -19,7 +19,7 @@ import MyImage from "../../components/shared/myimage";
 
 export default function Agence() {
   return (
-    <NavPage>
+    <NavPage current={"Agence / Equipe"}>
       <H1>{"Notre agence"}</H1>
       <H3 className='mt-10'>
         {
@@ -33,7 +33,7 @@ export default function Agence() {
           "Forte de 20 ans d’expérience, Immo Barbière est la référence quand il s’agit d’acheter ou de mettre son bien en vente. "
         }
       </H3>
-      <Container className='space-y-[50px]'>
+      <Container className='space-y-[20px]'>
         <CardTeam
           img={"/assets/barbiere.svg"}
           nom={"François Barbière "}

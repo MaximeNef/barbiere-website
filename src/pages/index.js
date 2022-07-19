@@ -14,11 +14,17 @@ import CardTeam from "../components/shared/card-team";
 import CardAvis from "../components/shared/cardAvis";
 import NavPage from "../components/all/Nav-page";
 import Container from "../components/shared/container";
+import HeroImg from "../components/hero/heroImg";
 
 export default function Home() {
   return (
-    <NavPage>
-      <H3 className='mt-12'> {"Nous sommes actif près de chez vous "}</H3>
+    <NavPage current='Accueil'>
+      <HeroImg />
+      <a name='some' />
+      <H3 className='mt-12' id='Ancre'>
+        {" "}
+        {"Nous sommes actif près de chez vous "}
+      </H3>{" "}
       <Container className='mt-12'>
         <CardCTA
           text1={"Tous nos biens se trouvent ici"}
@@ -27,12 +33,10 @@ export default function Home() {
           src='/pages'
         />
       </Container>
-
       <Flex justify='between' className='mt-12'>
         <H3 className=''>{"Nos biens vendus/loués"}</H3>
         <Btn3 src='/page' color='black' text='voir plus' />
       </Flex>
-
       <H3 className='mt-12'>{"Notre agence en quelques chiffres"}</H3>
       <Container className='space-y-[20px] mt-12'>
         <H3>{"Ils parlent de nous ... "}</H3>

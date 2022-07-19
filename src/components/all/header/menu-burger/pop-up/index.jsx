@@ -21,13 +21,13 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
             {link.page == current ? (
               <a
                 onClick={handelClick2}
-                className='text-xl font-light   tracking-wide rounded-full pl-6 py-4 bg-[#FF7E00]/10 w-full'
+                className='text-xl font-light   tracking-wide rounded-full pl-6 py-4 bg-[#41B8B8]/10 w-full'
               >
                 <Flex justify='start'>
                   <MyImage source={link.src} w={20} h={20} />
 
                   <Flex justify='start'>
-                    <p className='ml-8 '>{link.page}</p>
+                    <p className='ml-5 '>{link.page}</p>
                   </Flex>
                 </Flex>
               </a>
@@ -40,7 +40,7 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
                   <MyImage source={link.src} w={20} h={20} />
 
                   <Flex justify='start'>
-                    <p className='ml-8 text-center'>{link.page}</p>
+                    <p className='ml-5 text-center'>{link.page}</p>
                   </Flex>
                 </Flex>
               </a>

@@ -5,14 +5,14 @@ import MyImage from "../../shared/myimage";
 
 const Footer = () => {
   return (
-    <Container className='bg-[#41B8B8]/10'>
+    <Container className='bg-[#FBFFFF'>
       <Container className=' pt-20 ' />
       <Container className='bg-[#41B8B8]  m-auto w-full text-center pb-2 rounded-tl-[25px] rounded-tr-[25px] border-t-[3px] border-[#41B8B8]'>
         {/* btn contact us  */}
         <Flex justify='center' className='  mt-[-28px] mb-5 '>
           <Link href='/contactus' passHref>
             <a className=''>
-              <Container className='border-[#EDF8F8] border-2 rounded-[27px] '>
+              <Container className='border-[#FBFFFF] border-2 rounded-[27px] '>
                 <Container className='bg-gradient-to-r from-[#41B8B8] to-[#41B8B8] p-[1px] rounded-[25px] shadow-realisationCard'>
                   <Flex
                     justify='center'

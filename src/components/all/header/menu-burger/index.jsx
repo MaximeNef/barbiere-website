@@ -18,37 +18,43 @@ const Menuburger = ({ current }) => {
       page: "Accueil",
       href: "/",
       selected: false,
-      src: "/assets/logo/Home.svg",
+      src: "/assets/home.svg",
+    },
+    {
+      page: "Nos biens",
+      href: "/biens",
+      selected: false,
+      src: "/assets/biens.svg",
+    },
+    {
+      page: "Biens vendus / loués",
+      href: "/biensVendus",
+      selected: false,
+      src: "/assets/biens.svg",
     },
     {
       page: "Services",
       href: "/services",
       selected: false,
-      src: "/assets/logo/Online.svg",
+      src: "/assets/services.svg",
     },
     {
-      page: "Réalisations",
-      href: "/realisations",
+      page: "Agence / Equipe",
+      href: "/agence",
       selected: false,
-      src: "/assets/logo/Windows.svg",
+      src: "/assets/team.svg",
     },
     {
-      page: "Blog",
-      href: "/blogs",
+      page: "Emplois",
+      href: "/emplois",
       selected: false,
-      src: "/assets/logo/GoodNotes.svg",
+      src: "/assets/emploi.svg",
     },
     {
-      page: "Contact",
-      href: "/contactus",
+      page: "contact",
+      href: "/contact",
       selected: false,
-      src: "/assets/logo/Contacts.svg",
-    },
-    {
-      page: "Team",
-      href: "/team",
-      selected: false,
-      src: "/assets/logo/Contacts.svg",
+      src: "/assets/contact.svg",
     },
   ]);
   const defaultOptions = {
@@ -83,15 +89,18 @@ const Menuburger = ({ current }) => {
 
   return (
     <Container className=' w-full '>
-      <Container className='fixed z-20 bg-white bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-60  w-full top-0  py-2  '>
-        <Container className=' m-auto  max-h-12  z-20 '>
+      <Container className='fixed z-20 bg-white bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-60  w-full top-0  pb-2  '>
+        <Container className=' m-auto  max-h-12  z-20  pt-1'>
           <Link href='/' passHref>
             <a>
               <MyImage source='/assets/LogoHeader.svg' w={76} h={52} />
             </a>
           </Link>{" "}
         </Container>
-        <Container onClick={handelClick} className=' left-2 z-20 fixed  mt-1 '>
+        <Container
+          onClick={handelClick}
+          className=' left-2 z-20 fixed  mt-1 pt-1'
+        >
           <Lottie
             options={defaultOptions}
             height={48}
@@ -110,7 +119,7 @@ const Menuburger = ({ current }) => {
           initial={false}
           variants={menuVariants}
           animate={isOpen ? "opened" : "closed"}
-          className='bg-[#FFFAF5] h-full w-full fixed z-10 flex '
+          className='bg-[#FBFFFF] h-screen w-full fixed z-10 flex '
           transition={{
             duration: 0.7,
             times: [0, 0.1, 0.3, 0],
