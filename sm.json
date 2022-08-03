@@ -1,0 +1,7 @@
+{
+  "_latest": "0.3.0",
+  "apiEndpoint": "https://barbiere-website.prismic.io/api/v2",
+  "libraries": ["@/slices"],
+  "localSliceSimulatorURL": "http://localhost:3001/slice-simulator",
+  "framework": "previousNext"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "card_biens",
+  "type": "SharedSlice",
+  "name": "CardBiens",
+  "description": "CardBiens",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CardBiens",
+      "primary": {
+        "Image_bien": {
+          "type": "Image",
+          "config": {
+            "label": "Image Biens",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "nom_bien": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nom Bien",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "prix_bien": {
+          "type": "Number",
+          "config": {
+            "label": "Prix Bien",
+            "placeholder": ""
+          }
+        },
+        "adresse_bien": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Adresse Bien",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Superficie_bien": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Superficie Bien",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "sdb_bien": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sdb Bien",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "chambre_bien": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Chambre Bien",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

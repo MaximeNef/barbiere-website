@@ -9,8 +9,6 @@ const HeroImg = () => {
       <Container className='relative h-screen mx-[-20px] mt-[-80px]'>
         <MyImage
           source={"/assets/bgHero.jpg"}
-          h={"100"}
-          w={"100"}
           layout='fill'
           objectFit='cover'
         />

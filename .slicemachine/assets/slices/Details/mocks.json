@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "details",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Generate synergistic e-commerce",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Reprehenderit laborum veniam Lorem proident cillum id proident incididunt nulla dolor.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

@@ -2,6 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  images: {
+    loader: "imgix",
+    path: "",
+    domains: ["images.prismic.io"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

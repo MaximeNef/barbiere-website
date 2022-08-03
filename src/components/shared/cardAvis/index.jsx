@@ -6,7 +6,7 @@ import P from "../p";
 
 const CardAvis = () => {
   return (
-    <Container className='rounded-[20px] p-5 bg-white shadow-cardAvis'>
+    <Container className=' rounded-[20px] p-5 bg-white shadow-cardAvis snap-always snap-center flex-shrink-0 w-[300px] m-2 '>
       <Flex justify='between' className=''>
         <Flex className='space-x-[16px]'>
           <MyImage source={"/assets/logoblueu.svg"} h={20} w={30} />{" "}

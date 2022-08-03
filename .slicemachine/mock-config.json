@@ -1,0 +1,13 @@
+{
+  "slices": {
+    "CardBiens": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Details": {}
+  },
+  "_cts": {
+    "biencard": {}
+  }
+}

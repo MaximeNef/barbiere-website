@@ -17,7 +17,7 @@ const CardCTA = (props) => {
           objectFit={"contain"}
         />
       </Container>{" "}
-      <Flex type='col' justify='between' className='space-y-[20px]'>
+      <Flex type='col' justify='between' className='space-y-[20px] px-[22px]'>
         <H2 className='text-white px-5    '> {props.text1}</H2>{" "}
         <P className='text-white px-5 '>{props.text2}</P>{" "}
         <Btn2 src={props.src} color='white' text={props.text3} />{" "}

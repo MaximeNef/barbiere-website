@@ -6,7 +6,7 @@ export default function Btn2(props) {
       case "white":
         return "  bg-white px-4 py-2 ";
       case "blueu":
-        return "bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] px-2 py-2  ";
+        return "bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] px-2 py-2 ";
     }
   }
   function findtextClass() {
@@ -28,7 +28,7 @@ export default function Btn2(props) {
             id={props.id}
             className={` w-fit ${
               props.className
-            } justify-center  items-center ${findBgClass()} rounded-[40px]   `}
+            } justify-center  items-center ${findBgClass()} rounded-[40px] `}
             style={{
               ...(props.fitHeight && { height: "fit-content" }),
               ...props.style,
