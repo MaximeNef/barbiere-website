@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import NavPage from "../../components/all/Nav-page";
 import Optionform from "../../components/contact/optionform";
@@ -6,14 +7,16 @@ import Flex from "../../components/shared/flex";
 import H1 from "../../components/shared/h1";
 import H3 from "../../components/shared/h3";
 import P from "../../components/shared/p";
-
+import { useRouter } from "next/router";
 export default function Contact() {
+  // router
+  const router = useRouter();
   // btn options  contact
   const [vendre, setVendre] = useState(false);
   const [louer, setLouer] = useState(false);
   const [acheter, setAcheter] = useState(false);
   const [expertise, setExpertise] = useState(false);
-  const [estimation, setEstimation] = useState(false);
+  const [estimation, setEstimation] = useState(true);
 
   // formulaire contact
   const [nom, setNom] = useState("");
@@ -61,6 +64,22 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (nom == "") {
+      console.log(error);
+      return;
+    }
+    if (prenom == "") {
+      console.log(error);
+      return;
+    }
+    if (mail == "") {
+      console.log(error);
+      return;
+    }
+    if (telephone == "") {
+      console.log(error);
+      return;
+    }
 
     const res = await fetch("/api/contact", {
       body: JSON.stringify({
@@ -68,6 +87,11 @@ export default function Contact() {
         prenom: prenom,
         mail: mail,
         telephone: telephone,
+        vendre: vendre,
+        louer: louer,
+        acheter: acheter,
+        expertise: expertise,
+        estimation: estimation,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -81,6 +105,7 @@ export default function Contact() {
       return;
     }
     console.log(nom, prenom, mail, telephone);
+    router.push("/");
   };
   return (
     <NavPage current='contact'>
@@ -129,12 +154,12 @@ export default function Contact() {
             <input
               type='text'
               name='nom'
-              placeholder='Nom'
+              placeholder={`${nom == "" ? "Nom " : "Nom"}`}
               value={nom}
               onChange={(e) => {
                 setNom(e.target.value);
               }}
-              className='w-[45%] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 focus:outline-none '
+              className='w-[45%] md:w-[46%] h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 focus:outline-none '
             />
             <input
               type='text'
@@ -144,7 +169,7 @@ export default function Contact() {
               onChange={(e) => {
                 setPrenom(e.target.value);
               }}
-              className='w-[45%] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[45%] md:w-[47%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
             />
             <input
               type='email'
@@ -154,7 +179,7 @@ export default function Contact() {
               onChange={(e) => {
                 setMail(e.target.value);
               }}
-              className='w-[95%] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[95%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
             />
             <input
               type='number'
@@ -164,17 +189,17 @@ export default function Contact() {
               onChange={(e) => {
                 setTelephone(e.target.value);
               }}
-              className='w-[95%] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[95%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
             />{" "}
-            <Flex justify='center' className='mt-5'>
+            <Flex justify='center' className='mt-5 relative'>
               <button
                 type='submit'
-                className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[10px] w-fit shadow-cardcta '
+                className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[10px] w-fit shadow-cardcta absolute  '
               >
-                <H3 className='text-white mx-[22px] my-[11px] '>
+                <h3 className='text-white mx-[22px] my-[11px]   text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col  justify-center   '>
                   {"Envoyer "}
-                </H3>
-              </button>
+                </h3>
+              </button>{" "}
             </Flex>
           </form>
         </Flex>

@@ -1,6 +1,6 @@
 import Lottie from "react-lottie";
 
-import burgerMenu from "../../../../../public/assets/burgermenu.json";
+import burgerMenu from "../../../../../public/assets/burger3.json";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Container from "../../../shared/container";
@@ -26,14 +26,14 @@ const Menuburger = ({ current }) => {
       selected: false,
       src: "/assets/biens.svg",
     },
+    // {
+    //   page: "Biens vendus / loués",
+    //   href: "/biensVendus",
+    //   selected: false,
+    //   src: "/assets/biens.svg",
+    // },
     {
-      page: "Biens vendus / loués",
-      href: "/biensVendus",
-      selected: false,
-      src: "/assets/biens.svg",
-    },
-    {
-      page: "Services",
+      page: "Nos services",
       href: "/services",
       selected: false,
       src: "/assets/services.svg",
@@ -81,7 +81,7 @@ const Menuburger = ({ current }) => {
       setIsOpen((previsOpen) => !previsOpen);
       setTimeout(function () {
         setPause((prevPause) => !prevPause);
-      }, 1500);
+      }, 1520 - 1000);
       setPause((prevPause) => !prevPause);
     } else {
     }
@@ -89,7 +89,7 @@ const Menuburger = ({ current }) => {
 
   return (
     <Container className=' w-full '>
-      <Container className='fixed z-20 bg-white bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-60  w-full top-0  pb-2  '>
+      <Container className='fixed z-20 bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-70  w-full top-0  pb-2  '>
         <Container className=' m-auto  max-h-12  z-20  pt-1'>
           <Link href='/' passHref>
             <a>
@@ -99,7 +99,7 @@ const Menuburger = ({ current }) => {
         </Container>
         <Container
           onClick={handelClick}
-          className=' left-2 z-20 fixed  mt-1 pt-1'
+          className=' left-2 z-20 fixed  mt-1 pt-[2px]'
         >
           <Lottie
             options={defaultOptions}
@@ -111,7 +111,7 @@ const Menuburger = ({ current }) => {
           />
         </Container>
 
-        <Container className=' right-2 z-20 fixed  top-[18px]'>
+        <Container className=' right-2 z-20 fixed  top-[16px]'>
           <Btn2 src='/contact' color='blueu' text='Estimation gratuite' />
         </Container>
         {/* pop-Up menu burger */}
@@ -121,7 +121,7 @@ const Menuburger = ({ current }) => {
           animate={isOpen ? "opened" : "closed"}
           className='bg-[#FBFFFF] h-screen w-full fixed z-10 flex '
           transition={{
-            duration: 0.7,
+            duration: 0.5,
             times: [0, 0.1, 0.3, 0],
             // ease: [0.57, 0.97, 0.73, 0.57],
           }}

@@ -36,13 +36,6 @@
                     "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 },
-                "prix_bien": {
-                  "type": "Number",
-                  "config": {
-                    "label": "Prix Bien",
-                    "placeholder": ""
-                  }
-                },
                 "adresse_bien": {
                   "type": "StructuredText",
                   "config": {
@@ -78,9 +71,152 @@
                     "allowTargetBlank": true,
                     "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
+                },
+                "description_biens": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description Biens",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "surface_habitable": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Surface Habitable",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "superficie_terrain": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Superficie Terrain",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "type_env": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Type Env",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "nbr_chanbre": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Nbr Chanbre",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "nbr_etages": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Nbr Etages",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "lgr_facade": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Lgr Facade",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "garage": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Garage",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "nbr_sdb": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Nbr Sdb",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "nbr_toilettes": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Nbr Toilettes",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "nbr_parking": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Nbr Parking",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "prix_bien": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Prix Bien",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "vendu": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Vendu",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "peb": {
+                  "type": "Select",
+                  "config": {
+                    "label": "PEB",
+                    "placeholder": "",
+                    "options": [
+                      "PEB-A",
+                      "PEB-B",
+                      "PEB-C",
+                      "PEB-D",
+                      "PEB-E",
+                      "PEB-F",
+                      "PEB-G"
+                    ],
+                    "default_value": "PEB-A"
+                  }
                 }
               },
-              "items": {},
+              "items": {
+                "autres_img": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Autres Img",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
@@ -90,7 +226,52 @@
             "variation": "default",
             "name": "Default",
             "slice_type": "card_biens",
-            "items": [],
+            "items": [
+              {
+                "autres_img": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "autres_img": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "autres_img": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "autres_img": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+                }
+              }
+            ],
             "primary": {
               "Image_bien": {
                 "dimensions": {
@@ -99,44 +280,129 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
               },
               "nom_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Labore eiusmod ad cillum sint velit ut id eiusmod ut veniam est ea veniam. Esse aute exercitation enim officia id qui veniam laboris ad enim. Anim duis eu cillum sunt magna id sit fugiat.",
+                  "text": "Irure aute minim pariatur anim veniam ad dolore consectetur ipsum.",
                   "spans": []
                 }
               ],
-              "prix_bien": 9282,
               "adresse_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Anim quis reprehenderit velit qui nisi ea minim.",
+                  "text": "Nulla nostrud exercitation elit excepteur exercitation adipisicing do enim cillum sit pariatur occaecat. Consectetur proident culpa minim laborum est. Amet nulla do aliquip aliqua officia aute sint sit eu irure do aliquip amet irure.",
                   "spans": []
                 }
               ],
               "Superficie_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Esse cillum reprehenderit aliquip fugiat fugiat minim.",
+                  "text": "Esse velit cillum id proident in eu cillum. Eu magna Lorem excepteur minim eu nisi exercitation adipisicing excepteur qui elit.",
                   "spans": []
                 }
               ],
               "sdb_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Ullamco minim do minim id anim sit id sint occaecat.",
+                  "text": "Nostrud ullamco elit esse quis dolor aliqua exercitation aliqua amet.",
                   "spans": []
                 }
               ],
               "chambre_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Eiusmod esse nisi culpa consectetur minim occaecat occaecat magna irure amet do. Ut elit aliquip occaecat ea pariatur aute occaecat reprehenderit ex cillum proident magna. Nostrud eiusmod cillum magna eiusmod laborum magna pariatur proident Lorem.",
+                  "text": "Cillum occaecat esse id labore velit amet magna ullamco nostrud dolore nostrud labore.",
                   "spans": []
                 }
-              ]
+              ],
+              "description_biens": [
+                {
+                  "type": "paragraph",
+                  "text": "Eu occaecat nisi consectetur Lorem reprehenderit enim fugiat aliquip officia quis non voluptate nisi nostrud pariatur.",
+                  "spans": []
+                }
+              ],
+              "surface_habitable": [
+                {
+                  "type": "paragraph",
+                  "text": "Id ut officia commodo cupidatat. Dolor aliqua fugiat incididunt ullamco aliquip tempor magna qui ex.",
+                  "spans": []
+                }
+              ],
+              "superficie_terrain": [
+                {
+                  "type": "paragraph",
+                  "text": "Pariatur in qui ea. Elit excepteur velit tempor non quis est aliquip exercitation incididunt. Non voluptate ex id dolor ad ullamco qui aliquip nisi dolor mollit ex cupidatat culpa ad.",
+                  "spans": []
+                }
+              ],
+              "type_env": [
+                {
+                  "type": "paragraph",
+                  "text": "Velit culpa ea duis nostrud do exercitation tempor.",
+                  "spans": []
+                }
+              ],
+              "nbr_chanbre": [
+                {
+                  "type": "paragraph",
+                  "text": "Aute deserunt eu laborum cillum aliquip. Deserunt veniam veniam sunt officia aliqua officia laboris ex laborum id.",
+                  "spans": []
+                }
+              ],
+              "nbr_etages": [
+                {
+                  "type": "paragraph",
+                  "text": "Aute ullamco cillum et. Laborum dolor nisi nulla ex consectetur aliqua consequat incididunt sint.",
+                  "spans": []
+                }
+              ],
+              "lgr_facade": [
+                {
+                  "type": "paragraph",
+                  "text": "Fugiat dolor sunt laborum. Eu aliquip anim minim do aute et fugiat elit proident.",
+                  "spans": []
+                }
+              ],
+              "garage": [
+                {
+                  "type": "paragraph",
+                  "text": "Aliqua exercitation in do sint fugiat dolor. Eu ea ullamco et adipisicing duis excepteur labore nulla ut est deserunt cupidatat labore.",
+                  "spans": []
+                }
+              ],
+              "nbr_sdb": [
+                {
+                  "type": "paragraph",
+                  "text": "Velit duis nostrud excepteur qui. Ipsum do et nostrud proident voluptate ullamco eu non reprehenderit ut.",
+                  "spans": []
+                }
+              ],
+              "nbr_toilettes": [
+                {
+                  "type": "paragraph",
+                  "text": "Aute amet et pariatur commodo laboris esse commodo consectetur commodo nulla ipsum elit non cillum qui.",
+                  "spans": []
+                }
+              ],
+              "nbr_parking": [
+                {
+                  "type": "paragraph",
+                  "text": "Est mollit irure eu in exercitation anim consectetur mollit nostrud fugiat.",
+                  "spans": []
+                }
+              ],
+              "prix_bien": [
+                {
+                  "type": "paragraph",
+                  "text": "Et anim culpa incididunt reprehenderit sit irure.",
+                  "spans": []
+                }
+              ],
+              "vendu": false,
+              "peb": "PEB-A"
             }
           }
         },

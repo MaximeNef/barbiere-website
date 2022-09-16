@@ -15,13 +15,22 @@ export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
  */
 // Update the Link Resolver to match your project's route structure
 export function linkResolver(doc) {
-  switch (doc.type) {
-    case "homepage":
-      return "/";
-    case "a-vendre":
-      return `a-vendre/${doc.uid}`;
-    default:
-      return `/a-vendre/${doc.uid}`;
+  console.log(doc, "DOCDOCDOC");
+  // switch (doc.type) {
+  //   case "homepage":
+  //     return "/";
+  //   case "a-vendre":
+  //     return `a-vendre/${doc.uid}`;
+  //   case "a-louer":
+  //     return `a-louer/${doc.uid}`;
+  //   default:
+  //     return `/a-vendre/${doc.uid}`;
+  // }
+  if (doc.type === "biencard") {
+    return `/a-vendre/${doc.uid}`;
+  }
+  if (doc.type === "location") {
+    return `/a-louer/${doc.uid}`;
   }
 }
 

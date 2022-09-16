@@ -3,7 +3,8 @@ import CardInfo from "../../components/shared/card-Info";
 import Container from "../../components/shared/container";
 import H1 from "../../components/shared/h1";
 import H3 from "../../components/shared/h3";
-
+import MotionTop from "../../components/shared/motion-top";
+import MotionRight from "../../components/shared/motion-CardRight";
 export default function Emplois() {
   const services = [
     {
@@ -20,14 +21,20 @@ export default function Emplois() {
     },
   ];
   return (
-    <NavPage current={"emplois"}>
+    <NavPage current={"Emplois"}>
       <H1>{"Emplois"}</H1>
-      <H3 className='mt-5'>
-        {
-          "Immo Barbière est toujours à la recherche de bons éléments pour agrandir son équipe  "
-        }
-      </H3>
-      <Container className='space-y-[40px] mt-12'>
+      <MotionTop
+        initial='hidden'
+        animate='visible'
+        transition={{ duration: 0.3, delay: 0.3 }}
+      >
+        <h3 className='	 mt-12 text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default '>
+          {
+            "Immo Barbière est toujours à la recherche de bons éléments pour agrandir son équipe  "
+          }
+        </h3>
+      </MotionTop>
+      <Container className='space-y-[40px] mt-12 md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-center '>
         {services.map((service, i) => {
           return (
             <CardInfo

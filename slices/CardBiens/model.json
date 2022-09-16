@@ -28,13 +28,6 @@
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "prix_bien": {
-          "type": "Number",
-          "config": {
-            "label": "Prix Bien",
-            "placeholder": ""
-          }
-        },
         "adresse_bien": {
           "type": "StructuredText",
           "config": {
@@ -70,9 +63,152 @@
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
+        },
+        "description_biens": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description Biens",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "surface_habitable": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Surface Habitable",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "superficie_terrain": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Superficie Terrain",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "type_env": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Type Env",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "nbr_chanbre": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nbr Chanbre",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "nbr_etages": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nbr Etages",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "lgr_facade": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Lgr Facade",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "garage": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Garage",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "nbr_sdb": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nbr Sdb",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "nbr_toilettes": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nbr Toilettes",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "nbr_parking": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nbr Parking",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "prix_bien": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Prix Bien",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "vendu": {
+          "type": "Boolean",
+          "config": {
+            "label": "Vendu",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "peb": {
+          "type": "Select",
+          "config": {
+            "label": "PEB",
+            "placeholder": "",
+            "options": [
+              "PEB-A",
+              "PEB-B",
+              "PEB-C",
+              "PEB-D",
+              "PEB-E",
+              "PEB-F",
+              "PEB-G"
+            ],
+            "default_value": "PEB-A"
+          }
         }
       },
-      "items": {},
+      "items": {
+        "autres_img": {
+          "type": "Image",
+          "config": {
+            "label": "Autres Img",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

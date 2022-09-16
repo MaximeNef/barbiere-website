@@ -12,45 +12,75 @@ import { createClient } from "../../../prismicio";
 import { components } from "../../../slices";
 import Image from "next/image";
 import MyImage from "../../components/shared/myimage";
-
-export default function Biens({ pages }) {
+import CardBienVendu from "../../components/biens/cardBiensVendu";
+import CardBienLocation from "../../components/biens/CardBienLocation";
+import MotionBottom from "../../components/shared/motion-bottom";
+import MotionRight from "../../components/shared/motion-CardRight";
+import { motion } from "framer-motion";
+export default function Biens({ pages, locations }) {
   console.log(pages, "prismic");
   return (
     <NavPage current='Nos biens'>
       <H1>{"Nos Biens"}</H1>
-      <Flex justify='between' className=' my-5'>
-        <H3 className=''>{"Nos biens à vendre"}</H3>
-        <Btn3 src='/page' color='black' text='voir plus' />
-      </Flex>
-      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] space-x-3'>
+      <MotionBottom
+        initial='hidden'
+        animate='visible'
+        transition={{ duration: 0.3, delay: 0.3 }}
+      >
+        {" "}
+        <Flex justify='between' className=' my-5'>
+          {" "}
+          <H3 className=''>{"Nos biens à vendre"}</H3>{" "}
+          <Btn3 src='/a-vendre' color='black' text='voir plus' />
+        </Flex>{" "}
+      </MotionBottom>
+      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px]  md:mr-auto'>
         <CardBien pages={pages} />
-        <Container className='  w-[100px] flex-shrink-0 h-[200px] flex items-center justify-center mx-10  '></Container>
       </Flex>
-
       <Container className='my-10'>
-        <CardCTA
-          text1={"Ne manquez plus nos nouveaux biens !"}
-          text2={
-            "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !"
-          }
-          text3={"Nos biens >"}
-          src='/pages'
-        />
+        <MotionRight
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 0.7, delay: 0.9 }}
+        >
+          <CardCTA
+            text1={"Ne manquez plus nos nouveaux biens !"}
+            text2={
+              "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !"
+            }
+            text3={"Nos biens >"}
+            src='/pages'
+          />
+        </MotionRight>
       </Container>
-      {/* <Flex justify='between' className='mb-5'>
-        <H3 className=''>{"Nos biens à louer"}</H3>
-        <Btn3 src='/page' color='black' text='voir plus' />
+      <MotionBottom
+        initial='hidden'
+        animate='visible'
+        transition={{ duration: 0.5 }}
+      >
+        {" "}
+        <Flex justify='between' className='mb-5'>
+          <H3 className=''>{"Nos biens à louer"}</H3>{" "}
+          <Btn3 src='/a-louer' color='black' text='voir plus' />{" "}
+        </Flex>
+      </MotionBottom>
+      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px]  md:mr-auto'>
+        <CardBienLocation pages={locations} />
+        <Container className='  w-[100px] flex-shrink-0 h-[200px] flex items-center justify-center mx-10  md:hidden  '></Container>
+      </Flex>{" "}
+      <MotionBottom
+        initial='hidden'
+        animate='visible'
+        transition={{ duration: 0.5 }}
+      >
+        <Flex justify='between' className='mb-5 mt-[60px]'>
+          <H3 className=''>{"Nos biens vendus/loués"}</H3>{" "}
+          <Btn3 src='/vendu' color='black' text='voir plus' />{" "}
+        </Flex>{" "}
+      </MotionBottom>
+      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px]   md:mr-auto'>
+        <CardBienVendu pages={pages} locations={locations} />
       </Flex>
-      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px]'>
-        <CardBien /> <CardBien /> <CardBien /> <CardBien />
-      </Flex>
-      <Flex justify='between' className='mb-5 mt-[60px]'>
-        <H3 className=''>{"Nos biens vendus/loués"}</H3>
-        <Btn3 src='/page' color='black' text='voir plus' />
-      </Flex>
-      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px]'>
-        <CardBien /> <CardBien /> <CardBien /> <CardBien />
-      </Flex> */}
     </NavPage>
   );
 }
@@ -63,10 +93,11 @@ export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
   const pages = await client.getAllByType("biencard");
-
+  const locations = await client.getAllByType("location");
   return {
     props: {
       pages,
+      locations,
     },
   };
 }

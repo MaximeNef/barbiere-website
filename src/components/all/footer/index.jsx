@@ -10,7 +10,7 @@ const Footer = () => {
       <Container className='bg-[#41B8B8]  m-auto w-full text-center pb-2 rounded-tl-[25px] rounded-tr-[25px] border-t-[3px] border-[#41B8B8]'>
         {/* btn contact us  */}
         <Flex justify='center' className='  mt-[-28px] mb-5 '>
-          <Link href='/contactus' passHref>
+          <Link href='/contact' passHref>
             <a className=''>
               <Container className='border-[#FBFFFF] border-2 rounded-[27px] '>
                 <Container className='bg-gradient-to-r from-[#41B8B8] to-[#41B8B8] p-[1px] rounded-[25px] shadow-realisationCard'>
@@ -33,22 +33,25 @@ const Footer = () => {
 
         <Flex
           justify='between'
-          className='mx-5 text-[#FFFFFF] text-[14px] leading-4'
+          className='mx-5 text-[#FFFFFF] text-[14px] leading-4 md:mx-[15%]'
         >
           <Container className='text-start space-y-[12px]'>
             <Link href='/' passHref>
-              <a> Biens à vendre</a>
+              <a>Acceuil</a>
             </Link>
-            <Link href='/' passHref>
-              <a> Biens à louer</a>
+            <Link href='/biens' passHref>
+              <a> Nos biens</a>
             </Link>
-            <Link href='/' passHref>
-              <a> Notre agence</a>
+            <Link href='/services' passHref>
+              <a> Nos services</a>
             </Link>
-            <Link href='/' passHref>
+            <Link href='/agence' passHref>
+              <a> Agence / Equipe </a>
+            </Link>
+            <Link href='/emplois' passHref>
               <a> Emplois</a>
             </Link>
-            <Link href='/' passHref>
+            <Link href='/contact' passHref>
               <a> Contact</a>
             </Link>
           </Container>
@@ -85,12 +88,19 @@ const Footer = () => {
               <MyImage source={"/assets/instagram.svg"} h={20} w={20} />
             </Container>
           </Flex>
-          <p className='text-[7px] leading-[9px] mx-3 font-light'>
+          <p className='text-[7px] leading-[9px] mx-3 font-light md:text-[14px] md:px-[15%] md:leading-4'>
             {
               "Agent immobilier agréé IPI sous le n° 506.259 – Belgique. Organisme de contrôle : Institut professionnel des agents immobiliers, rue du Luxembourg 16B à 1000 Bruxelles www.ipi.be - code de déontologie de l’IPI AXA Belgium sous les n° xxx.xxx.xxx et n° xxx.xxx.xxx"
             }
           </p>
-          <p>{" 2022 © listri | Designed with passion by LISTRI"}</p>
+          <p className='md:text-[13px] '>
+            {" 2022 © listri | Designed with passion by "}
+            <span>
+              <Link href='https://www.listri.digital/' passHref>
+                <a target='_blank'>{"LISTRI"}</a>
+              </Link>
+            </span>
+          </p>
         </Container>
       </Container>{" "}
     </Container>

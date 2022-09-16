@@ -6,11 +6,13 @@ import P from "../p";
 
 const CardAvis = () => {
   return (
-    <Container className=' rounded-[20px] p-5 bg-white shadow-cardAvis snap-always snap-center flex-shrink-0 w-[300px] m-2 '>
-      <Flex justify='between' className=''>
+    <Container className=' rounded-[20px] p-5 bg-white shadow-cardAvis snap-always snap-center flex-shrink-0 w-[300px] m-2 md:min-w-[55%] '>
+      <Flex justify='between' className=' md:px-5'>
         <Flex className='space-x-[16px]'>
           <MyImage source={"/assets/logoblueu.svg"} h={20} w={30} />{" "}
-          <H3>Julien Nef</H3>
+          <h3 className='text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start justify-center text-default'>
+            Julien Nef
+          </h3>
         </Flex>
 
         <Container className='my-auto'>

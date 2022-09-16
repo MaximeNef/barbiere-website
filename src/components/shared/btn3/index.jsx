@@ -1,10 +1,11 @@
 import Link from "next/link";
+import MyImage from "../myimage";
 
 export default function Btn3(props) {
   function findColorClass() {
     switch (props.color) {
       case "black":
-        return "text-default border-black text-[17px] font-light  leading-[21px]";
+        return "text-default border-black text-[17px] font-medium  leading-[21px]";
       case "blueu":
         return "text-transparent bg-clip-text bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] border-black text-[19px] font-semibold leading-6";
     }
@@ -28,7 +29,7 @@ export default function Btn3(props) {
             id={props.id}
             className={` w-fit ${
               props.className
-            } justify-center  items-center ${findColorClass()} relative font-light whitespace-nowrap  `}
+            }  flex justify-center  items-center ${findColorClass()} relative whitespace-nowrap   `}
             style={{
               ...(props.fitHeight && { height: "fit-content" }),
               ...props.style,
@@ -37,8 +38,14 @@ export default function Btn3(props) {
             onMouseLeave={props.onMouseLeave}
           >
             {props.text}{" "}
-            <div
+            {/* <div
               className={` w-full absolute bottom-[1px] h-[1px] ${findBorderClass()} `}
+            /> */}
+            <MyImage
+              source='/assets/Arrow-right.svg'
+              w={"20"}
+              h={"20"}
+              // objectFit={"contain"}
             />
           </div>{" "}
         </a>

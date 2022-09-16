@@ -8,7 +8,7 @@ const NavPage = ({ children, current }) => {
     <Container className=''>
       <Page className='font-family text-[#7A767C] '>
         <Header current={current} />
-        <Container className='mx-5'>{children}</Container>
+        <Container className='mx-5 md:px-10'>{children}</Container>
       </Page>{" "}
       <Footer />
     </Container>

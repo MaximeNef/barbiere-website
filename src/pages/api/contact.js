@@ -8,7 +8,11 @@ async function sendEmail(req, res) {
     await sgMail.send({
       to: "maximenef1@gmail.com", // Your email where you'll receive emails
       from: "barbiere@listri.digital ", // your website email address here
-      subject: `[Lead from website] : ${req.body.mail}`,
+      subject: `${req.body.vendre ? "Je veux VENDRE ma maison" : ""}${
+        req.body.louer ? "Je veux LOUER ma maison" : ""
+      }${req.body.acheter ? "Je veux Acheter une maison" : ""}${
+        req.body.expertise ? "Je veux une EXPERTISE de ma maison" : ""
+      }${req.body.estimation ? "Je veux une ESTIMATION de ma maison" : ""}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -27,10 +31,12 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from ${req.body.nom}, their email is: ✉️${req.body.prenom} </h3>
+              <h3>Vous avez recu un e-mail de la part de :</h3>
+              <h2 style="color:blue;"> ${req.body.nom} <span>  ${req.body.prenom}</span></h2>
+              <h3>  Voici mon E-mail: ✉️${req.body.mail} </h3>
               <div style="font-size: 16px;">
-              <p>Message:</p>
-              <p>${req.body.telephone}</p>
+              <p>Voici mon Numero de téléphone:</p>
+              <h2 style="color:blue;">${req.body.telephone}</h2>
               <br>
               </div>
            

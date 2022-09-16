@@ -7,11 +7,11 @@ const Header = ({ current }) => {
   const [link, setLink] = useState([
     { page: "Accueil", href: "/", selected: false },
     { page: "Nos biens", href: "/biens", selected: false },
-    { page: "Biens vendus / loués", href: "/biensVendus", selected: false },
-    { page: "Services", href: "/services", selected: false },
+    // { page: "Biens vendus / loués", href: "/biensVendus", selected: false },
+    { page: "Nos services", href: "/services", selected: false },
     { page: "Agence / Equipe", href: "/agence", selected: false },
     { page: "Emplois", href: "/emplois", selected: false },
-    { page: "contact", href: "/contact", selected: false },
+    //   { page: "contact", href: "/contact", selected: false },
   ]);
 
   return (

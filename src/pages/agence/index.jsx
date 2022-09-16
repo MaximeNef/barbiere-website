@@ -16,56 +16,117 @@ import NavPage from "../../components/all/Nav-page";
 import Container from "../../components/shared/container";
 import ImgAgence from "../../components/agence/img-agence";
 import MyImage from "../../components/shared/myimage";
+import MotionBottom from "../../components/shared/motion-bottom";
+import MotionTop from "../../components/shared/motion-top";
+import MotionRight from "../../components/shared/motion-CardRight";
+import CardTeams from "../../components/shared/card-teams";
 
 export default function Agence() {
   return (
     <NavPage current={"Agence / Equipe"}>
-      <H1>{"Notre agence"}</H1>
-      <H3 className='mt-10'>
-        {
-          "Forte de 20 ans d’expérience, Immo Barbière est la référence quand il s’agit d’acheter ou de mettre son bien en vente. "
-        }
-      </H3>
-      <ImgAgence />
-      <H1 className='mt-12'>{"Notre équipe"}</H1>
-      <H3 className='mt-10 mb-10'>
-        {
-          "Forte de 20 ans d’expérience, Immo Barbière est la référence quand il s’agit d’acheter ou de mettre son bien en vente. "
-        }
-      </H3>
-      <Container className='space-y-[20px]'>
-        <CardTeam
-          img={"/assets/barbiere.svg"}
-          nom={"François Barbière "}
-          post={"Agent Immobilier - Gérant"}
-          ipi={"Nr d’agréation IPI : 506259"}
-          tel={"0493/193.003"}
-          mail={"fb@barbiere.be"}
-        />
-        <CardTeam
-          img={"/assets/barbiere.svg"}
-          nom={"François Barbière "}
-          post={"Agent Immobilier - Gérant"}
-          ipi={"Nr d’agréation IPI : 506259"}
-          tel={"0493/193.003"}
-          mail={"fb@barbiere.be"}
-        />
-        <CardTeam
-          img={"/assets/barbiere.svg"}
-          nom={"François Barbière "}
-          post={"Agent Immobilier - Gérant"}
-          ipi={"Nr d’agréation IPI : 506259"}
-          tel={"0493/193.003"}
-          mail={"fb@barbiere.be"}
-        />
-        <CardTeam
-          img={"/assets/barbiere.svg"}
-          nom={"François Barbière "}
-          post={"Agent Immobilier - Gérant"}
-          ipi={"Nr d’agréation IPI : 506259"}
-          tel={"0493/193.003"}
-          mail={"fb@barbiere.be"}
-        />
+      <Container className='md:px-14'>
+        <H1>{"Notre agence"}</H1>{" "}
+        <MotionTop
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 0.3, delay: 0.3 }}
+        >
+          <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-12 '>
+            {
+              "Forte de 20 ans d’expérience, Immo Barbière est la référence quand il s’agit d’acheter ou de mettre son bien en vente. "
+            }
+          </h3>
+        </MotionTop>{" "}
+        <ImgAgence />
+        <H1 className='mt-12'>{"Notre équipe"}</H1>{" "}
+        <MotionTop
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 0.3, delay: 0.3 }}
+        >
+          <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default   md:mt-12 md:mb-10 '>
+            {
+              "Forte de 20 ans d’expérience, Immo Barbière est la référence quand il s’agit d’acheter ou de mettre son bien en vente. "
+            }
+          </h3>
+        </MotionTop>{" "}
+        <MotionTop
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 0.7, delay: 0.5 }}
+        >
+          <MyImage
+            source='/assets/equipe.png'
+            w='100%'
+            h='50%'
+            className={" object-cover   w-full  mx-[-20px] m-auto  "}
+            // objectFit={"cover"}
+            layout='responsive'
+            objectFit='contain'
+          />
+        </MotionTop>{" "}
+        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-center '>
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/barbiere.svg"}
+              nom={"François Barbière "}
+              post={"Agent Immobilier - Gérant"}
+              ipi={"Nr d’agréation IPI : 506259"}
+              region={"Région : Hebaye"}
+              tel={"0493/193.003"}
+              mail={"fb@barbiere.be"}
+            />
+          </MotionRight>{" "}
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/Ste.jpg"}
+              nom={"Stéphane Beaujot "}
+              post={"Agent Immobilier"}
+              ipi={"Nr d’agréation IPI : 510059"}
+              region={"Région : Liège"}
+              tel={"0477/75.44.10"}
+              mail={"sb@barbiere.be"}
+            />
+          </MotionRight>{" "}
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/Gillon.jpg"}
+              nom={"Camille Gillon"}
+              post={"Conseillère en Immobilier"}
+              ipi={"Nr d’agréation IPI : 506259"}
+              region={"Région : Hannut"}
+              tel={"0497/40.85.29"}
+              mail={"cg@barbiere.be"}
+            />
+          </MotionRight>{" "}
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/VanHove.jpg"}
+              nom={"G. Van Hove "}
+              post={"Conseillère en Immobilier"}
+              ipi={"Nr d’agréation IPI : 510912"}
+              region={"Région : Hannut"}
+              tel={"0473/29.00.70"}
+              mail={"gv@barbiere.be"}
+            />
+          </MotionRight>
+        </Container>
       </Container>
     </NavPage>
   );
