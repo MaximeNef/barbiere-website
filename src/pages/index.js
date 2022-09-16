@@ -36,7 +36,6 @@ export default function Home({ pages, locations }) {
       >
         {" "}
         <H3 className='mt-1 md:mt-0  ' id='Ancre'>
-          {" "}
           {"Nous sommes actif près de chez vous "}
         </H3>{" "}
       </MotionBottom>
