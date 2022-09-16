@@ -1,9 +1,8 @@
-import React from 'react'
-import { RichText } from 'prismic-reactjs'
+import React from "react";
 
 const Details = ({ slice }) => (
   <section>
-    <span className="title">
+    {/* <span className="title">
       {
         slice.primary.title ?
         <RichText render={slice.primary.title}/>
@@ -24,8 +23,8 @@ const Details = ({ slice }) => (
         .title {
           color: #8592e0;
         }
-    `}</style>
+    `}</style> */}
   </section>
-)
+);
 
-export default Details
+export default Details;
