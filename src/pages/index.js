@@ -34,10 +34,9 @@ export default function Home({ pages, locations }) {
         transition={{ duration: 0.3 }}
         className='bg-white z-10 relative'
       >
-        {" "}
-        <H3 className='mt-1 md:mt-0  ' id='Ancre'>
+        <H3 className='mt-1 md:mt-0' id='Ancre'>
           {"Nous sommes actif près de chez vous "}
-        </H3>{" "}
+        </H3>
       </MotionBottom>
       <CarteBelgique />{" "}
       <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full'>
