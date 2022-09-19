@@ -26,11 +26,13 @@ import ChiffreAgence from "../components/home/chiffre-agence";
 import CarteBelgique from "../components/home/CarteBelgique";
 import dynamic from "next/dynamic";
 const DynamicCarte = dynamic(() => import("../components/home/CarteBelgique"));
+const DynamicVideo = dynamic(() => import("../components/hero/heroImg"));
 
 export default function Home({ pages, locations }) {
   return (
     <NavPage current='Accueil'>
       <HeroImg /> <a name='some' className=' absolute bottom-[22px]' />
+      <DynamicVideo />
       <MotionBottom
         initial='hidden'
         animate='visible'
@@ -41,7 +43,8 @@ export default function Home({ pages, locations }) {
           {"Nous sommes actif près de chez vous "}
         </H3>
       </MotionBottom>
-      <CarteBelgique /> <DynamicCarte />
+      {/* <CarteBelgique /> */}
+      <DynamicCarte />
       <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full'>
         <MotionRight
           initial='hidden'
