@@ -24,6 +24,9 @@ import MotionBottom from "../components/shared/motion-bottom";
 import MotionCardRight from "../components/shared/motion-right";
 import ChiffreAgence from "../components/home/chiffre-agence";
 import CarteBelgique from "../components/home/CarteBelgique";
+import dynamic from "next/dynamic";
+const DynamicCarte = dynamic(() => import("../components/home/CarteBelgique"));
+
 export default function Home({ pages, locations }) {
   return (
     <NavPage current='Accueil'>
@@ -38,7 +41,7 @@ export default function Home({ pages, locations }) {
           {"Nous sommes actif près de chez vous "}
         </H3>
       </MotionBottom>
-      <CarteBelgique />{" "}
+      <CarteBelgique /> <DynamicCarte />
       <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full'>
         <MotionRight
           initial='hidden'
