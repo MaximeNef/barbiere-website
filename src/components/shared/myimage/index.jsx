@@ -7,7 +7,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const MyImage = ({ source, h, w, className, objectFit, layout }) => {
   return (
-    <Image
+    <img
       loader={myLoader}
       src={source}
       alt='Picture of the author'
