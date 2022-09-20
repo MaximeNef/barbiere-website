@@ -44,7 +44,7 @@ export default function VideoPlayer(props) {
   }, []);
 
   return shouldUseImage ? (
-    <img src={props.video} alt='Muted Video' />
+    <img src={props.video} alt='Muted Video' priority={true} />
   ) : (
     <div
       className='  md:w-full md:h-[100vh]   '
