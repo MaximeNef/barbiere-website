@@ -27,6 +27,12 @@ import CarteBelgique from "../components/home/CarteBelgique";
 import dynamic from "next/dynamic";
 const DynamicCarte = dynamic(() => import("../components/home/CarteBelgique"));
 const DynamicVideo = dynamic(() => import("../components/hero/heroImg"));
+const DynamicChiffre = dynamic(() =>
+  import("../components/home/chiffre-agence")
+);
+const DynamicCardBienVendu = dynamic(() =>
+  import("../components/biens/cardBiensVendu")
+);
 
 export default function Home({ pages, locations }) {
   return (
@@ -89,7 +95,7 @@ export default function Home({ pages, locations }) {
         </MotionBottom>
       </Flex>{" "}
       <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto'>
-        <CardBienVendu pages={pages} locations={locations} />
+        <DynamicCardBienVendu pages={pages} locations={locations} />
       </Flex>{" "}
       <MotionBottom
         initial='hidden'
