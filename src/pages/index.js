@@ -35,6 +35,7 @@ const DynamicCardBienVendu = dynamic(() =>
 );
 const DynamicCardCTA = dynamic(() => import("../components/shared/card-Cta"));
 const DynamicAvis = dynamic(() => import("../components/shared/cardAvis"));
+
 export default function Home({ pages, locations }) {
   return (
     <NavPage current='Accueil'>

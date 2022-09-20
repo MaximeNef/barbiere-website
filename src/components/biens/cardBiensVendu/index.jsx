@@ -32,6 +32,8 @@ const CardBienVendu = (props) => {
                     source={page.data.slices[0].primary.Image_bien.url}
                     layout='fill'
                     className='rounded-t-[20px] h-full w-full  '
+                    h={100}
+                    w={100}
                   />{" "}
                   <Container className='absolute bottom-1 left-1'>
                     {page.data.slices[0].primary.peb == "PEB-A" ? (

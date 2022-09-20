@@ -17,7 +17,7 @@ const MyImage = ({ source, h, w, className, objectFit, layout }) => {
       className={className}
       objectFit={objectFit}
       layout={layout}
-      priority={true}
+      priority={false}
       loading='lazy'
     />
   );
