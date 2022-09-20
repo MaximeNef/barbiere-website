@@ -33,12 +33,13 @@ const DynamicChiffre = dynamic(() =>
 const DynamicCardBienVendu = dynamic(() =>
   import("../components/biens/cardBiensVendu")
 );
-
+const DynamicCardCTA = dynamic(() => import("../components/shared/card-Cta"));
+const DynamicAvis = dynamic(() => import("../components/shared/cardAvis"));
 export default function Home({ pages, locations }) {
   return (
     <NavPage current='Accueil'>
-      <HeroImg /> <a name='some' className=' absolute bottom-[22px]' />
-      <DynamicVideo />
+      {/* <HeroImg />*/}
+      <DynamicVideo /> <a name='some' className=' absolute bottom-[22px]' />
       <MotionBottom
         initial='hidden'
         animate='visible'
@@ -57,25 +58,13 @@ export default function Home({ pages, locations }) {
           animate='visible'
           transition={{ duration: 0.7 }}
         >
-          <CardCTA
+          <DynamicCardCTA
             text1={"Tous nos biens se trouvent ici"}
             text2={"Vous trouverez ici tous nos biens à vendre qu’à louer."}
             text3={"Nos biens >"}
             src='/biens'
           />{" "}
         </MotionRight>{" "}
-        <MotionRight
-          initial='hidden'
-          animate='visible'
-          transition={{ duration: 0.7 }}
-        >
-          <CardCTA
-            text1={"Tous nos biens se trouvent ici"}
-            text2={"Vous trouverez ici tous nos biens à vendre qu’à louer."}
-            text3={"Nos biens >"}
-            src='/biens'
-          />{" "}
-        </MotionRight>
       </Container>
       <Flex justify='between' className='mt-12 mb-5'>
         <MotionBottom
@@ -104,7 +93,7 @@ export default function Home({ pages, locations }) {
       >
         <H3 className='mt-12 '>{"Notre agence en quelques chiffres"}</H3>
       </MotionBottom>
-      <ChiffreAgence />
+      <DynamicChiffre />
       <Container className='space-y-[20px] mt-12 '>
         <MotionBottom
           initial='hidden'
@@ -122,9 +111,9 @@ export default function Home({ pages, locations }) {
             transition={{ duration: 0.5 }}
             className='  w-full flex'
           >
-            <CardAvis />
-            <CardAvis />
-            <CardAvis />{" "}
+            <DynamicAvis />
+            <DynamicAvis />
+            <DynamicAvis />{" "}
             <Container className='w-[20%]  snap-always snap-center flex-shrink-0  inline-flex' />
           </MotionCardRight>
         </Flex>
