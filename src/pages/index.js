@@ -127,11 +127,15 @@ export default function Home({ pages, locations }) {
   );
 }
 
-export async function getStaticProps({ previewData }) {
+export async function getStaticProps({ previewData, res }) {
   const client = createClient({ previewData });
 
   const pages = await client.getAllByType("biencard");
   const locations = await client.getAllByType("location");
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=31536000, stale-while-revalidate"
+  );
   return {
     props: {
       pages,
