@@ -12,8 +12,8 @@ const CardCTA = (props) => {
       <Container className='absolute h-full w-full  my-auto top-0 '>
         <MyImage
           source='/assets/logo.svg'
-          w={"200"}
-          h={"200"}
+          w={350}
+          h={180}
           objectFit={"contain"}
         />
       </Container>{" "}

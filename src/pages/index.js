@@ -51,7 +51,6 @@ export default function Home({ pages, locations }) {
           {"Nous sommes actif près de chez vous "}
         </H3>
       </MotionBottom>
-      {/* <CarteBelgique /> */}
       <DynamicCarte />
       <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full'>
         <MotionRight
