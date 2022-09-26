@@ -111,10 +111,36 @@ export default function Home({ pages, locations }) {
             transition={{ duration: 0.5 }}
             className='  w-full flex'
           >
-            <DynamicAvis />
-            <DynamicAvis />
-            <DynamicAvis />{" "}
-            <Container className='w-[20%]  snap-always snap-center flex-shrink-0  inline-flex' />
+            <DynamicAvis
+              txt={
+                "L’agence Barbière nous a proposé ses services, les choses se sont très vite activées. Ils ont été hyper professionnels,honnêtes et transparents du début à la fin"
+              }
+              user={"Blaise et Katia"}
+            />
+            <DynamicAvis
+              txt={
+                "Félicitation à l'agence Barbière de son professionnalisme, sa gentillesse ainsi que de ses bons conseils. Je ne manquerai pas de revenir vers vos services."
+              }
+              user={"Anita Demartino"}
+            />
+            <DynamicAvis
+              txt={
+                "Un grand merci à toute l'équipe immobilière ‘François Barbière & associés’ pour les conseils lors de notre achat mais également pour l'accompagnement de la vente de notre bien."
+              }
+              user={"Luc et famille"}
+            />
+            <DynamicAvis
+              txt={
+                "J’ai vraiment apprécié la prise en charge de la vente de la maison. Rapidité et efficacité sont leurs mots d'ordre."
+              }
+              user={"Véronique Crotteux"}
+            />
+            <DynamicAvis
+              txt={
+                "Des explications claires et complètes lors de la visite du bien. Un suivi régulier et une disponibilité de l’agent immobilier"
+              }
+              user={"Françoise Docquier"}
+            />{" "}
           </MotionCardRight>
         </Flex>
       </Container>

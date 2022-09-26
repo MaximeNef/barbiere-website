@@ -17,8 +17,8 @@ const CardBienVendre = (props) => {
             {page.data.slices[0].primary.vendu ? (
               <div className='md:w-fit' />
             ) : (
-              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-4 mx-auto md:max-w-[400px]  md:items-center md:mx-6'>
-                <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
+              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-4 mx-auto md:max-w-[390px]  md:items-center md:mx-6'>
+                <Container className='relative min-w-[340] min-h-[206px] md:w-[390px] md:min-h-[230px]'>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
                     layout='fill'

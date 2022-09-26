@@ -9,42 +9,22 @@ import MyImage from "../../shared/myimage";
 const CardBienLouer = (props) => {
   console.log(props.pages, "bienVendresss");
   const [index, setIndex] = useState(0);
-  //   {
-  //     if (page.data.slices[0].primary.vendu) {
-  //       useEffect(() => {
-  //         setIndex(index - 1);
-  //       }, []);
-  //     } else {
-  //       useEffect(() => {
-  //         setIndex(index + 1);
-  //       }, []);
-  //     }
-  //   }
 
   return (
-    <>
+    <Container className='md:flex md:flex-row md:flex-wrap md:w-full md:justify-center md:items-center '>
       {" "}
       {props.pages.map((page, i) => (
-        <Container>
+        <Container className='md:flex md:flex-row md:flex-wrap md:w-fit '>
           <Link href={`/a-louer/${page.uid}`} key={page.uid} passHref>
             {page.data.slices[0].primary.vendu ? (
-              <div>
-                {/* {" "}
-                {useEffect(() => {
-                  setIndex((prev) => prev - 1 / 2);
-                }, [])}{" "} */}
-              </div>
+              <div className='md:w-fit' />
             ) : (
-              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto'>
-                {useEffect(() => {
-                  setIndex((prev) => prev + 1 / 2);
-                }, [])}
-                <Container className='relative max-w-[350px] max-h-[206px]'>
+              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[390px]  md:items-center md:mx-6'>
+                <Container className='relative max-w-[350px] max-h-[206px] md:min-w-[390px] md:min-h-[230px]'>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
-                    h={"206"}
-                    w={"300"}
-                    className='rounded-t-[20px] '
+                    layout='fill'
+                    className='rounded-t-[20px] h-full w-full  '
                   />
                   <Container className='absolute bottom-1 left-1'>
                     <MyImage source={"/assets/peb.svg"} h={"20"} w={"68"} />
@@ -110,27 +90,9 @@ const CardBienLouer = (props) => {
               </Container>
             )}
           </Link>{" "}
-          {/* <p>{index}</p>
-          <p> {i}"i"</p>{" "} */}
-          <Container>
-            {index == (i - index) * 2 || i == (index - i) * 2 ? (
-              <Container className='my-5'>
-                <CardCTA
-                  text1={"Ne manquez plus nos nouveaux biens !"}
-                  text2={
-                    "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !"
-                  }
-                  text3={"Nos biens >"}
-                  src='/pages'
-                />
-              </Container>
-            ) : (
-              <div />
-            )}
-          </Container>
         </Container>
       ))}
-    </>
+    </Container>
   );
 };
 export default CardBienLouer;

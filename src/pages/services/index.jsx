@@ -51,7 +51,7 @@ export default function Services() {
       >
         <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-12 '>
           {
-            "Immo Barbière vous propose plusieures services pour vous aider dans votre projet quel qu’il soit.  "
+            "Immo Barbière vous propose une maîtrise parfaite et prise en charge complète de votre dossier "
           }
         </h3>
       </MotionTop>

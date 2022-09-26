@@ -33,7 +33,7 @@ export default function Agence() {
         >
           <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-12 '>
             {
-              "Forte de 20 ans d’expérience, Immo Barbière est la référence quand il s’agit d’acheter ou de mettre son bien en vente. "
+              "Forte d’une expérience de plus de 20 années dans l’immobilier et la construction, notre équipe d’agents immobiliers (agréés IPI), vous assurera un service de qualité, sur mesure, pour louer et vendre votre bien immobilier au mieux de vos intérêts."
             }
           </h3>
         </MotionTop>{" "}
@@ -46,7 +46,7 @@ export default function Agence() {
         >
           <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default   md:mt-12 md:mb-10 '>
             {
-              "Forte de 20 ans d’expérience, Immo Barbière est la référence quand il s’agit d’acheter ou de mettre son bien en vente. "
+              " Une valorisation optimale de votre bien immobilier et votre entière satisfaction est notre but. "
             }
           </h3>
         </MotionTop>{" "}

@@ -109,9 +109,9 @@ export default function Contact() {
   };
   return (
     <NavPage current='contact'>
-      <H1 className='mb-[50px]'>{"Nous contacter"}</H1>
-      <Container className='md:flex md:flex-row'>
-        <Container className='md:w-1/2'>
+      <H1 className='mb-[40px]'>{"Nous contacter"}</H1>
+      <Container className='md:flex md:flex-col'>
+        <Container className='md:w-full'>
           <P className='mb-[20px]'> {"Vous souhaitez nous contacter pour"}</P>
           <Flex justify='between'>
             <Optionform
@@ -145,8 +145,8 @@ export default function Contact() {
             />
           </Flex>{" "}
         </Container>{" "}
-        <Flex className='flex-wrap md:w-1/2'>
-          <P className=' mt-[40px] mb-[20px]  mx-auto md:mt-0'>
+        <Flex className='flex-wrap md:w-full md:flex-col'>
+          <P className=' mt-[40px] mb-[20px]  mx-auto'>
             {"Complétez vos informations"}
           </P>
 
@@ -159,7 +159,7 @@ export default function Contact() {
               onChange={(e) => {
                 setNom(e.target.value);
               }}
-              className='w-[45%] md:w-[46%] h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 focus:outline-none '
+              className='w-[45%] md:w-[48%] h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 focus:outline-none '
             />
             <input
               type='text'
@@ -169,7 +169,7 @@ export default function Contact() {
               onChange={(e) => {
                 setPrenom(e.target.value);
               }}
-              className='w-[45%] md:w-[47%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[45%] md:w-[49%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
             />
             <input
               type='email'
@@ -179,7 +179,7 @@ export default function Contact() {
               onChange={(e) => {
                 setMail(e.target.value);
               }}
-              className='w-[95%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[95%] md:w-[98%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
             />
             <input
               type='number'
@@ -189,7 +189,7 @@ export default function Contact() {
               onChange={(e) => {
                 setTelephone(e.target.value);
               }}
-              className='w-[95%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[95%] md:w-[98%] h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
             />{" "}
             <Flex justify='center' className='mt-5 relative'>
               <button
