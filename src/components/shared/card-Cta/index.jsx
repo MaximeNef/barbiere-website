@@ -11,7 +11,7 @@ const CardCTA = (props) => {
     <Container className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px]  py-5 relative  shadow-cardcta w-full h-full text-center'>
       <Container className='absolute h-full w-full  my-auto top-0 '>
         <MyImage
-          source={"/assets/logo.svg"}
+          source={"/assets/Logo.svg"}
           w={350}
           h={180}
           objectFit={"contain"}
