@@ -125,6 +125,12 @@ export default function Home({ pages, locations }) {
             />
             <DynamicAvis
               txt={
+                "Je ne peux que me féliciter d'avoir découvert votre société et mon avis se résume en quelques mots: Réactivité, positivité, disponibilité et gentillesse."
+              }
+              user={"Camille"}
+            />
+            <DynamicAvis
+              txt={
                 "Un grand merci à toute l'équipe immobilière ‘François Barbière & associés’ pour les conseils lors de notre achat mais également pour l'accompagnement de la vente de notre bien."
               }
               user={"Luc et famille"}
@@ -141,6 +147,7 @@ export default function Home({ pages, locations }) {
               }
               user={"Françoise Docquier"}
             />{" "}
+            <Container className='w-[20%]  snap-always snap-center flex-shrink-0  md:inline-flex hidden' />
           </MotionCardRight>
         </Flex>
       </Container>
