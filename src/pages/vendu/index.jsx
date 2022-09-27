@@ -6,6 +6,7 @@ import CardCTA from "../../components/shared/card-Cta";
 import CardBienVendre from "../../components/biens/cardBienVendre";
 import CardBienVendu from "../../components/biens/cardBiensVendu";
 import MotionRight from "../../components/shared/motion-CardRight";
+import H1 from "../../components/shared/h1";
 
 const Avendre = ({ pages, locations }) => {
   return (
