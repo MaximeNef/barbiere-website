@@ -44,7 +44,7 @@ const CardInfo = (props) => {
           </Container>{" "}
           {props.btn == "je postule" ? (
             <div
-              className={`text-transparent bg-clip-text bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
+              className={`text-[#E78DB1]  text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
             >
               <a href='mailto:no-one@snai1mai1.com?subject=Agent Immobilier'>
                 {" "}
@@ -52,17 +52,17 @@ const CardInfo = (props) => {
               </a>
 
               <div
-                className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9]`}
+                className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#E78DB1] to-[#E78DB1]`}
               />
             </div>
           ) : (
             <Container onClick={handleClick}>
               <div
-                className={`text-transparent bg-clip-text bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
+                className={` text-[#E78DB1] text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
               >
                 <p>{props.btn}</p>
                 <div
-                  className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9]`}
+                  className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#E78DB1] to-[#E78DB1]`}
                 />
               </div>
             </Container>
