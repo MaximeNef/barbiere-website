@@ -12,11 +12,11 @@ export default function Contact() {
   // router
   const router = useRouter();
   // btn options  contact
-  const [vendre, setVendre] = useState(false);
+  const [vendre, setVendre] = useState(true);
   const [louer, setLouer] = useState(false);
   const [acheter, setAcheter] = useState(false);
   const [expertise, setExpertise] = useState(false);
-  const [estimation, setEstimation] = useState(true);
+  const [estimation, setEstimation] = useState(false);
 
   // formulaire contact
   const [nom, setNom] = useState("");
