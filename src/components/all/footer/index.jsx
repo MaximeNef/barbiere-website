@@ -81,11 +81,11 @@ const Footer = () => {
         <Container className='text-[#FFFFFF] '>
           <Flex justify='center' className='space-x-[8px] mb-2'>
             <Container>
-              <MyImage source={"/assets/facebook.svg"} h={20} w={20} />{" "}
+              <MyImage source={"/assets/facebook.svg"} h={25} w={25} />{" "}
             </Container>
             <Container>
               {" "}
-              <MyImage source={"/assets/instagram.svg"} h={20} w={20} />
+              <MyImage source={"/assets/instagram.svg"} h={25} w={25} />
             </Container>
           </Flex>
           <p className='text-[7px] leading-[9px] mx-3 font-light md:text-[14px] md:px-[15%] md:leading-4'>
@@ -93,7 +93,7 @@ const Footer = () => {
               "Agent immobilier agréé IPI sous le n° 506.259 – Belgique. Organisme de contrôle : Institut professionnel des agents immobiliers, rue du Luxembourg 16B à 1000 Bruxelles www.ipi.be - code de déontologie de l’IPI AXA Belgium sous les n° xxx.xxx.xxx et n° xxx.xxx.xxx"
             }
           </p>
-          <p className='md:text-[13px] '>
+          <p className='md:text-[13px] text-[11px] my-3 '>
             {" 2022 © listri | Designed with passion by "}
             <span>
               <Link href='https://www.listri.digital/' passHref>

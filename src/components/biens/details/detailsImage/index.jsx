@@ -89,8 +89,8 @@ export default function detailsImage(props) {
             <div
               className={
                 index === currentSlide
-                  ? "h-4 w-4 bg-[#1AD9D9] rounded-full mx-2 mb-2 cursor-pointer"
-                  : "h-4 w-4 bg-gray-300 rounded-full mx-2 mb-2 cursor-pointer"
+                  ? "h-2 w-4 bg-[#1AD9D9] rounded-full mx-1 mb-2 cursor-pointer"
+                  : "h-2 w-2 bg-gray-300 rounded-full mx-1 mb-2 cursor-pointer"
               }
               key={index}
               onClick={() => {
