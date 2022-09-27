@@ -16,12 +16,11 @@ const ImgAgence = () => {
       >
         <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo'>
           {" "}
-          <Container className=' rounded-[18px] relative '>
+          <Container className=' rounded-[18px] relative min-h-[300px] md:min-h-[600px] '>
             <MyImage
               source='/assets/agenceImg.jpg'
-              w={300}
-              h={600}
-              className='rounded-[18px]'
+              layout='fill'
+              className='rounded-[18px] md:min-h-[600px] '
               objectFit={"cover"}
             />
           </Container>{" "}
