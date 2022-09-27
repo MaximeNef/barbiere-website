@@ -20,7 +20,7 @@ const Optionform = ({ state, handleClick, name }) => {
             className='rounded-[10px] bg-white text-center  h-[58px] cursor-pointer hover:bg-[#41B8B8] hover:text-white'
             onClick={handleClick}
           >
-            <h3 className=' hover:text-white	w-full h-full  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] mx-auto'>
+            <h3 className=' hover:text-white	w-full h-full  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-center justify-center text-transparent text-[#41B8B8] mx-auto'>
               {name}
             </h3>
           </Container>
