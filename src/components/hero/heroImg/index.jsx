@@ -37,9 +37,6 @@ const HeroImg = () => {
         <div className='hidden md:inline-flex'>
           <VideoPlayer video='video/videoBarbiere.mp4' />
         </div>
-        <video width='1320' height='1240' loop autoPlay>
-          <source src="'video/videoBarbiere.mp4'" type='video/mp4' />
-        </video>
       </Container>{" "}
       <Container className='  absolute w-full bottom-[280px] md:bottom-[220px] md:w-[45%] md:mx-auto md:relative'>
         {" "}

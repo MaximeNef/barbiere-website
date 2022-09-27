@@ -57,7 +57,9 @@ export default function Home({ pages, locations }) {
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.7 }}
+          className='w-full'
         >
+          {" "}
           <DynamicCardCTA
             text1={"Tous nos biens se trouvent ici"}
             text2={"Vous trouverez ici tous nos biens à vendre qu’à louer."}

@@ -119,7 +119,7 @@ const Menuburger = ({ current }) => {
           initial={false}
           variants={menuVariants}
           animate={isOpen ? "opened" : "closed"}
-          className='bg-[#FBFFFF] h-screen w-full fixed z-10 flex '
+          className='bg-[#FBFFFF] h-screen w-full fixed z-[90px] flex '
           transition={{
             duration: 0.5,
             times: [0, 0.1, 0.3, 0],
