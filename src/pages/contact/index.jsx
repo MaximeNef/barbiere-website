@@ -110,7 +110,7 @@ export default function Contact() {
   return (
     <NavPage current='contact'>
       <H1 className='mb-[40px]'>{"Nous contacter"}</H1>
-      <Container className='md:flex md:flex-col'>
+      <Container className='md:flex md:flex-col mb-10'>
         <Container className='md:w-full'>
           <P className='mb-[20px]'> {"Vous souhaitez nous contacter pour"}</P>
           <Flex justify='between'>
