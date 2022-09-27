@@ -16,7 +16,7 @@ const CardTeams = (props) => {
           className={" object-cover  rounded-[20px] "}
         />
       </Container>{" "}
-      <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] drop-shadow-lg z-20 mt-[-50px]'>
+      <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] drop-shadow-lg z-10 mt-[-50px]'>
         <Container className='bg-white rounded-[18px] pt-[15px]'>
           <H3 className='mx-auto'>{props.nom}</H3>
           <H3 className='mx-auto'>{props.post}</H3>
