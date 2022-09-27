@@ -27,7 +27,7 @@ const CardTeams = (props) => {
             <Container className='mr-auto'>
               <Link href={`tel:${props.tel}`} passHref>
                 <a className='flex'>
-                  <MyImage source='/assets/phone.svg' w={20} h={20} />
+                  <MyImage source='/assets/Phone.svg' w={20} h={20} />
                   <P className='ml-1'>{props.tel}</P>
                 </a>
               </Link>
