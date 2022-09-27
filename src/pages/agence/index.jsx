@@ -72,7 +72,7 @@ export default function Agence() {
             transition={{ duration: 0.7, delay: 0.5 }}
           >
             <CardTeams
-              img={"/assets/F.barbiere"}
+              img={"/assets/fran.jpg"}
               nom={"François Barbière "}
               post={"Agent Immobilier - Gérant"}
               ipi={"Nr d’agréation IPI : 506259"}
