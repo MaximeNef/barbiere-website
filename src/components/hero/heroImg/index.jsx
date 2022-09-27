@@ -31,7 +31,7 @@ const HeroImg = () => {
           layout='fill'
           objectFit='cover'
         /> */}
-        <div className='md:hidden'>
+        <div className='md:hidden inline-flex'>
           <VideoPlayer video='video/videobarbiereM.mp4' />
         </div>
         <div className='hidden md:inline-flex'>

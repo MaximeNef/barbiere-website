@@ -57,7 +57,7 @@ const Footer = () => {
           </Container>
           <Container className='space-y-[10px]'>
             <Container>
-              <MyImage source={"/assets/logoWhite.svg"} h={52} w={72} />
+              <MyImage source={"/assets/LogoWhite.svg"} h={52} w={72} />
               <p className='text-[10px] leading-[13px]'>
                 {" "}
                 {"François Barbière & associés"}
