@@ -5,7 +5,15 @@ const myLoader = ({ src, width, quality }) => {
   return `${src}`;
 };
 
-const MyImage = ({ source, h, w, className, objectFit, layout }) => {
+const MyImage = ({
+  source,
+  h,
+  w,
+  className,
+  objectFit,
+  layout,
+  imageProps,
+}) => {
   return (
     <Image
       loader={myLoader}
@@ -18,7 +26,8 @@ const MyImage = ({ source, h, w, className, objectFit, layout }) => {
       objectFit={objectFit}
       layout={layout}
       priority={false}
-      loading='lazy'
+      placeholder='blur'
+      blurDataURL='/images/path-to-blur-image.jpg'
     />
   );
 };
