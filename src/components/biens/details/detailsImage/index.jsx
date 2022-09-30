@@ -7,7 +7,8 @@ import { useState } from "react";
 import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import MyImage from "../../../shared/myimage";
-
+import PopupImage from "./popupImage";
+import Container from "../../../shared/container";
 /**
  * Carousel component for nextJS and Tailwind.
  * Using external library react-easy-swipe for swipe gestures on mobile devices (optional)
@@ -37,6 +38,16 @@ export default function detailsImage(props) {
         : currentSlide - 1;
     setCurrentSlide(newSlide);
   };
+
+  const handleShow = () => {
+    if (showModal == true) {
+      setShowModal(false);
+    }
+    if (showModal == false) {
+      setShowModal(true);
+    }
+  };
+
   const [zoom, setzoom] = useState(false);
   const handleClick = (e) => {
     if (zoom == true) {
@@ -46,17 +57,23 @@ export default function detailsImage(props) {
       setzoom(true);
     }
   };
+  const [showModal, setShowModal] = useState(false);
+  console.log(showModal, "modal");
   return (
     <div className='relative z-10'>
       <AiOutlineLeft
         onClick={handlePrevSlide}
-        className='absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-[#1AD9D9] z-20'
+        className={` m-auto inset-y-1/2 cursor-pointer text-[#1AD9D9] z-20 ${
+          showModal
+            ? " fixed left-20 text-[50px] md:text-[100px]"
+            : "absolute left-0 text-5xl"
+        }`}
       />
       <div
         className={`w-full h-[50vh] flex overflow-hidden relative m-auto  rounded-[20px] ${
-          zoom ? "" : ""
+          showModal ? " " : ""
         }`}
-        onClick={handleClick}
+        onClick={handleShow}
       >
         <Swipe
           onSwipeLeft={handleNextSlide}
@@ -67,20 +84,40 @@ export default function detailsImage(props) {
             console.log(item, "itemsssssssss");
             if (index === currentSlide) {
               return (
-                <MyImage
-                  source={item.autres_img.url}
-                  layout='fill'
-                  objectFit='cover'
-                  className='animate-fadeIn rounded-[20px]'
-                />
+                <>
+                  <MyImage
+                    source={item.autres_img.url}
+                    layout='fill'
+                    objectFit='cover'
+                    className='animate-fadeIn rounded-[20px]'
+                  />
+                  {showModal && (
+                    <Container className='  top-0 left-0 w-screen h-screen flex justify-center items-center bg-black/90 overflow-hidden  fixed'>
+                      <Container className=' w-[80%] h-[80%] mt-[5%]'>
+                        <MyImage
+                          source={item.autres_img.url}
+                          objectFit='contain'
+                          className='animate-fadeIn rounded-[20px]'
+                          w={1000}
+                          h={1000}
+                        />
+                      </Container>
+                    </Container>
+                  )}{" "}
+                </>
               );
             }
           })}
         </Swipe>
       </div>
+
       <AiOutlineRight
         onClick={handleNextSlide}
-        className='absolute right-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-[#1AD9D9] z-20'
+        className={` m-auto  inset-y-1/2 cursor-pointer text-[#1AD9D9] z-20 ${
+          showModal
+            ? " fixed right-20 text-[50px] md:text-[100px]"
+            : "absolute right-0 text-5xl"
+        }`}
       />
 
       <div className='relative flex justify-center p-2'>
