@@ -18,7 +18,7 @@ const CardBienVendu = (props) => {
         {props.pages.map((page) => (
           <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
             {page.data.slices[0].primary.vendu ? (
-              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3'>
+              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
                   {" "}
                   <Container className='absolute z-10  top-[-2px] left-[-1px] '>
@@ -131,7 +131,7 @@ const CardBienVendu = (props) => {
         {props.locations.map((page) => (
           <Link href={`/a-louer/${page.uid}`} key={page.uid} passHref>
             {page.data.slices[0].primary.vendu ? (
-              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 '>
+              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
                   <Container className='absolute z-10  top-[-2px] left-[-1px] '>
                     <MyImage source={"/assets/VenduBanner.svg"} h={98} w={98} />

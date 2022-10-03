@@ -20,7 +20,7 @@ const CardBien = (props) => {
             {page.data.slices[0].primary.vendu ? (
               <div />
             ) : (
-              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 '>
+              <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
