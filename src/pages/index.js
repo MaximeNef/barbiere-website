@@ -39,6 +39,14 @@ const DynamicAvis = dynamic(() => import("../components/shared/cardAvis"));
 export default function Home({ pages, locations }) {
   return (
     <NavPage current='Accueil'>
+      <Head>
+        <title>{"Barbiere-Immo "}</title>
+        <meta
+          name='Barbiere immobilier'
+          content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
+        />
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       {/* <HeroImg />*/}
       <DynamicVideo /> <a name='some' className=' absolute bottom-[22px]' />
       <MotionBottom
