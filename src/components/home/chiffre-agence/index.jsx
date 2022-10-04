@@ -37,7 +37,7 @@ const ChiffreAgence = () => {
               </Flex>
               <Container className=' font-light text-[17px] leading-[21px] text-[#646464] ml-[10px] text-center md:text-left'>
                 {"de satisfaction client,"}
-                <br /> {" vous ne repartirez pas dessus "}
+                <br /> {" vous ne repartirez pas déçus "}
               </Container>
             </Flex>
           </Container>

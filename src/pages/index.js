@@ -133,7 +133,7 @@ export default function Home({ pages, locations }) {
             />
             <DynamicAvis
               txt={
-                "Félicitation à l'agence Barbière de son professionnalisme, sa gentillesse ainsi que de ses bons conseils. Je ne manquerai pas de revenir vers vos services."
+                "Félicitations à l'agence Barbière de son professionnalisme, sa gentillesse ainsi que de ses bons conseils. Je ne manquerai pas de revenir vers vos services."
               }
               user={"A.D."}
             />

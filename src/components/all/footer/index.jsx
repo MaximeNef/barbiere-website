@@ -72,7 +72,7 @@ const Footer = () => {
               <Link href={"tel:+32493 19 30 03"} passHref>
                 <a className='text-[10px] leading-[13px]  font-medium'>
                   {" "}
-                  {"+32493 19 30 03"}
+                  {"019.305.732"}
                 </a>
               </Link>{" "}
             </Container>

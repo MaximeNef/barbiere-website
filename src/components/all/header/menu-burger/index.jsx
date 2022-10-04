@@ -112,7 +112,7 @@ const Menuburger = ({ current }) => {
         </Container>
 
         <Container className=' right-2 z-20 fixed  top-[16px]'>
-          <Btn2 src='/contact' color='blueu' text='Estimation gratuite' />
+          <Btn2 src='/contact' color='blueu' text='estimation offerte' />
         </Container>
         {/* pop-Up menu burger */}
         <motion.div

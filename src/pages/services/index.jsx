@@ -32,13 +32,28 @@ export default function Services() {
     {
       img: "/assets/Expert.svg",
       h2: "Expertise",
-      p: "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !",
+      p: "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis...  plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !",
       btn: "En savoir plus",
     },
     {
       img: "/assets/lien.svg",
       h2: "Liens utiles",
-      p: "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !",
+      href: {
+        name: "•Calcul de frais ",
+        desc: "https://www.notaire.be/calcul-de-frais/achat",
+      },
+      href1: {
+        name: "•Formulaire des energies ",
+        desc: "https://www.cwape.be/formulaire-de-reprise-des-energies",
+      },
+      href2: {
+        name: "•Formulaire changement usager ",
+        desc: "https://www.cile.be/sites/default/files/2022-06/Formulaire%20de%20changement%20d'usager.pdf?ver=2019-07-23-075233-290",
+      },
+      href3: {
+        name: "•Formulaire de déménagement",
+        desc: "https://www.swde.be/sites/default/files/2022-06/form.demenagement_fr.pdf",
+      },
       btn: "En savoir plus",
     },
   ];
@@ -71,6 +86,10 @@ export default function Services() {
               img={service.img}
               h2={service.h2}
               p={service.p}
+              href={service.href}
+              href1={service.href1}
+              href2={service.href2}
+              href3={service.href3}
               btn={service.btn}
               key={i}
             />
