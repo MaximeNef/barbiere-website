@@ -52,7 +52,7 @@ const MenuDesktop = ({ link, current }) => {
                       </a>
                     </Flex>
                     <motion.div
-                      style={{ y: -10 }}
+                      style={{ y: 10 }}
                       animate={{ y: 0 }}
                       // transition={{ duration: 0.3 }}
                       layout

@@ -126,7 +126,7 @@ export default function Agence() {
           >
             <CardTeams
               img={"/assets/VanHove.jpg"}
-              nom={"G. Van Hove "}
+              nom={"Gaëtane Van Hove "}
               post={"Conseillère en Immobilier"}
               ipi={"Nr d’agréation IPI : 510912"}
               region={"Région : Hannut"}
