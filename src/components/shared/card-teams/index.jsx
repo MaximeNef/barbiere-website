@@ -7,13 +7,13 @@ import P from "../p";
 
 const CardTeams = (props) => {
   return (
-    <Container className='pt-[70px] md:min-w-[324px] md:mx-8 '>
+    <Container className='pt-[70px] md:min-w-[324px] md:mx-8 md:pb-10'>
       <Container className='border-[2px] border-teal-400 bg-white   rounded-[20px]  w-[95%] h-full m-auto    mt-[-50px] shadow-2xl  '>
         <MyImage
           source={props.img}
           w={100}
           h={400}
-          className={" object-cover  rounded-[20px] "}
+          className={" object-cover  rounded-[18px] "}
         />
       </Container>{" "}
       <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] drop-shadow-lg z-10 mt-[-50px]'>

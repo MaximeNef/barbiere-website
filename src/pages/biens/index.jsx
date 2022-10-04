@@ -18,6 +18,7 @@ import MotionBottom from "../../components/shared/motion-bottom";
 import MotionRight from "../../components/shared/motion-CardRight";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import CardDesktop from "../../components/shared/card-cta-desktop";
 export default function Biens({ pages, locations }) {
   console.log(pages, "prismic");
   return (
@@ -51,15 +52,17 @@ export default function Biens({ pages, locations }) {
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.7, delay: 0.9 }}
+          className='md:w-[65%] mx-auto'
         >
-          <CardCTA
+          {/* <CardCTA
             text1={"Ne manquez plus nos nouveaux biens !"}
             text2={
               "Quand vous trouvez enfin un bien qui correspond à vos attentes, on vous annonce qu’il est déjà vendu... En vous inscrivant cela ne vous arrivera plus !"
             }
             text3={"Nos biens >"}
             src='/pages'
-          />
+          /> */}
+          <CardDesktop />
         </MotionRight>
       </Container>
       <MotionBottom

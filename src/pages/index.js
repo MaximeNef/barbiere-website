@@ -71,7 +71,7 @@ export default function Home({ pages, locations }) {
           {" "}
           <DynamicCardCTA
             text1={"Tous nos biens se trouvent ici"}
-            text2={"Vous trouverez ici tous nos biens à vendre qu’à louer."}
+            text2={"Découvrez tous nos biens à vendre & louer."}
             text3={"Nos biens >"}
             src='/biens'
           />{" "}
@@ -97,7 +97,7 @@ export default function Home({ pages, locations }) {
           <Btn3 src='/biens' color='black' text='voir plus' />
         </MotionRight>
       </Flex>{" "}
-      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto'>
+      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto md:my-5'>
         <DynamicCardBienVendu pages={pages} locations={locations} />
       </Flex>{" "}
       <MotionBottom

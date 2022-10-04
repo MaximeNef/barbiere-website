@@ -7,7 +7,7 @@ import P from "../p";
 const CardAvis = (props) => {
   return (
     <Container className=' rounded-[20px] p-5 bg-white shadow-cardAvis snap-always snap-center flex-shrink-0 w-[300px] m-2 md:min-w-[55%] '>
-      <Container className='md:flex-row md:items-start'>
+      <Container className='md:flex-row md:items-start md:pr-5'>
         <Flex
           justify='between'
           className=' md:px-5 max-h-[30px] items-start md:justify-start'
@@ -17,12 +17,14 @@ const CardAvis = (props) => {
             {props.user}
           </h3>{" "}
         </Flex>
-        <Container className=' flex justify-start items-end'>
+        <Container className=' flex justify-start items-end md:my-auto'>
           <MyImage source={"/assets/stars.svg"} h={14} w={60} />
         </Container>
       </Container>
 
-      <P className='mt-5'>{props.txt}</P>
+      <p className='mt-5 text-left text-[17px] font-light leading-[21px] flex flex-col items-center justify-center md:px-3'>
+        {props.txt}
+      </p>
     </Container>
   );
 };

@@ -39,48 +39,53 @@ export default function Agence() {
           animate='visible'
           transition={{ duration: 0.3, delay: 0.3 }}
         >
-          <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-12 '>
+          <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-5 md:mt-12 '>
             {
               "Forte d’une expérience de plus de 20 années dans l’immobilier et la construction, notre équipe d’agents immobiliers (agréés IPI), vous assurera un service de qualité, sur mesure, pour louer et vendre votre bien immobilier au mieux de vos intérêts."
             }
           </h3>
         </MotionTop>{" "}
         <ImgAgence />
-        <H1 className='mt-12'>{"Notre équipe"}</H1>{" "}
+        <H1 className='mt-24'>{"Notre équipe"}</H1>{" "}
         <MotionTop
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.3, delay: 0.3 }}
         >
-          <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default   md:mt-12 md:mb-10 '>
+          <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default mt-5  md:mt-12 md:mb-10 '>
             {
               " Une valorisation optimale de votre bien immobilier et votre entière satisfaction est notre but. "
             }
           </h3>
         </MotionTop>{" "}
-        <MotionTop
+        <MotionRight
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.7, delay: 0.5 }}
+          className='relative'
         >
-          <MyImage
-            source='/assets/equipe.png'
-            w='100%'
-            h='50%'
-            className={" object-cover   w-full  mx-[-20px] m-auto  "}
-            // objectFit={"cover"}
-            layout='responsive'
-            objectFit='contain'
-          />
-        </MotionTop>{" "}
-        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-center '>
+          <Container className=' relative w-[100%] z-20 mt-6'>
+            <Container className='ml-[-20px] md:ml-[-116px] md:mr-[-116px] mr-[-20px] shadow-cardcta md:h-[70vh] '>
+              <MyImage
+                source='/assets/team.png'
+                w='100%'
+                h='58%'
+                className={""}
+                // objectFit={"cover"}
+                layout='responsive'
+                objectFit='cover'
+              />
+            </Container>
+          </Container>
+        </MotionRight>{" "}
+        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:ml-6 mt-8  '>
           <MotionRight
             initial='hidden'
             animate='visible'
             transition={{ duration: 0.7, delay: 0.5 }}
           >
             <CardTeams
-              img={"/assets/fran.jpg"}
+              img={"/assets/barbiere.jpg"}
               nom={"François Barbière "}
               post={"Agent Immobilier - Gérant"}
               ipi={"Nr d’agréation IPI : 506259"}
@@ -110,7 +115,7 @@ export default function Agence() {
             transition={{ duration: 0.7, delay: 0.5 }}
           >
             <CardTeams
-              img={"/assets/Gillon.jpg"}
+              img={"/assets/cam.jpg"}
               nom={"Camille Gillon"}
               post={"Conseillère en Immobilier"}
               ipi={"Nr d’agréation IPI : 506259"}
@@ -129,6 +134,21 @@ export default function Agence() {
               nom={"Gaëtane Van Hove "}
               post={"Conseillère en Immobilier"}
               ipi={"Nr d’agréation IPI : 510912"}
+              region={"Région : Hannut"}
+              tel={"0473/29.00.70"}
+              mail={"gv@barbiere.be"}
+            />
+          </MotionRight>
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/lisa.jpg"}
+              nom={"Lisa"}
+              post={"Stagiaire"}
+              ipi={""}
               region={"Région : Hannut"}
               tel={"0473/29.00.70"}
               mail={"gv@barbiere.be"}
