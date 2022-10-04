@@ -3,6 +3,7 @@ import Container from "../../components/shared/container";
 import H1 from "../../components/shared/h1";
 import MotionTop from "../../components/shared/motion-top";
 import CardJob from "../../components/shared/card-job";
+import Head from "next/head";
 export default function Emplois() {
   const services = [
     {
@@ -20,6 +21,14 @@ export default function Emplois() {
   ];
   return (
     <NavPage current={"Emplois"}>
+      <Head>
+        <title>{"Barbiere-Immo "}</title>
+        <meta
+          name='Barbiere immobilier'
+          content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
+        />
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       <H1>{"Emplois"}</H1>
       <MotionTop
         initial='hidden'

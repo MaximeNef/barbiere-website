@@ -20,7 +20,7 @@ const CardCTA = (props) => {
       <Flex
         type='col'
         justify='between'
-        className=' space-y-[20px] px-[22px] z-10'
+        className=' space-y-[20px] px-[22px] z-10 '
       >
         <H2 className='text-white md:px-5 px-3    '> {props.text1}</H2>{" "}
         <P className='text-white md:px-5 px-3 '>{props.text2}</P>{" "}

@@ -24,6 +24,14 @@ import CardTeams from "../../components/shared/card-teams";
 export default function Agence() {
   return (
     <NavPage current={"Agence / Equipe"}>
+      <Head>
+        <title>{"Barbiere-Immo "}</title>
+        <meta
+          name='Barbiere immobilier'
+          content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
+        />
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       <Container className='md:px-14'>
         <H1>{"Notre agence"}</H1>{" "}
         <MotionTop

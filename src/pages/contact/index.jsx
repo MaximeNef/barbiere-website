@@ -8,6 +8,7 @@ import H1 from "../../components/shared/h1";
 import H3 from "../../components/shared/h3";
 import P from "../../components/shared/p";
 import { useRouter } from "next/router";
+import Head from "next/head";
 export default function Contact() {
   // router
   const router = useRouter();
@@ -109,6 +110,14 @@ export default function Contact() {
   };
   return (
     <NavPage current='contact'>
+      <Head>
+        <title>{"Barbiere-Immo "}</title>
+        <meta
+          name='Barbiere immobilier'
+          content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
+        />
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       <H1 className='mb-[40px]'>{"Nous contacter"}</H1>
       <Container className='md:flex md:flex-col mb-10'>
         <Container className='md:w-full'>

@@ -21,6 +21,7 @@ module.exports = {
         cardAvis: " 2px 4px 10px 2px rgba(55, 71, 79, 0.3)",
         cardDetails: "2px 4px 6px 2px rgba(100, 100, 100, 0.1)",
         cardTeam: "  25px 25px 50px -12px rgb(0 0 0 / 0.25);",
+        cardChiffre: "0 0 6px rgb(0 0 0 / 16%);",
       },
     },
   },

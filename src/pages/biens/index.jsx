@@ -17,10 +17,19 @@ import CardBienLocation from "../../components/biens/CardBienLocation";
 import MotionBottom from "../../components/shared/motion-bottom";
 import MotionRight from "../../components/shared/motion-CardRight";
 import { motion } from "framer-motion";
+import Head from "next/head";
 export default function Biens({ pages, locations }) {
   console.log(pages, "prismic");
   return (
     <NavPage current='Nos biens'>
+      <Head>
+        <title>{"Barbiere-Immo "}</title>
+        <meta
+          name='Barbiere immobilier'
+          content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
+        />
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       <H1>{"Nos Biens"}</H1>
       <MotionBottom
         initial='hidden'

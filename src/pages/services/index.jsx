@@ -9,6 +9,7 @@ import MotionBottom from "../../components/shared/motion-bottom";
 import MotionRight from "../../components/shared/motion-CardRight";
 import MotionTop from "../../components/shared/motion-top";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 export default function Services() {
   // The default value is 'blue', it will be used during pre-rendering and the first render in the browser (hydration)
   const [color, setColor] = useState("blue");
@@ -43,6 +44,14 @@ export default function Services() {
   ];
   return (
     <NavPage current={"Nos services"}>
+      <Head>
+        <title>{"Barbiere-Immo "}</title>
+        <meta
+          name='Barbiere immobilier'
+          content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
+        />
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       <H1>{"Nos Services"}</H1>{" "}
       <MotionTop
         initial='hidden'

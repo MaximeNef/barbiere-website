@@ -16,7 +16,7 @@ const ChiffreAgence = () => {
       </Container>
       <Container className='md:flex md:flex-row md:justify-start md:w-full'>
         <Container className=''>
-          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardAvis md:w-fit'>
+          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardChiffre md:w-fit'>
             <Flex
               justify='start'
               align='center'
@@ -42,7 +42,7 @@ const ChiffreAgence = () => {
             </Flex>
           </Container>
 
-          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardAvis '>
+          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardChiffre '>
             <Flex
               justify='start'
               align='center'
@@ -69,7 +69,7 @@ const ChiffreAgence = () => {
           </Container>
         </Container>
         <Container>
-          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardAvis md:w-fit'>
+          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardChiffre md:w-fit'>
             <Flex
               justify='start'
               align='center'
@@ -95,7 +95,7 @@ const ChiffreAgence = () => {
             </Flex>
           </Container>
 
-          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardAvis md:w-fit'>
+          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardChiffre md:w-fit'>
             <Flex
               justify='start'
               align='center'
