@@ -11,12 +11,14 @@ export default function Emplois() {
       h2: "Agent immobilier",
       p: "Pour soutenir notre développement en Wallonie et à Bruxelles, nous rechercherons des agents immobiliers (agrées IPI) expérimentés. N’hésitez pas à nous contacter pour plus d'informations et à nous transmettre votre curriculum vitae complet, vos références, ainsi qu’une lettre de motivation, à l’adresse suivante: fb@barbiere.be      A très bientôt !",
       btn: "je postule",
+      mail: "mailto:fb@barbiere.be?subject=Agent Immobilier",
     },
     {
       img: "/assets/serviceVendre.svg",
       h2: "Candidature spontanée",
-      p: "Pour toute demande de candidature spontanée, n’hésitez pas à nous contacter pour plus d'informations et à nous transmettre votre curriculum vitae complet, vos références, ainsi qu’une lettre de motivation, à l’adresse suivante: fb@barbiere.be A très bientôt !",
+      p: "Pour toute demande de candidature spontanée, n’hésitez pas à nous contacter pour plus d'informations et à nous transmettre votre curriculum vitae, vos références, ainsi qu’une lettre de motivation, à l’adresse suivante: fb@barbiere.be A très bientôt !",
       btn: "je postule",
+      mail: "mailto:fb@barbiere.be?subject=Candidature spontanée",
     },
   ];
   return (
@@ -35,7 +37,7 @@ export default function Emplois() {
         animate='visible'
         transition={{ duration: 0.3, delay: 0.3 }}
       >
-        <h3 className='	 mt-12 text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default '>
+        <h3 className='	 mt-12 text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default '>
           {
             "Immo Barbière est toujours à la recherche de bons éléments pour agrandir son équipe  "
           }
@@ -50,6 +52,7 @@ export default function Emplois() {
               p={service.p}
               btn={service.btn}
               key={i}
+              mail={service.mail}
             />
           );
         })}

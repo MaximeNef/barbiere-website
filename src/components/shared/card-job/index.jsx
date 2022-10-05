@@ -18,34 +18,34 @@ const CardJob = (props) => {
     <MotionRight
       initial='hidden'
       animate='visible'
-      transition={{ duration: 0.7, delay: 0.5 }}
+      transition={{ duration: 0.7 }}
       className='md:max-w-[45%] md:m-2 md:flex md:justify-center md:items-center '
     >
       <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo md:w-full md:h-fit md:mx-4 md:mb-8  '>
-        <Container className='bg-white rounded-[18px] relative space-y-[30px] px-5 py-10 '>
-          {" "}
+        <Container className='bg-white rounded-[18px] relative space-y-[30px] px-5 py-10  min-h-[340px] '>
           <Container className='relative w-full'>
             {props.img == undefined ? (
               <></>
             ) : (
-              <Container className='absolute top-[-30px] left-[-10px]'>
+              <Container className='absolute top-[-20px] left-[-10px]'>
                 <MyImage source={props.img} w={"50"} h={"50"} />
               </Container>
             )}
 
-            <H2>{props.h2}</H2>
+            <H2 className='ml-2 md:ml-0'>{props.h2}</H2>
           </Container>
           <Container
             className={` text-[17px] font-light leading-[21px]   items-center justify-center h-fit `}
           >
-            <p className='relative  overflow-hidden   text-center'>{props.p}</p>
+            <p className='relative  overflow-hidden text-left leading-6 md:h-[140px]'>
+              {props.p}
+            </p>
           </Container>{" "}
           {props.btn == "je postule" ? (
             <div
               className={`text-[#E78DB1]  text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
             >
-              <a href='mailto:no-one@snai1mai1.com?subject=Agent Immobilier'>
-                {" "}
+              <a href={props.mail}>
                 <p>{props.btn}</p>
               </a>
 
