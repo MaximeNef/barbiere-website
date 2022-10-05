@@ -35,12 +35,17 @@ const Generales = (props) => {
       carac: "m²",
     },
     {
+      name: "Disponibilité ",
+      info: props.details.data.slices[0].primary.Disponibilite[0]?.text,
+      carac: "m²",
+    },
+    {
       name: "Garage ",
       info: props.details.data.slices[0].primary.garage[0]?.text,
     },
     {
       name: "Salles de bains ",
-      info: props.details.data.slices[0].primary.nbr_sdb[0]?.text,
+      info: props.details.data.slices[0].primary.sdb_bien[0].text,
     },
     {
       name: "Toilettes ",
@@ -52,29 +57,30 @@ const Generales = (props) => {
     },
   ];
   return (
-    <Container className=' p-5 rounded-[20px] shadow-cardDetails'>
+    <Container className=' p-5 rounded-[12px] shadow-cardDetails'>
       <H3 className='mb-5'>{"Caractéristiques générales"}</H3>
+      <Container className='md:flex-wrap md:max-h-[200px] md:ml-[-40px] '>
+        {generales.map((generale, i) => (
+          <Container key={i} className='md:ml-10  md:w-[46%] leading-8'>
+            {generale.info ? (
+              <Flex justify='between' className=''>
+                <Container>
+                  <p>{generale.name}</p>
+                </Container>
+                <Container>
+                  <p className='text-black'>
+                    {generale.info}
 
-      {generales.map((generale, i) => (
-        <Container key={i}>
-          {generale.info ? (
-            <Flex justify='between' className=''>
-              <Container>
-                <p>{generale.name}</p>
-              </Container>
-              <Container>
-                <p>
-                  {generale.info}
-
-                  <span className='ml-1'>{generale.carac}</span>
-                </p>
-              </Container>{" "}
-            </Flex>
-          ) : (
-            <div />
-          )}
-        </Container>
-      ))}
+                    <span className='ml-1 text-black'>{generale.carac}</span>
+                  </p>
+                </Container>{" "}
+              </Flex>
+            ) : (
+              <div />
+            )}
+          </Container>
+        ))}
+      </Container>
     </Container>
   );
 };

@@ -37,7 +37,9 @@ const BannerSection = () => {
             <h2
               className={` text-white  text-[20px] font-bold leading-[25px] text-left `}
             >
-              {" retrouver  nous dans la wallonie pour niquez vos mere "}
+              {
+                " retrouver nous dans toute la wallonie pour répondre à vos besoins"
+              }
             </h2>
             <p
               className={` text-white text-[17px] font-light leading-[21px] text-left `}

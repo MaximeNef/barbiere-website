@@ -22,7 +22,7 @@
         "nom_bien": {
           "type": "StructuredText",
           "config": {
-            "label": "Nom Bien",
+            "label": "Nom du Bien",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -31,7 +31,7 @@
         "adresse_bien": {
           "type": "StructuredText",
           "config": {
-            "label": "Adresse Bien",
+            "label": "l'Adresse du Bien",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -40,7 +40,7 @@
         "Superficie_bien": {
           "type": "StructuredText",
           "config": {
-            "label": "Superficie Bien",
+            "label": "Superficie du Bien",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -49,7 +49,7 @@
         "sdb_bien": {
           "type": "StructuredText",
           "config": {
-            "label": "Sdb Bien",
+            "label": "Nombre de salle de bain",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -76,7 +76,7 @@
         "surface_habitable": {
           "type": "StructuredText",
           "config": {
-            "label": "Surface Habitable",
+            "label": "Superficie habitable",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -94,7 +94,7 @@
         "type_env": {
           "type": "StructuredText",
           "config": {
-            "label": "Type Env",
+            "label": "Type Environnement ",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -103,7 +103,7 @@
         "nbr_chanbre": {
           "type": "StructuredText",
           "config": {
-            "label": "Nbr Chanbre",
+            "label": "Nombre de chambres",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -112,7 +112,7 @@
         "nbr_etages": {
           "type": "StructuredText",
           "config": {
-            "label": "Nbr Etages",
+            "label": "Nombre d'étages",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -121,7 +121,7 @@
         "lgr_facade": {
           "type": "StructuredText",
           "config": {
-            "label": "Lgr Facade",
+            "label": "largeur de façade",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -148,7 +148,7 @@
         "nbr_toilettes": {
           "type": "StructuredText",
           "config": {
-            "label": "Nbr Toilettes",
+            "label": "Nombre de toilettes",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -157,7 +157,7 @@
         "nbr_parking": {
           "type": "StructuredText",
           "config": {
-            "label": "Nbr Parking",
+            "label": "Nombre de Parking",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -197,13 +197,229 @@
             ],
             "default_value": "PEB-A"
           }
+        },
+        "Disponibilite": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Disponibilite",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Rvn_cadastral": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Revenu cadastral",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Type_chauffage": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Type de chauffage",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Chauffage": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Chauffage",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Raccordement_eau": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Raccordement à l'eau",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Type_chassis": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Type de châssis",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Cuisine": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Cuisine",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Confort_interieur": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Confort Interieur",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Confort_exterieur": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Confort Exterieur",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "nbr_facades": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nombre de facades",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Annee_construction": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Année de construction",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Etat_bien": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Etat du bien",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Orientation_facade_arriere": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Orientation façade arrière",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Toiture": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Toiture",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "installation_electrique": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Installation Electrique",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "Evacuation_eaux": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Evacuation des eaux usées",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "jardin": {
+          "type": "Boolean",
+          "config": {
+            "label": "Jardin",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "orientation_jardin": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Orientation du Jardin",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "terrasse": {
+          "type": "Boolean",
+          "config": {
+            "label": "Terrasse",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "orientation_terrasse": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Orientation de la Terrasse",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "conso_primaire": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Consommation d'énergie primaire",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "classe_energie": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Classe énergétique",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "rapport_peb": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Numéro du rapport PEB",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "emission_co2": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Emission Co2",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
         }
       },
       "items": {
         "autres_img": {
           "type": "Image",
           "config": {
-            "label": "Autres Img",
+            "label": "Autres image",
             "constraint": {},
             "thumbnails": []
           }

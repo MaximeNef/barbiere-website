@@ -8,7 +8,7 @@ import P from "../p";
 const CardDesktop = (props) => {
   console.log(props);
   return (
-    <Container className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px]  py-6 relative  shadow-cardcta w-full h-full'>
+    <Container className='bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px]  py-6 relative  shadow-cardcta w-full h-full mb-4'>
       <Container className='absolute h-full w-full  my-auto top-0 z-10'>
         <MyImage
           source={"/assets/Logo.svg"}

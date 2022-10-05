@@ -128,7 +128,7 @@ export default function Agence() {
               img={"/assets/cam.jpg"}
               nom={"Camille Gillon"}
               post={"Conseillère en Immobilier"}
-              ipi={"Nr d’agréation IPI : 506259"}
+              ipi={""}
               region={"Région : Hannut"}
               tel={"0497/40.85.29"}
               mail={"cg@barbiere.be"}
@@ -143,7 +143,7 @@ export default function Agence() {
               img={"/assets/VanHove.jpg"}
               nom={"Gaëtane Van Hove "}
               post={"Conseillère en Immobilier"}
-              ipi={"Nr d’agréation IPI : 510912"}
+              ipi={""}
               region={"Région : Hannut"}
               tel={"0473/29.00.70"}
               mail={"gv@barbiere.be"}
