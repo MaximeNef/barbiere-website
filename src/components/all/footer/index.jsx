@@ -54,6 +54,9 @@ const Footer = () => {
             <Link href='/contact' passHref>
               <a> Contact</a>
             </Link>
+            <Link href='/deontologie' passHref>
+              <a> Déontologie</a>
+            </Link>
           </Container>
           <Container className='space-y-[10px]'>
             <Container>
