@@ -20,19 +20,19 @@ export default function Services() {
     {
       img: "/assets/serviceVendre.svg",
       h2: "Vendre",
-      p: "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !",
+      p: "La première étape, essentielle, consiste en une analyse approfondie du bien afin de pouvoir en évaluer la valeur vénale, de manière professionnelle et objective, en fonction des conditions de marché (celle-ci est gratuite et sans engagement). Préalablement à la mise en vente, nous procédons à différentes recherches administratives, nous permettant de vérifier de nombreux points, gage d’une vente totalement sécurisée. Selon de type de bien, nous procédons ensuite au choix des canaux de publicité, rédaction de support de présentation (dossier détaillée, photos et vidéos de présentation réalisées par des partenaire professionnels, permettant une valorisation optimale de votre bien.  La promotion est réalisée de manière pro-active (mailing ciblés) auprès de nos nombreux candidats, mais également sur les plus grands sites immobiliers et les réseaux sociaux.L’ensemble des visites sont réalisées par du personnel formé, encadré par les associés de l’agence, avec pour objectif une présentation complète et détaillé de chaque maison, avec la volonté de permettre à chaque acheteur d’avoir une image positive et parfaite compréhension de chaque maison mise en vente. Durant tout le processus de mise en vente et les étapes de la négociation et l’examen de la solvabilité et du plan de financement de l’acheteur, nous veillons à vous tenir régulièrement au courant de leur avancement. Vous bénéficiez toujours d’un temps de réflexion … ; vous pouvez décider en toute quiétude, Nous nous chargeons de la rédaction du compromis de vente en des termes protégeant vos droits, en collaboration avec les études des parties, afin de concrétiser et parfaitement finaliser  tous les aspects de la vente. Durant toute notre mission de vente, nous nous occupons de tous les détails du projet. Vous pouvez vivre ces étapes en confiance et en toute sérénité.",
       btn: "En savoir plus",
     },
     {
       img: "/assets/Key.svg",
       h2: "Louer",
-      p: "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !",
+      p: "Nous nous occupons de tout le processus de présentation de votre bien et de la sélection des meilleurs candidats, selon des critères objectifs et respectant notre code de déontologie. Une fois le(s) candidat(s) choisi(s), nous rédigeons le contrat de bail, établissons un état des lieux détaillé et nous chargeons de l'enregistrement de ceux-ci. Nous restons la première personne de contact avec votre locataire, pour solutionner les premiers problèmes éventuels. Nous restons dès lors la personne de contact durant toute la durée du bail et gérons, à la fin de la location, l'état des lieux de sortie.",
       btn: "En savoir plus",
     },
     {
       img: "/assets/Expert.svg",
       h2: "Expertise",
-      p: "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis...  plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !",
+      p: "Notre équipe d'experts se tient à votre disposition pour réaliser tout type d'expertise dans le cadre de successions, divorces, constitution de société, faillites, … ou simplement pour vous permettre de connaître la valeur de votre bien.",
       btn: "En savoir plus",
     },
     {
@@ -73,10 +73,20 @@ export default function Services() {
         animate='visible'
         transition={{ duration: 0.3, delay: 0.3 }}
       >
-        <h3 className='	  text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-12 '>
+        <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-12 '>
           {
-            "Immo Barbière vous propose une maîtrise parfaite et prise en charge complète de votre dossier "
+            "Une maîtrise parfaite et prise en charge complète de votre dossier:  "
           }
+          <span className=' py-2 md:py-4'>
+            {
+              "accompagnement, assistance et conseils jusqu’à la signature de l’acte de vente chez votre Notaire."
+            }
+          </span>
+          <span>
+            {
+              "Dans le respect le plus strict des règles déontologiques imposées par notre profession."
+            }
+          </span>
         </h3>
       </MotionTop>
       <Container className='space-y-[40px] md:space-y-0 mt-12 md:flex md:flex-row md:flex-wrap md:justify-center md:items-center  '>
