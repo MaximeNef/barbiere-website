@@ -15,12 +15,6 @@
               "blocks": 1
             }
           },
-          "nbr_chanbre": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
           "sdb_bien": {
             "config": {
               "patternType": "PARAGRAPH",
@@ -154,6 +148,24 @@
             }
           },
           "emission_co2": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "chambre_bien": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "description_biens": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "nbr_sdb": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1

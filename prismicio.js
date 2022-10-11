@@ -26,7 +26,7 @@ export function linkResolver(doc) {
   //   default:
   //     return `/a-vendre/${doc.uid}`;
   // }
-  if (doc.type === "biencard") {
+  if (doc.type === "vendre") {
     return `/a-vendre/${doc.uid}`;
   }
   if (doc.type === "location") {

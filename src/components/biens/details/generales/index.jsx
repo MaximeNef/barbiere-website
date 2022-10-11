@@ -22,7 +22,7 @@ const Generales = (props) => {
     },
     {
       name: "Chambres ",
-      info: props.details.data.slices[0].primary.nbr_chanbre[0]?.text,
+      info: props.details.data.slices[0].primary.chambre_bien[0]?.text,
     },
     {
       name: "Nombre d’étages ",
@@ -37,7 +37,6 @@ const Generales = (props) => {
     {
       name: "Disponibilité ",
       info: props.details.data.slices[0].primary.Disponibilite[0]?.text,
-      carac: "m²",
     },
     {
       name: "Garage ",

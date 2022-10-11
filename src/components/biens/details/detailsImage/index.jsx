@@ -103,7 +103,7 @@ export default function detailsImage(props) {
                     source={item.autres_img.url}
                     layout='fill'
                     objectFit='cover'
-                    className='animate-fadeIn rounded-[20px]'
+                    className='animate-fadeIn rounded-[20px] w-full'
                   />
                   {showModal && (
                     <Container className='  top-0 left-0 w-screen h-screen flex justify-center items-center bg-black/90 overflow-hidden  fixed'>

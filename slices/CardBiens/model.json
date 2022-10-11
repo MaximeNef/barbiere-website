@@ -58,7 +58,7 @@
         "chambre_bien": {
           "type": "StructuredText",
           "config": {
-            "label": "Chambre Bien",
+            "label": "Nombre de Chambre",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -67,7 +67,7 @@
         "description_biens": {
           "type": "StructuredText",
           "config": {
-            "label": "Description Biens",
+            "label": "Description du Biens",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -95,15 +95,6 @@
           "type": "StructuredText",
           "config": {
             "label": "Type Environnement ",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "nbr_chanbre": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Nombre de chambres",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
@@ -139,7 +130,7 @@
         "nbr_sdb": {
           "type": "StructuredText",
           "config": {
-            "label": "Nbr Sdb",
+            "label": "Nombre de salle de bain ",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
