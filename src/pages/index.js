@@ -57,6 +57,7 @@ export default function Home({ pages, locations }) {
         className='bg-white z-10 relative'
       >
         <H3 className='mt-1 md:mt-0' id='Ancre'>
+          {"Nous sommes actif près de chez vous "}{" "}
           {"Nous sommes actif près de chez vous "}
         </H3>
       </MotionRight>
