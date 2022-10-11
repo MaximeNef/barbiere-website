@@ -18,7 +18,7 @@ const ImgAgence = () => {
           {" "}
           <Container className=' rounded-[18px] relative min-h-[300px] md:min-h-[600px] '>
             <MyImage
-              source='/assets/agenceImg.jpg'
+              source='/assets/façade.jpg'
               layout='fill'
               className='rounded-[18px] md:min-h-[600px] '
               objectFit={"cover"}

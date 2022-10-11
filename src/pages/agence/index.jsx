@@ -88,7 +88,7 @@ export default function Agence() {
             </Container>
           </Container>
         </MotionRight>{" "}
-        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:ml-6 mt-8  '>
+        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:mx-auto md:ml-[10%] mt-8  '>
           <MotionRight
             initial='hidden'
             animate='visible'
@@ -97,24 +97,24 @@ export default function Agence() {
             <CardTeams
               img={"/assets/barbiere.jpg"}
               nom={"François Barbière "}
-              post={"Agent Immobilier - Gérant"}
+              post={"Agent Immobilier - Associé"}
               ipi={"Nr d’agréation IPI : 506259"}
-              region={"Région : Hebaye"}
-              tel={"0493/193.003"}
+              region={"Région: Hannut - Waremme & leurs villages"}
+              tel={"019 30 57 32"}
               mail={"fb@barbiere.be"}
             />
           </MotionRight>{" "}
           <MotionRight
             initial='hidden'
             animate='visible'
-            transition={{ duration: 0.7, delay: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
           >
             <CardTeams
               img={"/assets/ste.jpg"}
               nom={"Stéphane Beaujot "}
-              post={"Agent Immobilier"}
+              post={"Agent immobilier - Associé"}
               ipi={"Nr d’agréation IPI : 510059"}
-              region={"Région : Liège"}
+              region={"Région: Liège / Embourg - Beaufays"}
               tel={"0477/75.44.10"}
               mail={"sb@barbiere.be"}
             />
@@ -122,14 +122,14 @@ export default function Agence() {
           <MotionRight
             initial='hidden'
             animate='visible'
-            transition={{ duration: 0.7, delay: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
           >
             <CardTeams
               img={"/assets/cam.jpg"}
               nom={"Camille Gillon"}
               post={"Conseillère en Immobilier"}
               ipi={""}
-              region={"Région : Hannut"}
+              region={"Région: Jodoigne - Hélécine - Orp-Jauche"}
               tel={"0497/40.85.29"}
               mail={"cg@barbiere.be"}
             />
@@ -144,8 +144,8 @@ export default function Agence() {
               nom={"Gaëtane Van Hove "}
               post={"Conseillère en Immobilier"}
               ipi={""}
-              region={"Région : Hannut"}
-              tel={"0473/29.00.70"}
+              region={"Région: Braives / Wasseiges"}
+              tel={"0479 54 76 01"}
               mail={"gv@barbiere.be"}
             />
           </MotionRight>
@@ -156,12 +156,42 @@ export default function Agence() {
           >
             <CardTeams
               img={"/assets/lisa.jpg"}
-              nom={"Lisa"}
+              nom={"Lisa Yodts"}
               post={"Stagiaire"}
               ipi={""}
-              region={"Région : Hannut"}
+              region={""}
+              tel={"019 30 57 32"}
+              mail={"ly@barbiere.be"}
+            />
+          </MotionRight>
+          {/* <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/pers2.jpg"}
+              nom={"Zoé Livron"}
+              post={"Conseillère en immobilier"}
+              ipi={""}
+              region={"Région: Huy / Héron / Burdinne / Andenne"}
               tel={"0473/29.00.70"}
-              mail={"gv@barbiere.be"}
+              mail={"zl@barbiere.be"}
+            />
+          </MotionRight> */}
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/pers1.jpg"}
+              nom={"Valérie Crahay"}
+              post={"Conseillère en immobilier"}
+              ipi={""}
+              region={"Région: Namur / Beauraing / Dinant"}
+              tel={"0498 71 40 57"}
+              mail={"vc@barbiere.be"}
             />
           </MotionRight>
         </Container>
