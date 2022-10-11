@@ -44,7 +44,7 @@ export default function DetailsVendre({ details }) {
 }
 export async function getStaticPaths() {
   const client = createClient();
-  const documents = await client.getAllByType("biencard");
+  const documents = await client.getAllByType("vendre");
   return {
     paths: documents.map((doc) => prismicH.asLink(doc, linkResolver)),
 
@@ -54,7 +54,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData });
 
-  const details = (await client.getByUID("biencard", params.uid)) || {};
+  const details = (await client.getByUID("vendre", params.uid)) || {};
 
   return {
     props: {

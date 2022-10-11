@@ -1,0 +1,21 @@
+{
+  "id": "vendre",
+  "label": "Vendre",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "card_biens": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

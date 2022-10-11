@@ -161,7 +161,7 @@ export default function Home({ pages, locations }) {
               }
               user={"F.D."}
             />{" "}
-            <Container className='w-[20%]  snap-always snap-center flex-shrink-0  md:inline-flex hidden' />
+            <Container className='w-[20%]  snap-always snap-center flex-shrink-0  md:inline-flex hidden ' />
           </MotionCardRight>
         </Flex>
       </Container>
@@ -172,7 +172,7 @@ export default function Home({ pages, locations }) {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
-  const pages = await client.getAllByType("biencard");
+  const pages = await client.getAllByType("vendre");
   const locations = await client.getAllByType("location");
   return {
     props: {

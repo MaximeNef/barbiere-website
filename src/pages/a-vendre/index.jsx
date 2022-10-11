@@ -30,7 +30,7 @@ export default Avendre;
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
-  const pages = await client.getAllByType("biencard");
+  const pages = await client.getAllByType("vendre");
 
   return {
     props: {
