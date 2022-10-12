@@ -93,14 +93,27 @@ const Footer = () => {
           </Flex>
           <p className='text-[7px] leading-[9px] mx-3 font-light md:text-[14px] md:px-[15%] md:leading-4'>
             {
-              "Agent immobilier agréé IPI sous le n° 506.259 – Belgique. Organisme de contrôle : Institut professionnel des agents immobiliers, rue du Luxembourg 16B à 1000 Bruxelles www.ipi.be - code de déontologie de l’IPI AXA Belgium sous les n° xxx.xxx.xxx et n° xxx.xxx.xxx"
-            }
+              "Agent immobilier agréé IPI sous le n° 506.259 – Belgique. TVA: BE 0546.735.847 .  Organisme de contrôle : Institut professionnel des agents immobiliers, rue du Luxembourg 16B à 1000 Bruxelles www.ipi.be  - "
+            }{" "}
+            <span>
+              <Link
+                href='https://www.ipi.be/agent-immobilier-ipi/la-deontologie-de-lagent-immobilier'
+                passHref
+              >
+                <a target='_blank' className='underline underline-offset-2'>
+                  {"code de déontologie de l’IPI"}
+                </a>
+              </Link>
+            </span>
+            {" AXA Belgium sous les n° xxx.xxx.xxx et n° xxx.xxx.xxx"}
           </p>
           <p className='md:text-[13px] text-[11px] my-3 '>
             {" 2022 © listri | Designed with passion by "}
             <span>
               <Link href='https://www.listri.digital/' passHref>
-                <a target='_blank'>{"LISTRI"}</a>
+                <a target='_blank' className='underline underline-offset-2'>
+                  {"LISTRI"}
+                </a>
               </Link>
             </span>
           </p>

@@ -119,7 +119,7 @@ export default function Contact() {
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
       <H1 className='mb-[40px]'>{"Nous contacter"}</H1>
-      <Container className='md:flex md:flex-col mb-10'>
+      <Container className='md:flex md:flex-col mb-10 md:mx-36'>
         <Container className='md:w-full'>
           <P className='mb-[20px]'> {"Vous souhaitez nous contacter pour"}</P>
           <Flex justify='between'>
