@@ -69,10 +69,10 @@ const CardBienLocation = (props) => {
                 <Container className='p-3 '>
                   <Flex justify='between'>
                     <Container className=' text-xl font-bold '>
-                      {page.data.slices[0].primary.nom_bien[0].text}
+                      {page.data.slices[0].primary.nom_bien[0]?.text}
                     </Container>
                     <p className=' text-xl font-semibold text-[#43A8AA] '>
-                      {page.data.slices[0].primary.prix_bien[0].text}
+                      {page.data.slices[0].primary.prix_bien[0]?.text}
                       {"€"}
                     </p>
                   </Flex>
@@ -80,7 +80,7 @@ const CardBienLocation = (props) => {
                   <Flex justify='start'>
                     <MyImage source={"/assets/pin.svg"} h={"16"} w={"12"} />
                     <Container className='ml-2 font-light text-[15px] leading-[18px]'>
-                      {page.data.slices[0].primary.adresse_bien[0].text}
+                      {page.data.slices[0].primary.adresse_bien[0]?.text}
                     </Container>
                   </Flex>
                   <Flex justify='between' className='mt-[14px]'>
@@ -92,7 +92,7 @@ const CardBienLocation = (props) => {
                           w={"20"}
                         />
                         <p className='ml-2 font-light text-[15px] leading-[18px]'>
-                          {page.data.slices[0].primary.Superficie_bien[0].text}
+                          {page.data.slices[0].primary.Superficie_bien[0]?.text}
                           {"m²"}
                         </p>
                       </Flex>
@@ -105,7 +105,7 @@ const CardBienLocation = (props) => {
                           w={"20"}
                         />
                         <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
-                          {page.data.slices[0].primary.sdb_bien[0].text}
+                          {page.data.slices[0].primary.sdb_bien[0]?.text}
                         </p>
                       </Flex>
                     </Container>
@@ -117,7 +117,7 @@ const CardBienLocation = (props) => {
                           w={"28"}
                         />
                         <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
-                          {page.data.slices[0].primary.chambre_bien[0].text}
+                          {page.data.slices[0].primary.chambre_bien[0]?.text}
                         </p>
                       </Flex>
                     </Container>
