@@ -108,7 +108,7 @@ const CardBienVendu = (props) => {
                           w={20}
                         />
                         <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
-                          {page.data.slices[0].primary.sdb_bien[0].text}
+                          {page.data.slices[0].primary.sdb_bien[0]?.text}
                         </p>
                       </Flex>
                     </Container>
