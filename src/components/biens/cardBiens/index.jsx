@@ -143,7 +143,7 @@ const CardBien = (props) => {
             )}
           </Link>
         ))}{" "}
-        <Container className='  min-w-[1px]  h-[200px] flex items-center justify-center mx-10 md:hidden '></Container>
+        <Container className='  min-w-[1px]  h-[200px] flex items-center justify-center mx-10  '></Container>
       </MotionCardRight>
     </>
   );
