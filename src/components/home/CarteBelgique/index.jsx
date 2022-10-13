@@ -9,57 +9,57 @@ const CarteBelgique = () => {
     {
       img: "/assets/cartehome.svg",
       imgHover: "/assets/homeHover.svg",
-      adresse: "Hannut",
-      num: "+32497408529",
+      adresse: "Verviers / Herve / Battice",
+      num: "0473 29 00 70",
       carte: "/assets/carte1.svg",
     },
     {
       img: "/assets/cartehome.svg",
       imgHover: "/assets/homeHover.svg",
-      adresse: "Grand-Rechain",
-      num: "+32497408529",
+      adresse: "Liège / Embourg - Beaufays",
+      num: "0477 75 44 10",
       carte: "/assets/carte2.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
-      adresse: "Couthuin",
-      num: "+32497408529",
+      adresse: "Hannut - Waremme & leurs villages",
+      num: "019 30 57 32",
       carte: "/assets/carte3.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
-      adresse: "Embourg",
-      num: "+32497408529",
+      adresse: "Braives",
+      num: "0479 54 76 01",
       carte: "/assets/carte4.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
-      adresse: "Jodoigne",
-      num: "+32497408529",
+      adresse: "Huy / Héron / Burdinne / Andenne",
+      num: "0492 55 69 36",
       carte: "/assets/carte5.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
-      adresse: "Namur",
-      num: "+32497408529",
+      adresse: "Wasseiges",
+      num: "0479 54 76 01",
       carte: "/assets/carte6.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
-      adresse: "Dinant",
-      num: "+32497408529",
+      adresse: "Namur / Beauraing / Dinant",
+      num: "0498 71 40 57",
       carte: "/assets/carte7.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
-      adresse: "Beauraing",
-      num: "+32497408529",
+      adresse: "Jodoigne - Hélécine - Orp-Jauche",
+      num: "0497 40 85 29",
       carte: "/assets/carte8.svg",
     },
   ];
@@ -101,19 +101,22 @@ const CarteBelgique = () => {
               {" "}
               <Flex className='mx-1 '>
                 <Flex>
-                  <MyImage
-                    source={
-                      adresse.carte === isHovering
-                        ? adresse.imgHover
-                        : adresse.img
-                    }
-                    w={20}
-                    h={20}
-                    objectFit='contain'
-                  />{" "}
-                  <P className='ml-4 font-bold text-[17px] leading-[22px] cursor-default	'>
+                  <Container className='min-w-[20px] min-h-[20px] my-auto'>
+                    <MyImage
+                      source={
+                        adresse.carte === isHovering
+                          ? adresse.imgHover
+                          : adresse.img
+                      }
+                      w={20}
+                      h={20}
+                      objectFit='contain'
+                    />
+                  </Container>
+
+                  <p className='ml-4 font-bold text-[17px] leading-[22px] cursor-default  text-left flex flex-col items-center justify-center	'>
                     {adresse.adresse}
-                  </P>
+                  </p>
                 </Flex>
                 <Container className='md:ml-[150px] mt-0 text-center  cursor-pointer'>
                   <a href={`tel:${adresse.num}`} className=' text-center '>
