@@ -167,9 +167,9 @@
           "type": "Boolean",
           "config": {
             "label": "Vendu",
-            "default_value": false,
+            "placeholder_false": "false",
             "placeholder_true": "true",
-            "placeholder_false": "false"
+            "default_value": false
           }
         },
         "peb": {
@@ -337,9 +337,9 @@
           "type": "Boolean",
           "config": {
             "label": "Jardin",
-            "default_value": false,
+            "placeholder_false": "false",
             "placeholder_true": "true",
-            "placeholder_false": "false"
+            "default_value": false
           }
         },
         "orientation_jardin": {
@@ -355,9 +355,9 @@
           "type": "Boolean",
           "config": {
             "label": "Terrasse",
-            "default_value": false,
+            "placeholder_false": "false",
             "placeholder_true": "true",
-            "placeholder_false": "false"
+            "default_value": false
           }
         },
         "orientation_terrasse": {

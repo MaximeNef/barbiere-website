@@ -17,7 +17,7 @@ const Description = (props) => {
         <p
           className={`mt-5 font-light text-[17px] leading-[22px] overflow-hidden`}
         >
-          {props.details.data.slices[0].primary.description_biens[0].text}
+          {props.details.data.slices[0].primary.description_biens[0]?.text}
         </p>
       </Container>
 

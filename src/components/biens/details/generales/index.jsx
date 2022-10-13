@@ -44,7 +44,7 @@ const Generales = (props) => {
     },
     {
       name: "Salles de bains ",
-      info: props.details.data.slices[0].primary.sdb_bien[0].text,
+      info: props.details.data.slices[0].primary.sdb_bien[0]?.text,
     },
     {
       name: "Toilettes ",

@@ -10,20 +10,18 @@ const Exterieur = (props) => {
       info: props.details.data.slices[0].primary.superficie_terrain[0]?.text,
       carac: "m²",
     },
-    {
-      name: "Jardin",
-      info: `${
-        props.details.data.slices[0].primary.jardin[0]?.text ? "✔" : "✗"
-      }`,
-    },
+    // {
+    //   name: "Jardin",
+    //   info: props.details.data.slices[0].primary.jardin[0] ? "✔" : "✗",
+    // },
     {
       name: "Orientation du jardin",
       info: props.details.data.slices[0].primary.orientation_jardin[0]?.text,
     },
-    {
-      name: "Terrasse",
-      info: props.details.data.slices[0].primary.terrasse[0]?.text,
-    },
+    // {
+    //   name: "Terrasse",
+    //   info: props.details.data.slices[0].primary.terrasse[0]?.text ? "✔" : "✗",
+    // },
     {
       name: "Orientation de la terrasse",
       info: props.details.data.slices[0].primary.orientation_terrasse[0]?.text,

@@ -87,24 +87,35 @@ const CardBien = (props) => {
                   <Flex justify='between' className='mt-[7px]'>
                     <Container>
                       <Flex align='center'>
-                        <MyImage
-                          source={"/assets/superficie.svg"}
-                          h={"20"}
-                          w={"20"}
-                        />
+                        {page.data.slices[0].primary.Superficie_bien[0]
+                          ?.text ? (
+                          <MyImage
+                            source={"/assets/superficie.svg"}
+                            h={20}
+                            w={20}
+                          />
+                        ) : (
+                          ""
+                        )}
                         <p className='ml-2 font-light text-[15px] leading-[18px]'>
                           {page.data.slices[0].primary.Superficie_bien[0]?.text}
-                          {"m²"}
+                          {page.data.slices[0].primary.Superficie_bien[0]?.text
+                            ? "m²"
+                            : ""}
                         </p>
                       </Flex>
                     </Container>
                     <Container className=''>
                       <Flex className='' align='center'>
-                        <MyImage
-                          source={"/assets/Bathroom.svg"}
-                          h={"20"}
-                          w={"20"}
-                        />
+                        {page.data.slices[0].primary.sdb_bien[0]?.text ? (
+                          <MyImage
+                            source={"/assets/Bathroom.svg"}
+                            h={20}
+                            w={20}
+                          />
+                        ) : (
+                          ""
+                        )}
                         <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
                           {page.data.slices[0].primary.sdb_bien[0]?.text}
                         </p>
@@ -112,11 +123,15 @@ const CardBien = (props) => {
                     </Container>
                     <Container>
                       <Flex align='center'>
-                        <MyImage
-                          source={"/assets/Bedroom.svg"}
-                          h={"19"}
-                          w={"28"}
-                        />
+                        {page.data.slices[0].primary.chambre_bien[0]?.text ? (
+                          <MyImage
+                            source={"/assets/Bedroom.svg"}
+                            h={19}
+                            w={28}
+                          />
+                        ) : (
+                          ""
+                        )}
                         <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
                           {page.data.slices[0].primary.chambre_bien[0]?.text}
                         </p>
