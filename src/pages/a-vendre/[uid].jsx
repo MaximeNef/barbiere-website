@@ -18,10 +18,7 @@ export default function DetailsVendre({ details }) {
   console.log(details, "doc");
   return (
     <NavPage current='a-vendre'>
-      {/* <Container className='mr-auto mb-4'>
-        <Btn3 src='/biens' color='black' text='< Retour' />
-      </Container> */}
-      <Container className='md:mx-5'>
+      {/* <Container className='md:mx-5'>
         <DetailsImg details={details} />
         <Container className=' space-y-[30px]'>
           <HeroDetails details={details} />
@@ -38,7 +35,7 @@ export default function DetailsVendre({ details }) {
           </Container>
           <Energie details={details} />
         </Container>{" "}
-      </Container>
+      </Container> */}
     </NavPage>
   );
 }
