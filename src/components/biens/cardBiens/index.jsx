@@ -63,7 +63,6 @@ const CardBien = (props) => {
                     ) : (
                       <div />
                     )}
-                    {/* <MyImage source={"/assets/peb.svg"} h={"20"} w={"68"} /> */}
                   </Container>
                 </Container>
                 <Container className='p-3 '>

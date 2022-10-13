@@ -21,6 +21,7 @@ const Avendre = ({ pages }) => {
         <CardDesktop />
       </MotionRight>
       <CardBienVendre pages={pages} />
+
       {/* <Container className='relative z-20 h-44 w-full'></Container> */}
     </NavPage>
   );
