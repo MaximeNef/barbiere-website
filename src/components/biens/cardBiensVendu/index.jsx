@@ -71,7 +71,7 @@ const CardBienVendu = (props) => {
                     )}
                   </Container>
                 </Container>
-                <Container className='p-3 '>
+                <Container className='p-3 h-full'>
                   <Flex justify='between'>
                     <Container className=' text-xl font-bold '>
                       {page.data.slices[0].primary.nom_bien[0]?.text}
@@ -80,10 +80,11 @@ const CardBienVendu = (props) => {
 
                   <Flex justify='start'>
                     <MyImage source={"/assets/pin.svg"} h={"16"} w={"12"} />
-                    <Container className='ml-2 font-light text-[15px] leading-[18px]'>
+                    <Container className='ml-2 font-light text-[15px] leading-[18px] my-auto'>
                       {page.data.slices[0].primary.adresse_bien[0]?.text}
                     </Container>
                   </Flex>
+                  <Container className='w-full h-[1px] bg-slate-200 mt-[7px]' />
                   <Flex justify='between' className='mt-[14px]'>
                     <Container>
                       <Flex align='center'>

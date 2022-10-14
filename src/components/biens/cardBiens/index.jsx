@@ -24,12 +24,8 @@ const CardBien = (props) => {
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
-                    className='rounded-t-[20px] md:w-[400px] md:h-[230px]  '
-                    w={340}
-                    h={206}
-                    sizes='(max-width: 400px) 100vw,
-              (max-width: 200px) 50vw,
-              33vw'
+                    className='rounded-t-[20px] '
+                    layout={"fill"}
                   />
                   <Container className='absolute bottom-1 left-1'>
                     {page.data.slices[0].primary.peb == "PEB-A" ? (
@@ -69,25 +65,25 @@ const CardBien = (props) => {
                     )}
                   </Container>
                 </Container>
-                <Container className='p-3 '>
+                <Container className='p-3 h-full'>
                   <Flex justify='between'>
                     <Container className=' text-xl font-bold '>
                       {page.data.slices[0].primary.nom_bien[0]?.text}
                     </Container>
-                    <p className=' text-xl font-semibold text-[#43A8AA] '>
+                    <p className=' text-xl font-semibold text-[#43A8AA] min-w-[100px] text-end '>
                       {page.data.slices[0].primary.prix_bien[0]?.text}
                       {"€"}
                     </p>
                   </Flex>
 
-                  <Flex justify='start'>
+                  <Flex justify='start' className=''>
                     <MyImage source={"/assets/pin.svg"} h={"16"} w={"12"} />
-                    <Container className='ml-2 font-light text-[15px] leading-[18px]'>
+                    <Container className='ml-2 font-light text-[15px] leading-[18px] my-auto'>
                       {page.data.slices[0].primary.adresse_bien[0]?.text}
                     </Container>
                   </Flex>
                   <Container className='w-full h-[1px] bg-slate-200 mt-[7px]' />
-                  <Flex justify='between' className='mt-[7px]'>
+                  <Flex justify='between' className='mt-[14px] '>
                     <Container>
                       <Flex align='center'>
                         {page.data.slices[0].primary.Superficie_bien[0]

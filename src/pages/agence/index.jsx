@@ -129,7 +129,7 @@ export default function Agence() {
               nom={"Camille Gillon"}
               post={"Conseillère en Immobilier"}
               ipi={""}
-              region={"Jodoigne - Hélécine - Orp-Jauche"}
+              region={"Hélécine - Orp-Jauche"}
               tel={"0497/40.85.29"}
               mail={"cg@barbiere.be"}
             />
