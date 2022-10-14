@@ -76,7 +76,7 @@ export default function Biens({ pages, locations }) {
           <Btn3 src='/a-louer' color='black' text='voir plus' />{" "}
         </Flex>
       </MotionBottom>
-      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px]  md:mr-auto'>
+      <Flex className='md:w-[100%]  container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px]  md:mr-auto'>
         <CardBienLocation pages={locations} />
         {/* <Container className='  w-[100px] flex-shrink-0 h-[200px] flex items-center justify-center mx-10  md:hidden  '></Container> */}
       </Flex>{" "}
@@ -90,7 +90,7 @@ export default function Biens({ pages, locations }) {
           <Btn3 src='/vendu' color='black' text='voir plus' />{" "}
         </Flex>{" "}
       </MotionBottom>
-      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px]   md:mr-auto'>
+      <Flex className='md:w-[100%] container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px]   md:mr-auto'>
         <CardBienVendu pages={pages} locations={locations} />
       </Flex>
     </NavPage>

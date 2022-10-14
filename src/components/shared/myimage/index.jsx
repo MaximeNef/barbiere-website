@@ -13,6 +13,7 @@ const MyImage = ({
   objectFit,
   layout,
   imageProps,
+  sizes,
 }) => {
   return (
     <Image
@@ -28,6 +29,7 @@ const MyImage = ({
       priority={false}
       placeholder='blur'
       blurDataURL='/images/path-to-blur-image.jpg'
+      sizes={sizes}
     />
   );
 };

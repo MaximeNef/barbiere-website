@@ -27,6 +27,9 @@ const CardBienLocation = (props) => {
                     source={page.data.slices[0].primary.Image_bien.url}
                     layout='fill'
                     className='rounded-t-[20px] h-full w-full  '
+                    sizes='(max-width: 768px) 100vw,
+                      (max-width: 1200px) 50vw,
+                      33vw'
                   />
                   <Container className='absolute bottom-1 left-1'>
                     {page.data.slices[0].primary.peb == "PEB-A" ? (
@@ -127,7 +130,7 @@ const CardBienLocation = (props) => {
             )}
           </Link>
         ))}
-        <Container className='  min-w-[1px]  h-[200px] flex items-center justify-center mx-10 md:hidden '></Container>
+        <Container className='  min-w-[1px]  h-[200px] flex items-center justify-center mx-10  '></Container>
       </MotionCardRight>
     </>
   );
