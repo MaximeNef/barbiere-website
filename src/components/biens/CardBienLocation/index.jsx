@@ -26,11 +26,11 @@ const CardBienLocation = (props) => {
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
                     layout='fill'
-                    className='rounded-t-[20px]'
+                    className='rounded-t-[20px] w-[420px] h-[230px]'
                     w={400}
                     h={230}
-                    sizes='(max-width: 768px) 100vw,
-                      (max-width: 1200px) 50vw,
+                    sizes='(max-width: 400px) 100vw,
+                      (max-width: 200px) 50vw,
                       33vw'
                   />
                   <Container className='absolute bottom-1 left-1'>
