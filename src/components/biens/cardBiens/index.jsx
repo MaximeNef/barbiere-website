@@ -24,9 +24,9 @@ const CardBien = (props) => {
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
-                    className='rounded-t-[20px] w-[400px] h-[230px]  '
-                    w={400}
-                    h={230}
+                    className='rounded-t-[20px] md:w-[400px] md:h-[230px]  '
+                    w={340}
+                    h={206}
                     sizes='(max-width: 400px) 100vw,
               (max-width: 200px) 50vw,
               33vw'

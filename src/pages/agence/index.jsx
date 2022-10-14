@@ -99,7 +99,7 @@ export default function Agence() {
               nom={"François Barbière "}
               post={"Agent Immobilier - Associé"}
               ipi={"Nr d’agréation IPI : 506259"}
-              region={"Région: Hannut - Waremme & leurs villages"}
+              region={"Hannut - Waremme & leurs villages"}
               tel={"019 30 57 32"}
               mail={"fb@barbiere.be"}
             />
@@ -114,7 +114,7 @@ export default function Agence() {
               nom={"Stéphane Beaujot "}
               post={"Agent immobilier - Associé"}
               ipi={"Nr d’agréation IPI : 510059"}
-              region={"Région: Liège / Embourg - Beaufays"}
+              region={"Liège / Embourg - Beaufays"}
               tel={"0477/75.44.10"}
               mail={"sb@barbiere.be"}
             />
@@ -129,7 +129,7 @@ export default function Agence() {
               nom={"Camille Gillon"}
               post={"Conseillère en Immobilier"}
               ipi={""}
-              region={"Région: Jodoigne - Hélécine - Orp-Jauche"}
+              region={"Jodoigne - Hélécine - Orp-Jauche"}
               tel={"0497/40.85.29"}
               mail={"cg@barbiere.be"}
             />
@@ -144,7 +144,7 @@ export default function Agence() {
               nom={"Gaëtane Van Hove "}
               post={"Conseillère en Immobilier"}
               ipi={""}
-              region={"Région: Braives / Wasseiges"}
+              region={"Braives / Wasseiges"}
               tel={"0479 54 76 01"}
               mail={"gv@barbiere.be"}
             />
@@ -189,7 +189,7 @@ export default function Agence() {
               nom={"Valérie Crahay"}
               post={"Conseillère en immobilier"}
               ipi={""}
-              region={"Région: Namur / Beauraing / Dinant"}
+              region={"Namur / Beauraing / Dinant"}
               tel={"0498 71 40 57"}
               mail={"vc@barbiere.be"}
             />
