@@ -26,7 +26,7 @@ const CardBienLocation = (props) => {
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
                     layout='fill'
-                    className='rounded-t-[20px] h-full w-full  '
+                    className='rounded-t-[20px]'
                     sizes='(max-width: 768px) 100vw,
                       (max-width: 1200px) 50vw,
                       33vw'
