@@ -15,7 +15,10 @@
           "type": "Image",
           "config": {
             "label": "Image Biens",
-            "constraint": {},
+            "constraint": {
+              "width": 400,
+              "height": 230
+            },
             "thumbnails": []
           }
         },
@@ -411,7 +414,10 @@
           "type": "Image",
           "config": {
             "label": "Autres image",
-            "constraint": {},
+            "constraint": {
+              "width": 400,
+              "height": 230
+            },
             "thumbnails": []
           }
         }

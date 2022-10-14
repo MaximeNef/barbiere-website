@@ -26,7 +26,6 @@ const CardBienVendu = (props) => {
                   </Container>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
-                    layout='fill'
                     className='rounded-t-[20px] w-[400px] h-[230px]  '
                     w={400}
                     h={230}

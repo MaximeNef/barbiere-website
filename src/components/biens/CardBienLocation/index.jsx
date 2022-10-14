@@ -25,7 +25,6 @@ const CardBienLocation = (props) => {
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
-                    layout='fill'
                     className='rounded-t-[20px] w-[420px] h-[230px]'
                     w={400}
                     h={230}
