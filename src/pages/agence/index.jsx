@@ -88,7 +88,7 @@ export default function Agence() {
             </Container>
           </Container>
         </MotionRight>{" "}
-        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:mx-auto md:ml-[10%] mt-8  '>
+        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:mx-auto md:ml-[5%] mt-8  '>
           <MotionRight
             initial='hidden'
             animate='visible'
@@ -99,7 +99,7 @@ export default function Agence() {
               nom={"François Barbière "}
               post={"Agent Immobilier - Associé"}
               ipi={"Nr d’agréation IPI : 506259"}
-              region={"Hannut - Waremme & leurs villages"}
+              region={"Hannut / Waremme & leurs villages"}
               tel={"019 30 57 32"}
               mail={"fb@barbiere.be"}
             />
@@ -114,7 +114,7 @@ export default function Agence() {
               nom={"Stéphane Beaujot "}
               post={"Agent immobilier - Associé"}
               ipi={"Nr d’agréation IPI : 510059"}
-              region={"Liège / Embourg - Beaufays"}
+              region={"Liège / Embourg / Beaufays"}
               tel={"0477/75.44.10"}
               mail={"sb@barbiere.be"}
             />
@@ -129,7 +129,7 @@ export default function Agence() {
               nom={"Camille Gillon"}
               post={"Conseillère en Immobilier"}
               ipi={""}
-              region={"Hélécine - Orp-Jauche"}
+              region={"Hélécine / Orp-Jauche"}
               tel={"0497/40.85.29"}
               mail={"cg@barbiere.be"}
             />
@@ -164,21 +164,6 @@ export default function Agence() {
               mail={"ly@barbiere.be"}
             />
           </MotionRight>
-          {/* <MotionRight
-            initial='hidden'
-            animate='visible'
-            transition={{ duration: 0.7, delay: 0.5 }}
-          >
-            <CardTeams
-              img={"/assets/pers2.jpg"}
-              nom={"Zoé Livron"}
-              post={"Conseillère en immobilier"}
-              ipi={""}
-              region={"Région: Huy / Héron / Burdinne / Andenne"}
-              tel={"0473/29.00.70"}
-              mail={"zl@barbiere.be"}
-            />
-          </MotionRight> */}
           <MotionRight
             initial='hidden'
             animate='visible'
@@ -186,6 +171,21 @@ export default function Agence() {
           >
             <CardTeams
               img={"/assets/pers1.jpg"}
+              nom={"Zoé Livron"}
+              post={"Conseillère en immobilier"}
+              ipi={""}
+              region={"Huy / Héron / Burdinne / Andenne"}
+              tel={"0473/29.00.70"}
+              mail={"zl@barbiere.be"}
+            />
+          </MotionRight>
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/pers2.jpg"}
               nom={"Valérie Crahay"}
               post={"Conseillère en immobilier"}
               ipi={""}

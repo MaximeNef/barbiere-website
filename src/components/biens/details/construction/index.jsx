@@ -8,23 +8,19 @@ const Construction = (props) => {
     {
       name: "Nombre de façades",
       info: props.details.data.slices[0].primary.nbr_facades[0]?.text,
-      carac: "€",
     },
     {
       name: "Année de construction",
       info: props.details.data.slices[0].primary.Annee_construction[0]?.text,
-      carac: "€",
     },
     {
       name: "Etat du bien",
       info: props.details.data.slices[0].primary.Etat_bien[0]?.text,
-      carac: "€",
     },
     {
       name: "Orientation façade arrière",
       info: props.details.data.slices[0].primary.Orientation_facade_arriere[0]
         ?.text,
-      carac: "€",
     },
     {
       name: "Toiture",

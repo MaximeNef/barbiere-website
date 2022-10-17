@@ -18,7 +18,6 @@ const Generales = (props) => {
     {
       name: "Type d’environnement ",
       info: props.details.data.slices[0].primary.type_env[0]?.text,
-      carac: "m²",
     },
     {
       name: "Chambres ",
@@ -27,7 +26,6 @@ const Generales = (props) => {
     {
       name: "Nombre d’étages ",
       info: props.details.data.slices[0].primary.nbr_etages[0]?.text,
-      carac: "m²",
     },
     {
       name: "Largeur de façade ",

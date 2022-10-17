@@ -7,7 +7,7 @@ import P from "../p";
 
 const CardTeams = (props) => {
   return (
-    <Container className='pt-[70px] md:min-w-[324px] md:mx-8 md:pb-10'>
+    <Container className='pt-[70px] md:min-w-[324px] md:mx-4 md:pb-10'>
       <Container className='border-[2px] border-teal-400 bg-white   rounded-[20px]  w-[95%] h-full m-auto    mt-[-50px] shadow-2xl  '>
         <MyImage
           source={props.img}

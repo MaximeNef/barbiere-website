@@ -8,7 +8,6 @@ const Equipement = (props) => {
     {
       name: "Type de chauffage",
       info: props.details.data.slices[0].primary.Type_chauffage[0]?.text,
-      carac: "€",
     },
     {
       name: "Chauffage",
@@ -18,12 +17,10 @@ const Equipement = (props) => {
     {
       name: "Type de châssis",
       info: props.details.data.slices[0].primary.Type_chassis[0]?.text,
-      carac: "€",
     },
     {
       name: "Cuisine",
       info: props.details.data.slices[0].primary.Cuisine[0]?.text,
-      carac: "€",
     },
     {
       name: "Confort intérieur",
