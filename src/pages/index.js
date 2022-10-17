@@ -50,16 +50,9 @@ export default function Home({ pages, locations }) {
       </Head>
       {/* <HeroImg />*/}
       <DynamicVideo /> <a name='some' className=' absolute bottom-[22px]' />
-      <MotionRight
-        initial='hidden'
-        animate='visible'
-        transition={{ duration: 0.1 }}
-        className='bg-white z-10 relative'
-      >
-        <H3 className='mt-1 md:mt-0' id='Ancre'>
-          {"Nous sommes actif près de chez vous "}
-        </H3>
-      </MotionRight>
+      <H3 className='mt-1 md:mt-0' id='Ancre'>
+        {"Nous sommes actif près de chez vous "}
+      </H3>
       <DynamicCarte />
       <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full md:min-h-[350px] md:mb-[60px]'>
         <MotionRight

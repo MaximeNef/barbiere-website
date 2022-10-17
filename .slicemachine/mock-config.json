@@ -164,12 +164,6 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
-          },
-          "nbr_sdb": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
           }
         },
         "items": {}

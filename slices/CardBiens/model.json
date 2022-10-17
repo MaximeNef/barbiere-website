@@ -130,15 +130,6 @@
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "nbr_sdb": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Nombre de salle de bain ",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
         "nbr_toilettes": {
           "type": "StructuredText",
           "config": {
@@ -214,15 +205,6 @@
           "type": "StructuredText",
           "config": {
             "label": "Type de chauffage",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "Chauffage": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Chauffage",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"

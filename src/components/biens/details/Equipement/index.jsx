@@ -10,11 +10,6 @@ const Equipement = (props) => {
       info: props.details.data.slices[0].primary.Type_chauffage[0]?.text,
     },
     {
-      name: "Chauffage",
-      info: props.details.data.slices[0].primary.Chauffage[0]?.text,
-      carac: "€",
-    },
-    {
       name: "Type de châssis",
       info: props.details.data.slices[0].primary.Type_chassis[0]?.text,
     },

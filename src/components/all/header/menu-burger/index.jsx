@@ -93,11 +93,11 @@ const Menuburger = ({ current }) => {
         <Container className=' m-auto  max-h-12  z-20  pt-1'>
           <Link href='/' passHref>
             <a>
-              {/* <MyImage source='/assets/LogoHeader.svg' w={76} h={52} /> */}
-              {/* <MyImage source='/assets/logobarbiere.svg' w={76} h={52} /> */}
-              {/* <MyImage source='/assets/logo3.svg' w={100} h={52} /> */}
-              {/* <MyImage source='/assets/logo4.svg' w={100} h={72} /> */}
-              <MyImage source='/assets/logo6.svg' w={100} h={50} />
+              {/* <MyImage source='/assets/LogoHeader.svg' w={76} h={52} />
+              <MyImage source='/assets/logobarbiere.svg' w={76} h={52} />
+              <MyImage source='/assets/logo3.svg' w={100} h={52} />
+              <MyImage source='/assets/logo4.svg' w={100} h={72} />*/}
+              <MyImage source='/assets/logoB.svg' w={100} h={50} />
             </a>
           </Link>{" "}
         </Container>

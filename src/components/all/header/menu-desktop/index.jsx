@@ -19,8 +19,8 @@ const MenuDesktop = ({ link, current }) => {
         <Flex className=' m-auto   max-h-12  '>
           <Link href='/' passHref>
             <a>
-              <Container className='max-h-12'>
-                <MyImage source='/assets/LogoHeader.svg' w={100} h={90} />
+              <Container className='max-h-[70px] mt-[-10px]'>
+                <MyImage source='/assets/logoB.svg' w={100} h={150} />
               </Container>
             </a>
           </Link>{" "}
