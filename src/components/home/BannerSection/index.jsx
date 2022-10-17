@@ -10,63 +10,38 @@ const DynamicCardCTA = dynamic(() => import("../../shared/card-Cta"));
 
 const BannerSection = () => {
   return (
-    <Container className='bg-[#7a767c] relative  h-[350px] hidden md:inline-flex md:flex-row  shadow-cardcta max-w-[100%]'>
-      <Container className='bg-white  skew-x-[-10deg] ml-[-26px] min-w-[60%]'>
-        <Container className='skew-x-[10deg] my-auto mx-10'>
-          <Container className='mt-[100px]'>
+    <Container className='bg-[#7a767c] relative  h-[400px] 2xl:h-[500px] hidden md:inline-flex md:flex-row  shadow-cardcta max-w-[100%]'>
+      <Container className='bg-[#ECECEC]  skew-x-[-10deg] ml-[-30px] min-w-[60%]'>
+        <Container className='skew-x-[10deg] h-full '>
+          <Container className='h-full'>
             <MyImage
-              source={"/assets/equipe.png"}
-              w={50}
-              h={250}
-              objectFit={"contain"}
+              source={"/assets/team.png"}
+              w='100%'
+              h={"380"}
+              objectFit={"cover"}
+              layout='responsive'
             />
           </Container>
-
-          {/* <DynamicCardCTA
-            text1={"Tous nos biens se trouvent ici"}
-            text2={"Vous trouverez ici tous nos biens à vendre qu’à louer."}
-            text3={"Nos biens >"}
-            src='/biens'
-          /> */}
         </Container>
       </Container>
 
-      <Container className='bg-[#7a767c] max-w-[30%]  skew-x-[-10deg]'>
-        <Container className='skew-x-[10deg] p-10 pl-20 pr-0 w-full '>
-          <Container className='space-y-6'>
-            <h2
-              className={` text-white  text-[20px] font-bold leading-[25px] text-left `}
-            >
-              {
-                " retrouver nous dans toute la wallonie pour répondre à vos besoins"
-              }
-            </h2>
-            <p
-              className={` text-white text-[17px] font-light leading-[21px] text-left `}
-            >
-              {
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumptio, eaque rerum! Provident similique accusantium nemo autem. Veritatis"
-              }
-            </p>
-            <Container className='mr-auto'>
-              <Btn2 src={"btn"} color='white' text={"nous retrouver >"} />
-            </Container>
-          </Container>{" "}
-          {/*
-          <Flex type='row' className=' pl-[100px] mt-5 px-10'>
-            <H2 className='text-white md:px-5 px-3   '>
-              {"retrouver nous dans toute la wallonie pour vous servir"}
-            </H2>{" "}
-            <Btn2 src={"btn"} color='white' text={"nous retrouver >"} />{" "}
-          </Flex> */}
-          {/* <Container className='mt-[40px]'>
-            <MyImage
-              source={"/assets/equipe.png"}
-              w={50}
-              h={190}
-              objectFit={"contain"}
-            />
-          </Container> */}
+      <Container className='bg-[#7a767c] max-w-[30%] skew-x-[-10deg] '>
+        <Container className='my-auto'>
+          <Container className='skew-x-[10deg] p-10 pl-20 pr-0 w-full h-full'>
+            <Container className='space-y-16'>
+              <h2
+                className={` text-white  text-[20px] font-bold leading-[25px] text-left `}
+              >
+                {
+                  " Retrouver nous dans toute la wallonie pour répondre à vos besoins !"
+                }
+              </h2>
+
+              <Container className='mr-auto'>
+                <Btn2 src={"btn"} color='white' text={"nous retrouver >"} />
+              </Container>
+            </Container>{" "}
+          </Container>
         </Container>
       </Container>
     </Container>

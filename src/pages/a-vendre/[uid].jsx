@@ -17,7 +17,7 @@ import Energie from "../../components/biens/details/Energie";
 export default function DetailsVendre({ details }) {
   console.log(details, "doc");
   return (
-    <NavPage current='a-vendre'>
+    <NavPage current='Nos biens'>
       <Container className='md:mx-5'>
         <DetailsImg details={details} />
         <Container className=' space-y-[30px]'>

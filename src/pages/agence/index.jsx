@@ -75,12 +75,11 @@ export default function Agence() {
           className='relative'
         >
           <Container className=' relative w-[100%] z-20 mt-6'>
-            <Container className='ml-[-20px] md:ml-[-116px] md:mr-[-116px] mr-[-20px] shadow-cardcta md:h-[70vh] '>
+            <Container className='ml-[-20px] md:ml-[-116px] md:mr-[-116px] mr-[-20px] shadow-cardcta'>
               <MyImage
                 source='/assets/team.png'
                 w='100%'
-                h='58%'
-                className={""}
+                h='40%'
                 // objectFit={"cover"}
                 layout='responsive'
                 objectFit='cover'
