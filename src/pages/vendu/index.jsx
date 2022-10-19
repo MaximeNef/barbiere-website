@@ -8,6 +8,7 @@ import CardBienVendu from "../../components/biens/cardBiensVendu";
 import MotionRight from "../../components/shared/motion-CardRight";
 import H1 from "../../components/shared/h1";
 import CardDesktop from "../../components/shared/card-cta-desktop";
+import CardVendu from "../../components/biens/cardVendu";
 const Avendre = ({ pages, locations }) => {
   return (
     <NavPage current='Nos biens'>
@@ -20,7 +21,9 @@ const Avendre = ({ pages, locations }) => {
       >
         <CardDesktop />
       </MotionRight>
-      <CardBienVendu pages={pages} locations={locations} />
+
+      <CardVendu pages={pages} locations={locations} />
+
       <Container className='relative z-20 h-44 w-full'></Container>
     </NavPage>
   );
