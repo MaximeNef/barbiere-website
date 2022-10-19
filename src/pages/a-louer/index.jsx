@@ -10,8 +10,8 @@ import H1 from "../../components/shared/h1";
 
 const Alouer = ({ pages }) => {
   return (
-    <NavPage current='Avendre'>
-      <H1>{"Nos Biens à vendre"}</H1>
+    <NavPage current='Nos biens'>
+      <H1>{"Nos biens à Louer"}</H1>
       <MotionRight
         initial='hidden'
         animate='visible'

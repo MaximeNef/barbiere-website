@@ -406,8 +406,8 @@
           "config": {
             "label": "Autres image",
             "constraint": {
-              "width": 400,
-              "height": 230
+              "width": null,
+              "height": null
             },
             "thumbnails": []
           }

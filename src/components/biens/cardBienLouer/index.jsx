@@ -20,7 +20,7 @@ const CardBienLouer = (props) => {
               <div className='md:w-fit' />
             ) : (
               <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[390px]  md:items-center md:mx-6'>
-                <Container className='relative max-w-[350px] max-h-[206px] md:min-w-[390px] md:min-h-[230px]'>
+                <Container className='relative min-w-[350px] min-h-[206px] md:min-w-[390px] md:min-h-[230px]'>
                   <Container className='absolute z-10  top-[-2px] '>
                     {page.data.slices[0].primary.option ? (
                       <MyImage
@@ -75,7 +75,7 @@ const CardBienLouer = (props) => {
                     )}
                   </Container>
                 </Container>
-                <Container className='p-3 '>
+                <Container className='p-3 w-full md:min-h-[142px]'>
                   <Flex justify='between'>
                     <Container className=' text-xl font-bold '>
                       {page.data.slices[0].primary.nom_bien[0]?.text}
@@ -88,10 +88,11 @@ const CardBienLouer = (props) => {
 
                   <Flex justify='start'>
                     <MyImage source={"/assets/pin.svg"} h={"16"} w={"12"} />
-                    <Container className='ml-2 font-light text-[15px] leading-[18px]'>
+                    <Container className='ml-2 font-light text-[15px] leading-[18px] my-auto'>
                       {page.data.slices[0].primary.adresse_bien[0]?.text}
                     </Container>
                   </Flex>
+                  <Container className='w-full h-[1px] bg-slate-200 mt-[7px]' />
                   <Flex justify='between' className='mt-[14px]'>
                     <Container>
                       <Flex align='center'>
