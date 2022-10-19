@@ -7,24 +7,18 @@ import CardBienVendre from "../../components/biens/cardBienVendre";
 import CardBienVendu from "../../components/biens/cardBiensVendu";
 import MotionRight from "../../components/shared/motion-CardRight";
 import H1 from "../../components/shared/h1";
-
+import CardDesktop from "../../components/shared/card-cta-desktop";
 const Avendre = ({ pages, locations }) => {
   return (
-    <NavPage current='Avendre'>
+    <NavPage current='Nos biens'>
       <H1>{"Nos Biens vendu"}</H1>
       <MotionRight
         initial='hidden'
         animate='visible'
         transition={{ duration: 0.7, delay: 0.9 }}
+        className='md:w-[65%] mx-auto my-4'
       >
-        <CardCTA
-          text1={"Ne manquez plus nos nouveaux biens !"}
-          text2={
-            "Quand vous trouvez enfin un bien qui correspond à vos attentes, on vous annonce qu’il est déjà vendu... En vous inscrivant cela ne vous arrivera plus !"
-          }
-          text3={"Nos biens >"}
-          src='/pages'
-        />
+        <CardDesktop />
       </MotionRight>
       <CardBienVendu pages={pages} locations={locations} />
       <Container className='relative z-20 h-44 w-full'></Container>
