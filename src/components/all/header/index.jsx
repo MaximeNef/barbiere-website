@@ -9,7 +9,7 @@ const Header = ({ current }) => {
     { page: "Nos biens", href: "/biens", selected: false },
     // { page: "Biens vendus / loués", href: "/biensVendus", selected: false },
     { page: "Nos services", href: "/services", selected: false },
-    { page: "Agence / Equipe", href: "/agence", selected: false },
+    { page: "Agence / Équipe", href: "/agence", selected: false },
     { page: "Emplois", href: "/emplois", selected: false },
     //   { page: "contact", href: "/contact", selected: false },
   ]);

@@ -23,7 +23,7 @@ import CardTeams from "../../components/shared/card-teams";
 
 export default function Agence() {
   return (
-    <NavPage current={"Agence / Equipe"}>
+    <NavPage current={"Agence / Équipe"}>
       <Head>
         <title>{"Barbiere-Immo "}</title>
         <meta
@@ -50,7 +50,7 @@ export default function Agence() {
             </span>
             <span>
               {
-                "Notre but : une valorisation optimale de votre bien immobilier et votre entière satisfaction."
+                "Notre équipe est à votre écoute, pour vous apporter des conseils avisés et vous accompagner pour une valorisation optimale de votre bien immobilier."
               }
             </span>
           </h3>

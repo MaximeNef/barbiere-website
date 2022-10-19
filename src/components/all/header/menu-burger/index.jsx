@@ -39,7 +39,7 @@ const Menuburger = ({ current }) => {
       src: "/assets/services.svg",
     },
     {
-      page: "Agence / Equipe",
+      page: "Agence / Équipe",
       href: "/agence",
       selected: false,
       src: "/assets/team.svg",

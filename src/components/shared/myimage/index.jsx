@@ -30,6 +30,7 @@ const MyImage = ({
       placeholder='blur'
       blurDataURL='/images/path-to-blur-image.jpg'
       sizes={sizes}
+      quality={100}
     />
   );
 };
