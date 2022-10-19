@@ -36,7 +36,7 @@ const CardDesktop = (props) => {
           </Container>
         </Container>
 
-        <Container className='my-auto pr-5 z-20 hidden md:inline-flex'>
+        <Container className='my-auto pr-5 z-10  hidden md:inline-flex'>
           <Btn2 src={"/contact"} color='white' text={"fixer un rendez-vous"} />{" "}
         </Container>
       </Flex>

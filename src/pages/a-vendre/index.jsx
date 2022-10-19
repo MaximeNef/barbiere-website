@@ -10,7 +10,7 @@ import CardDesktop from "../../components/shared/card-cta-desktop";
 
 const Avendre = ({ pages }) => {
   return (
-    <NavPage current='Avendre'>
+    <NavPage current='Nos biens'>
       <H1>{"Nos Biens à vendre"}</H1>
       <MotionRight
         initial='hidden'

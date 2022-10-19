@@ -12,13 +12,24 @@ const CardBienVendre = (props) => {
     <Container className='md:flex md:flex-row md:flex-wrap md:w-full md:justify-center md:items-center '>
       {" "}
       {props.pages.map((page, i) => (
-        <Container className='md:flex md:flex-row md:flex-wrap md:w-fit '>
+        <Container className='md:flex md:flex-row md:flex-wrap md:w-fit'>
           <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
             {page.data.slices[0].primary.vendu ? (
               <div className='md:w-fit' />
             ) : (
               <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-4 mx-auto md:max-w-[390px]  md:items-center md:mx-6'>
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[390px] md:min-h-[230px]'>
+                  <Container className='absolute z-10  top-[-2px] '>
+                    {page.data.slices[0].primary.option ? (
+                      <MyImage
+                        source={"/assets/OptionBanner.svg"}
+                        h={98}
+                        w={98}
+                      />
+                    ) : (
+                      <></>
+                    )}
+                  </Container>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien?.url}
                     layout='fill'
@@ -62,12 +73,12 @@ const CardBienVendre = (props) => {
                     )}
                   </Container>
                 </Container>
-                <Container className='p-3 w-full'>
+                <Container className='p-3 w-full md:min-h-[142px]'>
                   <Flex justify='between'>
                     <Container className=' text-xl font-bold '>
                       {page.data.slices[0].primary.nom_bien[0]?.text}
                     </Container>
-                    <p className=' text-xl font-semibold text-[#43A8AA] '>
+                    <p className=' text-xl font-semibold text-[#43A8AA] min-w-[100px] text-end'>
                       {page.data.slices[0].primary.prix_bien[0]?.text}
                       {"€"}
                     </p>
@@ -75,10 +86,11 @@ const CardBienVendre = (props) => {
 
                   <Flex justify='start'>
                     <MyImage source={"/assets/pin.svg"} h={"16"} w={"12"} />
-                    <Container className='ml-2 font-light text-[15px] leading-[18px]'>
+                    <Container className='ml-2 font-light text-[15px] leading-[18px] my-auto'>
                       {page.data.slices[0].primary.adresse_bien[0]?.text}
                     </Container>
                   </Flex>
+                  <Container className='w-full h-[1px] bg-slate-200 mt-[7px]' />
                   <Flex justify='between' className='mt-[14px]'>
                     <Container>
                       <Flex align='center'>
@@ -89,17 +101,23 @@ const CardBienVendre = (props) => {
                         />
                         <p className='ml-2 font-light text-[15px] leading-[18px]'>
                           {page.data.slices[0].primary.Superficie_bien[0]?.text}
-                          {"m²"}
+                          {page.data.slices[0].primary.Superficie_bien[0]?.text
+                            ? "m²"
+                            : ""}
                         </p>
                       </Flex>
                     </Container>
                     <Container className=''>
                       <Flex className='' align='center'>
-                        <MyImage
-                          source={"/assets/Bathroom.svg"}
-                          h={"20"}
-                          w={"20"}
-                        />
+                        {page.data.slices[0].primary.sdb_bien[0]?.text ? (
+                          <MyImage
+                            source={"/assets/Bathroom.svg"}
+                            h={20}
+                            w={20}
+                          />
+                        ) : (
+                          ""
+                        )}
                         <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
                           {page.data.slices[0].primary.sdb_bien[0]?.text}
                         </p>
@@ -107,11 +125,15 @@ const CardBienVendre = (props) => {
                     </Container>
                     <Container>
                       <Flex align='center'>
-                        <MyImage
-                          source={"/assets/Bedroom.svg"}
-                          h={"19"}
-                          w={"28"}
-                        />
+                        {page.data.slices[0].primary.chambre_bien[0]?.text ? (
+                          <MyImage
+                            source={"/assets/Bedroom.svg"}
+                            h={19}
+                            w={28}
+                          />
+                        ) : (
+                          ""
+                        )}
                         <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
                           {page.data.slices[0].primary.chambre_bien[0]?.text}
                         </p>
@@ -122,22 +144,6 @@ const CardBienVendre = (props) => {
               </Container>
             )}
           </Link>
-          {/* <Container className='md:w-fit md:flex md:flex-wrap md:flex-row '>
-            {index == (i - index) * 2 || i == (index - i) * 2 ? (
-              <Container className='my-5 md:w-full md:flex md:flex-wrap md:flex-row'>
-                <CardCTA
-                  text1={"Ne manquez plus nos nouveaux biens !"}
-                  text2={
-                    "Quand vous trouvez enfin la perle rare, on vous annonce qu’elle est déjà sous compromis... En vous inscrivant cela ne vous arrivera plus !"
-                  }
-                  text3={"Nos biens >"}
-                  src='/pages'
-                />
-              </Container>
-            ) : (
-              <div />
-            )}
-          </Container> */}
         </Container>
       ))}
     </Container>

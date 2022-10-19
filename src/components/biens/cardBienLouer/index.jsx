@@ -21,6 +21,17 @@ const CardBienLouer = (props) => {
             ) : (
               <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[390px]  md:items-center md:mx-6'>
                 <Container className='relative max-w-[350px] max-h-[206px] md:min-w-[390px] md:min-h-[230px]'>
+                  <Container className='absolute z-10  top-[-2px] '>
+                    {page.data.slices[0].primary.option ? (
+                      <MyImage
+                        source={"/assets/OptionBanner.svg"}
+                        h={98}
+                        w={98}
+                      />
+                    ) : (
+                      <></>
+                    )}
+                  </Container>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}
                     layout='fill'

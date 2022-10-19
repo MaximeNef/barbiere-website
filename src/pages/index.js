@@ -49,8 +49,11 @@ export default function Home({ pages, locations }) {
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
       {/* <HeroImg />*/}
-      <DynamicVideo /> <a name='some' className=' absolute bottom-[22px]' />
-      <H3 className='mt-1 md:mt-0' id='Ancre'>
+      <Container className=' 2xl:h-[1100px] '>
+        <DynamicVideo />
+      </Container>
+      <a name='some' className=' absolute bottom-[22px]' />
+      <H3 className='mt-1 md:mt-0  ' id='Ancre'>
         {"Nous sommes actif près de chez vous "}
       </H3>
       <DynamicCarte />
@@ -90,7 +93,7 @@ export default function Home({ pages, locations }) {
           <Btn3 src='/biens' color='black' text='voir plus' />
         </MotionRight>
       </Flex>{" "}
-      <Flex className=' container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto md:my-5'>
+      <Flex className='md:w-[100%] container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto md:my-5'>
         <DynamicCardBienVendu pages={pages} locations={locations} />
       </Flex>{" "}
       <MotionBottom

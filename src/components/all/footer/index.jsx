@@ -93,8 +93,8 @@ const Footer = () => {
           </Flex>
           <p className='text-[7px] leading-[9px] mx-3 font-light md:text-[14px] md:px-[15%] md:leading-4'>
             {
-              "Agent immobilier agréé IPI sous le n° 506.259 – Belgique. TVA: BE 0546.735.847 .  Organisme de contrôle : Institut professionnel des agents immobiliers, rue du Luxembourg 16B à 1000 Bruxelles www.ipi.be  - "
-            }{" "}
+              "François Barbière - Agent immobilier agréé IPI Nr 506.259 (Belgique). Nr d'entreprise : BE 0546.735.847 . Autorité de surveillance : Institut professionnel des agents immobiliers, rue du Luxembourg 16B à 1000 Bruxelles www.ipi.be  - "
+            }
             <span>
               <Link
                 href='https://www.ipi.be/agent-immobilier-ipi/la-deontologie-de-lagent-immobilier'
@@ -105,7 +105,9 @@ const Footer = () => {
                 </a>
               </Link>
             </span>
-            {" AXA Belgium sous les n° xxx.xxx.xxx et n° xxx.xxx.xxx"}
+            {
+              " RC professionnelle : AXA Belgium Nr 7304044070280 et Nr 7304010470284"
+            }
           </p>
           <p className='md:text-[13px] text-[11px] my-3 '>
             {" 2022 © listri | Designed with passion by "}
