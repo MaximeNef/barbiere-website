@@ -1,6 +1,7 @@
 import Container from "../../shared/container";
 import Flex from "../../shared/flex";
 import MyImage from "../../shared/myimage";
+import CardChiffre from "./CardChiffre";
 
 const ChiffreAgence = () => {
   return (
@@ -15,159 +16,32 @@ const ChiffreAgence = () => {
         />
       </Container>
       <Container className='md:flex md:flex-row md:justify-start md:w-full'>
-        <Container className=''>
-          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardChiffre md:w-fit'>
-            <Flex
-              justify='start'
-              align='center'
-              className='flex-col md:flex-row'
-            >
-              <Flex>
-                <Container className='min-w-[52px]   '>
-                  <MyImage
-                    source='/assets/starsImmo.svg'
-                    w={"52px"}
-                    h={"52px"}
-                    objectFit={"contain"}
-                  />
-                </Container>
-                <Container className='font-semibold text-[43px] leading-[29px] text-[#E88DB1] ml-[10px] my-auto'>
-                  {" 98%"}
-                </Container>
-              </Flex>
-              <Container className=' font-light text-[17px] leading-[21px] text-[#646464] ml-[10px] text-center md:text-left'>
-                {"de satisfaction client,"}
-                <br /> {" vous ne repartirez pas déçus "}
-              </Container>
-            </Flex>
-          </Container>
-
-          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardChiffre '>
-            <Flex
-              justify='start'
-              align='center'
-              className='flex-col md:flex-row'
-            >
-              <Flex className='w-fit'>
-                <Container className='min-w-[52px]   '>
-                  <MyImage
-                    source='/assets/Language.png'
-                    w={"52px"}
-                    h={"52px"}
-                    objectFit={"contain"}
-                  />
-                </Container>
-                <Container className='font-semibold text-[43px] leading-[29px] text-[#E88DB1] ml-[10px] my-auto w-fit md:mx-auto'>
-                  {" 4"}
-                </Container>
-              </Flex>
-              <Container className=' font-light text-[17px] leading-[21px] text-[#646464] text-center md:text-left md:pr-8'>
-                {"langues étrangères parlées"}
-                <br /> {" au sein de l’agence"}
-              </Container>
-            </Flex>
-          </Container>
+        <Container className='md:max-w-[50%] md:flex md:flex-row'>
+          <CardChiffre
+            img='/assets/starsImmo.svg'
+            nbr={"98%"}
+            txt={" de satisfaction client vous ne repartirez pas déçus "}
+          />
+          <CardChiffre
+            img='/assets/Language.png'
+            nbr={"4"}
+            txt={"langues étrangères parlées au sein de l’agence"}
+          />
         </Container>
-        <Container>
-          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardChiffre md:w-fit'>
-            <Flex
-              justify='start'
-              align='center'
-              className='flex-col md:flex-row'
-            >
-              <Flex>
-                <Container className='min-w-[52px]   '>
-                  <MyImage
-                    source='/assets/reco.svg'
-                    w={"52px"}
-                    h={"52px"}
-                    objectFit={"contain"}
-                  />
-                </Container>
-                <Container className='font-semibold text-[43px] leading-[29px] text-[#E88DB1] ml-[10px] my-auto'>
-                  {" 85%"}
-                </Container>
-              </Flex>
-              <Container className=' font-light text-[17px] leading-[21px] text-[#646464] ml-[10px] text-center md:text-left'>
-                {"de nos clients "}
-                <br /> {"viennent suite à une recommandation"}
-              </Container>
-            </Flex>
-          </Container>
-
-          <Container className=' my-3 mx-6 rounded-[20px] p-5 bg-white shadow-cardChiffre md:w-fit'>
-            <Flex
-              justify='start'
-              align='center'
-              className='flex-col md:flex-row'
-            >
-              <Flex>
-                <Container className='min-w-[52px]   '>
-                  <MyImage
-                    source='/assets/chart.svg'
-                    w={"52px"}
-                    h={"52px"}
-                    objectFit={"contain"}
-                  />
-                </Container>
-                <Container className='font-semibold text-[43px] leading-[29px] text-[#E88DB1] ml-[10px] my-auto'>
-                  {" 95%"}
-                </Container>
-              </Flex>
-              <Container className=' font-light text-[17px] leading-[21px] text-[#646464] ml-[10px] text-center md:text-left'>
-                {" des biens sont vendus au prix estimé"}
-                <br /> {" ou à une valeur supérieure"}
-              </Container>
-            </Flex>
-          </Container>
+        <Container className='md:max-w-[50%] md:flex md:flex-row'>
+          <CardChiffre
+            img='/assets/reco.svg'
+            nbr={"85%"}
+            txt={"de nos clients viennent suite à une recommandation"}
+          />
+          <CardChiffre
+            img='/assets/chart.svg'
+            nbr={"95%"}
+            txt={
+              " des biens sont vendus au prix estimé ou à une valeur supérieure"
+            }
+          />
         </Container>
-
-        {/* <Container>
-          <Flex
-            justify='start'
-            className='mx-6 my-3 rounded-[20px] p-5 bg-white shadow-cardAvis'
-          >
-            <Container className='min-w-[52px] '>
-              <MyImage
-                source='/assets/reco.svg'
-                w={"52px"}
-                h={"52px"}
-                objectFit={"contain"}
-              />
-            </Container>
-            <Container className='ml-[30px]'>
-              <Container className='font-semibold text-[23px] leading-[29px] text-[#E88DB1]'>
-                {" 85%"}
-              </Container>
-              <Container className=' font-light text-[17px] leading-[21px] text-[#646464]'>
-                {"de nos clients viennent suite à une recommandation"}
-              </Container>
-            </Container>
-          </Flex>
-          <Flex
-            justify='start'
-            className='mx-6 my-3 rounded-[20px] p-5 bg-white shadow-cardAvis'
-          >
-            <Container className='min-w-[52px] '>
-              <MyImage
-                source='/assets/chart.svg'
-                w={"52px"}
-                h={"52px"}
-                objectFit={"contain"}
-              />
-            </Container>
-            <Container className='ml-[30px]'>
-              <Container className='font-semibold text-[23px] leading-[29px] text-[#E88DB1]'>
-                {"95%"}
-              </Container>
-              <Container className=' font-light text-[17px] leading-[21px] text-[#646464]'>
-                {
-                  "des biens sont vendus au prix estimé ou à une valeur supérieure"
-                }
-              </Container>
-            </Container>
-          </Flex>{" "}
-        </Container> */}
       </Container>
     </Container>
   );

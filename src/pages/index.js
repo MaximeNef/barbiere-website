@@ -101,7 +101,9 @@ export default function Home({ pages, locations }) {
         animate='visible'
         transition={{ duration: 0.3 }}
       >
-        <H3 className='mt-12 mb-4 '>{"Notre agence en quelques chiffres"}</H3>
+        <H3 className='mt-12 mb-6 md:mb-8 '>
+          {"Notre agence en quelques chiffres"}
+        </H3>
       </MotionBottom>
       <DynamicChiffre />
       <Container className='space-y-[20px] mt-12 '>
