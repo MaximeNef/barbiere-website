@@ -41,21 +41,25 @@ export default function Agence() {
         >
           <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-5 md:mt-12 '>
             {
-              "Forte d’une expérience de plus de 20 années dans l’immobilier et la construction. "
+              "Forte d’une expérience de plus de 20 années dans l’immobilier et la construction, "
             }
             <span className='py-2 md:py-4'>
               {
-                " Notre équipe d’agents immobiliers (agréés IPI), vous assurera un service de qualité, sur mesure, pour louer et vendre votre bien immobilier au mieux de vos intérêts."
+                " notre équipe d’agents immobiliers (agréés IPI), vous assurera un service de qualité, sur mesure, pour louer et vendre votre bien immobilier au mieux de vos intérêts."
               }
             </span>
             <span>
               {
-                "Notre équipe est à votre écoute, pour vous apporter des conseils avisés et vous accompagner pour une valorisation optimale de votre bien immobilier."
+                "Nous sommes à votre écoute, pour vous apporter des conseils avisés et vous accompagner pour une valorisation optimale de votre bien immobilier."
               }
             </span>
           </h3>
         </MotionTop>{" "}
         <ImgAgence src='/assets/façade.jpg' />
+        <div className='flex flex-row space-x-2 md:space-x-10 mt-[-4vh] md:mt-0'>
+          <ImgAgence src='/assets/camtable.jpg' />
+          <ImgAgence src='/assets/deco.jpg' />
+        </div>
         <H1 className='mt-24'>{"Notre équipe"}</H1>{" "}
         <MotionTop
           initial='hidden'
@@ -64,7 +68,7 @@ export default function Agence() {
         >
           <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default mt-5  md:mt-12 md:mb-10 '>
             {
-              " Une valorisation optimale de votre bien immobilier et votre entière satisfaction est notre but. "
+              "Notre équipe est à votre écoute, pour vous apporter des conseils avisés et vous accompagner pour une valorisation optimale de votre bien immobilier."
             }
           </h3>
         </MotionTop>{" "}
@@ -85,7 +89,7 @@ export default function Agence() {
                 objectFit='cover'
               />
             </Container>
-          </Container>
+          </Container>{" "}
         </MotionRight>{" "}
         <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:mx-auto md:ml-[5%] mt-8  '>
           <MotionRight
@@ -114,7 +118,7 @@ export default function Agence() {
               post={"Agent immobilier - Associé"}
               ipi={"Nr d’agréation IPI : 510059"}
               region={"Liège / Embourg / Beaufays"}
-              tel={"0477/75.44.10"}
+              tel={"0477 75 44 10"}
               mail={"sb@barbiere.be"}
             />
           </MotionRight>{" "}
@@ -129,7 +133,7 @@ export default function Agence() {
               post={"Conseillère en Immobilier"}
               ipi={""}
               region={"Hélécine / Orp-Jauche"}
-              tel={"0497/40.85.29"}
+              tel={"0497 40 85 29"}
               mail={"cg@barbiere.be"}
             />
           </MotionRight>{" "}
@@ -174,7 +178,7 @@ export default function Agence() {
               post={"Conseillère en immobilier"}
               ipi={"Nr d’agréation IPI : 513512"}
               region={"Huy / Héron / Burdinne / Andenne"}
-              tel={"0473/29.00.70"}
+              tel={"0473 29 00 70"}
               mail={"zl@barbiere.be"}
             />
           </MotionRight>

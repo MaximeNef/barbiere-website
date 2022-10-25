@@ -20,9 +20,9 @@ const CardInfo = (props) => {
       initial='hidden'
       animate='visible'
       transition={{ duration: 0.7, delay: 0.5 }}
-      className='md:max-w-[45%] md:m-2 md:flex md:justify-center md:items-center md:min-w-[45%] '
+      className='md:max-w-[45%] md:m-4 md:flex md:justify-between md:items-center md:min-w-[45%] '
     >
-      <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo md:w-full md:h-fit md:mx-4 md:mb-8  '>
+      <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo md:w-full md:h-fit  md:mb-8   '>
         <Container className='bg-white rounded-[18px] relative space-y-[30px] px-5 py-10'>
           {" "}
           <Container className='relative w-full'>

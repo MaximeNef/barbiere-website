@@ -3,10 +3,14 @@ import Container from "../../shared/container";
 import Flex from "../../shared/flex";
 import MyImage from "../../shared/myimage";
 
-const Footer = () => {
+const Footer = ({ current }) => {
   return (
-    <Container className='bg-[#FBFFFF'>
-      <Container className=' pt-20 ' />
+    <Container
+      className={` z-20  ${
+        current == "contact" ? "mt-[-20px] " : "pt-20 bg-[#FBFFFF]"
+      }`}
+    >
+      <Container className='' />
       <Container className='bg-[#41B8B8]  m-auto w-full text-center pb-2 rounded-tl-[25px] rounded-tr-[25px] border-t-[3px] border-[#41B8B8]'>
         {/* btn contact us  */}
         <Flex justify='center' className='  mt-[-28px] mb-5 '>
@@ -37,7 +41,7 @@ const Footer = () => {
         >
           <Container className='text-start space-y-[12px]'>
             <Link href='/' passHref>
-              <a>Acceuil</a>
+              <a>Accueil</a>
             </Link>
             <Link href='/biens' passHref>
               <a> Nos biens</a>
@@ -58,13 +62,9 @@ const Footer = () => {
               <a> Déontologie</a>
             </Link>
           </Container>
-          <Container className='space-y-[10px]'>
+          <Container className='space-y-[20px]  md:space-y-[38px]'>
             <Container>
-              <MyImage source={"/assets/Logowhite.svg"} h={72} w={72} />
-              <p className='text-[12px] md:text-[16px] leading-[13px]'>
-                {" "}
-                {"François Barbière & associés"}
-              </p>
+              <MyImage source={"/assets/logoB.svg"} h={72} w={72} />
             </Container>
             <Container>
               <p className='text-[12px] md:text-[16px]  leading-[13px] max-w-[120px] md:max-w-[240px] mx-auto font-medium'>
@@ -74,8 +74,7 @@ const Footer = () => {
             <Container>
               <Link href={"tel:+32493 19 30 03"} passHref>
                 <a className='text-[12px] md:text-[16px]  leading-[13px]  font-medium'>
-                  {" "}
-                  {"019.305.732"}
+                  {"019/30.57.32"}
                 </a>
               </Link>{" "}
             </Container>
@@ -84,11 +83,15 @@ const Footer = () => {
         <Container className='text-[#FFFFFF] '>
           <Flex justify='center' className='space-x-[8px] mb-2'>
             <Container>
-              <MyImage source={"/assets/facebook.svg"} h={25} w={25} />{" "}
-            </Container>
-            <Container>
-              {" "}
-              <MyImage source={"/assets/instagram.svg"} h={25} w={25} />
+              <Link
+                href='https://www.facebook.com/profile.php?id=100063790292167'
+                passhref
+                target='_blank'
+              >
+                <a target='_blank'>
+                  <MyImage source={"/assets/facebook.svg"} h={25} w={25} />
+                </a>
+              </Link>{" "}
             </Container>
           </Flex>
           <p className='text-[7px] leading-[9px] mx-3 font-light md:text-[14px] md:px-[15%] md:leading-4'>

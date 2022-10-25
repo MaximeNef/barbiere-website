@@ -4,7 +4,7 @@ import MyImage from "../../shared/myimage";
 
 const ImgAgence = (props) => {
   return (
-    <Container className='mt-10 '>
+    <Container className='mt-10 w-full  '>
       {" "}
       <Container className='absolute top-[130px] left-20 md:left-[110vh]'>
         <MyImage source='/assets/LogoAgence.svg' w={600} h={800} />
@@ -16,7 +16,7 @@ const ImgAgence = (props) => {
       >
         <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo'>
           {" "}
-          <Container className=' rounded-[18px] relative min-h-[300px] md:min-h-[600px] '>
+          <Container className=' rounded-[18px] relative min-h-[300px] md:min-h-[600px] z-30 '>
             <MyImage
               source={props.src}
               layout='fill'

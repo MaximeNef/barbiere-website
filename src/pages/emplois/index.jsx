@@ -40,7 +40,7 @@ export default function Emplois() {
       >
         <h3 className='	 mt-12 text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default '>
           {
-            "Immo Barbière est toujours à la recherche de bons éléments pour agrandir son équipe  "
+            "L'Immobilière François Barbière est toujours à la recherche de bons éléments pour agrandir son équipe  "
           }
         </h3>
       </MotionTop>

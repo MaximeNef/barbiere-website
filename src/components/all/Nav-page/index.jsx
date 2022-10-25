@@ -10,7 +10,7 @@ const NavPage = ({ children, current }) => {
         <Header current={current} />
         <Container className='mx-5 md:px-10'>{children}</Container>
       </Page>{" "}
-      <Footer />
+      <Footer current={current} />
     </Container>
   );
 };

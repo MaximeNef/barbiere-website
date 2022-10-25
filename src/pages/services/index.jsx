@@ -93,7 +93,7 @@ export default function Services() {
       <Container className='md:px-14'>
         <ImgAgence src='/assets/bureau.jpg' />
       </Container>
-      <Container className='space-y-[40px] md:space-y-0 mt-12 md:flex md:flex-row md:flex-wrap md:justify-center md:items-center  '>
+      <Container className='space-y-[40px] md:space-y-0 mt-10 md:mt-4 md:flex md:flex-row md:flex-wrap md:justify-center md:items-center  '>
         {services.map((service, i) => {
           return (
             <CardInfo
@@ -109,7 +109,10 @@ export default function Services() {
             />
           );
         })}
-      </Container>
+      </Container>{" "}
+      <div className='md:mx-12 md:mt-[-4vh]'>
+        <ImgAgence src='/assets/desk.jpg' />
+      </div>
     </NavPage>
   );
 }
