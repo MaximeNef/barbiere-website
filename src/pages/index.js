@@ -49,15 +49,15 @@ export default function Home({ pages, locations }) {
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
       {/* <HeroImg />*/}
-      <Container className=' 2xl:h-[1100px] '>
+      <Container className=' 2xl:h-[1100px] md:max-h-[100vh] '>
         <DynamicVideo />
       </Container>
       <a name='some' className=' absolute bottom-[22px]' />
       <H3 className='mt-1 md:mt-0  ' id='Ancre'>
-        {"Nous sommes actif près de chez vous "}
+        {"Nous sommes actifs près de chez vous "}
       </H3>
       <DynamicCarte />
-      <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full md:min-h-[350px] md:mb-[60px]'>
+      <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full md:min-h-[350px] md:mb-[60px] '>
         <MotionRight
           initial='hidden'
           animate='visible'
@@ -72,18 +72,18 @@ export default function Home({ pages, locations }) {
             src='/biens'
           />{" "}
         </MotionRight>{" "}
-        <Container className='absolute w-full '>
+        <Container className='absolute w-full'>
           <BannerSection />
         </Container>
       </Container>
-      <Flex justify='between' className='mt-12 mb-5'>
+      <Flex justify='between' className='mt-12 mb-5 md:mt-[150px]'>
         <MotionRight
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.3 }}
         >
           {" "}
-          <H3 className=''>{"Nos biens vendus/loués"}</H3>{" "}
+          <H3 className=''>{"Nos nouveautées"}</H3>{" "}
         </MotionRight>
         <MotionRight
           initial='hidden'
@@ -94,7 +94,8 @@ export default function Home({ pages, locations }) {
         </MotionRight>
       </Flex>{" "}
       <Flex className='md:w-[100%] container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto md:my-5'>
-        <DynamicCardBienVendu pages={pages} locations={locations} />
+        {/* <DynamicCardBienVendu pages={pages} locations={locations} /> */}
+        <CardBien pages={pages} />
       </Flex>{" "}
       <MotionBottom
         initial='hidden'
@@ -128,36 +129,42 @@ export default function Home({ pages, locations }) {
                 "L’agence Barbière nous a proposé ses services, les choses se sont très vite activées. Ils ont été hyper professionnels,honnêtes et transparents du début à la fin"
               }
               user={"B. & K."}
+              region={"Wezeren"}
             />
             <DynamicAvis
               txt={
                 "Félicitations à l'agence Barbière de son professionnalisme, sa gentillesse ainsi que de ses bons conseils. Je ne manquerai pas de revenir vers vos services."
               }
               user={"A.D."}
+              region={"Hannut"}
             />
             <DynamicAvis
               txt={
                 "Je ne peux que me féliciter d'avoir découvert votre société et mon avis se résume en quelques mots: Réactivité, positivité, disponibilité et gentillesse."
               }
               user={"C."}
+              region={"Sprimont"}
             />
             <DynamicAvis
               txt={
                 "Un grand merci à toute l'équipe immobilière ‘François Barbière & associés’ pour les conseils lors de notre achat mais également pour l'accompagnement de la vente de notre bien."
               }
               user={"L. & famille"}
+              region={"Berloz"}
             />
             <DynamicAvis
               txt={
                 "J’ai vraiment apprécié la prise en charge de la vente de la maison. Rapidité et efficacité sont leurs mots d'ordre."
               }
               user={"V.C."}
+              region={"Beauraing & Dinant"}
             />
             <DynamicAvis
               txt={
                 "Des explications claires et complètes lors de la visite du bien. Un suivi régulier et une disponibilité de l’agent immobilier"
               }
               user={"F.D."}
+              region={"Severans"}
             />{" "}
             <Container className='w-[20%]  snap-always snap-center flex-shrink-0  md:inline-flex hidden ' />
           </MotionCardRight>

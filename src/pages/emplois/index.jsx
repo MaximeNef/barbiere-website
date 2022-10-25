@@ -4,6 +4,7 @@ import H1 from "../../components/shared/h1";
 import MotionTop from "../../components/shared/motion-top";
 import CardJob from "../../components/shared/card-job";
 import Head from "next/head";
+import ImgAgence from "../../components/agence/img-agence";
 export default function Emplois() {
   const services = [
     {
@@ -43,6 +44,10 @@ export default function Emplois() {
           }
         </h3>
       </MotionTop>
+      <Container className='md:px-14'>
+        <ImgAgence src='/assets/inter.jpg' />
+      </Container>
+
       <Container className='space-y-[40px] mt-12 md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-center '>
         {services.map((service, i) => {
           return (

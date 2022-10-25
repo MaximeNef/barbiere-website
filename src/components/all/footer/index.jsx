@@ -33,7 +33,7 @@ const Footer = () => {
 
         <Flex
           justify='between'
-          className='mx-5 text-[#FFFFFF] text-[14px] leading-4 md:mx-[15%]'
+          className='mx-5 text-[#FFFFFF] text-[14px] md:text-[18px] leading-4 md:mx-[15%]'
         >
           <Container className='text-start space-y-[12px]'>
             <Link href='/' passHref>
@@ -60,20 +60,20 @@ const Footer = () => {
           </Container>
           <Container className='space-y-[10px]'>
             <Container>
-              <MyImage source={"/assets/Logowhite.svg"} h={52} w={72} />
-              <p className='text-[10px] leading-[13px]'>
+              <MyImage source={"/assets/Logowhite.svg"} h={72} w={72} />
+              <p className='text-[12px] md:text-[16px] leading-[13px]'>
                 {" "}
                 {"François Barbière & associés"}
               </p>
             </Container>
             <Container>
-              <p className='text-[10px] leading-[13px] max-w-[90px] mx-auto font-medium'>
+              <p className='text-[12px] md:text-[16px]  leading-[13px] max-w-[120px] md:max-w-[240px] mx-auto font-medium'>
                 {"Rue de Tirlemont 7 4280 Hannut"}
               </p>
             </Container>
             <Container>
               <Link href={"tel:+32493 19 30 03"} passHref>
-                <a className='text-[10px] leading-[13px]  font-medium'>
+                <a className='text-[12px] md:text-[16px]  leading-[13px]  font-medium'>
                   {" "}
                   {"019.305.732"}
                 </a>

@@ -12,7 +12,7 @@ const CardAvis = (props) => {
           justify='between'
           className=' md:px-5 max-h-[30px] items-start md:justify-start'
         >
-          <MyImage source={"/assets/Logoblueu.svg"} h={20} w={30} />{" "}
+          <MyImage source={"/assets/Logoblueu.svg"} h={30} w={30} />{" "}
           <h3 className='text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col items-start justify-center text-default md:ml-4 '>
             {props.user}
           </h3>{" "}
@@ -22,8 +22,11 @@ const CardAvis = (props) => {
         </Container>
       </Container>
 
-      <p className='mt-5 text-left text-[17px] font-light leading-[21px] flex flex-col items-center justify-center md:px-3'>
+      <p className='mt-3 text-left text-[17px] font-light leading-[21px] flex flex-col items-center justify-center md:px-3'>
         {props.txt}
+      </p>
+      <p className=' mt-1 text-left text-[17px] font-bold leading-[21px] flex flex-col md:px-3'>
+        - {props.region}
       </p>
     </Container>
   );

@@ -2,7 +2,7 @@ import Container from "../../shared/container";
 import MotionRight from "../../shared/motion-CardRight";
 import MyImage from "../../shared/myimage";
 
-const ImgAgence = () => {
+const ImgAgence = (props) => {
   return (
     <Container className='mt-10 '>
       {" "}
@@ -18,7 +18,7 @@ const ImgAgence = () => {
           {" "}
           <Container className=' rounded-[18px] relative min-h-[300px] md:min-h-[600px] '>
             <MyImage
-              source='/assets/façade.jpg'
+              source={props.src}
               layout='fill'
               className='rounded-[18px] md:min-h-[600px] '
               objectFit={"cover"}

@@ -99,7 +99,7 @@ const CardInfo = (props) => {
               <div
                 className={` text-[#E78DB1] text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
               >
-                {height ? <p>{"en savoir moins"}</p> : <p>{props.btn}</p>}
+                {height ? <p>{"En savoir moins"}</p> : <p>{props.btn}</p>}
                 <div
                   className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#E78DB1] to-[#E78DB1]`}
                 />

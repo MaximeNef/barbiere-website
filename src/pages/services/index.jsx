@@ -10,6 +10,7 @@ import MotionRight from "../../components/shared/motion-CardRight";
 import MotionTop from "../../components/shared/motion-top";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import ImgAgence from "../../components/agence/img-agence";
 export default function Services() {
   // The default value is 'blue', it will be used during pre-rendering and the first render in the browser (hydration)
   const [color, setColor] = useState("blue");
@@ -88,7 +89,10 @@ export default function Services() {
             }
           </span>
         </h3>
-      </MotionTop>
+      </MotionTop>{" "}
+      <Container className='md:px-14'>
+        <ImgAgence src='/assets/bureau.jpg' />
+      </Container>
       <Container className='space-y-[40px] md:space-y-0 mt-12 md:flex md:flex-row md:flex-wrap md:justify-center md:items-center  '>
         {services.map((service, i) => {
           return (

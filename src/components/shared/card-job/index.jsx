@@ -21,7 +21,7 @@ const CardJob = (props) => {
       transition={{ duration: 0.7 }}
       className='md:max-w-[45%] md:m-2 md:flex md:justify-center md:items-center '
     >
-      <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo md:w-full md:h-fit md:mx-4 md:mb-8  '>
+      <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo md:w-full md:h-fit  md:mb-8  '>
         <Container className='bg-white rounded-[18px] relative space-y-[30px] px-5 py-10  min-h-[340px] '>
           <Container className='relative w-full'>
             {props.img == undefined ? (
@@ -41,7 +41,7 @@ const CardJob = (props) => {
               {props.p}
             </p>
           </Container>{" "}
-          {props.btn == "je postule" ? (
+          {props.btn == "Je postule" ? (
             <div
               className={`text-[#E78DB1]  text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
             >

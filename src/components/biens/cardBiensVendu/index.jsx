@@ -156,7 +156,7 @@ const CardBienVendu = (props) => {
               <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
                   <Container className='absolute z-10  top-[-2px] left-[-1px] '>
-                    <MyImage source={"/assets/VenduBanner.svg"} h={98} w={98} />
+                    <MyImage source={"/assets/bannerloué.svg"} h={98} w={98} />
                   </Container>
                   <MyImage
                     source={page.data.slices[0].primary.Image_bien.url}

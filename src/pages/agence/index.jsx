@@ -55,7 +55,7 @@ export default function Agence() {
             </span>
           </h3>
         </MotionTop>{" "}
-        <ImgAgence />
+        <ImgAgence src='/assets/façade.jpg' />
         <H1 className='mt-24'>{"Notre équipe"}</H1>{" "}
         <MotionTop
           initial='hidden'
@@ -75,11 +75,11 @@ export default function Agence() {
           className='relative'
         >
           <Container className=' relative w-[100%] z-20 mt-6'>
-            <Container className='ml-[-20px] md:ml-[-116px] md:mr-[-116px] mr-[-20px] shadow-cardcta'>
+            <Container className='ml-[-20px] md:ml-[-116px] md:mr-[-116px] mr-[-20px] shadow-cardcta md:h-[40%]'>
               <MyImage
                 source='/assets/team.png'
                 w='100%'
-                h='40%'
+                h='50%'
                 // objectFit={"cover"}
                 layout='responsive'
                 objectFit='cover'
@@ -142,40 +142,10 @@ export default function Agence() {
               img={"/assets/VanHove.jpg"}
               nom={"Gaëtane Van Hove "}
               post={"Conseillère en Immobilier"}
-              ipi={""}
+              ipi={"Nr d’agréation IPI : 516771"}
               region={"Braives / Wasseiges"}
               tel={"0479 54 76 01"}
               mail={"gv@barbiere.be"}
-            />
-          </MotionRight>
-          <MotionRight
-            initial='hidden'
-            animate='visible'
-            transition={{ duration: 0.7, delay: 0.5 }}
-          >
-            <CardTeams
-              img={"/assets/lisa.jpg"}
-              nom={"Lisa Yodts"}
-              post={"Stagiaire"}
-              ipi={""}
-              region={""}
-              tel={"019 30 57 32"}
-              mail={"ly@barbiere.be"}
-            />
-          </MotionRight>
-          <MotionRight
-            initial='hidden'
-            animate='visible'
-            transition={{ duration: 0.7, delay: 0.5 }}
-          >
-            <CardTeams
-              img={"/assets/pers1.jpg"}
-              nom={"Zoé Livron"}
-              post={"Conseillère en immobilier"}
-              ipi={""}
-              region={"Huy / Héron / Burdinne / Andenne"}
-              tel={"0473/29.00.70"}
-              mail={"zl@barbiere.be"}
             />
           </MotionRight>
           <MotionRight
@@ -191,6 +161,36 @@ export default function Agence() {
               region={"Namur / Beauraing / Dinant"}
               tel={"0498 71 40 57"}
               mail={"vc@barbiere.be"}
+            />
+          </MotionRight>
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/pers1.jpg"}
+              nom={"Zoé Livron"}
+              post={"Conseillère en immobilier"}
+              ipi={"Nr d’agréation IPI : 513512"}
+              region={"Huy / Héron / Burdinne / Andenne"}
+              tel={"0473/29.00.70"}
+              mail={"zl@barbiere.be"}
+            />
+          </MotionRight>
+          <MotionRight
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <CardTeams
+              img={"/assets/lisa.jpg"}
+              nom={"Lisa Yodts"}
+              post={"Stagiaire"}
+              ipi={""}
+              region={""}
+              tel={"019 30 57 32"}
+              mail={"ly@barbiere.be"}
             />
           </MotionRight>
         </Container>
