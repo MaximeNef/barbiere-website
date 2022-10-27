@@ -12,8 +12,9 @@ const CardTeams = (props) => {
         <MyImage
           source={props.img}
           w={100}
-          h={400}
-          className={" object-cover  rounded-[18px] "}
+          h={450}
+          objectFit={""}
+          className={"   rounded-[18px] "}
         />
       </Container>{" "}
       <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] drop-shadow-lg z-10 mt-[-50px]'>

@@ -9,10 +9,148 @@ import MotionRight from "../../components/shared/motion-CardRight";
 import H1 from "../../components/shared/h1";
 import CardDesktop from "../../components/shared/card-cta-desktop";
 import CardVendu from "../../components/biens/cardVendu";
+import { useState } from "react";
+import FilterProduct from "../../components/FilterProduct";
 const Avendre = ({ pages, locations }) => {
+  const [newProductList, setNewProductList] = useState(pages);
+  const [newLocationList, setNewLocationList] = useState(locations);
+  const [filterValue, setFilterValue] = useState("all");
+  const [postalValue, setPostalValue] = useState("all");
+
+  const filteredProductList = newProductList.filter((page) => {
+    if (filterValue === "all") {
+      if (postalValue === page?.data.slices[0].primary.postal_type) {
+        return page && page?.data.slices[0].primary.postal_type == postalValue;
+      } else if (postalValue === "all") {
+        return page;
+      }
+    } else if (filterValue === "maison") {
+      if (postalValue === page?.data.slices[0].primary.postal_type) {
+        return (
+          page?.data.slices[0].primary.typeFiltre === "maison" &&
+          page?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return page?.data.slices[0].primary.typeFiltre === "maison";
+      }
+    } else if (filterValue === "appartement") {
+      if (postalValue === page?.data.slices[0].primary.postal_type) {
+        return (
+          page?.data.slices[0].primary.typeFiltre === "appartement" &&
+          page?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return page?.data.slices[0].primary.typeFiltre === "appartement";
+      }
+      return page.data.slices[0].primary.typeFiltre === "appartemement ";
+    } else if (filterValue === "terrain") {
+      if (postalValue === page?.data.slices[0].primary.postal_type) {
+        return (
+          page?.data.slices[0].primary.typeFiltre === "terrain" &&
+          page?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return page?.data.slices[0].primary.typeFiltre === "terrain";
+      }
+    } else if (filterValue === "bureaux") {
+      if (postalValue === page?.data.slices[0].primary.postal_type) {
+        return (
+          page?.data.slices[0].primary.typeFiltre === "bureaux" &&
+          page?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return page?.data.slices[0].primary.typeFiltre === "bureaux";
+      }
+    } else if (filterValue === "garage") {
+      if (postalValue === page?.data.slices[0].primary.postal_type) {
+        return (
+          page?.data.slices[0].primary.typeFiltre === "garage" &&
+          page?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return page?.data.slices[0].primary.typeFiltre === "garage";
+      }
+    } else {
+      return page;
+    }
+  });
+  const filteredLocationList = newLocationList.filter((location) => {
+    if (filterValue === "all") {
+      if (postalValue === location?.data.slices[0].primary.postal_type) {
+        return (
+          location &&
+          location?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return location;
+      }
+    } else if (filterValue === "maison") {
+      if (postalValue === location?.data.slices[0].primary.postal_type) {
+        return (
+          location?.data.slices[0].primary.typeFiltre === "maison" &&
+          location?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return location?.data.slices[0].primary.typeFiltre === "maison";
+      }
+    } else if (filterValue === "appartement") {
+      if (postalValue === location?.data.slices[0].primary.postal_type) {
+        return (
+          location?.data.slices[0].primary.typeFiltre === "appartement" &&
+          location?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return location?.data.slices[0].primary.typeFiltre === "appartement";
+      }
+      return location.data.slices[0].primary.typeFiltre === "appartemement ";
+    } else if (filterValue === "terrain") {
+      if (postalValue === location?.data.slices[0].primary.postal_type) {
+        return (
+          location?.data.slices[0].primary.typeFiltre === "terrain" &&
+          location?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return location?.data.slices[0].primary.typeFiltre === "terrain";
+      }
+    } else if (filterValue === "bureaux") {
+      if (postalValue === location?.data.slices[0].primary.postal_type) {
+        return (
+          location?.data.slices[0].primary.typeFiltre === "bureaux" &&
+          location?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return location?.data.slices[0].primary.typeFiltre === "bureaux";
+      }
+    } else if (filterValue === "garage") {
+      if (postalValue === location?.data.slices[0].primary.postal_type) {
+        return (
+          location?.data.slices[0].primary.typeFiltre === "garage" &&
+          location?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return location?.data.slices[0].primary.typeFiltre === "garage";
+      }
+    } else {
+      return location;
+    }
+  });
+
+  function onFilterValueSelected(filterValue) {
+    console.log(filterValue);
+    setFilterValue(filterValue);
+  }
+  function onPostalValueSelected(postalValue) {
+    console.log(postalValue);
+    setPostalValue(postalValue);
+  }
+
   return (
     <NavPage current='Nos biens'>
       <H1>{"Nos Biens vendu"}</H1>
+      <FilterProduct
+        filterValueSelected={onFilterValueSelected}
+        postalValueSelected={onPostalValueSelected}
+      />
       <MotionRight
         initial='hidden'
         animate='visible'
@@ -22,9 +160,7 @@ const Avendre = ({ pages, locations }) => {
         <CardDesktop />
       </MotionRight>
 
-      <CardVendu pages={pages} locations={locations} />
-
-      <Container className='relative z-20 h-44 w-full'></Container>
+      <CardVendu pages={filteredProductList} locations={filteredLocationList} />
     </NavPage>
   );
 };

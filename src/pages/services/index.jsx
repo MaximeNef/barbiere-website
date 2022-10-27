@@ -11,6 +11,7 @@ import MotionTop from "../../components/shared/motion-top";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import ImgAgence from "../../components/agence/img-agence";
+import Carousel from "../../components/shared/carousel";
 export default function Services() {
   // The default value is 'blue', it will be used during pre-rendering and the first render in the browser (hydration)
   const [color, setColor] = useState("blue");
@@ -58,6 +59,7 @@ export default function Services() {
       btn: "En savoir plus",
     },
   ];
+  const photo = ["/assets/emploi1.jpg", "/assets/desk.jpg"];
   return (
     <NavPage current={"Nos services"}>
       <Head>
@@ -91,7 +93,7 @@ export default function Services() {
         </h3>
       </MotionTop>{" "}
       <Container className='md:px-14'>
-        <ImgAgence src='/assets/bureau.jpg' />
+        <Carousel photo={photo} />
       </Container>
       <Container className='space-y-[40px] md:space-y-0 mt-10 md:mt-4 md:flex md:flex-row md:flex-wrap md:justify-center md:items-center  '>
         {services.map((service, i) => {

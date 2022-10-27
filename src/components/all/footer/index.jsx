@@ -62,19 +62,31 @@ const Footer = ({ current }) => {
               <a> Déontologie</a>
             </Link>
           </Container>
-          <Container className='space-y-[20px]  md:space-y-[38px]'>
+          <Container className='space-y-[26px]  md:space-y-[10px]'>
             <Container>
-              <MyImage source={"/assets/logoB.svg"} h={72} w={72} />
-            </Container>
+              <Container className=' hidden md:inline-flex '>
+                <MyImage source={"/assets/logoB.svg"} h={120} w={120} />
+              </Container>
+              <Container className='md:hidden inline-flex '>
+                <MyImage source={"/assets/logoB.svg"} h={92} w={92} />
+              </Container>
+            </Container>{" "}
             <Container>
-              <p className='text-[12px] md:text-[16px]  leading-[13px] max-w-[120px] md:max-w-[240px] mx-auto font-medium'>
+              <p className='text-[14px] md:text-[16px]  leading-[13px] max-w-[120px] md:max-w-[240px] mx-auto font-medium'>
                 {"Rue de Tirlemont 7 4280 Hannut"}
               </p>
             </Container>
             <Container>
               <Link href={"tel:+32493 19 30 03"} passHref>
-                <a className='text-[12px] md:text-[16px]  leading-[13px]  font-medium'>
-                  {"019/30.57.32"}
+                <a className='text-[14px] md:text-[16px]  leading-[13px]  font-medium'>
+                  {"tel:"} {"019/30.57.32"}
+                </a>
+              </Link>{" "}
+            </Container>
+            <Container>
+              <Link href={"mailto:info@barbiere.be"} passHref>
+                <a className='text-[14px] md:text-[16px]  leading-[13px]  font-medium'>
+                  {"mail:"} {"info@barbiere.be"}
                 </a>
               </Link>{" "}
             </Container>

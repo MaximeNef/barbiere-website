@@ -136,7 +136,7 @@ export default function Home({ pages, locations }) {
                 "Félicitations à l'agence Barbière de son professionnalisme, sa gentillesse ainsi que de ses bons conseils. Je ne manquerai pas de revenir vers vos services."
               }
               user={"A.D."}
-              region={"Hannut"}
+              region={"Omal"}
             />
             <DynamicAvis
               txt={
@@ -157,15 +157,36 @@ export default function Home({ pages, locations }) {
                 "J’ai vraiment apprécié la prise en charge de la vente de la maison. Rapidité et efficacité sont leurs mots d'ordre."
               }
               user={"V.C."}
-              region={"Beauraing & Dinant"}
+              region={"Hannut"}
             />
             <DynamicAvis
               txt={
                 "Des explications claires et complètes lors de la visite du bien. Un suivi régulier et une disponibilité de l’agent immobilier"
               }
               user={"F.D."}
-              region={"Severans"}
-            />{" "}
+              region={"Villers-le-Peuplier"}
+            />
+            <DynamicAvis
+              txt={
+                "Je recommande vivement l’agence immobilière Barbière. Une écoute et un professionnalisme irréprochable qui m'ont permis de vendre sereinement une maison familiale.Les explications claires ainsi que la transparence de la vente m'ont confirmé que j'avais fait le bon choix d'agence immobilière."
+              }
+              user={"A.G "}
+              region={"Sprimont"}
+            />
+            <DynamicAvis
+              txt={
+                "Travail rigoureux, efficace et dans le respect des attentes du client 😊. Je referais appel à vous les yeux fermés !"
+              }
+              user={"A.V "}
+              region={"Saint-Nicolas"}
+            />
+            <DynamicAvis
+              txt={
+                "Je remercie toute l’équipe pour le professionnalisme dont ils ont fait preuve pour la vente de nos deux biens. Nous avons été bien conseillés et suivis."
+              }
+              user={"F.R "}
+              region={"Jandrain & Saint-Hilaire-du-Bois"}
+            />
             <Container className='w-[20%]  snap-always snap-center flex-shrink-0  md:inline-flex hidden ' />
           </MotionCardRight>
         </Flex>

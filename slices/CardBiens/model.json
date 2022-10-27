@@ -398,6 +398,35 @@
             "placeholder_true": "true",
             "default_value": false
           }
+        },
+        "typeFiltre": {
+          "type": "Select",
+          "config": {
+            "label": "type.bien.filtre",
+            "placeholder": "",
+            "options": [
+              "all",
+              "maison",
+              "appartement",
+              "terrain",
+              "bureaux",
+              "garage"
+            ],
+            "default_value": "all"
+          }
+        },
+        "postal_type": {
+          "type": "Select",
+          "config": {
+            "label": "postal type",
+            "placeholder": "",
+            "options": [
+              "all",
+              "1240",
+              "5140"
+            ],
+            "default_value": "all"
+          }
         }
       },
       "items": {

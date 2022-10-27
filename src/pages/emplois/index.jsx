@@ -5,6 +5,7 @@ import MotionTop from "../../components/shared/motion-top";
 import CardJob from "../../components/shared/card-job";
 import Head from "next/head";
 import ImgAgence from "../../components/agence/img-agence";
+import Carousel from "../../components/shared/carousel";
 export default function Emplois() {
   const services = [
     {

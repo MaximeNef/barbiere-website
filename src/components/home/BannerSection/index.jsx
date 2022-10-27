@@ -6,6 +6,7 @@ import MyImage from "../../shared/myimage";
 import P from "../../shared/p";
 import dynamic from "next/dynamic";
 import H3 from "../../shared/h3";
+import H1 from "../../shared/h1";
 const DynamicCardCTA = dynamic(() => import("../../shared/card-Cta"));
 
 const BannerSection = () => {
@@ -28,9 +29,12 @@ const BannerSection = () => {
       <Container className='bg-[#7a767c] max-w-[30%] skew-x-[-10deg] '>
         <Container className='my-auto'>
           <Container className='skew-x-[10deg] p-10 pl-20 pr-0 w-full h-full'>
-            <Container className='space-y-14'>
+            <Container className='space-y-5 ml-12 mr-[-100px]'>
+              <h1 className=' text-[36px] leading-[50px] text-left text-white flex flex-col mb-5 '>
+                {"Besoin d'un conseil ?"}
+              </h1>
               <h2
-                className={` text-white  text-[20px] font-bold leading-[32px] text-left `}
+                className={` text-white  text-[20px] font-light leading-[32px] text-left `}
               >
                 {
                   " Retrouvez notre équipe expérimentée pour répondre à tous vos besoins !"
@@ -38,7 +42,11 @@ const BannerSection = () => {
               </h2>
 
               <Container className='mr-auto'>
-                <Btn2 src={"/agence"} color='white' text={"Découvrez Nous >"} />
+                <Btn2
+                  src={"/agence"}
+                  color='white'
+                  text={"Rencontrons-nous !"}
+                />
               </Container>
             </Container>{" "}
           </Container>

@@ -298,7 +298,7 @@ const CardVendu = (props) => {
               )}
             </Link>
           ))}{" "}
-          <Container className='  w-[100px] flex-shrink-0 h-[200px] flex items-center justify-center mx-10  '></Container>
+          <Container className=' h-[50px] ' />
         </Container>{" "}
       </MotionCardRight>
     </>

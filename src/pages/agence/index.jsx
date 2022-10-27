@@ -20,8 +20,14 @@ import MotionBottom from "../../components/shared/motion-bottom";
 import MotionTop from "../../components/shared/motion-top";
 import MotionRight from "../../components/shared/motion-CardRight";
 import CardTeams from "../../components/shared/card-teams";
-
+import DetailsImg from "../../components/biens/details/detailsImage";
+import Carousel from "../../components/shared/carousel";
 export default function Agence() {
+  const photo = [
+    "/assets/façade.jpg",
+    "/assets/vitrine.jpg",
+    "/assets/deco.jpg",
+  ];
   return (
     <NavPage current={"Agence / Équipe"}>
       <Head>
@@ -55,12 +61,8 @@ export default function Agence() {
             </span>
           </h3>
         </MotionTop>{" "}
-        <ImgAgence src='/assets/façade.jpg' />
-        <div className='flex flex-row space-x-2 md:space-x-10 mt-[-4vh] md:mt-0'>
-          <ImgAgence src='/assets/camtable.jpg' />
-          <ImgAgence src='/assets/deco.jpg' />
-        </div>
-        <H1 className='mt-24'>{"Notre équipe"}</H1>{" "}
+        <Carousel photo={photo} />
+        <H1 className='mt-12 md:mt-20'>{"Notre équipe"}</H1>{" "}
         <MotionTop
           initial='hidden'
           animate='visible'
@@ -91,7 +93,7 @@ export default function Agence() {
             </Container>
           </Container>{" "}
         </MotionRight>{" "}
-        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:mx-auto md:ml-[5%] mt-8  '>
+        <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:mx-auto md:ml-[7%] mt-8  '>
           <MotionRight
             initial='hidden'
             animate='visible'
@@ -173,7 +175,7 @@ export default function Agence() {
             transition={{ duration: 0.7, delay: 0.5 }}
           >
             <CardTeams
-              img={"/assets/pers1.jpg"}
+              img={"/assets/pers1test.jpg"}
               nom={"Zoé Livron"}
               post={"Conseillère en immobilier"}
               ipi={"Nr d’agréation IPI : 513512"}
