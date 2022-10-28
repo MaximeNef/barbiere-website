@@ -83,7 +83,7 @@ export default function Home({ pages, locations }) {
           transition={{ duration: 0.3 }}
         >
           {" "}
-          <H3 className=''>{"Nos nouvautées"}</H3>{" "}
+          <H3 className=''>{"Nos nouvautés"}</H3>{" "}
         </MotionRight>
         <MotionRight
           initial='hidden'

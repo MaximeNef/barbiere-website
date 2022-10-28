@@ -130,6 +130,24 @@ const Avendre = ({ pages, locations }) => {
       } else if (postalValue === "all") {
         return location?.data.slices[0].primary.typeFiltre === "garage";
       }
+    } else if (filterValue === "entrepot") {
+      if (postalValue === page?.data.slices[0].primary.postal_type) {
+        return (
+          page?.data.slices[0].primary.typeFiltre === "entrepot" &&
+          page?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return page?.data.slices[0].primary.typeFiltre === "entrepot";
+      }
+    } else if (filterValue === "immeuble mixte") {
+      if (postalValue === page?.data.slices[0].primary.postal_type) {
+        return (
+          page?.data.slices[0].primary.typeFiltre === "immeuble mixte" &&
+          page?.data.slices[0].primary.postal_type == postalValue
+        );
+      } else if (postalValue === "all") {
+        return page?.data.slices[0].primary.typeFiltre === "immeuble mixte";
+      }
     } else {
       return location;
     }

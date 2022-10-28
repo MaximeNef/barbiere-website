@@ -30,7 +30,7 @@ const Generales = (props) => {
     {
       name: "Largeur de façade ",
       info: props.details.data.slices[0].primary.lgr_facade[0]?.text,
-      carac: "m²",
+      carac: "m",
     },
     {
       name: "Disponibilité ",
@@ -41,7 +41,7 @@ const Generales = (props) => {
       info: props.details.data.slices[0].primary.garage[0]?.text,
     },
     {
-      name: "Salles de bains ",
+      name: "Salle(s) de bains ",
       info: props.details.data.slices[0].primary.sdb_bien[0]?.text,
     },
     {

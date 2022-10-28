@@ -18,7 +18,7 @@ export default function DetailsVendre({ details }) {
   console.log(details, "doc");
   return (
     <NavPage current='Nos biens'>
-      <Container className='md:mx-5'>
+      <Container className='md:mx-5 md:mb-5'>
         <DetailsImg details={details} />
         <Container className=' space-y-[30px]'>
           <HeroDetails details={details} />

@@ -89,7 +89,7 @@ export default function detailsImage(props) {
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
-          className='relative z-10 w-full h-full '
+          className='relative z-10 w-full h-full cursor-pointer '
           onClick={() => {
             setShowModal(true);
           }}
@@ -103,7 +103,7 @@ export default function detailsImage(props) {
                     source={item.autres_img.url}
                     layout='fill'
                     objectFit='cover'
-                    className='animate-fadeIn rounded-[20px] w-full'
+                    className='animate-fadeIn rounded-[20px] w-full hover:scale-110 transition duration-700 ease-in-out'
                   />
                   {showModal && (
                     <Container className='  top-0 left-0 w-screen h-screen flex justify-center items-center bg-black/90 overflow-hidden  fixed'>

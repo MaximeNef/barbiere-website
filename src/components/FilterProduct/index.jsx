@@ -32,7 +32,9 @@ const FilterProduct = (props) => {
             <option value='appartement'>Appartement</option>
             <option value='terrain'>Terrain</option>
             <option value='bureaux'>Bureaux</option>
-            <option value='garage'>Garage/ Entrepôt</option>
+            <option value='garage'>Garage</option>
+            <option value='entrepot'>entrepôt</option>
+            <option value='immeuble mixte'>immeuble mixte</option>
           </select>
         </Container>
         <Container className='md:w-full'>

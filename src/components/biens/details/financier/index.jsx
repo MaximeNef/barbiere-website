@@ -6,12 +6,12 @@ const InfoFinanciere = (props) => {
   console.log(props, "generales ");
   const generales = [
     {
-      name: "Prix",
+      name: "Loyer",
       info: props.details.data.slices[0].primary.prix_bien[0]?.text,
       carac: "€",
     },
     {
-      name: "revenu cadastral",
+      name: "Revenu cadastral",
       info: props.details.data.slices[0].primary.Rvn_cadastral[0]?.text,
       carac: "€",
     },

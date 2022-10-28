@@ -31,11 +31,11 @@ const HeroImg = () => {
           layout='fill'
           objectFit='cover'
         /> */}
-        <div className='md:hidden inline-flex'>
-          <VideoPlayer video='video/videobarbiereM.mp4' />
+        <div className='md:hidden inline-flex bg-black/50  '>
+          <VideoPlayer video='video/videoMobile.mp4' />
         </div>
-        <div className='hidden md:inline-flex'>
-          <VideoPlayer video='video/videoBarbiere.mp4' />
+        <div className='hidden md:inline-flex bg-black/50  '>
+          <VideoPlayer video='video/videoDesktop.mp4' />
         </div>
       </Container>{" "}
       <Container className='  absolute w-full bottom-[280px] md:bottom-[220px] md:w-[45%] md:mx-auto md:relative'>

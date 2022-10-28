@@ -410,7 +410,9 @@
               "appartement",
               "terrain",
               "bureaux",
-              "garage"
+              "garage",
+              "entrepot",
+              "immeuble mixte"
             ],
             "default_value": "all"
           }

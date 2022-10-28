@@ -168,8 +168,8 @@ const CardVendu = (props) => {
           {props.locations.map((page) => (
             <Link href={`/a-louer/${page.uid}`} key={page.uid} passHref>
               {page.data.slices[0].primary.vendu ? (
-                <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
-                  <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
+                <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0   md:max-w-[400px] mr-3 cursor-pointer my-2 md:my-0 '>
+                  <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[240px]'>
                     <Container className='absolute z-10  top-[-2px] left-[-1px] '>
                       <MyImage
                         source={"/assets/VenduBanner.svg"}
@@ -220,7 +220,7 @@ const CardVendu = (props) => {
                       )}
                     </Container>
                   </Container>
-                  <Container className='p-3 md:min-h-[142px]'>
+                  <Container className='p-3 h-full md:min-h-[142px]'>
                     <Flex justify='between'>
                       <Container className=' text-xl font-bold '>
                         {page.data.slices[0].primary.nom_bien[0]?.text}
@@ -228,11 +228,12 @@ const CardVendu = (props) => {
                     </Flex>
 
                     <Flex justify='start'>
-                      <MyImage source={"/assets/pin.svg"} h={16} w={12} />
-                      <Container className='ml-2 font-light text-[15px] leading-[18px]'>
+                      <MyImage source={"/assets/pin.svg"} h={"16"} w={"12"} />
+                      <Container className='ml-2 font-light text-[15px] leading-[18px] my-auto'>
                         {page.data.slices[0].primary.adresse_bien[0]?.text}
                       </Container>
                     </Flex>
+                    <Container className='w-full h-[1px] bg-slate-200 mt-[7px]' />
                     <Flex justify='between' className='mt-[14px]'>
                       <Container>
                         <Flex align='center'>
@@ -246,6 +247,7 @@ const CardVendu = (props) => {
                           ) : (
                             ""
                           )}
+
                           <p className='ml-2 font-light text-[15px] leading-[18px]'>
                             {
                               page.data.slices[0].primary.Superficie_bien[0]
@@ -269,6 +271,7 @@ const CardVendu = (props) => {
                           ) : (
                             ""
                           )}
+
                           <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
                             {page.data.slices[0].primary.sdb_bien[0]?.text}
                           </p>
@@ -285,6 +288,7 @@ const CardVendu = (props) => {
                           ) : (
                             ""
                           )}
+
                           <p className='ml-2 font-light text-[15px] leading-[18px] pt-1'>
                             {page.data.slices[0].primary.chambre_bien[0]?.text}
                           </p>

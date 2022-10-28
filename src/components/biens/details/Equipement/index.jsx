@@ -21,10 +21,6 @@ const Equipement = (props) => {
       name: "Confort intérieur",
       info: props.details.data.slices[0].primary.Confort_interieur[0]?.text,
     },
-    {
-      name: "Confort extérieur",
-      info: props.details.data.slices[0].primary.Confort_exterieur[0]?.text,
-    },
   ];
   return (
     <Container className='bg-white p-5 rounded-[12px] shadow-cardDetails'>

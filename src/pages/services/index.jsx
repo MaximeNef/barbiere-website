@@ -111,10 +111,7 @@ export default function Services() {
             />
           );
         })}
-      </Container>{" "}
-      <div className='md:mx-12 md:mt-[-4vh]'>
-        <ImgAgence src='/assets/desk.jpg' />
-      </div>
+      </Container>
     </NavPage>
   );
 }

@@ -46,22 +46,25 @@ export default function VideoPlayer(props) {
   return shouldUseImage ? (
     <img src={props.video} alt='Muted Video' priority={true} />
   ) : (
-    <div
-      className='  md:w-full md:h-[100vh]   '
-      ref={videoParentRef}
-      dangerouslySetInnerHTML={{
-        __html: `
+    <>
+      <div className=' bg-black/30 z-0 absolute  h-full w-full' />
+      <div
+        className='  md:w-full md:h-[100vh]  '
+        ref={videoParentRef}
+        dangerouslySetInnerHTML={{
+          __html: `
         <video
           loop
           muted
           autoplay
           playsinline
-          preload="none"
+          preload="auto"
           priority={true}
         >
         <source src="${props.video}" type="video/mp4"  />
         </video>`,
-      }}
-    />
+        }}
+      />
+    </>
   );
 }
