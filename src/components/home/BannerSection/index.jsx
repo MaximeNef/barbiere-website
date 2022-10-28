@@ -33,13 +33,13 @@ const BannerSection = () => {
               <h1 className=' text-[36px] leading-[50px] text-left text-white flex flex-col mb-5 '>
                 {"Besoin d'un conseil ?"}
               </h1>
-              <h2
+              {/* <h2
                 className={` text-white  text-[20px] font-light leading-[32px] text-left `}
               >
                 {
                   " Retrouvez notre équipe expérimentée pour répondre à tous vos besoins !"
                 }
-              </h2>
+              </h2> */}
 
               <Container className='mr-auto'>
                 <Btn2
