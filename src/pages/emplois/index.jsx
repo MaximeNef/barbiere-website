@@ -12,14 +12,14 @@ export default function Emplois() {
       img: "/assets/serviceVendre.svg",
       h2: "Agent immobilier",
       p: "Pour soutenir notre développement en Wallonie et à Bruxelles, nous rechercherons des agents immobiliers (agrées IPI) expérimentés. N’hésitez pas à nous contacter pour plus d'informations et à nous transmettre votre curriculum vitae complet, vos références, ainsi qu’une lettre de motivation, à l’adresse suivante: fb@barbiere.be      A très bientôt !",
-      btn: "je postule",
+      btn: "Je postule",
       mail: "mailto:fb@barbiere.be?subject=Agent Immobilier",
     },
     {
       img: "/assets/serviceVendre.svg",
       h2: "Candidature spontanée",
       p: "Pour toute demande de candidature spontanée, n’hésitez pas à nous contacter pour plus d'informations et à nous transmettre votre curriculum vitae, vos références, ainsi qu’une lettre de motivation, à l’adresse suivante: fb@barbiere.be A très bientôt !",
-      btn: "je postule",
+      btn: "Je postule",
       mail: "mailto:fb@barbiere.be?subject=Candidature spontanée",
     },
   ];
