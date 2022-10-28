@@ -14,6 +14,7 @@ const MyImage = ({
   layout,
   imageProps,
   sizes,
+  priority,
 }) => {
   return (
     <Image
@@ -26,7 +27,7 @@ const MyImage = ({
       className={className}
       objectFit={objectFit}
       layout={layout}
-      priority={false}
+      priority={priority ? true : false}
       placeholder='blur'
       blurDataURL='/images/path-to-blur-image.jpg'
       sizes={sizes}

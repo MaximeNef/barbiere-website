@@ -49,7 +49,12 @@ const HeroImg = () => {
       </Container>{" "}
       <a href='#some'>
         <Container className='absolute w-full bottom-[110px] md:bottom-[70px] md:relative animate-bounce'>
-          <MyImage source={"/assets/arrow-down.svg"} h={"60"} w={"100"} />
+          <MyImage
+            source={"/assets/arrow-down.svg"}
+            h={"60"}
+            w={"100"}
+            priority={true}
+          />
         </Container>{" "}
       </a>
     </Container>
