@@ -47,9 +47,9 @@ export default function VideoPlayer(props) {
     <img src={props.video} alt='Muted Video' priority={true} />
   ) : (
     <>
-      <div className=' bg-black/30 z-0 absolute  h-full w-full' />
+      <div className=' bg-black/30 z-0 absolute  h-[93%] md:h-[102%] w-full' />
       <div
-        className='  md:w-full md:h-[100vh]  '
+        className='  md:w-full md:max-h-[10vh]  '
         ref={videoParentRef}
         dangerouslySetInnerHTML={{
           __html: `
@@ -58,10 +58,10 @@ export default function VideoPlayer(props) {
           muted
           autoplay
           playsinline
-          preload="auto"
+          preload="none"
           priority={true}
         >
-        <source src="${props.video}" type="video/mp4"  />
+        <source src="${props.video}" type="video/mp4" />
         </video>`,
         }}
       />
