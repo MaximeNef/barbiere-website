@@ -11,6 +11,13 @@ const FilterProduct = (props) => {
   function onPostalValueChanged(event) {
     props.postalValueSelected(event.target.value);
   }
+  const newTodos = [];
+  const handleAdd = (page) => {
+    const newTodos = [...pages];
+    newTodos.push(page.data.slices[0].primary.code_postal);
+    setTodos(newTodos);
+  };
+  console.log(newTodos, " push array ");
 
   return (
     <Container className=' py-5 rounded-[20px] space-y-4 my-4 md:w-full mb-5 '>
@@ -28,6 +35,7 @@ const FilterProduct = (props) => {
             <option value='all' className='text-white'>
               Types de biens
             </option>
+
             <option value='maison'>Maison</option>
             <option value='appartement'>Appartement</option>
             <option value='terrain'>Terrain</option>
@@ -43,10 +51,17 @@ const FilterProduct = (props) => {
             onChange={onPostalValueChanged}
             className='rounded-[10px] h-10 drop-shadow-xl bg-white outline-0 px-2'
           >
-            <option value='all'>{"Localisation (code postal)"}</option>
-            <option value='1140'>1140</option>
-            <option value='1240'>1240</option>
-            <option value='5140'>5140</option>
+            {" "}
+            <option value='all'>{"Localisation (code postal)"}</option>{" "}
+            {props.pages.map((page) => {
+              return page.data.slices[0].primary.code_postal === null ? (
+                <></>
+              ) : (
+                <option value={`${page.data.slices[0].primary.code_postal}`}>
+                  {page.data.slices[0].primary.code_postal}
+                </option>
+              );
+            })}
           </select>
         </Container>{" "}
       </Container>

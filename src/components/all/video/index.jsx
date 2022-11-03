@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import Container from "../../shared/container";
 
 const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
@@ -46,10 +47,9 @@ export default function VideoPlayer(props) {
   return shouldUseImage ? (
     <img src={props.video} alt='Muted Video' priority={true} />
   ) : (
-    <>
-      <div className=' bg-black/30 z-0 absolute  h-[93%] md:h-[102%] w-full' />
+    <Container className='w-[100%] absolute bottom-0'>
       <div
-        className='  md:w-full md:max-h-[10vh]  '
+        className=''
         ref={videoParentRef}
         dangerouslySetInnerHTML={{
           __html: `
@@ -60,11 +60,12 @@ export default function VideoPlayer(props) {
           playsinline
           preload="none"
           priority={true}
+         
         >
-        <source src="${props.video}" type="video/mp4" />
+        <source src="${props.video}" type="video/mp4"  />
         </video>`,
         }}
       />
-    </>
+    </Container>
   );
 }

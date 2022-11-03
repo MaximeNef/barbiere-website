@@ -11,6 +11,7 @@ import FilterProduct from "../../components/FilterProduct";
 import { useState } from "react";
 
 const Avendre = ({ pages }) => {
+  console.log(pages, "code postal ");
   const [newProductList, setNewProductList] = useState(pages);
   const [filterValue, setFilterValue] = useState("all");
   const [postalValue, setPostalValue] = useState("all");
@@ -104,6 +105,7 @@ const Avendre = ({ pages }) => {
     <NavPage current='Nos biens'>
       <H1>{"Nos Biens à vendre"}</H1>{" "}
       <FilterProduct
+        pages={pages}
         filterValueSelected={onFilterValueSelected}
         postalValueSelected={onPostalValueSelected}
       />

@@ -429,6 +429,13 @@
             ],
             "default_value": "all"
           }
+        },
+        "code_postal": {
+          "type": "Number",
+          "config": {
+            "label": "code postal",
+            "placeholder": ""
+          }
         }
       },
       "items": {
