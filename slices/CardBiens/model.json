@@ -418,23 +418,12 @@
           }
         },
         "postal_type": {
-          "type": "Select",
+          "type": "StructuredText",
           "config": {
-            "label": "postal type",
+            "label": "postal_type",
             "placeholder": "",
-            "options": [
-              "all",
-              "1240",
-              "5140"
-            ],
-            "default_value": "all"
-          }
-        },
-        "code_postal": {
-          "type": "Number",
-          "config": {
-            "label": "code postal",
-            "placeholder": ""
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },

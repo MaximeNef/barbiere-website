@@ -426,23 +426,12 @@
                   }
                 },
                 "postal_type": {
-                  "type": "Select",
+                  "type": "StructuredText",
                   "config": {
-                    "label": "postal type",
+                    "label": "postal_type",
                     "placeholder": "",
-                    "options": [
-                      "all",
-                      "1240",
-                      "5140"
-                    ],
-                    "default_value": "all"
-                  }
-                },
-                "code_postal": {
-                  "type": "Number",
-                  "config": {
-                    "label": "code postal",
-                    "placeholder": ""
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 }
               },
@@ -476,7 +465,7 @@
                   },
                   "alt": null,
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+                  "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
                 }
               }
             ],
@@ -488,110 +477,110 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f"
+                "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51"
               },
               "nom_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Occaecat tempor excepteur exercitation. Sint ea quis eiusmod duis et aliquip aliquip duis sint do quis Lorem sint adipisicing. Laborum do officia mollit eiusmod sunt qui exercitation ullamco amet laboris nostrud ea.",
+                  "text": "Ullamco nostrud commodo ex fugiat anim fugiat anim. Exercitation esse elit officia est nulla consectetur est Lorem non culpa sit cillum ex eu.",
                   "spans": []
                 }
               ],
               "adresse_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Tempor excepteur fugiat consequat qui laboris id do ea. Incididunt deserunt esse magna laboris nulla sint nostrud.",
+                  "text": "Tempor enim nostrud id enim mollit aliquip qui velit.",
                   "spans": []
                 }
               ],
               "Superficie_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Eu velit aliquip eu id ex amet eiusmod voluptate duis elit consequat aliquip velit eu.",
+                  "text": "Proident veniam officia proident aliqua nisi elit commodo sit cupidatat officia voluptate eiusmod non. Dolor ea aute est ad ea aliquip fugiat duis voluptate enim enim culpa.",
                   "spans": []
                 }
               ],
               "sdb_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Ex commodo do non exercitation amet culpa exercitation officia ipsum nisi irure. Irure exercitation sunt cupidatat in labore laboris. Dolor veniam ut eu ea commodo est officia amet qui non consequat aliqua eu.",
+                  "text": "Mollit mollit nostrud nostrud duis proident laboris nulla qui mollit ut dolore quis excepteur. Fugiat proident exercitation proident. Sunt fugiat exercitation est nulla sint cupidatat enim in proident cillum pariatur tempor non.",
                   "spans": []
                 }
               ],
               "chambre_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Incididunt velit reprehenderit sint sunt aliquip id laborum dolore labore minim elit nisi elit. Elit consectetur culpa amet veniam culpa consectetur sint aliqua deserunt tempor est voluptate officia do. Ullamco non consectetur id dolor aliquip non.",
+                  "text": "Esse proident sint proident nulla pariatur. Fugiat quis cupidatat voluptate esse aliquip. Dolore tempor sit voluptate aliqua fugiat ex occaecat.",
                   "spans": []
                 }
               ],
               "description_biens": [
                 {
                   "type": "paragraph",
-                  "text": "Qui magna amet adipisicing qui duis mollit aute deserunt nisi anim consectetur eiusmod qui sit. Quis adipisicing et incididunt.",
+                  "text": "Eu voluptate esse ullamco excepteur. Eiusmod labore sunt Lorem Lorem.",
                   "spans": []
                 }
               ],
               "surface_habitable": [
                 {
                   "type": "paragraph",
-                  "text": "Id nostrud nulla eu fugiat ipsum in. Sunt ullamco quis labore sint commodo esse. Est consequat est ut sit enim ad tempor minim occaecat labore aute proident sint nulla ipsum.",
+                  "text": "Laboris proident ex veniam exercitation commodo excepteur. Commodo aute eu cillum exercitation nostrud nisi irure quis officia minim amet ex cillum culpa. Mollit ex mollit minim eu tempor commodo ea nisi cillum ut.",
                   "spans": []
                 }
               ],
               "superficie_terrain": [
                 {
                   "type": "paragraph",
-                  "text": "Esse minim ad est esse.",
+                  "text": "Reprehenderit ipsum nostrud esse commodo. Eu aliquip voluptate duis qui dolore ut consectetur eu mollit sit dolor duis do pariatur.",
                   "spans": []
                 }
               ],
               "type_env": [
                 {
                   "type": "paragraph",
-                  "text": "Sit irure ullamco ipsum reprehenderit deserunt sunt laboris ex Lorem minim.",
+                  "text": "In irure anim est et consectetur culpa consectetur nulla. Nulla proident nostrud amet.",
                   "spans": []
                 }
               ],
               "nbr_etages": [
                 {
                   "type": "paragraph",
-                  "text": "Deserunt ut consectetur consectetur magna sunt. Nulla ad dolore cupidatat magna aliqua est mollit.",
+                  "text": "Velit pariatur et amet.",
                   "spans": []
                 }
               ],
               "lgr_facade": [
                 {
                   "type": "paragraph",
-                  "text": "Sit duis aute excepteur cupidatat excepteur ullamco sit. Nulla magna adipisicing aute duis. Ea proident amet voluptate velit nulla eiusmod commodo culpa tempor aliquip nulla eiusmod aute.",
+                  "text": "Duis aliquip cillum qui sunt sint amet. Tempor occaecat fugiat aute minim laboris consectetur aute quis nisi.",
                   "spans": []
                 }
               ],
               "garage": [
                 {
                   "type": "paragraph",
-                  "text": "Lorem enim occaecat Lorem amet adipisicing laborum mollit. Sunt laborum tempor occaecat enim ut amet pariatur et quis id amet magna esse occaecat. Aute est in sunt eiusmod aliquip dolore sint commodo anim excepteur dolor.",
+                  "text": "Nostrud in proident sint dolor laboris non ad do. Ea non labore ullamco anim.",
                   "spans": []
                 }
               ],
               "nbr_toilettes": [
                 {
                   "type": "paragraph",
-                  "text": "Tempor do nostrud eu ipsum pariatur commodo nostrud amet consectetur ex ipsum amet occaecat enim. Veniam dolore elit id veniam sit anim. Ullamco sint veniam ex est irure aute qui est tempor sint.",
+                  "text": "Dolore exercitation excepteur voluptate culpa fugiat consequat officia.",
                   "spans": []
                 }
               ],
               "nbr_parking": [
                 {
                   "type": "paragraph",
-                  "text": "Ad labore excepteur sit dolor adipisicing reprehenderit esse qui ullamco. Laborum nostrud qui irure consectetur irure irure ipsum tempor nulla.",
+                  "text": "Esse cupidatat aliquip id pariatur Lorem ad anim. Occaecat cillum occaecat amet est elit occaecat. Pariatur ut quis culpa elit aliquip sit sint irure officia et proident enim id.",
                   "spans": []
                 }
               ],
               "prix_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Velit pariatur nisi sunt quis officia adipisicing proident laborum laborum esse officia minim sunt nulla ea. Nulla et aliquip esse fugiat deserunt consequat elit labore dolor Lorem minim. Sit non ea minim sint.",
+                  "text": "Cillum amet eiusmod sint. Minim adipisicing dolore esse esse tempor quis elit enim dolor exercitation enim excepteur do magna.",
                   "spans": []
                 }
               ],
@@ -600,105 +589,105 @@
               "Disponibilite": [
                 {
                   "type": "paragraph",
-                  "text": "Adipisicing deserunt cillum sint commodo. Et proident nisi nostrud et esse eiusmod dolore nostrud consequat nisi ex ex labore.",
+                  "text": "Ad dolore cillum qui et cillum labore ex aliquip excepteur tempor officia. Ipsum nisi sint deserunt adipisicing dolor est quis aliquip esse ipsum nostrud voluptate pariatur dolor adipisicing. Et sit laboris incididunt aliqua nostrud exercitation laborum tempor sit incididunt.",
                   "spans": []
                 }
               ],
               "Rvn_cadastral": [
                 {
                   "type": "paragraph",
-                  "text": "Quis pariatur aliquip exercitation id ad culpa. Ullamco occaecat cupidatat nisi elit enim. Fugiat occaecat Lorem est officia est eu occaecat veniam ea eu.",
+                  "text": "Voluptate elit Lorem mollit incididunt commodo reprehenderit minim deserunt eu sit. Nulla Lorem in cupidatat irure. Reprehenderit sunt veniam tempor quis pariatur pariatur aute eiusmod ut laboris fugiat enim.",
                   "spans": []
                 }
               ],
               "Type_chauffage": [
                 {
                   "type": "paragraph",
-                  "text": "Deserunt consequat elit deserunt consequat mollit voluptate nisi Lorem fugiat enim amet.",
+                  "text": "Do voluptate nulla consectetur reprehenderit mollit aute proident proident officia Lorem deserunt laboris quis aute.",
                   "spans": []
                 }
               ],
               "Raccordement_eau": [
                 {
                   "type": "paragraph",
-                  "text": "Elit qui sunt ipsum velit fugiat eiusmod Lorem sint laboris pariatur nisi mollit quis.",
+                  "text": "Et elit duis ut do enim quis excepteur. Incididunt cupidatat est cillum consectetur sint nisi sunt sunt magna duis ut.",
                   "spans": []
                 }
               ],
               "Type_chassis": [
                 {
                   "type": "paragraph",
-                  "text": "Reprehenderit mollit ut est aute duis voluptate aliquip.",
+                  "text": "Aliqua id duis duis veniam sint. Reprehenderit laboris sint aute duis Lorem.",
                   "spans": []
                 }
               ],
               "Cuisine": [
                 {
                   "type": "paragraph",
-                  "text": "Dolore duis adipisicing dolore sunt reprehenderit et nostrud reprehenderit.",
+                  "text": "Amet qui id excepteur incididunt pariatur deserunt ipsum ex. Cupidatat ea elit proident aute ipsum ea amet pariatur aute amet do cupidatat labore. Do enim cupidatat laboris ad veniam sunt aute pariatur eiusmod id adipisicing.",
                   "spans": []
                 }
               ],
               "Confort_interieur": [
                 {
                   "type": "paragraph",
-                  "text": "Excepteur non sunt voluptate magna cillum exercitation pariatur enim enim cillum proident in laborum mollit. Aliquip ex non exercitation aliqua cillum irure ad excepteur nisi. Veniam velit irure elit voluptate ut occaecat laborum.",
+                  "text": "In do nostrud elit.",
                   "spans": []
                 }
               ],
               "Confort_exterieur": [
                 {
                   "type": "paragraph",
-                  "text": "Proident dolor eu exercitation enim est cupidatat reprehenderit ullamco sit officia est cupidatat velit exercitation incididunt. Nulla cupidatat id voluptate. Aliqua mollit voluptate reprehenderit adipisicing cillum pariatur aliquip.",
+                  "text": "Mollit est sunt proident magna sint sit exercitation anim proident.",
                   "spans": []
                 }
               ],
               "nbr_facades": [
                 {
                   "type": "paragraph",
-                  "text": "In aute quis nisi deserunt cupidatat dolor consequat est. Proident est quis est dolore sunt voluptate eiusmod ut laboris ullamco elit nulla. Commodo tempor proident proident tempor nulla enim aliquip Lorem incididunt eu commodo.",
+                  "text": "In minim officia sit reprehenderit commodo.",
                   "spans": []
                 }
               ],
               "Annee_construction": [
                 {
                   "type": "paragraph",
-                  "text": "Esse incididunt mollit exercitation incididunt do. Labore duis voluptate sint dolor labore minim. Cupidatat exercitation ea non labore tempor est cillum mollit dolore.",
+                  "text": "Irure irure enim cillum sint. Do incididunt sunt nulla.",
                   "spans": []
                 }
               ],
               "Etat_bien": [
                 {
                   "type": "paragraph",
-                  "text": "Cupidatat sint nostrud labore reprehenderit non in eiusmod laboris ex mollit esse. Officia Lorem do id laborum sunt non exercitation reprehenderit nulla dolor.",
+                  "text": "Amet do duis ea est proident Lorem ex cillum quis culpa mollit. Est voluptate anim eiusmod tempor cillum do reprehenderit eu sit et ipsum elit. Esse in nulla ipsum et do non tempor eiusmod.",
                   "spans": []
                 }
               ],
               "Orientation_facade_arriere": [
                 {
                   "type": "paragraph",
-                  "text": "Irure pariatur minim proident enim quis nulla minim non pariatur laborum laborum laboris cillum fugiat.",
+                  "text": "Nisi amet laboris officia consequat sunt Lorem consectetur est.",
                   "spans": []
                 }
               ],
               "Toiture": [
                 {
                   "type": "paragraph",
-                  "text": "Non ullamco labore officia Lorem nostrud. Aliqua culpa et occaecat. Do amet proident incididunt non qui fugiat dolore.",
+                  "text": "Incididunt aute ea fugiat amet do anim dolore. Sunt aliquip culpa eu. Excepteur elit non excepteur commodo exercitation minim laboris voluptate aliqua ut.",
                   "spans": []
                 }
               ],
               "installation_electrique": [
                 {
                   "type": "paragraph",
-                  "text": "Reprehenderit ad dolor amet officia fugiat sint nostrud.",
+                  "text": "Tempor ea ullamco veniam quis in cupidatat nostrud adipisicing ea pariatur tempor aute nulla culpa voluptate. Incididunt aute reprehenderit elit voluptate et enim in eiusmod elit culpa.",
                   "spans": []
                 }
               ],
               "Evacuation_eaux": [
                 {
                   "type": "paragraph",
-                  "text": "Nulla aliquip ex occaecat sint dolore aliqua laborum voluptate ad proident duis veniam amet reprehenderit eu. Nisi sit duis amet consectetur occaecat elit non esse deserunt.",
+                  "text": "Ex do voluptate aliqua voluptate labore culpa labore laborum nulla consequat amet aliqua qui incididunt. Labore sint sint amet. Adipisicing nisi fugiat ex aliquip anim dolore cillum fugiat.",
                   "spans": []
                 }
               ],
@@ -706,7 +695,7 @@
               "orientation_jardin": [
                 {
                   "type": "paragraph",
-                  "text": "Sit magna nulla elit ex pariatur et cillum veniam. Amet cillum anim pariatur adipisicing ullamco culpa irure ad.",
+                  "text": "Deserunt sint occaecat id elit sunt consequat occaecat dolore. Aliqua deserunt nulla non quis enim occaecat eiusmod do laborum aliquip pariatur ullamco exercitation Lorem adipisicing. Nisi dolore officia fugiat nostrud.",
                   "spans": []
                 }
               ],
@@ -714,42 +703,47 @@
               "orientation_terrasse": [
                 {
                   "type": "paragraph",
-                  "text": "Et exercitation aute mollit laboris mollit proident pariatur commodo magna consectetur aute ex consectetur.",
+                  "text": "Duis nisi quis consectetur est aute aute dolore irure dolor ea. Eiusmod nisi occaecat deserunt occaecat reprehenderit officia elit mollit proident Lorem culpa ea eiusmod in cupidatat.",
                   "spans": []
                 }
               ],
               "conso_primaire": [
                 {
                   "type": "paragraph",
-                  "text": "Proident est et aliqua incididunt qui fugiat. Nisi nisi pariatur ex adipisicing dolore laboris nulla proident nisi dolor. Nostrud magna consectetur ipsum mollit fugiat sit non non aliquip enim et qui minim sint sunt.",
+                  "text": "Ad consectetur excepteur ea ex consectetur culpa dolor nostrud officia aliquip do consectetur.",
                   "spans": []
                 }
               ],
               "classe_energie": [
                 {
                   "type": "paragraph",
-                  "text": "Esse laborum eiusmod cupidatat esse enim dolore cillum non. Pariatur qui Lorem anim dolor magna sunt mollit duis ad.",
+                  "text": "Nostrud esse voluptate id est consectetur tempor et veniam consequat labore aliqua reprehenderit laborum. Ad ipsum tempor ex aliqua sunt sit incididunt nisi consectetur aute minim.",
                   "spans": []
                 }
               ],
               "rapport_peb": [
                 {
                   "type": "paragraph",
-                  "text": "Ut cupidatat irure nisi.",
+                  "text": "Id incididunt dolore laboris ullamco eu pariatur non.",
                   "spans": []
                 }
               ],
               "emission_co2": [
                 {
                   "type": "paragraph",
-                  "text": "Occaecat sit nisi do. Commodo aute nisi sint tempor.",
+                  "text": "Laboris ullamco ipsum duis voluptate eu ullamco ipsum dolore aliquip sint occaecat. Elit proident velit exercitation minim esse minim officia adipisicing. Veniam excepteur commodo exercitation.",
                   "spans": []
                 }
               ],
-              "option": false,
+              "option": true,
               "typeFiltre": "all",
-              "postal_type": "5140",
-              "code_postal": 31
+              "postal_type": [
+                {
+                  "type": "paragraph",
+                  "text": "Cupidatat laboris est ullamco ea nostrud ullamco ea velit ipsum duis irure proident.",
+                  "spans": []
+                }
+              ]
             },
             "slice_type": "card_biens"
           }
