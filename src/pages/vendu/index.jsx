@@ -166,6 +166,8 @@ const Avendre = ({ pages, locations }) => {
     <NavPage current='Nos biens'>
       <H1>{"Nos Biens vendu"}</H1>
       <FilterProduct
+        pages={pages}
+        location={locations}
         filterValueSelected={onFilterValueSelected}
         postalValueSelected={onPostalValueSelected}
       />

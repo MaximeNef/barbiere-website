@@ -53,7 +53,16 @@ const FilterProduct = (props) => {
           >
             {" "}
             <option value='all'>{"Localisation (code postal)"}</option>{" "}
-            {props.pages.map((page) => {
+            {props.pages?.map((page) => {
+              return page.data.slices[0].primary.code_postal === null ? (
+                <></>
+              ) : (
+                <option value={`${page.data.slices[0].primary.code_postal}`}>
+                  {page.data.slices[0].primary.code_postal}
+                </option>
+              );
+            })}
+            {props.locations?.map((page) => {
               return page.data.slices[0].primary.code_postal === null ? (
                 <></>
               ) : (

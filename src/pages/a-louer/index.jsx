@@ -2,7 +2,6 @@ import NavPage from "../../components/all/Nav-page";
 import CardBien from "../../components/biens/cardBiens";
 import { createClient } from "../../../prismicio";
 import Container from "../../components/shared/container";
-
 import CardBienLouer from "../../components/biens/cardBienLouer";
 import MotionRight from "../../components/shared/motion-CardRight";
 import CardCTA from "../../components/shared/card-Cta";
@@ -10,6 +9,7 @@ import H1 from "../../components/shared/h1";
 import CardDesktop from "../../components/shared/card-cta-desktop";
 import FilterProduct from "../../components/FilterProduct";
 import { useState } from "react";
+
 const Alouer = ({ pages }) => {
   const [newProductList, setNewProductList] = useState(pages);
   const [filterValue, setFilterValue] = useState("all");
@@ -103,6 +103,7 @@ const Alouer = ({ pages }) => {
     <NavPage current='Nos biens'>
       <H1>{"Nos biens à Louer"}</H1>
       <FilterProduct
+        pages={pages}
         filterValueSelected={onFilterValueSelected}
         postalValueSelected={onPostalValueSelected}
       />
