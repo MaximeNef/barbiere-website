@@ -172,7 +172,7 @@ const CardVendu = (props) => {
                   <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[240px]'>
                     <Container className='absolute z-10  top-[-2px] left-[-1px] '>
                       <MyImage
-                        source={"/assets/VenduBanner.svg"}
+                        source={"/assets/bannerloué.svg"}
                         h={98}
                         w={98}
                       />
@@ -302,9 +302,9 @@ const CardVendu = (props) => {
               )}
             </Link>
           ))}{" "}
-          <Container className=' h-[50px] ' />
         </Container>{" "}
-      </MotionCardRight>
+      </MotionCardRight>{" "}
+      <Container className=' min-h-[50px]' />
     </>
   );
 };

@@ -53,7 +53,10 @@ const FilterProduct = (props) => {
           >
             {" "}
             <option value='all'>{"Localisation (code postal)"}</option>{" "}
-            {props.pages?.map((page) => {
+            {props.withoutDuplicates.map((codePostal) => {
+              return <option value={codePostal}>{codePostal}</option>;
+            })}
+            {/* {props.pages?.map((page) => {
               return page.data.slices[0].primary.code_postal === null ? (
                 <></>
               ) : (
@@ -70,7 +73,7 @@ const FilterProduct = (props) => {
                   {page.data.slices[0].primary.code_postal}
                 </option>
               );
-            })}
+            })} */}
           </select>
         </Container>{" "}
       </Container>
