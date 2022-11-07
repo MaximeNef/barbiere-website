@@ -17,7 +17,10 @@ const Alouer = ({ pages }) => {
   const [newCodeList, setNewCodeList] = useState([]);
   {
     pages.map((page) => {
-      if (page.data.slices[0].primary.vendu === true) {
+      if (
+        page.data.slices[0].primary.vendu === null ||
+        page.data.slices[0].primary.vendu === false
+      ) {
         if (
           newCodeList.text !== page?.data.slices[0].primary.postal_type[0]?.text
         ) {

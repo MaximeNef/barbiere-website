@@ -18,7 +18,10 @@ const Avendre = ({ pages }) => {
   const [newCodeList, setNewCodeList] = useState([]);
   {
     pages.map((page) => {
-      if (page.data.slices[0].primary.vendu == false) {
+      if (
+        page.data.slices[0].primary.vendu === null ||
+        page.data.slices[0].primary.vendu === false
+      ) {
         if (
           newCodeList.text !== page?.data.slices[0].primary.postal_type[0]?.text
         ) {
@@ -27,7 +30,6 @@ const Avendre = ({ pages }) => {
       }
     });
   }
-
   const withoutDuplicates = [...new Set(newCodeList)];
   console.log(withoutDuplicates, "code postal AAA");
 
