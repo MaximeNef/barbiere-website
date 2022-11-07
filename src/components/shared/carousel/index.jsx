@@ -63,7 +63,7 @@ export default function Carousel(props) {
                     transition={{ duration: 0.7 }}
                   >
                     <Container className=' bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo  w-full '>
-                      <Container className=' rounded-[18px] relative    min-h-[300px] md:min-h-[600px] z-30 '>
+                      <Container className=' rounded-[18px] relative    min-h-[300px] md:min-h-[500px] z-30 '>
                         <MyImage
                           source={item}
                           layout='fill'

@@ -46,7 +46,7 @@ export default function Services() {
       },
       href1: {
         name: "•Formulaire des energies ",
-        desc: "https://www.cwape.be/formulaire-de-reprise-des-energies",
+        desc: "https://www.cwape.be/docs/?doc=919",
       },
       href2: {
         name: "•Formulaire changement usager ",
@@ -56,6 +56,7 @@ export default function Services() {
         name: "•Formulaire de déménagement",
         desc: "https://www.swde.be/sites/default/files/2022-06/form.demenagement_fr.pdf",
       },
+
       btn: "En savoir plus",
     },
   ];

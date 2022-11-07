@@ -26,79 +26,23 @@ const Alouer = ({ pages }) => {
   }
   const withoutDuplicates = [...new Set(newCodeList)];
   console.log(withoutDuplicates, "code postal AAA");
+
   const filteredProductList = newProductList.filter((page) => {
     if (filterValue === "all") {
-      if (postalValue === page?.data.slices[0].primary.postal_type) {
-        return page && page?.data.slices[0].primary.postal_type == postalValue;
-      } else if (postalValue === "all") {
+      if (postalValue === "all") {
         return page;
       }
-    } else if (filterValue === "maison") {
-      if (postalValue === page?.data.slices[0].primary.postal_type) {
-        return (
-          page?.data.slices[0].primary.typeFiltre === "maison" &&
-          page?.data.slices[0].primary.postal_type == postalValue
-        );
-      } else if (postalValue === "all") {
-        return page?.data.slices[0].primary.typeFiltre === "maison";
+      if (postalValue === page?.data.slices[0].primary.postal_type[0]?.text) {
+        return page;
       }
-    } else if (filterValue === "appartement") {
-      if (postalValue === page?.data.slices[0].primary.postal_type) {
-        return (
-          page?.data.slices[0].primary.typeFiltre === "appartement" &&
-          page?.data.slices[0].primary.postal_type == postalValue
-        );
-      } else if (postalValue === "all") {
-        return page?.data.slices[0].primary.typeFiltre === "appartement";
+    }
+    if (filterValue === page?.data.slices[0].primary.typeFiltre) {
+      if (postalValue === "all") {
+        return page;
       }
-      return page.data.slices[0].primary.typeFiltre === "appartemement ";
-    } else if (filterValue === "terrain") {
-      if (postalValue === page?.data.slices[0].primary.postal_type) {
-        return (
-          page?.data.slices[0].primary.typeFiltre === "terrain" &&
-          page?.data.slices[0].primary.postal_type == postalValue
-        );
-      } else if (postalValue === "all") {
-        return page?.data.slices[0].primary.typeFiltre === "terrain";
+      if (postalValue === page?.data.slices[0].primary.postal_type[0]?.text) {
+        return page;
       }
-    } else if (filterValue === "bureaux") {
-      if (postalValue === page?.data.slices[0].primary.postal_type) {
-        return (
-          page?.data.slices[0].primary.typeFiltre === "bureaux" &&
-          page?.data.slices[0].primary.postal_type == postalValue
-        );
-      } else if (postalValue === "all") {
-        return page?.data.slices[0].primary.typeFiltre === "bureaux";
-      }
-    } else if (filterValue === "garage") {
-      if (postalValue === page?.data.slices[0].primary.postal_type) {
-        return (
-          page?.data.slices[0].primary.typeFiltre === "garage" &&
-          page?.data.slices[0].primary.postal_type == postalValue
-        );
-      } else if (postalValue === "all") {
-        return page?.data.slices[0].primary.typeFiltre === "garage";
-      }
-    } else if (filterValue === "entrepot") {
-      if (postalValue === page?.data.slices[0].primary.postal_type) {
-        return (
-          page?.data.slices[0].primary.typeFiltre === "entrepot" &&
-          page?.data.slices[0].primary.postal_type == postalValue
-        );
-      } else if (postalValue === "all") {
-        return page?.data.slices[0].primary.typeFiltre === "entrepot";
-      }
-    } else if (filterValue === "immeuble mixte") {
-      if (postalValue === page?.data.slices[0].primary.postal_type) {
-        return (
-          page?.data.slices[0].primary.typeFiltre === "immeuble mixte" &&
-          page?.data.slices[0].primary.postal_type == postalValue
-        );
-      } else if (postalValue === "all") {
-        return page?.data.slices[0].primary.typeFiltre === "immeuble mixte";
-      }
-    } else {
-      return page;
     }
   });
 
