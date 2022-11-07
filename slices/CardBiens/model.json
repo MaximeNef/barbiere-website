@@ -412,7 +412,8 @@
               "bureaux",
               "garage",
               "entrepot",
-              "immeuble mixte"
+              "immeuble mixte",
+              "ferme"
             ],
             "default_value": "all"
           }
