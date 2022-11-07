@@ -83,12 +83,12 @@ export default function Services() {
           }
           <span className=' py-2 md:py-4'>
             {
-              "accompagnement, assistance et conseils jusqu’à la signature de l’acte de vente chez votre Notaire."
+              "Accompagnement, assistance et conseils jusqu’à la signature de l’acte de vente chez votre Notaire,"
             }
           </span>
           <span>
             {
-              "Dans le respect le plus strict des règles déontologiques imposées par notre profession."
+              "dans le respect le plus strict des règles déontologiques imposées par notre profession."
             }
           </span>
         </h3>

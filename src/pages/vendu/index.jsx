@@ -98,7 +98,7 @@ const Avendre = ({ pages, locations }) => {
 
   return (
     <NavPage current='Nos biens'>
-      <H1>{"Nos Biens vendu"}</H1>
+      <H1>{"Nos Biens vendus"}</H1>
       <FilterProduct
         pages={pages}
         location={locations}
