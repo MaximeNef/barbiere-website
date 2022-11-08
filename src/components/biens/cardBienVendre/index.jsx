@@ -171,7 +171,7 @@ const CardBienVendre = (props) => {
                 {page.data.slices[0].primary.vendu ? (
                   <div className='md:w-fit' />
                 ) : (
-                  <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-4 mx-auto md:max-w-[390px]  md:items-center md:mx-6'>
+                  <Container className='rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[390px] mr-3 cursor-pointer'>
                     <Container className='relative min-w-[340] min-h-[206px] md:w-[390px] md:min-h-[230px]'>
                       <Container className='absolute z-10  top-[-2px] '>
                         {page.data.slices[0].primary.option ? (

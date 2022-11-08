@@ -18,14 +18,9 @@ const Alouer = ({ pages }) => {
   {
     pages.map((page) => {
       if (
-        page.data.slices[0].primary.vendu === null ||
-        page.data.slices[0].primary.vendu === false
+        newCodeList.text !== page?.data.slices[0].primary.postal_type[0]?.text
       ) {
-        if (
-          newCodeList.text !== page?.data.slices[0].primary.postal_type[0]?.text
-        ) {
-          newCodeList.push(page?.data.slices[0].primary.postal_type[0]?.text);
-        }
+        newCodeList.push(page?.data.slices[0].primary.postal_type[0]?.text);
       }
     });
   }
@@ -77,7 +72,11 @@ const Alouer = ({ pages }) => {
       >
         <CardDesktop />
       </MotionRight>
-      <CardBienLouer pages={filteredProductList} />
+      <CardBienLouer
+        pages={filteredProductList}
+        filterValue={filterValue}
+        postalValue={postalValue}
+      />
       <Container className='relative z-20 h-44 w-full'></Container>
     </NavPage>
   );
