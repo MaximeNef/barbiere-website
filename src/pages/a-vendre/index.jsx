@@ -78,7 +78,11 @@ const Avendre = ({ pages }) => {
       >
         <CardDesktop />
       </MotionRight>
-      <CardBienVendre pages={filteredProductList} />
+      <CardBienVendre
+        pages={filteredProductList}
+        filterValue={filterValue}
+        postalValue={postalValue}
+      />
       {/* <Container className='relative z-20 h-44 w-full'></Container> */}
     </NavPage>
   );
