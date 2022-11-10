@@ -57,7 +57,7 @@ const Alouer = ({ pages }) => {
   }
   return (
     <NavPage current='Nos biens'>
-      <H1>{"Nos biens à Louer"}</H1>
+      <H1>{"Nos biens à louer"}</H1>
       <FilterProduct
         pages={pages}
         withoutDuplicates={withoutDuplicates}

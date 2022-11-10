@@ -121,7 +121,7 @@ const Footer = ({ current }) => {
               </Link>
             </span>
             {
-              " RC professionnelle : AXA Belgium Nr 7304044070280 et Nr 7304010470284"
+              ". RC professionnelle : AXA Belgium Nr 7304044070280 et Nr 7304010470284"
             }
           </p>
           <p className='md:text-[13px] text-[11px] my-3 '>

@@ -47,16 +47,16 @@ export default function Agence() {
         >
           <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-5 md:mt-12 '>
             {
-              "Forte d’une expérience de plus de 20 années dans l’immobilier et la construction, "
+              "Forte d’une expérience de plus de 20 années dans l’immobilier et la construction,"
             }
             <span className='py-2 md:py-4'>
               {
-                " notre équipe d’agents immobiliers (agréés IPI), vous assurera un service de qualité, sur mesure, pour louer et vendre votre bien immobilier au mieux de vos intérêts."
+                "notre équipe d’agents immobiliers (agréés IPI) vous assurera un service de qualité, sur mesure,"
               }
             </span>
             <span>
               {
-                "Nous sommes à votre écoute, pour vous apporter des conseils avisés et vous accompagner pour une valorisation optimale de votre bien immobilier."
+                "pour louer et vendre votre bien immobilier au mieux de vos intérêts."
               }
             </span>
           </h3>
@@ -68,10 +68,13 @@ export default function Agence() {
           animate='visible'
           transition={{ duration: 0.3, delay: 0.3 }}
         >
-          <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default mt-5  md:mt-12 md:mb-10 '>
+          <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default mt-5  md:mt-12 md:mb-10 md:mx-[15%] '>
             {
-              "Notre équipe est à votre écoute, pour vous apporter des conseils avisés et vous accompagner pour une valorisation optimale de votre bien immobilier."
+              "Notre équipe est à votre écoute pour vous apporter des conseils avisés et vous accompagner"
             }
+            <span className='md:py-4'>
+              {"pour une valorisation optimale de votre bien immobilier."}
+            </span>
           </h3>
         </MotionTop>{" "}
         <MotionRight

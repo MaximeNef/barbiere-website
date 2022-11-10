@@ -31,7 +31,7 @@ export default function Biens({ pages, locations }) {
         />
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <H1>{"Nos Biens"}</H1>
+      <H1>{"Nos biens"}</H1>
       <MotionBottom
         initial='hidden'
         animate='visible'

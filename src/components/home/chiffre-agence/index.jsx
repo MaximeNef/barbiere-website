@@ -20,7 +20,7 @@ const ChiffreAgence = () => {
           <CardChiffre
             img='/assets/starsImmo.svg'
             nbr={"98%"}
-            txt={" de satisfaction client vous ne repartirez pas déçus "}
+            txt={"de satisfaction client. Vous ne repartirez pas déçus"}
           />
           <CardChiffre
             img='/assets/Language.png'
