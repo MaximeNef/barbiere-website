@@ -25,15 +25,17 @@ const CardBienVendu = (props) => {
                   <Container className='absolute z-10  top-[-2px] left-[-1px] '>
                     <MyImage source={"/assets/VenduBanner.svg"} h={98} w={98} />
                   </Container>
-                  <MyImage
-                    source={page.data.slices[0].primary.Image_bien.url}
-                    className='rounded-t-[20px] md:w-[400px] md:h-[230px]  '
-                    w={340}
-                    h={206}
-                    sizes='(max-width: 400px) 100vw,
+                  {page.data.slices[0].primary.Image_bien.url ? (
+                    <MyImage
+                      source={page.data.slices[0].primary.Image_bien.url}
+                      className='rounded-t-[20px] md:w-[400px] md:h-[230px]  '
+                      w={340}
+                      h={206}
+                      sizes='(max-width: 400px) 100vw,
                     (max-width: 200px) 50vw,
                     33vw'
-                  />{" "}
+                    />
+                  ) : null}
                   <Container className='absolute bottom-1 left-1'>
                     {page.data.slices[0].primary.peb == "PEB-A" ? (
                       <MyImage source={"/assets/peb-a.png"} h={20} w={68} />
