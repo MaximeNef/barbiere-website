@@ -5,7 +5,9 @@ import CardCTA from "../../shared/card-Cta";
 import Container from "../../shared/container";
 import Flex from "../../shared/flex";
 import MyImage from "../../shared/myimage";
-
+import BienAvendre from "../bienAvendre";
+import BienOptions from "../bienOptions";
+import BienVendu from "../bienVendu";
 const CardBienLouer = (props) => {
   console.log(props.pages, "bienVendresss");
   const [index, setIndex] = useState(0);
@@ -13,12 +15,17 @@ const CardBienLouer = (props) => {
   return (
     <Container className='md:flex md:flex-row md:flex-wrap md:w-full md:justify-center md:items-center '>
       {" "}
-      {props.pages.map((page, i) => (
+      {/* {props.pages.map((page, i) => (
         <Container className='md:flex md:flex-row md:flex-wrap md:w-fit '>
-          <Link href={`/a-louer/${page.uid}`} key={page.uid} passHref>
-            {props.postalValue !== "all" || props.filterValue !== "all" ? (
-              <div>
-                <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[390px] mr-3 cursor-pointer'>
+          <Link href={`/a-louer/${page.uid}`} key={page.uid} passHref> */}
+      {props.postalValue !== "all" || props.filterValue !== "all" ? (
+        <div>
+          <Container className='md:flex md:flex-row md:flex-wrap md:w-fit justify-center'>
+            <BienAvendre pages={props.pages} />
+            <BienOptions pages={props.pages} />
+            <BienVendu pages={props.pages} />
+          </Container>
+          {/* <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[390px] mr-3 cursor-pointer'>
                   <Container className='relative min-w-[350px] min-h-[206px] md:min-w-[390px] md:min-h-[230px]'>
                     <Container className='absolute z-10  top-[-2px] '>
                       {page.data.slices[0].primary.vendu ? (
@@ -169,11 +176,14 @@ const CardBienLouer = (props) => {
                       </Container>
                     </Flex>
                   </Container>{" "}
-                </Container>
-              </div>
-            ) : (
-              <div>
-                {page.data.slices[0].primary.vendu ? (
+                </Container> */}
+        </div>
+      ) : (
+        <div>
+          <Container className='md:flex md:flex-row md:flex-wrap md:w-fit justify-center'>
+            <BienAvendre pages={props.pages} />
+          </Container>
+          {/* {page.data.slices[0].primary.vendu ? (
                   <div className='md:w-fit' />
                 ) : (
                   <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[390px] mr-3 cursor-pointer'>
@@ -325,12 +335,12 @@ const CardBienLouer = (props) => {
                       </Flex>
                     </Container>{" "}
                   </Container>
-                )}{" "}
-              </div>
-            )}
-          </Link>{" "}
+                )}{" "} */}
+        </div>
+      )}
+      {/* </Link>{" "}
         </Container>
-      ))}
+      ))} */}
     </Container>
   );
 };
