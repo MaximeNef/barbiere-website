@@ -3,7 +3,7 @@ import MyImage from "../../../shared/myimage";
 
 const CardChiffre = (props) => {
   return (
-    <Container className='rounded-[20px] p-5 bg-white shadow-cardChiffre  border-2 mx-6 relative mb-6 mt-8 w-[100%]'>
+    <Container className='rounded-[20px] p-5 bg-white shadow-cardChiffre  border-2 mx-6 relative mb-6 mt-8 md:w-[100%]'>
       <Container className='absolute left-1/2 transform -translate-x-1/2 -translate-y-[65px] bg-gray-100 rounded-full p-4'>
         <MyImage
           source={props.img}
