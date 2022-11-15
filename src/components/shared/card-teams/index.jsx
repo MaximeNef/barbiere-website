@@ -43,7 +43,7 @@ const CardTeams = (props) => {
               </Link>
             </Container>
           </Flex>{" "}
-          <P className=' mb-2 mx-auto'>{props.ipi}</P>
+          <P className=' mb-2 mx-auto '>{props.ipi}</P>
         </Container>
       </Container>
     </Container>
