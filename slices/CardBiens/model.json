@@ -413,7 +413,8 @@
               "garage",
               "entrepot",
               "immeuble mixte",
-              "ferme"
+              "ferme",
+              "commerce"
             ],
             "default_value": "all"
           }

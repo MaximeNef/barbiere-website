@@ -24,8 +24,10 @@ const ChiffreAgence = () => {
           />
           <CardChiffre
             img='/assets/Language.png'
-            nbr={"4"}
-            txt={"langues étrangères parlées au sein de l’agence"}
+            nbr={"3"}
+            txt={
+              "langues étrangères parlées au sein de l'agence (néerlandais, anglais, allemand)"
+            }
           />
         </Container>
         <Container className='md:max-w-[50%] md:flex md:flex-row'>

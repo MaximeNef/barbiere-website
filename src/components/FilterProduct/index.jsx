@@ -44,6 +44,7 @@ const FilterProduct = (props) => {
             <option value='entrepot'>Entrepôt</option>
             <option value='immeuble mixte'>Immeuble mixte</option>
             <option value='ferme'>Ferme</option>
+            <option value='commerce'>Commerce</option>
           </select>
         </Container>
         <Container className='md:w-full'>

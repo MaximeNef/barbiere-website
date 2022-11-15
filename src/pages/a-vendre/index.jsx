@@ -58,7 +58,7 @@ const Avendre = ({ pages }) => {
 
   return (
     <NavPage current='Nos biens'>
-      <H1>{"Nos Biens à vendre"}</H1>{" "}
+      <H1>{"Nos biens à vendre"}</H1>{" "}
       <FilterProduct
         pages={pages}
         withoutDuplicates={withoutDuplicates}

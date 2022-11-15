@@ -9,6 +9,7 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import MyImage from "../myimage";
 import Container from "../container";
 import MotionRight from "../motion-CardRight";
+import { useEffect } from "react";
 /**
  * Carousel component for nextJS and Tailwind.
  * Using external library react-easy-swipe for swipe gestures on mobile devices (optional)
@@ -25,6 +26,16 @@ export default function Carousel(props) {
       currentSlide === props.photo.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(newSlide);
   };
+
+  useEffect(() => {
+    setInterval(function () {
+      let newSlide =
+        currentSlide <= props.photo.length - 2
+          ? currentSlide + 1
+          : (currentSlide = 0);
+      setCurrentSlide(newSlide);
+    }, 4000);
+  }, [currentSlide]);
 
   const handlePrevSlide = () => {
     let newSlide =
@@ -57,22 +68,16 @@ export default function Carousel(props) {
                   <Container className='absolute top-[130px] left-20 md:left-[110vh]'>
                     <MyImage source='/assets/LogoAgence.svg' w={600} h={800} />
                   </Container>
-                  <MotionRight
-                    initial='hidden'
-                    animate='visible'
-                    transition={{ duration: 0.7 }}
-                  >
-                    <Container className=' bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo  w-full '>
-                      <Container className=' rounded-[18px] relative    min-h-[300px] md:min-h-[500px] z-30 '>
-                        <MyImage
-                          source={item}
-                          layout='fill'
-                          objectFit='cover'
-                          className='animate-fadeIn rounded-[16px] '
-                        />
-                      </Container>
-                    </Container>{" "}
-                  </MotionRight>
+                  <Container className=' bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo  w-full '>
+                    <Container className=' rounded-[18px] relative    min-h-[300px] md:min-h-[500px] z-30 '>
+                      <MyImage
+                        source={item}
+                        layout='fill'
+                        objectFit='cover'
+                        className='animate-fadeIn rounded-[16px] '
+                      />
+                    </Container>
+                  </Container>{" "}
                 </Container>
               );
             }

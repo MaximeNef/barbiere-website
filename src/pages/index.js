@@ -137,7 +137,7 @@ export default function Home({ pages, locations }) {
               }
               user={"M.J."}
               region={"Crehen"}
-            />{" "}
+            />
             <DynamicAvis
               txt={
                 "Nous avons fait appel à l’agence Barbière dans le cadre de la vente de deux maisons: l’une située à Dinant et l’autre à Beauraing.L’estimation des bâtiments s’est faite  au prix le plus juste compte tenu de la nature des biens mis en vente. Valérie et Monsieur Barbière ont effectué les visites de façon très professionnelle.  Les maisons ont été vendues assez rapidement.L’immobilière se charge de toutes les modalités et tracasseries administratives: offre d’achat, contact avec le notaire, etc.Nous sommes entièrement satisfaits des services proposés par M.Barbière et ses collaborateurs."
