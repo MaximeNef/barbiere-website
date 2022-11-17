@@ -18,8 +18,11 @@ const CardTeams = (props) => {
         />
       </Container>{" "}
       <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] drop-shadow-lg z-10 mt-[-50px]'>
-        <Container className='bg-white rounded-[18px] pt-[15px] md:min-h-[210px]'>
-          <H3 className='mx-auto'>{props.nom}</H3>
+        <Container className='bg-white rounded-[18px] pt-[15px] md:min-h-[240px]'>
+          <H3 className='mx-auto'>{props.nom}</H3>{" "}
+          <h3 className='mx-auto text-[20px] md:text-[20px] font-extralight leading-[26px] text-center flex flex-col items-start justify-center text-default mb-1'>
+            {props.bac}
+          </h3>
           <h3 className='mx-auto text-[20px] md:text-[24px] font-light leading-[26px] text-center flex flex-col items-start justify-center text-default'>
             {props.post}
           </h3>

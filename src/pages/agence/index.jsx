@@ -105,11 +105,12 @@ export default function Agence() {
             <CardTeams
               img={"/assets/barbiere.jpg"}
               nom={"François Barbière "}
-              post={"Agent Immobilier - Associé"}
+              post={"Agent Immobilier - Gérant"}
               ipi={"Nr d’agréation IPI : 506259"}
               region={"Hannut / Waremme & leurs villages"}
               tel={"019 30 57 32"}
               mail={"fb@barbiere.be"}
+              bac={"Expert Immobilier IFAPME"}
             />
           </MotionRight>{" "}
           <MotionRight
@@ -125,6 +126,7 @@ export default function Agence() {
               region={"Liège / Embourg / Beaufays"}
               tel={"0477 75 44 10"}
               mail={"sb@barbiere.be"}
+              bac={"Bachelier en Immobilier"}
             />
           </MotionRight>{" "}
           <MotionRight
@@ -140,6 +142,7 @@ export default function Agence() {
               region={"Hélécine / Orp-Jauche"}
               tel={"0497 40 85 29"}
               mail={"cg@barbiere.be"}
+              bac={"Bachelière en Immobilier"}
             />
           </MotionRight>{" "}
           <MotionRight
@@ -155,6 +158,7 @@ export default function Agence() {
               region={"Braives / Wasseiges"}
               tel={"0479 54 76 01"}
               mail={"gv@barbiere.be"}
+              bac={"Bachelière en Immobilier"}
             />
           </MotionRight>
           <MotionRight
@@ -170,6 +174,7 @@ export default function Agence() {
               region={"Namur / Beauraing / Dinant"}
               tel={"0498 71 40 57"}
               mail={"vc@barbiere.be"}
+              bac={"AESI"}
             />
           </MotionRight>
           <MotionRight
@@ -185,6 +190,7 @@ export default function Agence() {
               region={"Huy / Héron / Burdinne / Andenne"}
               tel={"0473 29 00 70"}
               mail={"zl@barbiere.be"}
+              bac={"Bachelière en Immobilier"}
             />
           </MotionRight>
           <MotionRight
@@ -195,11 +201,12 @@ export default function Agence() {
             <CardTeams
               img={"/assets/lisa.jpg"}
               nom={"Lisa Yodts"}
-              post={"Stagiaire"}
+              post={"Stagiaire en Immobilier"}
               ipi={""}
               region={""}
               tel={"019 30 57 32"}
               mail={"ly@barbiere.be"}
+              bac={""}
             />
           </MotionRight>
         </Container>
