@@ -43,7 +43,7 @@ export default function Home({ pages, locations }) {
       <Head>
         <title>{"Barbiere-Immo "}</title>
         <meta
-          name='Barbiere immobilier'
+          name='description'
           content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
         />
         <link rel='shortcut icon' href='/favicon.ico' />
