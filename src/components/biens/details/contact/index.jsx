@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import Container from "../../../shared/container";
 import H3 from "../../../shared/h3";
@@ -13,9 +14,13 @@ const CardContact = () => {
           "Vous souhaitez plus de renseignements et/ou prendre rendez-vous pour visiter ce bien ?"
         }
       </p>
-      <Container className='bg-[#43A8AA] rounded-[10px] mt-4'>
-        <p className='mx-auto text-white py-2 '>{"contactez-nous"}</p>
-      </Container>
+      <Link href='/contact'>
+        <a>
+          <Container className='bg-[#43A8AA] rounded-[10px] mt-4'>
+            <p className='mx-auto text-white py-2 '>{"contactez-nous"}</p>
+          </Container>
+        </a>
+      </Link>
     </Container>
   );
 };
