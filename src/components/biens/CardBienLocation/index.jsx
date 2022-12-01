@@ -35,7 +35,11 @@ const CardBienLocation = (props) => {
                     )}
                   </Container>
                   <MyImage
-                    source={page.data.slices[0].primary.Image_bien.url}
+                    source={
+                      page.data.slices[0].primary.Image_bien.url
+                        ? page.data.slices[0].primary.Image_bien?.url
+                        : "/assets/logoB.svg"
+                    }
                     className='rounded-t-[20px] md:w-[420px] md:h-[230px]'
                     w={340}
                     h={206}

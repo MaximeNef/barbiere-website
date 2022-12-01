@@ -45,7 +45,7 @@ export default function Agence() {
           animate='visible'
           transition={{ duration: 0.3, delay: 0.3 }}
         >
-          <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-5 md:mt-12 '>
+          <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default  mt-5 md:mt-8 '>
             {
               "Forte d’une expérience de plus de 20 années dans l’immobilier et la construction,"
             }

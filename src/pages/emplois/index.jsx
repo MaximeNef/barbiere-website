@@ -39,7 +39,7 @@ export default function Emplois() {
         animate='visible'
         transition={{ duration: 0.3, delay: 0.3 }}
       >
-        <h3 className='	 mt-12 text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default '>
+        <h3 className='	 mt-5 md:mt-8 text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default '>
           {
             "L'Immobilière François Barbière est toujours à la recherche de bons éléments pour agrandir son équipe  "
           }

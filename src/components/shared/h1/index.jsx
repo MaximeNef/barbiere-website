@@ -13,7 +13,7 @@ export default function H1(props) {
         transition={{ duration: 0.7 }}
       >
         <h1
-          className={` ${props.className} text-[40px] font-medium leading-[50px] text-center flex flex-col items-center justify-center `}
+          className={` ${props.className} text-[40px] font-medium leading-[50px] text-center flex flex-col items-center justify-center md:mt-10 `}
         >
           {props.children}
         </h1>
