@@ -54,14 +54,6 @@ export default function Biens({ pages, locations }) {
           transition={{ duration: 0.7, delay: 0.9 }}
           className='md:w-[65%] mx-auto'
         >
-          {/* <CardCTA
-            text1={"Ne manquez plus nos nouveaux biens !"}
-            text2={
-              "Quand vous trouvez enfin un bien qui correspond à vos attentes, on vous annonce qu’il est déjà vendu... En vous inscrivant cela ne vous arrivera plus !"
-            }
-            text3={"Nos biens >"}
-            src='/pages'
-          /> */}
           <CardDesktop />
         </MotionRight>
       </Container>

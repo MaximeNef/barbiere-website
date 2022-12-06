@@ -34,7 +34,7 @@ export default function Carousel(props) {
           ? currentSlide + 1
           : (currentSlide = 0);
       setCurrentSlide(newSlide);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, [currentSlide]);
@@ -72,13 +72,13 @@ export default function Carousel(props) {
                   <Container className='absolute top-[130px] left-20 md:left-[110vh]'>
                     <MyImage source='/assets/LogoAgence.svg' w={600} h={800} />
                   </Container>
-                  <Container className='  rounded-[20px] shadow-cardinfo  w-full '>
+                  <Container className='  rounded-[20px]  w-full '>
                     <Container className=' rounded-[18px] relative    min-h-[300px] md:min-h-[500px] z-30 '>
                       <MyImage
                         source={item}
                         layout='fill'
                         objectFit='cover'
-                        className='animate-fadeIn rounded-[16px] '
+                        className='animate-fadeIn rounded-[16px] transition duration-700  shadow-cardinfo '
                       />
                     </Container>
                   </Container>{" "}
@@ -94,7 +94,7 @@ export default function Carousel(props) {
         className={` m-auto  inset-y-1/2 cursor-pointer text-[#1AD9D9] z-20 absolute right-0 text-5xl`}
       />
 
-      <div className='relative flex justify-center  p-2'>
+      <div className='relative flex justify-center  p-2 '>
         {props.photo.map((_, index) => {
           return (
             <div

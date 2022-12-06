@@ -23,7 +23,7 @@ const CarteBelgique = () => {
     {
       img: "/assets/cartehome.svg",
       imgHover: "/assets/homeHover.svg",
-      adresse: "Hannut - Waremme",
+      adresse: "Hannut / Waremme",
       num: "019 30 57 32",
       carte: "/assets/carte3.svg",
     },
@@ -52,7 +52,7 @@ const CarteBelgique = () => {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
       adresse: "Namur / Dinant",
-      num: "0498 71 40 57",
+      num: "019/30.57.32",
       carte: "/assets/carte7.svg",
     },
     {

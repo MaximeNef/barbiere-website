@@ -6,7 +6,7 @@ import H3 from "../../../shared/h3";
 const CardContact = () => {
   return (
     <Container className={` p-5 rounded-[12px] shadow-cardDetails md:w-full `}>
-      <H3>{"Reservez votre bien "}</H3>
+      <H3>{"Réservez votre bien "}</H3>
       <p
         className={`mt-5 font-light text-[17px] leading-[22px] overflow-hidden md:mr-48`}
       >

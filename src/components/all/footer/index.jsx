@@ -39,7 +39,7 @@ const Footer = ({ current }) => {
           justify='between'
           className='mx-5 text-[#FFFFFF] text-[14px] md:text-[18px] leading-4 md:mx-[15%]'
         >
-          <Container className='text-start space-y-[12px]'>
+          <Container className='text-start space-y-[18px]'>
             <Link href='/' passHref>
               <a>Accueil</a>
             </Link>
@@ -79,14 +79,14 @@ const Footer = ({ current }) => {
             <Container>
               <Link href={"tel:+32493 19 30 03"} passHref>
                 <a className='text-[14px] md:text-[16px]  leading-[13px]  font-medium'>
-                  {"tel:"} {"019/30.57.32"}
+                  {"019/30.57.32"}
                 </a>
               </Link>{" "}
             </Container>
             <Container>
               <Link href={"mailto:info@barbiere.be"} passHref>
                 <a className='text-[14px] md:text-[16px]  leading-[13px]  font-medium'>
-                  {"mail:"} {"info@barbiere.be"}
+                  {"info@barbiere.be"}
                 </a>
               </Link>{" "}
             </Container>
@@ -94,7 +94,16 @@ const Footer = ({ current }) => {
         </Flex>
         <Container className='text-[#FFFFFF] '>
           <Flex justify='center' className='space-x-[8px] mb-2'>
-            <Container>
+            <Flex justify='center' className='space-x-2'>
+              <Link
+                href='https://www.youtube.com/@immobilierefrancoisbarbier1746'
+                passhref
+                target='_blank'
+              >
+                <a target='_blank'>
+                  <MyImage source={"/assets/logoYoutube.svg"} h={30} w={25} />
+                </a>
+              </Link>{" "}
               <Link
                 href='https://www.facebook.com/profile.php?id=100063790292167'
                 passhref
@@ -104,7 +113,7 @@ const Footer = ({ current }) => {
                   <MyImage source={"/assets/facebook.svg"} h={25} w={25} />
                 </a>
               </Link>{" "}
-            </Container>
+            </Flex>
           </Flex>
           <p className='text-[7px] leading-[9px] mx-3 font-light md:text-[14px] md:px-[15%] md:leading-4'>
             {
