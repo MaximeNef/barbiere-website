@@ -22,19 +22,105 @@ export default function Services() {
     {
       img: "/assets/serviceVendre.svg",
       h2: "Vendre",
-      p: "La première étape, essentielle, est gratuite et sans engagement. Elle consiste en une analyse approfondie du bien afin de pouvoir en évaluer la valeur vénale, de manière professionnelle et objective, en fonction des conditions du marché. Préalablement à la mise en vente, nous procédons à différentes recherches administratives nous permettant de vérifier de nombreux points, gage d’une vente totalement sécurisée. Selon le type de bien, nous procédons ensuite au choix des canaux de publicité, à l’élaboration de supports de présentation (dossier détaillé, photos et vidéos réalisées par des partenaires professionnels) permettant une valorisation optimale de votre bien. La promotion est réalisée de manière pro-active (mailing ciblé) auprès de nos nombreux candidats mais également sur les plus grands sites immobiliers et les réseaux sociaux. L’ensemble des visites sont réalisées par du personnel formé, encadré par les associés de l’agence, avec pour objectif une présentation complète et détaillée de chaque bien, avec la volonté de permettre à chaque acheteur d’en avoir une image positive et une parfaite compréhension. Durant tout le processus de mise en vente, les étapes de la négociation et l’examen de la solvabilité et du plan de financement de l’acheteur, nous veillons à vous tenir régulièrement au courant de leur avancement. Vous bénéficiez toujours d’un temps de réflexion et pouvez donc décider en toute quiétude. Nous nous chargeons de la rédaction du compromis de vente en des termes protégeant vos droits, en collaboration avec les études des parties, afin de concrétiser et parfaitement finaliser tous les aspects de la vente. Durant notre mission de vente, nous nous occupons de tous les détails du projet. Vous pouvez vivre ces étapes en confiance et en parfaite sérénité..",
+      p: (
+        <p>
+          La première étape, essentielle, est gratuite et sans engagement. Elle
+          consiste en une{" "}
+          <strong className='font-semibold'>
+            analyse approfondie du bien afin de pouvoir en évaluer la valeur
+            vénale,
+          </strong>{" "}
+          de manière professionnelle et objective, en fonction des conditions du
+          marché. Préalablement à la mise en vente, nous procédons à{" "}
+          <strong className='font-semibold'>
+            différentes recherches administratives
+          </strong>{" "}
+          nous permettant de vérifier de nombreux points, gage d’une vente
+          totalement sécurisée. Selon le type de bien, nous procédons ensuite au{" "}
+          <strong className='font-semibold'>
+            choix des canaux de publicité,
+          </strong>{" "}
+          à l’élaboration de supports de présentation (dossier détaillé, photos
+          et vidéos réalisées par des partenaires professionnels) permettant une{" "}
+          <strong className='font-semibold'>
+            valorisation optimale de votre bien.
+          </strong>{" "}
+          La promotion est réalisée de manière pro-active (mailing ciblé) auprès
+          de nos nombreux candidats, mais également sur les plus grands sites
+          immobiliers et les réseaux sociaux. L’ensemble des visites sont
+          réalisées par du personnel formé, encadré par les associés de
+          l’agence, avec pour objectif une{" "}
+          <strong className='font-semibold'>
+            présentation complète et détaillée de chaque bien,
+          </strong>{" "}
+          avec la volonté de permettre à chaque acheteur d’en avoir une image
+          positive et une parfaite compréhension. Durant tout le processus de
+          mise en vente, les étapes de la négociation et l’examen de la
+          solvabilité et du plan de financement de l’acheteur, nous
+          <strong className='font-semibold'>
+            veillons à vous tenir régulièrement au courant de leur avancement.
+          </strong>
+          Vous bénéficiez toujours d’un temps de réflexion et pouvez donc
+          décider en toute quiétude. Nous nous chargeons de la{" "}
+          <strong className='font-semibold'>
+            rédaction du compromis de vente en des termes protégeant vos droits,
+          </strong>{" "}
+          en collaboration avec les études des parties, afin de concrétiser et
+          parfaitement finaliser tous les aspects de la vente. Durant notre
+          mission de vente, nous nous occupons de tous les détails du projet.
+          <strong className='font-semibold'>
+            {" "}
+            Vous pouvez vivre ces étapes en confiance et en parfaite sérénité..
+          </strong>
+        </p>
+      ),
       btn: "En savoir plus",
     },
     {
       img: "/assets/Key.svg",
       h2: "Louer",
-      p: "Nous nous occupons de tout le processus de présentation de votre bien et de la sélection des meilleurs candidats, selon des critères objectifs et respectant notre code de déontologie. Une fois le(s) candidat(s) choisi(s), nous rédigeons le contrat de bail, établissons un état des lieux détaillé et nous chargeons de l'enregistrement de ceux-ci. Nous restons la première personne de contact avec votre locataire, pour solutionner les premiers problèmes éventuels. Nous restons dès lors la personne de contact durant toute la durée du bail et gérons, à la fin de la location, l'état des lieux de sortie.",
+      p: (
+        <p>
+          Nous nous occupons de tout le{" "}
+          <strong className='font-semibold'>
+            processus de présentation de votre bien et de la sélection des
+            meilleurs candidats,
+          </strong>{" "}
+          selon des critères objectifs et respectant notre code de déontologie.
+          Une fois le(s) candidat(s) choisi(s), nous rédigeons le contrat de{" "}
+          <strong className='font-semibold'>bail,</strong> établissons un{" "}
+          <strong className='font-semibold'>
+            état des lieux d’entrée détaillé
+          </strong>{" "}
+          et nous chargeons de{" "}
+          <strong className='font-semibold'>
+            l'enregistrement de ceux-ci.
+          </strong>{" "}
+          Nous restons la première personne de contact avec votre locataire,
+          pour solutionner les premiers problèmes éventuels et gérons, à la fin
+          de la location,
+          <strong className='font-semibold'>
+            l'état des lieux de sortie.{" "}
+          </strong>
+        </p>
+      ),
       btn: "En savoir plus",
     },
     {
       img: "/assets/Expert.svg",
       h2: "Expertise",
-      p: "Notre équipe d'experts se tient à votre disposition pour réaliser tout type d'expertise dans le cadre de succession, divorce, constitution de société, faillite, etc. ou simplement pour vous permettre de connaître la valeur de votre bien.Notre équipe d'experts se tient à votre disposition pour réaliser tout type d'expertise dans le cadre de succession, divorce, constitution de société, faillite, etc. ou simplement pour vous permettre de connaître la valeur de votre bien.",
+      p: (
+        <p>
+          Notre équipe d'experts se tient à votre disposition pour réaliser{" "}
+          <strong className='font-semibold'>tout type d'expertise</strong> dans
+          le cadre de succession, divorce, constitution de société, faillite,
+          etc.{" "}
+          <strong className='font-semibold'>
+            ou simplement pour vous permettre de connaître la valeur de votre
+            bien.
+          </strong>
+        </p>
+      ),
       btn: "En savoir plus",
     },
     {
