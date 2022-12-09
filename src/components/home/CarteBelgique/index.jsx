@@ -62,6 +62,13 @@ const CarteBelgique = () => {
       num: "0497 40 85 29",
       carte: "/assets/carte8.svg",
     },
+    {
+      img: "/assets/People.svg",
+      imgHover: "/assets/PeopleHover.svg",
+      adresse: "Brabant Waalon / Bruxelles",
+      num: "0497 40 85 29",
+      carte: "/assets/carte9.svg",
+    },
   ];
   const [isHovering, setIsHovered] = useState("/assets/carte0.svg");
   const [icon, setIcon] = useState(adresses.img);
