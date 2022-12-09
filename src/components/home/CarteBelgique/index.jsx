@@ -2,7 +2,6 @@ import { useState } from "react";
 import Container from "../../shared/container";
 import Flex from "../../shared/flex";
 import MyImage from "../../shared/myimage";
-import P from "../../shared/p";
 
 const CarteBelgique = () => {
   const adresses = [
@@ -10,42 +9,42 @@ const CarteBelgique = () => {
       img: "/assets/cartehome.svg",
       imgHover: "/assets/homeHover.svg",
       adresse: "Verviers / Herve",
-      num: "0473 29 00 70",
+      num: "0473/29.00.70",
       carte: "/assets/carte1.svg",
     },
     {
       img: "/assets/cartehome.svg",
       imgHover: "/assets/homeHover.svg",
       adresse: "Liège",
-      num: "0477 75 44 10",
+      num: "0477/75.44.10",
       carte: "/assets/carte2.svg",
     },
     {
       img: "/assets/cartehome.svg",
       imgHover: "/assets/homeHover.svg",
       adresse: "Hannut / Waremme",
-      num: "019 30 57 32",
+      num: "019/30.57.32",
       carte: "/assets/carte3.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
       adresse: "Braives",
-      num: "0479 54 76 01",
+      num: "0479/54.76.01",
       carte: "/assets/carte4.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
       adresse: "Burdinne / Andenne",
-      num: "0492 55 69 36",
+      num: "0492/55.69.36",
       carte: "/assets/carte5.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
       adresse: "Wasseiges",
-      num: "0479 54 76 01",
+      num: "0479/54.76.01",
       carte: "/assets/carte6.svg",
     },
     {
@@ -59,14 +58,14 @@ const CarteBelgique = () => {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
       adresse: "Hélécine / Orp-Jauche",
-      num: "0497 40 85 29",
+      num: "0497/40.85.29",
       carte: "/assets/carte8.svg",
     },
     {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
       adresse: "Brabant Wallon / Bruxelles",
-      num: "0497 40 85 29",
+      num: "0497/40.85.29",
       carte: "/assets/carte9.svg",
     },
   ];
