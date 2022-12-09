@@ -65,7 +65,7 @@ const CarteBelgique = () => {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
       adresse: "Brabant Wallon / Bruxelles",
-      num: "0497/40.85.29",
+      num: "019/30.57.32",
       carte: "/assets/carte9.svg",
     },
   ];
