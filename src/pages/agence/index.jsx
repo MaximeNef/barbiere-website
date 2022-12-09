@@ -143,7 +143,7 @@ export default function Agence() {
           <CardTeams
             img={"/assets/barbiere.jpg"}
             nom={"Philippe Gatz"}
-            post={"Agent Immobilier"}
+            post={"Agent Immobilier - Associé"}
             ipi={"Nr d’agréation IPI : 510912"}
             region={"Verviers / Herve"}
             tel={"0473 29 00 70"}
@@ -174,10 +174,20 @@ export default function Agence() {
           />
           <CardTeams
             img={"/assets/logoB.svg"}
-            nom={"dévoiler en 2023"}
-            post={"Conseillère en immobilier"}
+            nom={"Dévoilé en 2023"}
+            post={""}
             ipi={""}
             region={"Namur / Beauraing / Dinant"}
+            tel={""}
+            mail={""}
+            bac={""}
+          />
+          <CardTeams
+            img={"/assets/logoB.svg"}
+            nom={"Dévoilé en 2023"}
+            post={""}
+            ipi={""}
+            region={"Jodoigne / Brabant Wallon / Bruxelles"}
             tel={""}
             mail={""}
             bac={""}
