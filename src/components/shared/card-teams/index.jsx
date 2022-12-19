@@ -47,7 +47,32 @@ const CardTeams = (props) => {
                     <P className='ml-2'>{props.tel}</P>
                   </a>
                 </Link>
+                {props.nom == "Philippe Gatz" ? (
+                  <>
+                    {" "}
+                    <div className='text-center font-light'>de 8h à 17h</div>
+                  </>
+                ) : (
+                  <></>
+                )}
               </Container>
+              {props.nom == "Philippe Gatz" ? (
+                <Container className='mr-auto'>
+                  <Link href={`tel:${props.tel}`} passHref>
+                    <a className='flex'>
+                      {props.tel ? (
+                        <MyImage source='/assets/Phone.svg' w={20} h={20} />
+                      ) : (
+                        <div />
+                      )}
+                      <P className='ml-2'>{props.tel}</P>
+                    </a>
+                  </Link>
+                  <div className='text-center mr-3 font-light'>après 17h</div>
+                </Container>
+              ) : (
+                <></>
+              )}
               <Container className='mr-auto'>
                 <Link href={`mailto:${props.mail}`} passHref>
                   <a className='flex'>
@@ -59,6 +84,11 @@ const CardTeams = (props) => {
                     <P className='ml-2'> {props.mail}</P>
                   </a>
                 </Link>
+                {props.nom == "Philippe Gatz" ? (
+                  <div className='text-center mr-5 font-light'>Part-Time</div>
+                ) : (
+                  <></>
+                )}
               </Container>
             </Flex>
             <P className='mt-2 md:mt-0 mb-2 mx-auto '>{props.ipi}</P>

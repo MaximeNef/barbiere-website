@@ -141,7 +141,7 @@ export default function Agence() {
             bac={"Bachelière en Immobilier Architecte d'intérieur"}
           />
           <CardTeams
-            img={"/assets/barbiere.jpg"}
+            img={"/assets/gatz.jpg"}
             nom={"Philippe Gatz"}
             post={"Agent Immobilier - Associé"}
             ipi={"Nr d’agréation IPI : 510912"}
