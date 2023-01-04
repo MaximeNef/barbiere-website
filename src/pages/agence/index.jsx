@@ -51,12 +51,12 @@ export default function Agence() {
             }
             <span className='py-2 md:py-4'>
               {
-                "notre équipe d’agents immobiliers (agréés IPI) vous assurera un service de qualité, sur mesure,"
+                "notre équipe d’agents immobiliers (agréés IPI) vous assurera un service, sur mesure,"
               }
             </span>
             <span>
               {
-                "pour louer et vendre votre bien immobilier au mieux de vos intérêts."
+                "pour louer ou vendre votre bien immobilier au mieux de vos intérêts."
               }
             </span>
           </h3>
@@ -70,11 +70,8 @@ export default function Agence() {
         >
           <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default mt-5  md:mt-12 md:mb-10 md:mx-[15%] '>
             {
-              "Notre équipe est à votre écoute pour vous apporter des conseils avisés et vous accompagner"
+              "Notre équipe est à votre écoute pour vous apporter des conseils avisés et vous accompagner pour une valorisation optimale de votre bien immobilier."
             }
-            <span className='md:py-4'>
-              {"pour une valorisation optimale de votre bien immobilier."}
-            </span>
           </h3>
         </MotionTop>{" "}
         <MotionRight
@@ -146,7 +143,7 @@ export default function Agence() {
             post={"Agent Immobilier - Associé"}
             ipi={"Nr d’agréation IPI : 510912"}
             region={"Verviers / Herve"}
-            tel={"0473 29 00 70"}
+            tel={"0493 19 30 03"}
             mail={"pg@barbiere.be"}
             bac={""}
           />

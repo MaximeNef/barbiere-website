@@ -44,7 +44,7 @@ const CardInfo = (props) => {
             <p className='relative  overflow-hidden leading-7 '>{props.p}</p>
             {props.href ? (
               <Link href={props.href.desc} passHref>
-                <a className='underline underline-offset-1 pb-2'>
+                <a className='underline underline-offset-1 pb-2  '>
                   {props.href.name}
                 </a>
               </Link>
@@ -53,7 +53,7 @@ const CardInfo = (props) => {
             )}
             {props.href1 ? (
               <Link href={props.href1.desc} passHref>
-                <a className='underline underline-offset-1 pb-2'>
+                <a className='underline underline-offset-1 pb-2 '>
                   {props.href1.name}
                 </a>
               </Link>
@@ -63,7 +63,7 @@ const CardInfo = (props) => {
             {props.href2 ? (
               <Link href={props.href2.desc} passHref>
                 <a>
-                  <p className='underline underline-offset-1 pb-2'>
+                  <p className='underline underline-offset-1 pb-2 '>
                     {props.href2.name}
                   </p>
                 </a>
@@ -73,7 +73,7 @@ const CardInfo = (props) => {
             )}
             {props.href3 ? (
               <Link href={props.href3.desc} passHref>
-                <a className='underline underline-offset-1 pb-2'>
+                <a className='underline underline-offset-1  overflow-hidden'>
                   {props.href3.name}
                 </a>
               </Link>

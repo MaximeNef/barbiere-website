@@ -24,44 +24,73 @@ export default function Services() {
       h2: "Vendre",
       p: (
         <p>
-          La première étape, essentielle, est gratuite et sans engagement. Elle
-          consiste en une{" "}
+          La première étape, essentielle, est gratuite et sans engagement :
           <strong className='font-semibold'>
-            analyse approfondie du bien afin de pouvoir en évaluer la valeur
+            {" "}
+            l’analyse approfondie du bien afin de pouvoir en évaluer la valeur
             vénale,
           </strong>{" "}
           de manière professionnelle et objective, en fonction des conditions du
-          marché. Préalablement à la mise en vente, nous procédons à{" "}
+          marché.
           <strong className='font-semibold'>
+            {" "}
+            Préalablement à la mise en vente,
+          </strong>{" "}
+          nous procédons à{" "}
+          <strong className='font-semibold'>
+            {" "}
             différentes recherches administratives
           </strong>{" "}
           nous permettant de vérifier de nombreux points, gage d’une vente
-          totalement sécurisée. Selon le type de bien, nous procédons ensuite au{" "}
+          totalement sécurisée.
           <strong className='font-semibold'>
-            choix des canaux de publicité,
+            {" "}
+            Lors de la mise en vente,
           </strong>{" "}
-          à l’élaboration de supports de présentation (dossier détaillé, photos
-          et vidéos réalisées par des partenaires professionnels) permettant une{" "}
+          selon le type de bien, nous procédons ensuite :
+          <li className='pl-4 my-4'> au choix des canaux de publicité,</li>{" "}
+          <li className='pl-4 my-4'>
+            à l’élaboration de{" "}
+            <strong className='font-semibold'>supports de présentation </strong>
+            (dossier détaillé, photos et vidéos réalisées par des partenaires
+            professionnels){" "}
+            <strong className='font-semibold'>
+              permettant une valorisation optimale de votre bien.
+            </strong>{" "}
+          </li>
+          <li className='pl-4 my-4'>
+            la
+            <strong className='font-semibold'>
+              {" "}
+              promotion de manière pro-active
+            </strong>{" "}
+            (mailing ciblé) auprès de nos nombreux candidats, mais également sur
+            les{" "}
+            <strong className='font-semibold'>
+              plus grands sites immobiliers et les réseaux sociaux.
+            </strong>{" "}
+          </li>
+          L’ensemble des visites sont réalisées par du personnel formé,
+          accompagné par les cadres de l’agence, avec pour objectif une
           <strong className='font-semibold'>
-            valorisation optimale de votre bien.
-          </strong>{" "}
-          La promotion est réalisée de manière pro-active (mailing ciblé) auprès
-          de nos nombreux candidats, mais également sur les plus grands sites
-          immobiliers et les réseaux sociaux. L’ensemble des visites sont
-          réalisées par du personnel formé, encadré par les associés de
-          l’agence, avec pour objectif une{" "}
-          <strong className='font-semibold'>
+            {" "}
             présentation complète et détaillée de chaque bien,
           </strong>{" "}
-          avec la volonté de permettre à chaque acheteur d’en avoir une image
-          positive et une parfaite compréhension. Durant tout le processus de
-          mise en vente, les étapes de la négociation et l’examen de la
-          solvabilité et du plan de financement de l’acheteur, nous
+          permettant à chaque acheteur d’en avoir une image positive et une
+          parfaite compréhension.
           <strong className='font-semibold'>
-            veillons à vous tenir régulièrement au courant de leur avancement.
+            Durant tout le processus de mise en vente,
+          </strong>{" "}
+          les étapes de la négociation et l’examen de la solvabilité et du plan
+          de financement de l’acheteur, nous{" "}
+          <strong className='font-semibold'>
+            veillons à vous tenir régulièrement au courant de leur avancement.{" "}
           </strong>
-          Vous bénéficiez toujours d’un temps de réflexion et pouvez donc
-          décider en toute quiétude. Nous nous chargeons de la{" "}
+          Vous bénéficiez toujours d’un{" "}
+          <strong className='font-semibold'>
+            temps de réflexion et pouvez donc décider en toute quiétude.{" "}
+          </strong>
+          Nous nous chargeons de la{" "}
           <strong className='font-semibold'>
             rédaction du compromis de vente en des termes protégeant vos droits,
           </strong>{" "}
@@ -69,10 +98,60 @@ export default function Services() {
           parfaitement finaliser tous les aspects de la vente. Durant notre
           mission de vente, nous nous occupons de tous les détails du projet.
           <strong className='font-semibold'>
-            {" "}
-            Vous pouvez vivre ces étapes en confiance et en parfaite sérénité..
+            Vous pouvez donc vivre ces étapes en confiance et en parfaite
+            sérénité…
           </strong>
         </p>
+        // <p>
+        //   La première étape, essentielle, est gratuite et sans engagement. Elle
+        //   consiste en une{" "}
+        //   <strong className='font-semibold'>
+        //     analyse approfondie du bien afin de pouvoir en évaluer la valeur
+        //     vénale,
+        //   </strong>{" "}
+        //   de manière professionnelle et objective, en fonction des conditions du
+        //   marché. Préalablement à la mise en vente, nous procédons à{" "}
+        //   <strong className='font-semibold'>
+        //     différentes recherches administratives
+        //   </strong>{" "}
+        //   nous permettant de vérifier de nombreux points, gage d’une vente
+        //   totalement sécurisée. Selon le type de bien, nous procédons ensuite au{" "}
+        //   <strong className='font-semibold'>
+        //     choix des canaux de publicité,
+        //   </strong>{" "}
+        //   à l’élaboration de supports de présentation (dossier détaillé, photos
+        //   et vidéos réalisées par des partenaires professionnels) permettant une{" "}
+        //   <strong className='font-semibold'>
+        //     valorisation optimale de votre bien.
+        //   </strong>{" "}
+        //   La promotion est réalisée de manière pro-active (mailing ciblé) auprès
+        //   de nos nombreux candidats, mais également sur les plus grands sites
+        //   immobiliers et les réseaux sociaux. L’ensemble des visites sont
+        //   réalisées par du personnel formé, encadré par les associés de
+        //   l’agence, avec pour objectif une{" "}
+        //   <strong className='font-semibold'>
+        //     présentation complète et détaillée de chaque bien,
+        //   </strong>{" "}
+        //   avec la volonté de permettre à chaque acheteur d’en avoir une image
+        //   positive et une parfaite compréhension. Durant tout le processus de
+        //   mise en vente, les étapes de la négociation et l’examen de la
+        //   solvabilité et du plan de financement de l’acheteur, nous
+        //   <strong className='font-semibold'>
+        //     veillons à vous tenir régulièrement au courant de leur avancement.
+        //   </strong>
+        //   Vous bénéficiez toujours d’un temps de réflexion et pouvez donc
+        //   décider en toute quiétude. Nous nous chargeons de la{" "}
+        //   <strong className='font-semibold'>
+        //     rédaction du compromis de vente en des termes protégeant vos droits,
+        //   </strong>{" "}
+        //   en collaboration avec les études des parties, afin de concrétiser et
+        //   parfaitement finaliser tous les aspects de la vente. Durant notre
+        //   mission de vente, nous nous occupons de tous les détails du projet.
+        //   <strong className='font-semibold'>
+        //     {" "}
+        //     Vous pouvez vivre ces étapes en confiance et en parfaite sérénité..
+        //   </strong>
+        // </p>
       ),
       btn: "En savoir plus",
     },
@@ -127,19 +206,19 @@ export default function Services() {
       img: "/assets/lien.svg",
       h2: "Liens utiles",
       href: {
-        name: "•Calcul de frais ",
+        name: "•Calcul de frais d'acquisition ",
         desc: "https://www.notaire.be/calcul-de-frais/achat",
       },
       href1: {
-        name: "•Formulaire des énergies ",
+        name: "•Document de reprise des énergies (électircité et/ou gaz)",
         desc: "https://www.cwape.be/docs/?doc=919",
       },
       href2: {
-        name: "•Formulaire changement usager ",
+        name: "•Formulaire changement usager (eay - CILE)",
         desc: "https://www.cile.be/sites/default/files/2022-06/Formulaire%20de%20changement%20d'usager.pdf?ver=2019-07-23-075233-290",
       },
       href3: {
-        name: "•Formulaire de déménagement",
+        name: "•Formulaire changement usager ( eau - SWDE)",
         desc: "https://www.swde.be/sites/default/files/2022-06/form.demenagement_fr.pdf",
       },
 

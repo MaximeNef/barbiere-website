@@ -72,7 +72,7 @@ const MenuDesktop = ({ link, current }) => {
           <Link href='/contact' passHref>
             <a>
               <Container className=' text-center rounded-[50px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9]  text-white font-normal m-auto p-2 px-6 mt-[6px] text-[15px]'>
-                {"Fixer un rendez-vous"}
+                {"Estimez votre bien"}
               </Container>
             </a>
           </Link>

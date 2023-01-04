@@ -65,7 +65,7 @@ const CardTeams = (props) => {
                       ) : (
                         <div />
                       )}
-                      <P className='ml-2'>{props.tel}</P>
+                      <P className='ml-2'>0473 29 00 70</P>
                     </a>
                   </Link>
                   <div className='text-center mr-3 font-light'>après 17h</div>
