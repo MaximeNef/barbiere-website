@@ -431,7 +431,7 @@
         "ordres": {
           "type": "Select",
           "config": {
-            "label": "ordres",
+            "label": "Position du bien",
             "placeholder": "",
             "options": [
               "1",
