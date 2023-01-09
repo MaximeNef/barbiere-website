@@ -17,6 +17,22 @@ const Avendre = ({ pages, locations }) => {
   const [filterValue, setFilterValue] = useState("all");
   const [postalValue, setPostalValue] = useState("all");
   const [newCodeList, setNewCodeList] = useState([]);
+  // Trier le tableau en fonction de la valeur de la clé 'ordres'
+  pages.sort((a, b) => {
+    if (
+      a.data.slices[0].primary.ordres === null &&
+      b.data.slices[0].primary.ordres === null
+    ) {
+      0;
+    }
+    if (a.data.slices[0].primary.ordres === null) {
+      return 1;
+    }
+    if (b.data.slices[0].primary.ordres === null) {
+      return -1;
+    }
+    return a.data.slices[0].primary.ordres - b.data.slices[0].primary.ordres;
+  });
   {
     pages.map((page) => {
       if (page.data.slices[0].primary.vendu === true) {

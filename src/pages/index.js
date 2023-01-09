@@ -92,11 +92,11 @@ export default function Home({ pages, locations }) {
         >
           <Btn3 src='/biens' color='black' text='voir plus' />
         </MotionRight>
-      </Flex>{" "}
+      </Flex>
       <Flex className='md:w-[100%] container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto md:my-5'>
         {/* <DynamicCardBienVendu pages={pages} locations={locations} /> */}
         <CardBien pages={pages} />
-      </Flex>{" "}
+      </Flex>
       <MotionBottom
         initial='hidden'
         animate='visible'
@@ -113,7 +113,6 @@ export default function Home({ pages, locations }) {
           animate='visible'
           transition={{ duration: 0.3 }}
         >
-          {" "}
           <H3 className=''>{"Ils parlent de nous ... "}</H3>
         </MotionBottom>
         <Flex className=' container-snap snap-x snap-mandatory overflow-scroll mx-[-15px] md:mx-[-60px] pr-10 pb-5 '>

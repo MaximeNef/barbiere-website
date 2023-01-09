@@ -6,6 +6,22 @@ import MyImage from "../../shared/myimage";
 
 const CardBien = (props) => {
   console.log(props.pages, "bienVendresss");
+  // Trier le tableau en fonction de la valeur de la clé 'ordres'
+  props.pages.sort((a, b) => {
+    if (
+      a.data.slices[0].primary.ordres === null &&
+      b.data.slices[0].primary.ordres === null
+    ) {
+      0;
+    }
+    if (a.data.slices[0].primary.ordres === null) {
+      return 1;
+    }
+    if (b.data.slices[0].primary.ordres === null) {
+      return -1;
+    }
+    return a.data.slices[0].primary.ordres - b.data.slices[0].primary.ordres;
+  });
   return (
     <>
       {" "}
@@ -153,7 +169,7 @@ const CardBien = (props) => {
               </Container>
             )}
           </Link>
-        ))}{" "}
+        ))}
         {props.pages.map((page, i) => (
           <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
             {page.data.slices[0].primary.option ? (
