@@ -20,23 +20,18 @@ const Menuburger = ({ current }) => {
       selected: false,
       src: "/assets/home.svg",
     },
-    {
-      page: "Nos biens",
-      href: "/biens",
-      selected: false,
-      src: "/assets/biens.svg",
-    },
-    // {
-    //   page: "Biens vendus / loués",
-    //   href: "/biensVendus",
-    //   selected: false,
-    //   src: "/assets/biens.svg",
-    // },
+
     {
       page: "Nos services",
       href: "/services",
       selected: false,
       src: "/assets/services.svg",
+    },
+    {
+      page: "Nos biens",
+      href: "/biens",
+      selected: false,
+      src: "/assets/biens.svg",
     },
     {
       page: "Agence / Équipe",
