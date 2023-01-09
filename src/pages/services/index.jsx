@@ -32,6 +32,8 @@ export default function Services() {
           </strong>{" "}
           de manière professionnelle et objective, en fonction des conditions du
           marché.
+          <br />
+          <br />
           <strong className='font-semibold'>
             {" "}
             Préalablement à la mise en vente,
@@ -43,6 +45,8 @@ export default function Services() {
           </strong>{" "}
           nous permettant de vérifier de nombreux points, gage d’une vente
           totalement sécurisée.
+          <br />
+          <br />
           <strong className='font-semibold'>
             {" "}
             Lors de la mise en vente,
@@ -78,6 +82,8 @@ export default function Services() {
           </strong>{" "}
           permettant à chaque acheteur d’en avoir une image positive et une
           parfaite compréhension.
+          <br />
+          <br />
           <strong className='font-semibold'>
             Durant tout le processus de mise en vente,
           </strong>{" "}
@@ -89,7 +95,9 @@ export default function Services() {
           Vous bénéficiez toujours d’un{" "}
           <strong className='font-semibold'>
             temps de réflexion et pouvez donc décider en toute quiétude.{" "}
-          </strong>
+          </strong>{" "}
+          <br />
+          <br />
           Nous nous chargeons de la{" "}
           <strong className='font-semibold'>
             rédaction du compromis de vente en des termes protégeant vos droits,
@@ -214,7 +222,7 @@ export default function Services() {
         desc: "https://www.cwape.be/docs/?doc=919",
       },
       href2: {
-        name: "•Formulaire changement usager (eay - CILE)",
+        name: "•Formulaire changement usager (eau - CILE)",
         desc: "https://www.cile.be/sites/default/files/2022-06/Formulaire%20de%20changement%20d'usager.pdf?ver=2019-07-23-075233-290",
       },
       href3: {
@@ -244,16 +252,16 @@ export default function Services() {
       >
         <h3 className='	  text-[20px] md:text-[24px]  font-light leading-[26px] text-center flex flex-col items-start md:items-center justify-center text-default mt-5 md:mt-8 '>
           {
-            "Une maîtrise parfaite et une prise en charge complète de votre dossier: "
+            "Pour un particulier, vendre un bien immobilier est une expérience importante mais rare, très souvent complexe et parsemée d’embûches. L’accompagnement d’un professionnel de l’immobilier s’avère la plupart du temps judicieux."
           }
           <span className=' py-2 md:py-4'>
             {
-              "accompagnement assistance et conseils jusqu’à la signature de l’acte de vente chez votre notaire, "
+              "L’immobilière François Barbière & Associés maîtrise parfaitement toutes les étapes du processus de vente de votre bien et prend en charge l’ensemble de votre dossier, de l’expertise initiale jusqu’à la signature de l’acte chez le notaire."
             }
           </span>
           <span>
             {
-              " dans le respect le plus strict des règles déontologiques imposées par notre profession."
+              "Nous confier votre bien, c’est la garantie de la vente de votre bien dans des conditions optimales et en totale sérénité."
             }
           </span>
         </h3>
