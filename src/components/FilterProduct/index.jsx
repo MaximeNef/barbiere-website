@@ -17,7 +17,6 @@ const FilterProduct = (props) => {
     newTodos.push(page.data.slices[0].primary.code_postal);
     setTodos(newTodos);
   };
-  console.log(newTodos, " push array ");
 
   return (
     <Container className=' py-5 rounded-[20px] space-y-4 my-4 md:w-full mb-5 '>

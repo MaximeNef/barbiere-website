@@ -10,7 +10,6 @@ import BienVendu from "../bienVendu";
 
 const CardBienVendre = (props) => {
   const [index, setIndex] = useState(0);
-  console.log(props.pages, "bienVendre");
   return (
     <Container className='md:flex md:flex-row md:flex-wrap md:w-full md:justify-center md:items-center '>
       {/* {props.pages.map((page, i) => (

@@ -59,7 +59,6 @@ const Avendre = ({ pages, locations }) => {
     });
   }
   const withoutDuplicates = [...new Set(newCodeList)];
-  console.log(withoutDuplicates, "code postal AAA");
 
   const filteredProductList = newProductList.filter((page) => {
     if (filterValue === "all") {
@@ -104,11 +103,9 @@ const Avendre = ({ pages, locations }) => {
   });
 
   function onFilterValueSelected(filterValue) {
-    console.log(filterValue);
     setFilterValue(filterValue);
   }
   function onPostalValueSelected(postalValue) {
-    console.log(postalValue);
     setPostalValue(postalValue);
   }
 

@@ -3,7 +3,6 @@ import Flex from "../../../shared/flex";
 import H3 from "../../../shared/h3";
 
 const Exterieur = (props) => {
-  console.log(props, "generales ");
   const generales = [
     {
       name: "Orientation du jardin",

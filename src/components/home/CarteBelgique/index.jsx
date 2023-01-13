@@ -71,7 +71,7 @@ const CarteBelgique = () => {
   ];
   const [isHovering, setIsHovered] = useState("/assets/carte0.svg");
   const [icon, setIcon] = useState(adresses.img);
-  console.log(icon, "icons");
+
   const handleClick = (carte) => {
     setIsHovered(carte);
   };

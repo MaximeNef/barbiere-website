@@ -67,19 +67,15 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (nom == "") {
-      console.log(error);
       return;
     }
     if (prenom == "") {
-      console.log(error);
       return;
     }
     if (mail == "") {
-      console.log(error);
       return;
     }
     if (telephone == "") {
-      console.log(error);
       return;
     }
 
@@ -103,10 +99,9 @@ export default function Contact() {
 
     const { error } = await res.json();
     if (error) {
-      console.log(error);
       return;
     }
-    console.log(nom, prenom, mail, telephone);
+
     router.push("/");
   };
   return (

@@ -5,7 +5,6 @@ import MotionCardRight from "../../shared/motion-right";
 import MyImage from "../../shared/myimage";
 
 const CardBien = (props) => {
-  console.log(props.pages, "bienVendresss");
   // Trier le tableau en fonction de la valeur de la clé 'ordres'
   props.pages.sort((a, b) => {
     if (
@@ -307,7 +306,7 @@ const CardBien = (props) => {
               <div />
             )}
           </Link>
-        ))}{" "}
+        ))}
         <Container className='  min-w-[1px]  h-[200px] flex items-center justify-center mx-10  '></Container>
       </MotionCardRight>
     </>

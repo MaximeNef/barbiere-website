@@ -20,9 +20,9 @@ const CardTeams = (props) => {
             w={305}
             h={458}
             objectFit={""}
-            className={
-              " object-cover md:object-contain  rounded-[18px] object-top "
-            }
+            className={` md:object-contain  rounded-[18px] object-top ${
+              props.post == "" ? "object-contain" : "object-cover"
+            }`}
           />
         </Container>{" "}
         <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] drop-shadow-lg z-10 mt-[-50px] max-w-full h-full'>

@@ -3,7 +3,6 @@ import Flex from "../../../shared/flex";
 import H3 from "../../../shared/h3";
 
 const Generales = (props) => {
-  console.log(props, "generales ");
   const generales = [
     {
       name: "Surface habitable",

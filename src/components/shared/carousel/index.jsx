@@ -18,7 +18,6 @@ import { useEffect } from "react";
  * @returns React component
  */
 export default function Carousel(props) {
-  console.log(props.photo, " img img ");
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleNextSlide = () => {
@@ -64,7 +63,6 @@ export default function Carousel(props) {
           className='relative z-10 w-full h-full '
         >
           {props.photo.map((item, index) => {
-            console.log(item, "itemsssssssss");
             if (index === currentSlide) {
               return (
                 <Container className='mt-10 w-full  '>

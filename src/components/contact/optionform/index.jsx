@@ -2,7 +2,6 @@ import Container from "../../shared/container";
 import H3 from "../../shared/h3";
 
 const Optionform = ({ state, handleClick, name }) => {
-  console.log(state);
   return (
     <Container className='w-full m-2 '>
       {state ? (

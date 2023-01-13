@@ -16,10 +16,6 @@ import Container from "../../../shared/container";
  * @returns React component
  */
 export default function detailsImage(props) {
-  console.log(
-    props.details.data.slices[0].items[0].autres_img.url,
-    " img img "
-  );
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleNextSlide = () => {
@@ -57,7 +53,7 @@ export default function detailsImage(props) {
     }
   };
   const [showModal, setShowModal] = useState(false);
-  console.log(showModal, "modal");
+
   return (
     <div className='relative z-10'>
       <AiOutlineLeft
@@ -95,7 +91,6 @@ export default function detailsImage(props) {
           }}
         >
           {props.details.data.slices[0].items.map((item, index) => {
-            console.log(item, "itemsssssssss");
             if (index === currentSlide) {
               return (
                 <>

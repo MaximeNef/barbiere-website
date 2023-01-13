@@ -7,10 +7,7 @@ import { repositoryName } from "../../prismicio";
 import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }) {
-  console.log("render");
-
   const [state, setState] = useState(() => {
-    console.log("state initialize");
     return "state";
   });
 

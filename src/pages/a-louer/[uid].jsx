@@ -15,7 +15,6 @@ import Construction from "../../components/biens/details/construction";
 import Exterieur from "../../components/biens/details/exterieur";
 import Energie from "../../components/biens/details/Energie";
 export default function DetailsVendre({ details }) {
-  console.log(details, "doc");
   return (
     <NavPage current='Nos biens'>
       <Container className='md:mx-5 md:mb-5'>

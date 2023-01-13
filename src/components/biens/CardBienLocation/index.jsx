@@ -5,7 +5,6 @@ import MotionCardRight from "../../shared/motion-right";
 import MyImage from "../../shared/myimage";
 
 const CardBienLocation = (props) => {
-  console.log(props.pages, "bienVendre");
   // Trier le tableau en fonction de la valeur de la clé 'ordres'
   props.pages.sort((a, b) => {
     if (

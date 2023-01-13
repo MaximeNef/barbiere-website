@@ -19,8 +19,7 @@ import MotionRight from "../../components/shared/motion-CardRight";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import CardDesktop from "../../components/shared/card-cta-desktop";
-export default function Biens({ pages, locations }) {
-  console.log(pages, "prismic");
+export default function Biens({ pages, locations, vendu, loué }) {
   return (
     <NavPage current='Nos biens'>
       <Head>
@@ -83,7 +82,7 @@ export default function Biens({ pages, locations }) {
         </Flex>{" "}
       </MotionBottom>
       <Flex className='md:w-[100%] container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px]   md:mr-auto'>
-        <CardBienVendu pages={pages} locations={locations} />
+        <CardBienVendu pages={vendu} locations={loué} />
       </Flex>
     </NavPage>
   );
@@ -91,17 +90,24 @@ export default function Biens({ pages, locations }) {
 
 // connection a prismic et affiche tous les biens a vendre et a louer et vendu
 // quand tu click ça va vers la page en question
-//
 
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
   const pages = await client.getAllByType("vendre");
   const locations = await client.getAllByType("location");
+  const pagesFilter = pages.filter(
+    (page) => page.data.slices[0].primary.vendu !== true
+  );
+  const locationsFilter = locations.filter(
+    (location) => location.data.slices[0].primary.vendu !== true
+  );
   return {
     props: {
-      pages,
-      locations,
+      pages: pagesFilter,
+      locations: locationsFilter,
+      vendu: pages,
+      loué: locations,
     },
   };
 }

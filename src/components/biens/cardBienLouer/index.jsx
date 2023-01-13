@@ -9,7 +9,6 @@ import BienAvendre from "../bienAvendre";
 import BienOptions from "../bienOptions";
 import BienVendu from "../bienVendu";
 const CardBienLouer = (props) => {
-  console.log(props.pages, "bienVendresss");
   const [index, setIndex] = useState(0);
 
   return (

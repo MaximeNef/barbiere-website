@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const myLoader = ({ src, width, quality }) => {
-  console.log(src, "src");
   return `${src}`;
 };
 

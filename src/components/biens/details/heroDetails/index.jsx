@@ -4,7 +4,6 @@ import H1 from "../../../shared/h1";
 import MyImage from "../../../shared/myimage";
 
 const HeroDetails = (props) => {
-  console.log(props);
   return (
     <Container className='mx-[30px]'>
       <H1 className='mr-auto mb-[7px] tracking-widest'>

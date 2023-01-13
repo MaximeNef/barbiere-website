@@ -11,7 +11,6 @@ import FilterProduct from "../../components/FilterProduct";
 import { useState } from "react";
 
 const Avendre = ({ pages }) => {
-  console.log(pages, "code postal ");
   const [newProductList, setNewProductList] = useState(pages);
   const [filterValue, setFilterValue] = useState("all");
   const [postalValue, setPostalValue] = useState("all");
@@ -42,7 +41,6 @@ const Avendre = ({ pages }) => {
     });
   }
   const withoutDuplicates = [...new Set(newCodeList)];
-  console.log(withoutDuplicates, "code postal AAA");
 
   const filteredProductList = newProductList.filter((page) => {
     if (filterValue === "all") {
@@ -64,11 +62,9 @@ const Avendre = ({ pages }) => {
   });
 
   function onFilterValueSelected(filterValue) {
-    console.log(filterValue);
     setFilterValue(filterValue);
   }
   function onPostalValueSelected(postalValue) {
-    console.log(postalValue);
     setPostalValue(postalValue);
   }
 

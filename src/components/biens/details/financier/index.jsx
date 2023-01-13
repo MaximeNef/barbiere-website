@@ -3,7 +3,6 @@ import Flex from "../../../shared/flex";
 import H3 from "../../../shared/h3";
 
 const InfoFinanciere = (props) => {
-  console.log(props, "generales ");
   const generales = [
     {
       name: "Loyer",

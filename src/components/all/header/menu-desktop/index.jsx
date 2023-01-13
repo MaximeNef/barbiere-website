@@ -7,8 +7,6 @@ import Flex from "../../../shared/flex";
 import MyImage from "../../../shared/myimage";
 
 const MenuDesktop = ({ link, current }) => {
-  console.log(link, "link");
-  console.log(current, "current");
   return (
     <Container className=' w-full '>
       <Flex

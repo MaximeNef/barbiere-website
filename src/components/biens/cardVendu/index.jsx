@@ -5,7 +5,6 @@ import MotionCardRight from "../../shared/motion-right";
 import MyImage from "../../shared/myimage";
 
 const CardVendu = (props) => {
-  console.log(props, "props VENDUs");
   return (
     <>
       {" "}

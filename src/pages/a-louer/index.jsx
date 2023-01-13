@@ -42,7 +42,6 @@ const Alouer = ({ pages }) => {
   }
 
   const withoutDuplicates = [...new Set(newCodeList)];
-  console.log(withoutDuplicates, "code postal AAA");
 
   const filteredProductList = newProductList.filter((page) => {
     if (filterValue === "all") {
@@ -64,11 +63,9 @@ const Alouer = ({ pages }) => {
   });
 
   function onFilterValueSelected(filterValue) {
-    console.log(filterValue);
     setFilterValue(filterValue);
   }
   function onPostalValueSelected(postalValue) {
-    console.log(postalValue);
     setPostalValue(postalValue);
   }
   return (
