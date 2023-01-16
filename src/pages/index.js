@@ -12,6 +12,7 @@ import MotionCardRight from "../components/shared/motion-right";
 import dynamic from "next/dynamic";
 import BannerSection from "../components/home/BannerSection";
 const DynamicCarte = dynamic(() => import("../components/home/CarteBelgique"));
+const DynamicVideo = dynamic(() => import("../components/hero/heroImg"));
 const DynamicChiffre = dynamic(() =>
   import("../components/home/chiffre-agence")
 );
@@ -82,7 +83,9 @@ export default function Home({ pages }) {
         />
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-
+      <Container className=' 2xl:h-[1100px] md:max-h-[100vh] '>
+        <DynamicVideo />
+      </Container>
       <a name='some' className=' absolute bottom-[22px]' />
       <H3 className='mt-1 md:mt-0  ' id='Ancre'>
         {"Nous sommes actifs près de chez vous "}
@@ -122,9 +125,7 @@ export default function Home({ pages }) {
           <Btn3 src='/biens' color='black' text='voir plus' />
         </MotionRight>
       </Flex>
-      <Flex className='md:w-[100%] container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto md:my-5'>
-        <CardBien pages={pages} />
-      </Flex>
+
       <MotionBottom
         initial='hidden'
         animate='visible'
