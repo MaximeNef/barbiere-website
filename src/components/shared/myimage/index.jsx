@@ -27,8 +27,8 @@ const MyImage = ({
       objectFit={objectFit}
       layout={layout}
       priority={priority ? true : false}
-      placeholder='blur'
-      blurDataURL='/images/path-to-blur-image.jpg'
+      placeholder={w > 540 || h > 40 ? "blur" : "empty"}
+      blurDataURL={source}
       sizes={sizes}
       quality={100}
     />

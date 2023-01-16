@@ -1,11 +1,8 @@
-import Link from "next/link";
 import Container from "../../shared/container";
 import MyImage from "../../shared/myimage";
 import HeroBtn from "../heroBtn";
 import { motion } from "framer-motion";
 import React, { useEffect, useRef } from "react";
-import { useState } from "react";
-import ReactPlayer from "react-player";
 import VideoPlayer from "../../all/video";
 
 const HeroImg = () => {
@@ -22,15 +19,9 @@ const HeroImg = () => {
   useEffect(() => {
     attemptPlay();
   }, []);
-  const [isPlaying, setIsPlaying] = useState(true);
   return (
     <Container className='w-full h-full relative'>
       <Container className='relative h-screen mx-[-20px] md:mx-[-60px] mt-[-80px]'>
-        {/* <MyImage
-          source={"/assets/bgHero4.jpg"}
-          layout='fill'
-          objectFit='cover'
-        /> */}
         <div className='md:hidden inline-flex  '>
           <VideoPlayer video='video/VideoBarbiereMV2.mp4' />
         </div>

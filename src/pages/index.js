@@ -1,43 +1,24 @@
 import Head from "next/head";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import Flex from "../components/shared/flex";
-import H1 from "../components/shared/h1";
-import H2 from "../components/shared/h2";
 import H3 from "../components/shared/h3";
-import P from "../components/shared/p";
 import Btn3 from "../components/shared/btn3";
-import Btn2 from "../components/shared/btn2";
-import CardCTA from "../components/shared/card-Cta";
-import CardInfo from "../components/shared/card-Info";
-import CardTeam from "../components/shared/card-team";
-import CardAvis from "../components/shared/cardAvis";
 import NavPage from "../components/all/Nav-page";
 import Container from "../components/shared/container";
-import HeroImg from "../components/hero/heroImg";
 import CardBien from "../components/biens/cardBiens";
-import { CardBiens } from "../../slices";
-import CardBienVendu from "../components/biens/cardBiensVendu";
 import { createClient } from "../../prismicio";
 import MotionRight from "../components/shared/motion-CardRight";
 import MotionBottom from "../components/shared/motion-bottom";
 import MotionCardRight from "../components/shared/motion-right";
-import ChiffreAgence from "../components/home/chiffre-agence";
-import CarteBelgique from "../components/home/CarteBelgique";
 import dynamic from "next/dynamic";
 import BannerSection from "../components/home/BannerSection";
 const DynamicCarte = dynamic(() => import("../components/home/CarteBelgique"));
-const DynamicVideo = dynamic(() => import("../components/hero/heroImg"));
 const DynamicChiffre = dynamic(() =>
   import("../components/home/chiffre-agence")
-);
-const DynamicCardBienVendu = dynamic(() =>
-  import("../components/biens/cardBiensVendu")
 );
 const DynamicCardCTA = dynamic(() => import("../components/shared/card-Cta"));
 const DynamicAvis = dynamic(() => import("../components/shared/cardAvis"));
 
-export default function Home({ pages, locations }) {
+export default function Home({ pages }) {
   const avis = [
     {
       txt: "Nous avions tenté de gérer la mise en vente de notre habitation en direct avec les potentiels acheteurs. Cela s’est très vite évéré extrêmement contraignant, et davantage complexe que nous l’avions pensé. L’agence Barbière nous a proposé ses services, et, nous a tout de suite mis en confiance, malgré nos aprioris sur les agences immobilières.Après quelques entrevues, et un accord signé, les choses se sont très vite activées. Ils ont été hyper professionnels du début à la fin. Aucun tracas pour nous et une habitation vendue très rapidement !  En résumé ?   Professionnels, honnêtes et transparents. Nous restons en contact !",
@@ -101,10 +82,7 @@ export default function Home({ pages, locations }) {
         />
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      {/* <HeroImg />*/}
-      <Container className=' 2xl:h-[1100px] md:max-h-[100vh] '>
-        <DynamicVideo />
-      </Container>
+
       <a name='some' className=' absolute bottom-[22px]' />
       <H3 className='mt-1 md:mt-0  ' id='Ancre'>
         {"Nous sommes actifs près de chez vous "}
@@ -117,7 +95,6 @@ export default function Home({ pages, locations }) {
           transition={{ duration: 0.5 }}
           className='w-full inline-flex md:hidden'
         >
-          {" "}
           <DynamicCardCTA
             text1={"Tous nos biens se trouvent ici"}
             text2={"Découvrez tous nos biens à vendre & louer."}
@@ -135,7 +112,6 @@ export default function Home({ pages, locations }) {
           animate='visible'
           transition={{ duration: 0.3 }}
         >
-          {" "}
           <H3 className=''>{"Nos nouveautés"}</H3>{" "}
         </MotionRight>
         <MotionRight

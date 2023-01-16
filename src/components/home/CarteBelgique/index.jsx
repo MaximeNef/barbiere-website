@@ -70,24 +70,19 @@ const CarteBelgique = () => {
     },
   ];
   const [isHovering, setIsHovered] = useState("/assets/carte0.svg");
-  const [icon, setIcon] = useState(adresses.img);
 
   const handleClick = (carte) => {
     setIsHovered(carte);
   };
-  const [isShown, setIsShown] = useState("/assets/carte0.svg");
 
   return (
     <Container className='md:flex md:flex-row md:justify-around'>
-      <Container className=' '>
-        {/* <MyImage source={isHovering} w={350} h={350} objectFit='contain' /> */}
-
+      <Container className=' h-[350px] w-full md:h-[600px] md:w-[600px] relative'>
         <MyImage
           source={isHovering}
-          w={600}
-          h={600}
+          layout='fill'
           objectFit='contain'
-          className={"md:min-h-[800px]"}
+          className={""}
         />
       </Container>
       <Container className='my-auto md:pt-[10px] '>
