@@ -10,6 +10,7 @@
     "slicemachine": "start-slicemachine -- --port 8000"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.1.2",
     "@prismicio/client": "^6.6.3",
     "@prismicio/helpers": "^2.3.2",
     "@prismicio/next": "^0.1.3",
