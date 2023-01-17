@@ -1,8 +1,7 @@
 import Container from "../container";
 import Flex from "../flex";
-import H3 from "../h3";
+
 import MyImage from "../myimage";
-import P from "../p";
 
 const CardAvis = (props) => {
   return (

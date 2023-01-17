@@ -5,12 +5,7 @@ const CardChiffre = (props) => {
   return (
     <Container className='rounded-[20px] p-5 bg-white shadow-cardChiffre  border-2 mx-6 relative mb-6 mt-8 md:w-[100%]'>
       <Container className='absolute left-1/2 transform -translate-x-1/2 -translate-y-[65px] bg-gray-100 rounded-full p-4'>
-        <MyImage
-          source={props.img}
-          w={"52px"}
-          h={"52px"}
-          objectFit={"contain"}
-        />
+        <MyImage source={props.img} w={52} h={52} objectFit={"contain"} />
       </Container>
 
       <p className=' font-light text-[43px] leading-[29px] text-[#E88DB1] mx-auto my-auto mt-10 mb-2'>

@@ -1,7 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import Flex from "../../components/shared/flex";
 import H1 from "../../components/shared/h1";
 import H2 from "../../components/shared/h2";
 import H3 from "../../components/shared/h3";

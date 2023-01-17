@@ -90,7 +90,6 @@ const Avendre = ({ pages }) => {
         filterValue={filterValue}
         postalValue={postalValue}
       />
-      {/* <Container className='relative z-20 h-44 w-full'></Container> */}
     </NavPage>
   );
 };

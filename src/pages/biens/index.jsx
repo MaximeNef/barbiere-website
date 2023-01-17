@@ -1,22 +1,15 @@
 import NavPage from "../../components/all/Nav-page";
 import CardBien from "../../components/biens/cardBiens";
 import Btn3 from "../../components/shared/btn3";
-import CardCTA from "../../components/shared/card-Cta";
 import Container from "../../components/shared/container";
 import Flex from "../../components/shared/flex";
 import H1 from "../../components/shared/h1";
 import H3 from "../../components/shared/h3";
-//
-import { SliceZone } from "@prismicio/react";
 import { createClient } from "../../../prismicio";
-import { components } from "../../../slices";
-import Image from "next/image";
-import MyImage from "../../components/shared/myimage";
 import CardBienVendu from "../../components/biens/cardBiensVendu";
 import CardBienLocation from "../../components/biens/CardBienLocation";
 import MotionBottom from "../../components/shared/motion-bottom";
 import MotionRight from "../../components/shared/motion-CardRight";
-import { motion } from "framer-motion";
 import Head from "next/head";
 import CardDesktop from "../../components/shared/card-cta-desktop";
 export default function Biens({ pages, locations, vendu, loué }) {

@@ -39,7 +39,7 @@ const Footer = ({ current }) => {
           justify='between'
           className='mx-5 text-[#FFFFFF] text-[14px] md:text-[18px] leading-4 md:mx-[15%]'
         >
-          <Container className='text-start space-y-[18px]'>
+          <Container className='text-start space-y-[18px] w-full'>
             <Link href='/' passHref>
               <a>Accueil</a>
             </Link>
