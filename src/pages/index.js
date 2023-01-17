@@ -88,7 +88,7 @@ export default function Home({ pages }) {
       </Container>
       <a name='some' className=' absolute bottom-[22px]' />
       <H3 className='mt-1 md:mt-0  ' id='Ancre'>
-        {"Nous sommes actifs près de chez vous "}
+        {"Nous sommes actifs près de chez vous"}
       </H3>
       <DynamicCarte />
       <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full md:min-h-[350px] md:mb-[60px] '>
