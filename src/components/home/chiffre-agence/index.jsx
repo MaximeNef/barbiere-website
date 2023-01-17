@@ -1,5 +1,4 @@
 import Container from "../../shared/container";
-import Flex from "../../shared/flex";
 import MyImage from "../../shared/myimage";
 import CardChiffre from "./CardChiffre";
 

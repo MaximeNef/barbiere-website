@@ -28,23 +28,21 @@ export default function MotionRight({
   }, [controls, inView]);
 
   return (
-    <>
-      <motion.div
-        ref={ref}
-        onClick={onClick}
-        id={id}
-        style={{
-          ...(fitHeight && { height: "fit-content" }),
-          ...style,
-        }}
-        initial={initial}
-        animate={controls}
-        transition={transition}
-        variants={variants}
-        className={className}
-      >
-        {children}
-      </motion.div>
-    </>
+    <motion.div
+      ref={ref}
+      onClick={onClick}
+      id={id}
+      style={{
+        ...(fitHeight && { height: "fit-content" }),
+        ...style,
+      }}
+      initial={initial}
+      animate={controls}
+      transition={transition}
+      variants={variants}
+      className={className}
+    >
+      {children}
+    </motion.div>
   );
 }
