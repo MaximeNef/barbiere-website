@@ -58,7 +58,7 @@ export default function VideoPlayer(props) {
           muted
           autoplay
           playsinline
-         
+          preload="none"
           priority={false}
          
         >
