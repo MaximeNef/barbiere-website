@@ -37,7 +37,7 @@ const CardTeams = (props) => {
             <P className='mt-2 mx-auto'>{props.region}</P>
             <Flex className='mt-[15px] mx-auto space-y-2 flex-col '>
               <Container className='mr-auto'>
-                <Link href={`tel:${props.tel}`} passHref>
+                <Link legacyBehavior href={`tel:${props.tel}`} passHref>
                   <a className='flex'>
                     {props.tel ? (
                       <MyImage source='/assets/Phone.svg' w={20} h={20} />
@@ -58,7 +58,7 @@ const CardTeams = (props) => {
               </Container>
               {props.nom == "Philippe Gatz" ? (
                 <Container className='mr-auto'>
-                  <Link href={`tel:${props.tel}`} passHref>
+                  <Link legacyBehavior href={`tel:${props.tel}`} passHref>
                     <a className='flex'>
                       {props.tel ? (
                         <MyImage source='/assets/Phone.svg' w={20} h={20} />
@@ -74,7 +74,7 @@ const CardTeams = (props) => {
                 <></>
               )}
               <Container className='mr-auto'>
-                <Link href={`mailto:${props.mail}`} passHref>
+                <Link legacyBehavior href={`mailto:${props.mail}`} passHref>
                   <a className='flex'>
                     {props.tel ? (
                       <MyImage source='/assets/mail.svg' w={20} h={20} />

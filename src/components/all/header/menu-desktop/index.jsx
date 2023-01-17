@@ -15,12 +15,10 @@ const MenuDesktop = ({ link, current }) => {
       >
         {" "}
         <Flex className=' m-auto   max-h-12  '>
-          <Link href='/' passHref>
-            <a>
-              <Container className='max-h-[70px] mt-[-10px]'>
-                <MyImage source='/assets/logoB.svg' w={100} h={150} />
-              </Container>
-            </a>
+          <Link legacyBehavior href='/' passHref>
+            <Container className='max-h-[70px] mt-[-10px]'>
+              <MyImage source='/assets/logoB.svg' w={100} h={150} />
+            </Container>
           </Link>{" "}
         </Flex>
         <Flex
@@ -31,7 +29,7 @@ const MenuDesktop = ({ link, current }) => {
         >
           {link.map((p) => {
             return (
-              <Link href={p.href} key={p.href} passHref>
+              <Link legacyBehavior href={p.href} key={p.href} passHref>
                 {p.page == current ? (
                   <Container
                     type='col'
@@ -67,12 +65,10 @@ const MenuDesktop = ({ link, current }) => {
             );
           })}
 
-          <Link href='/contact' passHref>
-            <a>
-              <Container className=' text-center rounded-[50px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9]  text-white font-normal m-auto p-2 px-6 mt-[6px] text-[15px]'>
-                {"Estimez votre bien"}
-              </Container>
-            </a>
+          <Link legacyBehavior href='/contact' passHref>
+            <Container className=' text-center rounded-[50px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9]  text-white font-normal m-auto p-2 px-6 mt-[6px] text-[15px]'>
+              {"Estimez votre bien"}
+            </Container>
           </Link>
         </Flex>
       </Flex>{" "}

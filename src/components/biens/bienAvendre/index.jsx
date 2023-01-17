@@ -8,7 +8,12 @@ const BienAvendre = (props) => {
     <>
       {props.pages.map((page, i) => (
         <Container className='md:flex md:flex-row md:flex-wrap md:w-fit'>
-          <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
+          <Link
+            legacyBehavior
+            href={`/a-vendre/${page.uid}`}
+            key={page.uid}
+            passHref
+          >
             {page.data.slices[0].primary.vendu ||
             page.data.slices[0].primary.option ? (
               <div className='md:w-fit' />

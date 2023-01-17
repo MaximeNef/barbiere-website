@@ -22,7 +22,7 @@ export default function Btn3(props) {
   return (
     <div className=' flex flex-col justify-center '>
       {" "}
-      <Link href={props.src} passHref>
+      <Link legacyBehavior href={props.src} passHref>
         <a className='flex flex-col items-center '>
           <div
             onClick={props.onClick}

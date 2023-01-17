@@ -43,7 +43,7 @@ const CardInfo = (props) => {
           >
             <p className='relative  overflow-hidden leading-7 '>{props.p}</p>
             {props.href ? (
-              <Link href={props.href.desc} passHref>
+              <Link legacyBehavior href={props.href.desc} passHref>
                 <a className='underline underline-offset-1 pb-2  '>
                   {props.href.name}
                 </a>
@@ -52,7 +52,7 @@ const CardInfo = (props) => {
               <div />
             )}
             {props.href1 ? (
-              <Link href={props.href1.desc} passHref>
+              <Link legacyBehavior href={props.href1.desc} passHref>
                 <a className='underline underline-offset-1 pb-2 '>
                   {props.href1.name}
                 </a>
@@ -61,18 +61,16 @@ const CardInfo = (props) => {
               <div />
             )}
             {props.href2 ? (
-              <Link href={props.href2.desc} passHref>
-                <a>
-                  <p className='underline underline-offset-1 pb-2 '>
-                    {props.href2.name}
-                  </p>
-                </a>
+              <Link legacyBehavior href={props.href2.desc} passHref>
+                <p className='underline underline-offset-1 pb-2 '>
+                  {props.href2.name}
+                </p>
               </Link>
             ) : (
               <div />
             )}
             {props.href3 ? (
-              <Link href={props.href3.desc} passHref>
+              <Link legacyBehavior href={props.href3.desc} passHref>
                 <a className='underline underline-offset-1  overflow-hidden'>
                   {props.href3.name}
                 </a>

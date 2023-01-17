@@ -14,7 +14,7 @@ const CardBienVendre = (props) => {
     <Container className='md:flex md:flex-row md:flex-wrap md:w-full md:justify-center md:items-center '>
       {/* {props.pages.map((page, i) => (
         <Container className='md:flex md:flex-row md:flex-wrap md:w-fit'>
-          <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref> */}
+          <Link legacyBehavior href={`/a-vendre/${page.uid}`} key={page.uid} passHref> */}
       {props.postalValue !== "all" || props.filterValue !== "all" ? (
         <div>
           {/* 1 afficher les biens a vendre , les biens sous options, bien vendu */}

@@ -23,7 +23,7 @@ async function sendEmail(req, res) {
         <meta name="author" content="SitePoint">
       <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
       
-        <link rel="stylesheet" href="css/styles.css?v=1.0">
+        <Link legacyBehavior rel="stylesheet" href="css/styles.css?v=1.0">
       
       </head>
       

@@ -18,7 +18,12 @@ const CardVendu = (props) => {
         <Container className='md:flex md:flex-row md:flex-wrap md:w-full md:justify-center md:items-center '>
           {props.pages.map((page) => (
             <Container className='md:flex md:flex-row md:flex-wrap md:w-fit'>
-              <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
+              <Link
+                legacyBehavior
+                href={`/a-vendre/${page.uid}`}
+                key={page.uid}
+                passHref
+              >
                 {page.data.slices[0].primary.vendu ? (
                   <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
                     <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
@@ -165,7 +170,12 @@ const CardVendu = (props) => {
             </Container>
           ))}
           {props.locations.map((page) => (
-            <Link href={`/a-louer/${page.uid}`} key={page.uid} passHref>
+            <Link
+              legacyBehavior
+              href={`/a-louer/${page.uid}`}
+              key={page.uid}
+              passHref
+            >
               {page.data.slices[0].primary.vendu ? (
                 <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0   md:max-w-[400px] mr-3 cursor-pointer my-2 md:my-0 '>
                   <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[240px]'>

@@ -242,7 +242,7 @@ export default function Services() {
           name='Barbiere immobilier'
           content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
         />
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <Link legacyBehavior rel='shortcut icon' href='/favicon.ico' />
       </Head>
       <H1>{"Nos Services"}</H1>{" "}
       <MotionTop

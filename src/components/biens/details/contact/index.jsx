@@ -14,12 +14,10 @@ const CardContact = () => {
           "Vous souhaitez plus de renseignements et/ou prendre rendez-vous pour visiter ce bien ?"
         }
       </p>
-      <Link href='/contact'>
-        <a>
-          <Container className='bg-[#43A8AA] rounded-[10px] mt-4'>
-            <p className='mx-auto text-white py-2 '>{"contactez-nous"}</p>
-          </Container>
-        </a>
+      <Link legacyBehavior href='/contact'>
+        <Container className='bg-[#43A8AA] rounded-[10px] mt-4'>
+          <p className='mx-auto text-white py-2 '>{"contactez-nous"}</p>
+        </Container>
       </Link>
     </Container>
   );

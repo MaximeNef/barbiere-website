@@ -21,7 +21,7 @@ export default function Btn2(props) {
   return (
     <div className='w-full flex flex-col justify-center '>
       {" "}
-      <Link href={props.src} passHref>
+      <Link legacyBehavior href={props.src} passHref>
         <a className='flex flex-col items-center '>
           <div
             onClick={props.onClick}

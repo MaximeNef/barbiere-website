@@ -33,7 +33,7 @@ export default function Agence() {
           name='Barbiere immobilier'
           content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
         />
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <Link legacyBehavior rel='shortcut icon' href='/favicon.ico' />
       </Head>
       <Container className='md:px-14'>
         <H1>{"Notre agence"}</H1>{" "}
@@ -81,8 +81,8 @@ export default function Agence() {
             <Container className='ml-[-20px] md:ml-[-116px] md:mr-[-116px] mr-[-20px] shadow-cardcta md:h-[40%]'>
               <MyImage
                 source='/assets/team.png'
-                w='100%'
-                h='50%'
+                w='100'
+                h='50'
                 // objectFit={"cover"}
                 layout='responsive'
                 objectFit='cover'

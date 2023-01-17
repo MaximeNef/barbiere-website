@@ -16,7 +16,7 @@ const CardBienLouer = (props) => {
       {" "}
       {/* {props.pages.map((page, i) => (
         <Container className='md:flex md:flex-row md:flex-wrap md:w-fit '>
-          <Link href={`/a-louer/${page.uid}`} key={page.uid} passHref> */}
+          <Link legacyBehavior href={`/a-louer/${page.uid}`} key={page.uid} passHref> */}
       {props.postalValue !== "all" || props.filterValue !== "all" ? (
         <div>
           <Container className='md:flex md:flex-row md:flex-wrap md:w-fit justify-center'>

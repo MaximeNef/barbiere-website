@@ -112,7 +112,7 @@ export default function Contact() {
           name='Barbiere immobilier'
           content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
         />
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <Link legacyBehavior rel='shortcut icon' href='/favicon.ico' />
       </Head>{" "}
       <Container className='relative mx-[-5vw]'>
         <className className='h-full w-full mx-[-20px] '>

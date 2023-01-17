@@ -17,7 +17,7 @@ const BannerSection = () => {
           <Container className='h-full'>
             <MyImage
               source={"/assets/team.png"}
-              w='100%'
+              w='100'
               h={"380"}
               objectFit={"cover"}
               layout='responsive'

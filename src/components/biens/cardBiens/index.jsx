@@ -31,7 +31,12 @@ const CardBien = (props) => {
         className='  w-full flex'
       >
         {props.pages.map((page, i) => (
-          <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
+          <Link
+            legacyBehavior
+            href={`/a-vendre/${page.uid}`}
+            key={page.uid}
+            passHref
+          >
             {page.data.slices[0].primary.vendu ||
             page.data.slices[0].primary.option ? (
               <div />
@@ -170,7 +175,12 @@ const CardBien = (props) => {
           </Link>
         ))}
         {props.pages.map((page, i) => (
-          <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
+          <Link
+            legacyBehavior
+            href={`/a-vendre/${page.uid}`}
+            key={page.uid}
+            passHref
+          >
             {page.data.slices[0].primary.option ? (
               <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>

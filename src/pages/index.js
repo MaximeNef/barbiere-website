@@ -81,7 +81,7 @@ export default function Home({ pages }) {
           name='description'
           content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
         />
-        <link rel='shortcut icon' href='/favicon.ico' />
+        {/* <Link  rel='shortcut icon' href='/favicon.ico' /> */}
       </Head>
       <Container className=' 2xl:h-[1100px] md:max-h-[100vh] '>
         <DynamicVideo />

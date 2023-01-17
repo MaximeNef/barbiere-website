@@ -25,7 +25,7 @@ const CardTeam = (props) => {
           <Container className='my-[15px] mx-auto '>
             {" "}
             <Container className='mr-auto'>
-              <Link href={`tel:${props.tel}`} passHref>
+              <Link legacyBehavior href={`tel:${props.tel}`} passHref>
                 <a className='flex'>
                   <MyImage source='/assets/phone.svg' w={20} h={20} />
                   <P className='ml-1'>{props.tel}</P>
@@ -33,7 +33,7 @@ const CardTeam = (props) => {
               </Link>
             </Container>
             <Container className='mr-auto'>
-              <Link href={`mailto:${props.mail}`} passHref>
+              <Link legacyBehavior href={`mailto:${props.mail}`} passHref>
                 <a className='flex'>
                   <MyImage source='/assets/mail.svg' w={20} h={20} />
                   <P className='ml-1'> {props.mail}</P>

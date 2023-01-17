@@ -14,7 +14,7 @@ const Footer = ({ current }) => {
       <Container className='bg-[#41B8B8]  m-auto w-full text-center pb-2 rounded-tl-[25px] rounded-tr-[25px] border-t-[3px] border-[#41B8B8]'>
         {/* btn contact us  */}
         <Flex justify='center' className='  mt-[-28px] mb-5 '>
-          <Link href='/contact' passHref>
+          <Link legacyBehavior href='/contact' passHref>
             <a className=''>
               <Container className='border-[#FBFFFF] border-2 rounded-[27px] '>
                 <Container className='bg-gradient-to-r from-[#41B8B8] to-[#41B8B8] p-[1px] rounded-[25px] shadow-realisationCard'>
@@ -40,26 +40,26 @@ const Footer = ({ current }) => {
           className='mx-5 text-[#FFFFFF] text-[14px] md:text-[18px] leading-4 md:mx-[15%]'
         >
           <Container className='text-start space-y-[18px]'>
-            <Link href='/' passHref>
-              <a>Accueil</a>
+            <Link legacyBehavior href='/' passHref>
+              Accueil
             </Link>
-            <Link href='/biens' passHref>
-              <a> Nos biens</a>
+            <Link legacyBehavior href='/biens' passHref>
+              Nos biens
             </Link>
-            <Link href='/services' passHref>
-              <a> Nos services</a>
+            <Link legacyBehavior href='/services' passHref>
+              Nos services
             </Link>
-            <Link href='/agence' passHref>
-              <a> Agence / Equipe </a>
+            <Link legacyBehavior href='/agence' passHref>
+              Agence / Equipe
             </Link>
-            <Link href='/emplois' passHref>
-              <a> Emplois</a>
+            <Link legacyBehavior href='/emplois' passHref>
+              Emplois
             </Link>
-            <Link href='/contact' passHref>
-              <a> Contact</a>
+            <Link legacyBehavior href='/contact' passHref>
+              Contact
             </Link>
-            <Link href='/deontologie' passHref>
-              <a> Déontologie</a>
+            <Link legacyBehavior href='/deontologie' passHref>
+              Déontologie
             </Link>
           </Container>
           <Container className='space-y-[26px]  md:space-y-[10px]'>
@@ -77,14 +77,14 @@ const Footer = ({ current }) => {
               </p>
             </Container>
             <Container>
-              <Link href={"tel:+32493 19 30 03"} passHref>
+              <Link legacyBehavior href={"tel:+32493 19 30 03"} passHref>
                 <a className='text-[14px] md:text-[16px]  leading-[13px]  font-medium'>
                   {"019/30.57.32"}
                 </a>
               </Link>{" "}
             </Container>
             <Container>
-              <Link href={"mailto:info@barbiere.be"} passHref>
+              <Link legacyBehavior href={"mailto:info@barbiere.be"} passHref>
                 <a className='text-[14px] md:text-[16px]  leading-[13px]  font-medium'>
                   {"info@barbiere.be"}
                 </a>
@@ -96,6 +96,7 @@ const Footer = ({ current }) => {
           <Flex justify='center' className='space-x-[8px] mb-2'>
             <Flex justify='center' className='space-x-2'>
               <Link
+                legacyBehavior
                 href='https://www.youtube.com/@immobilierefrancoisbarbier1746'
                 passhref
                 target='_blank'
@@ -105,6 +106,7 @@ const Footer = ({ current }) => {
                 </a>
               </Link>{" "}
               <Link
+                legacyBehavior
                 href='https://www.facebook.com/profile.php?id=100063790292167'
                 passhref
                 target='_blank'
@@ -121,6 +123,7 @@ const Footer = ({ current }) => {
             }
             <span>
               <Link
+                legacyBehavior
                 href='https://www.ipi.be/agent-immobilier-ipi/la-deontologie-de-lagent-immobilier'
                 passHref
               >
@@ -136,7 +139,7 @@ const Footer = ({ current }) => {
           <p className='md:text-[13px] text-[11px] my-3 '>
             {" 2022 © listri | Designed with passion by "}
             <span>
-              <Link href='https://www.listri.digital/' passHref>
+              <Link legacyBehavior href='https://www.listri.digital/' passHref>
                 <a target='_blank' className='underline underline-offset-2'>
                   {"LISTRI"}
                 </a>

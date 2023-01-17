@@ -21,7 +21,7 @@ export default function Biens({ pages, locations, vendu, loué }) {
           name='Barbiere immobilier'
           content="François Barbiere et ses associés ont pour vocation de dénicher le biens de vos rêves. Maison , appartement , ect  vous retrouverez tout ce qu'il faut chez nous "
         />
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <Link legacyBehavior rel='shortcut icon' href='/favicon.ico' />
       </Head>
       <H1>{"Nos biens"}</H1>
       <MotionBottom

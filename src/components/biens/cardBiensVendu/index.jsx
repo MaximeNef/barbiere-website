@@ -32,7 +32,12 @@ const CardBienVendu = (props) => {
       >
         {" "}
         {props.pages.map((page) => (
-          <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
+          <Link
+            legacyBehavior
+            href={`/a-vendre/${page.uid}`}
+            key={page.uid}
+            passHref
+          >
             {page.data.slices[0].primary.vendu ? (
               <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
@@ -168,7 +173,12 @@ const CardBienVendu = (props) => {
           </Link>
         ))}
         {props.locations.map((page) => (
-          <Link href={`/a-louer/${page.uid}`} key={page.uid} passHref>
+          <Link
+            legacyBehavior
+            href={`/a-louer/${page.uid}`}
+            key={page.uid}
+            passHref
+          >
             {page.data.slices[0].primary.vendu ? (
               <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
                 <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
