@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    // minimumCacheTTL: 60,
+    minimumCacheTTL: 90,
     loader: "imgix",
     path: "",
     domains: ["images.prismic.io"],
