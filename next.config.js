@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     // minimumCacheTTL: 90,
-    loader: "imgix",
+    // loader: "imgix",
     path: "",
     domains: ["images.prismic.io"],
   },
