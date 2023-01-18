@@ -33,7 +33,9 @@ const CardInfo = (props) => {
               height ? "h-fit" : "h-[85px]  "
             }`}
           >
-            <p className='relative  overflow-hidden leading-7 '>{props.p}</p>
+            <div className='relative  overflow-hidden leading-7 '>
+              {props.p}
+            </div>
             {props.href && (
               <Link href={props.href.desc} passHref>
                 <a className='underline underline-offset-1 pb-2  '>

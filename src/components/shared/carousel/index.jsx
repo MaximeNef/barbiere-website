@@ -61,18 +61,19 @@ export default function Carousel(props) {
           {props.photo.map((item, index) => {
             if (index === currentSlide) {
               return (
-                <Container className='mt-10 w-full  '>
+                <Container key={index} className='mt-10 w-full  '>
                   {" "}
                   <Container className='absolute top-[130px] left-20 md:left-[110vh]'>
                     <MyImage source='/assets/LogoAgence.svg' w={300} h={400} />
                   </Container>
                   <Container className='  rounded-[20px]  w-full '>
-                    <Container className=' rounded-[18px] relative    min-h-[300px] md:min-h-[500px] z-30 '>
+                    <Container className='  relative   z-30 '>
                       <MyImage
                         source={item}
-                        layout='fill'
+                        w={300}
+                        h={450}
                         objectFit='cover'
-                        className='animate-fadeIn rounded-[16px] transition duration-700  shadow-cardinfo '
+                        className='animate-fadeIn  rounded-[16px] transition duration-700  shadow-cardinfo '
                       />
                     </Container>
                   </Container>{" "}

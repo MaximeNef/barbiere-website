@@ -13,7 +13,7 @@ export default function Services() {
       img: "/assets/serviceVendre.svg",
       h2: "Vendre",
       p: (
-        <p>
+        <div>
           La première étape, essentielle, est gratuite et sans engagement :
           <strong className='font-semibold'>
             {" "}
@@ -99,7 +99,7 @@ export default function Services() {
             Vous pouvez donc vivre ces étapes en confiance et en parfaite
             sérénité…
           </strong>
-        </p>
+        </div>
       ),
       btn: "En savoir plus",
     },
@@ -107,7 +107,7 @@ export default function Services() {
       img: "/assets/Key.svg",
       h2: "Louer",
       p: (
-        <p>
+        <div>
           Nous nous occupons de tout le{" "}
           <strong className='font-semibold'>
             processus de présentation de votre bien et de la sélection des
@@ -129,7 +129,7 @@ export default function Services() {
           <strong className='font-semibold'>
             l'état des lieux de sortie.{" "}
           </strong>
-        </p>
+        </div>
       ),
       btn: "En savoir plus",
     },
@@ -137,7 +137,7 @@ export default function Services() {
       img: "/assets/Expert.svg",
       h2: "Expertise",
       p: (
-        <p>
+        <div>
           Notre équipe d'experts se tient à votre disposition pour réaliser{" "}
           <strong className='font-semibold'>tout type d'expertise</strong> dans
           le cadre de succession, divorce, constitution de société, faillite,
@@ -146,7 +146,7 @@ export default function Services() {
             ou simplement pour vous permettre de connaître la valeur de votre
             bien.
           </strong>
-        </p>
+        </div>
       ),
       btn: "En savoir plus",
     },
