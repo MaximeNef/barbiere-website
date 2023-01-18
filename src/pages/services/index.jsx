@@ -173,7 +173,7 @@ export default function Services() {
       btn: "En savoir plus",
     },
   ];
-  const photo = ["/assets/emploi1.jpg", "/assets/desk.jpg"];
+  const photo = ["/assets/emploi1.webp", "/assets/desk.jpg"];
   return (
     <NavPage current={"Nos services"}>
       <Head>
