@@ -1,13 +1,9 @@
 import Link from "next/link";
-import { useEffect } from "react";
 import { useState } from "react";
-import Btn3 from "../btn3";
 import Container from "../container";
-import Flex from "../flex";
 import H2 from "../h2";
 import MotionRight from "../motion-CardRight";
 import MyImage from "../myimage";
-import P from "../p";
 
 const CardInfo = (props) => {
   const [height, setheight] = useState(false);
@@ -24,16 +20,12 @@ const CardInfo = (props) => {
     >
       <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo md:w-full md:h-fit  md:mb-8   '>
         <Container className='bg-white rounded-[18px] relative space-y-[30px] px-5 py-10'>
-          {" "}
           <Container className='relative w-full'>
-            {props.img == undefined ? (
-              <></>
-            ) : (
+            {props.img == undefined ? null : (
               <Container className='absolute top-[-30px] left-[-10px]'>
-                <MyImage source={props.img} w={"50"} h={"50"} />
+                <MyImage source={props.img} w={50} h={50} />
               </Container>
             )}
-
             <H2>{props.h2}</H2>
           </Container>
           <Container
@@ -42,25 +34,21 @@ const CardInfo = (props) => {
             }`}
           >
             <p className='relative  overflow-hidden leading-7 '>{props.p}</p>
-            {props.href ? (
+            {props.href && (
               <Link href={props.href.desc} passHref>
                 <a className='underline underline-offset-1 pb-2  '>
                   {props.href.name}
                 </a>
               </Link>
-            ) : (
-              <div />
             )}
-            {props.href1 ? (
+            {props.href1 && (
               <Link href={props.href1.desc} passHref>
                 <a className='underline underline-offset-1 pb-2 '>
                   {props.href1.name}
                 </a>
               </Link>
-            ) : (
-              <div />
             )}
-            {props.href2 ? (
+            {props.href2 && (
               <Link href={props.href2.desc} passHref>
                 <a>
                   <p className='underline underline-offset-1 pb-2 '>
@@ -68,17 +56,13 @@ const CardInfo = (props) => {
                   </p>
                 </a>
               </Link>
-            ) : (
-              <div />
             )}
-            {props.href3 ? (
+            {props.href3 && (
               <Link href={props.href3.desc} passHref>
                 <a className='underline underline-offset-1  overflow-hidden'>
                   {props.href3.name}
                 </a>
               </Link>
-            ) : (
-              <div />
             )}
           </Container>{" "}
           {props.btn == "je postule" ? (

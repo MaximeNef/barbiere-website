@@ -1,23 +1,13 @@
 import H1 from "../../components/shared/h1";
-
-import H3 from "../../components/shared/h3";
-
 import CardInfo from "../../components/shared/card-Info";
 import NavPage from "../../components/all/Nav-page";
 import Container from "../../components/shared/container";
-import MotionBottom from "../../components/shared/motion-bottom";
-import MotionRight from "../../components/shared/motion-CardRight";
 import MotionTop from "../../components/shared/motion-top";
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import ImgAgence from "../../components/agence/img-agence";
 import Carousel from "../../components/shared/carousel";
+
 export default function Services() {
-  // The default value is 'blue', it will be used during pre-rendering and the first render in the browser (hydration)
-  const [color, setColor] = useState("blue");
-  // During hydration `useEffect` is called. `window` is available in `useEffect`. In this case because we know we're in the browser checking for window is not needed. If you need to read something from window that is fine.
-  // By calling `setColor` in `useEffect` a render is triggered after hydrating, this causes the "browser specific" value to be available. In this case 'red'.
-  useEffect(() => setColor("red"), []);
   const services = [
     {
       img: "/assets/serviceVendre.svg",
@@ -110,56 +100,6 @@ export default function Services() {
             sérénité…
           </strong>
         </p>
-        // <p>
-        //   La première étape, essentielle, est gratuite et sans engagement. Elle
-        //   consiste en une{" "}
-        //   <strong className='font-semibold'>
-        //     analyse approfondie du bien afin de pouvoir en évaluer la valeur
-        //     vénale,
-        //   </strong>{" "}
-        //   de manière professionnelle et objective, en fonction des conditions du
-        //   marché. Préalablement à la mise en vente, nous procédons à{" "}
-        //   <strong className='font-semibold'>
-        //     différentes recherches administratives
-        //   </strong>{" "}
-        //   nous permettant de vérifier de nombreux points, gage d’une vente
-        //   totalement sécurisée. Selon le type de bien, nous procédons ensuite au{" "}
-        //   <strong className='font-semibold'>
-        //     choix des canaux de publicité,
-        //   </strong>{" "}
-        //   à l’élaboration de supports de présentation (dossier détaillé, photos
-        //   et vidéos réalisées par des partenaires professionnels) permettant une{" "}
-        //   <strong className='font-semibold'>
-        //     valorisation optimale de votre bien.
-        //   </strong>{" "}
-        //   La promotion est réalisée de manière pro-active (mailing ciblé) auprès
-        //   de nos nombreux candidats, mais également sur les plus grands sites
-        //   immobiliers et les réseaux sociaux. L’ensemble des visites sont
-        //   réalisées par du personnel formé, encadré par les associés de
-        //   l’agence, avec pour objectif une{" "}
-        //   <strong className='font-semibold'>
-        //     présentation complète et détaillée de chaque bien,
-        //   </strong>{" "}
-        //   avec la volonté de permettre à chaque acheteur d’en avoir une image
-        //   positive et une parfaite compréhension. Durant tout le processus de
-        //   mise en vente, les étapes de la négociation et l’examen de la
-        //   solvabilité et du plan de financement de l’acheteur, nous
-        //   <strong className='font-semibold'>
-        //     veillons à vous tenir régulièrement au courant de leur avancement.
-        //   </strong>
-        //   Vous bénéficiez toujours d’un temps de réflexion et pouvez donc
-        //   décider en toute quiétude. Nous nous chargeons de la{" "}
-        //   <strong className='font-semibold'>
-        //     rédaction du compromis de vente en des termes protégeant vos droits,
-        //   </strong>{" "}
-        //   en collaboration avec les études des parties, afin de concrétiser et
-        //   parfaitement finaliser tous les aspects de la vente. Durant notre
-        //   mission de vente, nous nous occupons de tous les détails du projet.
-        //   <strong className='font-semibold'>
-        //     {" "}
-        //     Vous pouvez vivre ces étapes en confiance et en parfaite sérénité..
-        //   </strong>
-        // </p>
       ),
       btn: "En savoir plus",
     },

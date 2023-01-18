@@ -1,14 +1,10 @@
 import * as React from "react";
-
-import { motion, AnimatePresence } from "framer-motion";
-import { wrap } from "popmotion";
-import Image from "next/image";
 import { useState } from "react";
 import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import MyImage from "../myimage";
 import Container from "../container";
-import MotionRight from "../motion-CardRight";
+
 import { useEffect } from "react";
 /**
  * Carousel component for nextJS and Tailwind.
@@ -68,7 +64,7 @@ export default function Carousel(props) {
                 <Container className='mt-10 w-full  '>
                   {" "}
                   <Container className='absolute top-[130px] left-20 md:left-[110vh]'>
-                    <MyImage source='/assets/LogoAgence.svg' w={600} h={800} />
+                    <MyImage source='/assets/LogoAgence.svg' w={300} h={400} />
                   </Container>
                   <Container className='  rounded-[20px]  w-full '>
                     <Container className=' rounded-[18px] relative    min-h-[300px] md:min-h-[500px] z-30 '>
