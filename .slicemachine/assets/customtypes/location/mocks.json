@@ -1,6 +1,511 @@
 {
-  "id": "1ee20033-ca1d-4569-913e-7d9a70a5643b",
-  "uid": "eligendi-non-officia",
-  "type": "location",
-  "data": {}
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "flame"
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "card_biens$c95c2d4f-6c30-4d13-8cd0-a70408ff2f4e",
+        "name": "card_biens",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "Image_bien": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+                "width": 4000,
+                "height": 4000
+              },
+              "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?rect=0%2C700%2C4000%2C2600&w=400&h=260",
+              "width": 400,
+              "height": 260,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 700
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            },
+            "nom_bien": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Amet duis dolore ipsum nulla dolor sint sunt proident cupidatat fugiat sit irure ex amet officia."
+                  }
+                }
+              ]
+            },
+            "adresse_bien": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Deserunt occaecat sit aute eiusmod laborum excepteur officia."
+                  }
+                }
+              ]
+            },
+            "Superficie_bien": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Esse Lorem proident sit magna mollit mollit ipsum aute ut in esse aute. Id ad veniam cillum. Elit sunt magna excepteur."
+                  }
+                }
+              ]
+            },
+            "sdb_bien": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Quis mollit irure exercitation consectetur incididunt."
+                  }
+                }
+              ]
+            },
+            "chambre_bien": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Do veniam ullamco ea mollit ea ullamco et deserunt ex qui exercitation dolor dolor. Cupidatat adipisicing sit nisi est anim cupidatat ullamco exercitation excepteur et aliquip adipisicing laboris mollit."
+                  }
+                }
+              ]
+            },
+            "description_biens": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Pariatur occaecat ex ex reprehenderit in ea pariatur sunt cillum enim incididunt nisi cupidatat anim excepteur. Esse occaecat irure qui ad reprehenderit veniam non aute anim veniam cupidatat tempor proident."
+                  }
+                }
+              ]
+            },
+            "surface_habitable": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sint do consectetur et est non. Irure aute do Lorem incididunt minim velit incididunt labore ut aliquip deserunt qui labore incididunt elit. Dolor et incididunt duis minim elit reprehenderit."
+                  }
+                }
+              ]
+            },
+            "superficie_terrain": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Veniam laboris ipsum laboris proident officia veniam quis eu eiusmod reprehenderit id voluptate reprehenderit excepteur sint."
+                  }
+                }
+              ]
+            },
+            "type_env": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Excepteur reprehenderit elit velit officia. Ullamco deserunt pariatur cillum officia incididunt veniam anim ut."
+                  }
+                }
+              ]
+            },
+            "nbr_etages": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Elit ipsum sunt occaecat irure cupidatat minim Lorem consequat sint."
+                  }
+                }
+              ]
+            },
+            "lgr_facade": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Consequat commodo deserunt consectetur eiusmod aliquip. Excepteur do eiusmod anim ex aute in. Culpa tempor nisi duis."
+                  }
+                }
+              ]
+            },
+            "garage": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ea sunt duis id officia sit do magna amet eiusmod magna nostrud officia mollit nostrud. Aute commodo eu nulla."
+                  }
+                }
+              ]
+            },
+            "nbr_toilettes": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Minim quis tempor exercitation commodo nisi."
+                  }
+                }
+              ]
+            },
+            "nbr_parking": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Dolore mollit eiusmod pariatur minim sint fugiat voluptate elit sunt. Voluptate commodo aute nulla ut reprehenderit excepteur ut mollit occaecat sint ipsum."
+                  }
+                }
+              ]
+            },
+            "prix_bien": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ipsum enim nostrud ex."
+                  }
+                }
+              ]
+            },
+            "vendu": {
+              "__TYPE__": "BooleanContent",
+              "value": false
+            },
+            "peb": {
+              "__TYPE__": "FieldContent",
+              "value": "PEB-A",
+              "type": "Select"
+            },
+            "Disponibilite": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Voluptate duis magna est esse elit anim. Veniam velit quis in amet eiusmod ex quis aliqua occaecat. Esse qui est est laborum ut."
+                  }
+                }
+              ]
+            },
+            "Rvn_cadastral": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ipsum aute magna adipisicing ex laborum. Dolore dolore sunt consectetur mollit. Magna non in tempor cupidatat anim excepteur."
+                  }
+                }
+              ]
+            },
+            "Type_chauffage": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Adipisicing aliquip eiusmod laborum cupidatat eu labore est do."
+                  }
+                }
+              ]
+            },
+            "Raccordement_eau": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Qui ullamco aliqua cillum quis tempor. Irure aute adipisicing pariatur nostrud."
+                  }
+                }
+              ]
+            },
+            "Type_chassis": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Labore laborum esse dolor."
+                  }
+                }
+              ]
+            },
+            "Cuisine": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Commodo sit aliqua cupidatat veniam."
+                  }
+                }
+              ]
+            },
+            "Confort_interieur": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Reprehenderit est exercitation excepteur ut. Aute occaecat eiusmod dolore magna cillum do ipsum dolor sint eiusmod incididunt anim."
+                  }
+                }
+              ]
+            },
+            "Confort_exterieur": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Mollit laboris commodo irure."
+                  }
+                }
+              ]
+            },
+            "nbr_facades": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Eiusmod labore minim mollit voluptate labore aliquip velit."
+                  }
+                }
+              ]
+            },
+            "Annee_construction": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Veniam Lorem aliquip Lorem aliqua mollit consectetur."
+                  }
+                }
+              ]
+            },
+            "Etat_bien": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Do eiusmod dolor amet laborum duis in commodo et eiusmod."
+                  }
+                }
+              ]
+            },
+            "Orientation_facade_arriere": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ad nostrud laboris eu in anim in consequat eu. Occaecat elit consectetur pariatur amet enim ex duis labore aliqua anim in incididunt. Excepteur eu dolor enim ad ullamco veniam quis cillum dolor ut consectetur adipisicing id laboris."
+                  }
+                }
+              ]
+            },
+            "Toiture": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Dolor aliquip reprehenderit esse eiusmod enim id reprehenderit consectetur quis est amet nisi. Commodo laboris in cupidatat dolore incididunt quis dolor exercitation ipsum veniam mollit culpa mollit."
+                  }
+                }
+              ]
+            },
+            "installation_electrique": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Occaecat mollit culpa nostrud sit anim fugiat nulla labore. Adipisicing voluptate Lorem elit quis id cillum sunt pariatur voluptate culpa. Et consectetur excepteur ex eiusmod."
+                  }
+                }
+              ]
+            },
+            "Evacuation_eaux": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Qui occaecat ad incididunt cillum laborum occaecat."
+                  }
+                }
+              ]
+            },
+            "jardin": {
+              "__TYPE__": "BooleanContent",
+              "value": true
+            },
+            "orientation_jardin": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Aliqua quis culpa enim occaecat sint fugiat minim."
+                  }
+                }
+              ]
+            },
+            "terrasse": {
+              "__TYPE__": "BooleanContent",
+              "value": true
+            },
+            "orientation_terrasse": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Occaecat anim magna ut deserunt dolor id ut sit laborum laboris officia ut nostrud esse quis."
+                  }
+                }
+              ]
+            },
+            "conso_primaire": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Aliqua aliqua ipsum culpa reprehenderit ullamco occaecat. Consequat cillum nostrud culpa est officia dolor sint laborum nulla aliquip."
+                  }
+                }
+              ]
+            },
+            "classe_energie": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Nulla nisi eu consectetur adipisicing cillum mollit est laborum irure. Irure veniam non consectetur labore anim deserunt incididunt ullamco."
+                  }
+                }
+              ]
+            },
+            "rapport_peb": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Tempor voluptate consectetur do do ullamco. Velit aliqua deserunt id in dolor excepteur pariatur ipsum irure irure Lorem."
+                  }
+                }
+              ]
+            },
+            "emission_co2": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Aute veniam qui veniam proident. Magna qui mollit voluptate ullamco aliquip nisi ea aliqua amet consectetur commodo ipsum. Labore mollit id ut laboris occaecat."
+                  }
+                }
+              ]
+            },
+            "option": {
+              "__TYPE__": "BooleanContent",
+              "value": false
+            },
+            "typeFiltre": {
+              "__TYPE__": "FieldContent",
+              "value": "commerce",
+              "type": "Select"
+            },
+            "postal_type": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Nostrud exercitation proident qui Lorem culpa. Laboris irure incididunt laboris."
+                  }
+                }
+              ]
+            },
+            "ordres": {
+              "__TYPE__": "FieldContent",
+              "value": "9",
+              "type": "Select"
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "autres_img",
+                  {
+                    "__TYPE__": "ImageContent",
+                    "origin": {
+                      "id": "main",
+                      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+                      "width": 4010,
+                      "height": 4010
+                    },
+                    "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+                    "width": 4010,
+                    "height": 4010,
+                    "edit": {
+                      "zoom": 1,
+                      "crop": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "background": "transparent"
+                    },
+                    "thumbnails": {}
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
