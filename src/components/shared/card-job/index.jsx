@@ -22,7 +22,7 @@ const CardJob = (props) => {
           <Container className='relative w-full'>
             {props.img == undefined ? null : (
               <Container className='absolute top-[-20px] left-[-10px]'>
-                <MyImage source={props.img} w={"50"} h={"50"} />
+                <MyImage source={props.img} w={50} h={50} />
               </Container>
             )}
 
