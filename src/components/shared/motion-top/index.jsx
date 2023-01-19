@@ -27,22 +27,20 @@ export default function MotionTop({
   }, [controls, inView]);
 
   return (
-    <>
-      <motion.div
-        ref={ref}
-        onClick={onClick}
-        id={id}
-        style={{
-          ...(fitHeight && { height: "fit-content" }),
-          ...style,
-        }}
-        initial={initial}
-        animate={controls}
-        transition={transition}
-        variants={variants}
-      >
-        {children}
-      </motion.div>
-    </>
+    <motion.div
+      ref={ref}
+      onClick={onClick}
+      id={id}
+      style={{
+        ...(fitHeight && { height: "fit-content" }),
+        ...style,
+      }}
+      initial={initial}
+      animate={controls}
+      transition={transition}
+      variants={variants}
+    >
+      {children}
+    </motion.div>
   );
 }
