@@ -1,12 +1,7 @@
-import { useEffect } from "react";
 import { useState } from "react";
-import Btn3 from "../btn3";
-import Container from "../container";
-import Flex from "../flex";
 import H2 from "../h2";
 import MotionRight from "../motion-CardRight";
 import MyImage from "../myimage";
-import P from "../p";
 
 const CardJob = (props) => {
   const [height, setheight] = useState(false);
@@ -24,9 +19,7 @@ const CardJob = (props) => {
       <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo md:w-full md:h-fit  md:mb-8  '>
         <Container className='bg-white rounded-[18px] relative space-y-[30px] px-5 py-10  min-h-[340px] '>
           <Container className='relative w-full'>
-            {props.img == undefined ? (
-              <></>
-            ) : (
+            {props.img == undefined ? null : (
               <Container className='absolute top-[-20px] left-[-10px]'>
                 <MyImage source={props.img} w={"50"} h={"50"} />
               </Container>
