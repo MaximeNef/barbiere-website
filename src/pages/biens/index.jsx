@@ -12,7 +12,6 @@ import MotionRight from "../../components/shared/motion-CardRight";
 import Head from "next/head";
 import CardDesktop from "../../components/shared/card-cta-desktop";
 export default function Biens({ pages, locations, vendu, loué }) {
-  console.log(vendu, "?");
   return (
     <NavPage current='Nos biens'>
       <Head>
