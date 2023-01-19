@@ -117,17 +117,10 @@ export default function Contact() {
       <Container className='relative mx-[-5vw]'>
         <className className='h-full w-full mx-[-20px] '>
           <MyImage
-            source='/assets/contactgsm.jpg'
+            source='/assets/contactgsm.webp'
             layout='fill'
-            className=' md:min-h-[600px] absolute md:hidden'
             objectFit={"cover"}
           />{" "}
-          <MyImage
-            source='/assets/contactgsm.jpg'
-            layout='fill'
-            className=' md:min-h-[600px] absolute hidden md:inline-flex'
-            objectFit={"cover"}
-          />
         </className>
         <Container className='md:flex md:flex-col md:px-36 z-20  bg-black/50 pb-40  '>
           {" "}
