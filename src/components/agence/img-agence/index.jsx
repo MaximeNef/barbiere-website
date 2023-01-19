@@ -16,11 +16,12 @@ const ImgAgence = (props) => {
       >
         <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] shadow-cardinfo'>
           {" "}
-          <Container className=' rounded-[18px] relative min-h-[300px] md:min-h-[600px] z-30 '>
+          <Container className=' rounded-[18px] relative  z-30 '>
             <MyImage
               source={props.src}
-              layout='fill'
-              className='rounded-[18px] md:min-h-[600px] '
+              w={100}
+              h={400}
+              className='rounded-[18px] '
               objectFit={"cover"}
             />
           </Container>{" "}

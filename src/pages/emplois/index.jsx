@@ -5,7 +5,6 @@ import MotionTop from "../../components/shared/motion-top";
 import CardJob from "../../components/shared/card-job";
 import Head from "next/head";
 import ImgAgence from "../../components/agence/img-agence";
-import Carousel from "../../components/shared/carousel";
 export default function Emplois() {
   const services = [
     {
@@ -46,7 +45,7 @@ export default function Emplois() {
         </h3>
       </MotionTop>
       <Container className='md:px-14'>
-        <ImgAgence src='/assets/inter.jpg' />
+        <ImgAgence src='/assets/inter.webp' />
       </Container>
 
       <Container className='space-y-[40px] mt-12 md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-center '>
