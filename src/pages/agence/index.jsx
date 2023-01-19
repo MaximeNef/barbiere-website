@@ -1,29 +1,112 @@
 import Head from "next/head";
 import H1 from "../../components/shared/h1";
-import H2 from "../../components/shared/h2";
-import H3 from "../../components/shared/h3";
-import P from "../../components/shared/p";
-import Btn3 from "../../components/shared/btn3";
-import Btn2 from "../../components/shared/btn2";
-import CardCTA from "../../components/shared/card-Cta";
-import CardInfo from "../../components/shared/card-Info";
-import CardTeam from "../../components/shared/card-team";
-import CardAvis from "../../components/shared/cardAvis";
 import NavPage from "../../components/all/Nav-page";
 import Container from "../../components/shared/container";
-import ImgAgence from "../../components/agence/img-agence";
 import MyImage from "../../components/shared/myimage";
-import MotionBottom from "../../components/shared/motion-bottom";
 import MotionTop from "../../components/shared/motion-top";
 import MotionRight from "../../components/shared/motion-CardRight";
 import CardTeams from "../../components/shared/card-teams";
-import DetailsImg from "../../components/biens/details/detailsImage";
 import Carousel from "../../components/shared/carousel";
 export default function Agence() {
   const photo = [
-    "/assets/façade.jpg",
-    "/assets/vitrine.jpg",
-    "/assets/deco.jpg",
+    "/assets/façade.webp",
+    "/assets/vitrine.webp",
+    "/assets/deco.webp",
+  ];
+  const Teams = [
+    {
+      img: "/assets/barbiere.webp",
+      nom: "François Barbière ",
+      post: "Agent Immobilier - Gérant",
+      ipi: "Nr d’agréation IPI : 506259",
+      region: "Hannut / Waremme & leurs villages",
+      tel: "019 30 57 32",
+      mail: "fb@barbiere.be",
+      bac: "Expert Immobilier IFAPME  Licencié HEC Lg ",
+    },
+
+    {
+      img: "/assets/ste.webp",
+      nom: "Stéphane Beaujot ",
+      post: "Agent immobilier - Associé",
+      ipi: "Nr d’agréation IPI : 510059",
+      region: "Liège / Embourg / Beaufays",
+      tel: "0477 75 44 10",
+      mail: "sb@barbiere.be",
+      bac: "Bachelier en Immobilier",
+    },
+    {
+      img: "/assets/cam.webp",
+      nom: "Camille Gillon",
+      post: "Conseillère en Immobilier",
+      ipi: "Nr d’agréation IPI : 517107",
+      region: "Hélécine / Orp-Jauche",
+      tel: "0497 40 85 29",
+      mail: "cg@barbiere.be",
+      bac: "Bachelière en Immobilier",
+    },
+
+    {
+      img: "/assets/VanHove.webp",
+      nom: "Gaëtane Van Hove ",
+      post: "Conseillère en Immobilier",
+      ipi: "Nr d’agréation IPI : 516771",
+      region: "Braives / Wasseiges",
+      tel: "0479 54 76 01",
+      mail: "gv@barbiere.be",
+      bac: "Bachelière en Immobilier Architecte d'intérieur",
+    },
+    {
+      img: "/assets/gatz.webp",
+      nom: "Philippe Gatz",
+      post: "Agent Immobilier - Associé",
+      ipi: "Nr d’agréation IPI : 510912",
+      region: "Verviers / Herve",
+      tel: "0493 19 30 03",
+      mail: "pg@barbiere.be",
+      bac: "",
+    },
+    {
+      img: "/assets/pers1test.webp",
+      nom: "Zoé Livron",
+      post: "Conseillère en immobilier",
+      ipi: "Nr d’agréation IPI : 513512",
+      region: "Huy / Héron / Burdinne / Andenne",
+      tel: "0473 29 00 70",
+      mail: "zl@barbiere.be",
+      bac: "Bachelière en Immobilier",
+    },
+    {
+      img: "/assets/lisa.webp",
+      nom: "Lisa Yodts",
+      post: "Stagiaire en Immobilier",
+      ipi: "",
+      region: "",
+      tel: "019 30 57 32",
+      mail: "ly@barbiere.be",
+      bac: "",
+    },
+    {
+      img: "/assets/logoB.svg",
+      nom: "Dévoilé en 2023",
+      post: "",
+      ipi: "",
+      region: "Namur / Beauraing / Dinant",
+      tel: "",
+      mail: "",
+      bac: "",
+    },
+
+    {
+      img: "/assets/logoB.svg",
+      nom: "Dévoilé en 2023",
+      post: "",
+      ipi: "",
+      region: "Jodoigne / Brabant Wallon / Bruxelles",
+      tel: "",
+      mail: "",
+      bac: "",
+    },
   ];
   return (
     <NavPage current={"Agence / Équipe"}>
@@ -80,10 +163,9 @@ export default function Agence() {
           <Container className=' relative w-[100%] z-20 mt-6'>
             <Container className='ml-[-20px] md:ml-[-116px] md:mr-[-116px] mr-[-20px] shadow-cardcta md:h-[40%]'>
               <MyImage
-                source='/assets/team.png'
-                w='100%'
-                h='50%'
-                // objectFit={"cover"}
+                source='/assets/team.webp'
+                w='100'
+                h='50'
                 layout='responsive'
                 objectFit='cover'
               />
@@ -91,101 +173,21 @@ export default function Agence() {
           </Container>{" "}
         </MotionRight>{" "}
         <Container className='space-y-[20px] md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-start md:mx-auto md:ml-[7%] mt-8  '>
-          <CardTeams
-            img={"/assets/barbiere.jpg"}
-            nom={"François Barbière "}
-            post={"Agent Immobilier - Gérant"}
-            ipi={"Nr d’agréation IPI : 506259"}
-            region={"Hannut / Waremme & leurs villages"}
-            tel={"019 30 57 32"}
-            mail={"fb@barbiere.be"}
-            bac={"Expert Immobilier IFAPME  Licencié HEC Lg "}
-          />
-
-          <CardTeams
-            img={"/assets/ste.jpg"}
-            nom={"Stéphane Beaujot "}
-            post={"Agent immobilier - Associé"}
-            ipi={"Nr d’agréation IPI : 510059"}
-            region={"Liège / Embourg / Beaufays"}
-            tel={"0477 75 44 10"}
-            mail={"sb@barbiere.be"}
-            bac={"Bachelier en Immobilier"}
-          />
-
-          <CardTeams
-            img={"/assets/cam.jpg"}
-            nom={"Camille Gillon"}
-            post={"Conseillère en Immobilier"}
-            ipi={"Nr d’agréation IPI : 517107"}
-            region={"Hélécine / Orp-Jauche"}
-            tel={"0497 40 85 29"}
-            mail={"cg@barbiere.be"}
-            bac={"Bachelière en Immobilier"}
-          />
-
-          <CardTeams
-            img={"/assets/VanHove.jpg"}
-            nom={"Gaëtane Van Hove "}
-            post={"Conseillère en Immobilier"}
-            ipi={"Nr d’agréation IPI : 516771"}
-            region={"Braives / Wasseiges"}
-            tel={"0479 54 76 01"}
-            mail={"gv@barbiere.be"}
-            bac={"Bachelière en Immobilier Architecte d'intérieur"}
-          />
-          <CardTeams
-            img={"/assets/gatz.jpg"}
-            nom={"Philippe Gatz"}
-            post={"Agent Immobilier - Associé"}
-            ipi={"Nr d’agréation IPI : 510912"}
-            region={"Verviers / Herve"}
-            tel={"0493 19 30 03"}
-            mail={"pg@barbiere.be"}
-            bac={""}
-          />
-
-          <CardTeams
-            img={"/assets/pers1test.jpg"}
-            nom={"Zoé Livron"}
-            post={"Conseillère en immobilier"}
-            ipi={"Nr d’agréation IPI : 513512"}
-            region={"Huy / Héron / Burdinne / Andenne"}
-            tel={"0473 29 00 70"}
-            mail={"zl@barbiere.be"}
-            bac={"Bachelière en Immobilier"}
-          />
-
-          <CardTeams
-            img={"/assets/lisa.jpg"}
-            nom={"Lisa Yodts"}
-            post={"Stagiaire en Immobilier"}
-            ipi={""}
-            region={""}
-            tel={"019 30 57 32"}
-            mail={"ly@barbiere.be"}
-            bac={""}
-          />
-          <CardTeams
-            img={"/assets/logoB.svg"}
-            nom={"Dévoilé en 2023"}
-            post={""}
-            ipi={""}
-            region={"Namur / Beauraing / Dinant"}
-            tel={""}
-            mail={""}
-            bac={""}
-          />
-          <CardTeams
-            img={"/assets/logoB.svg"}
-            nom={"Dévoilé en 2023"}
-            post={""}
-            ipi={""}
-            region={"Jodoigne / Brabant Wallon / Bruxelles"}
-            tel={""}
-            mail={""}
-            bac={""}
-          />
+          {Teams.map((team, i) => {
+            return (
+              <CardTeams
+                key={i}
+                img={team.img}
+                nom={team.nom}
+                post={team.post}
+                ipi={team.ipi}
+                region={team.region}
+                tel={team.tel}
+                mail={team.mail}
+                bac={team.bac}
+              />
+            );
+          })}
         </Container>
       </Container>
     </NavPage>
