@@ -47,7 +47,7 @@ export default function Agence() {
     },
 
     {
-      img: "/assets/VanHove.webp",
+      img: "/assets/vanHove.webp",
       nom: "Gaëtane Van Hove ",
       post: "Conseillère en Immobilier",
       ipi: "Nr d’agréation IPI : 516771",

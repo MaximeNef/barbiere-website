@@ -9,7 +9,7 @@ const BannerSection = () => {
         <Container className='skew-x-[10deg] h-full '>
           <Container className='h-full '>
             <MyImage
-              source={"/assets/team.png"}
+              source={"/assets/team.webp"}
               objectFit={"cover"}
               layout='fill'
             />
