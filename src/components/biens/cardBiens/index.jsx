@@ -33,7 +33,7 @@ const CardBien = (props) => {
         {props.pages.map((page, i) => (
           <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
             <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
-              <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
+              <Container className='relative '>
                 <Container className='absolute z-10  top-[-2px] '>
                   {page.data.slices[0].primary.option ? (
                     <MyImage
@@ -46,7 +46,12 @@ const CardBien = (props) => {
                 <MyImage
                   source={page.data.slices[0].primary.Image_bien.url}
                   className='rounded-t-[20px] '
-                  layout={"fill"}
+                  w={340}
+                  h={230}
+                  sizes='(max-width: 400px) 100vw,
+                      (max-width: 200px) 50vw,
+                      33vw'
+                  objectFit={"cover"}
                 />
                 <Container className='absolute bottom-1 left-1'>
                   {page.data.slices[0].primary.peb == "PEB-A" ? (
@@ -72,9 +77,9 @@ const CardBien = (props) => {
                   ) : null}
                 </Container>
               </Container>
-              <Container className='p-3 h-full'>
+              <Container className='p-3 h-[150px]'>
                 <Flex justify='between'>
-                  <Container className=' text-xl font-bold '>
+                  <Container className=' text-xl font-bold overflow-hidden h-8'>
                     {page.data.slices[0].primary.nom_bien[0]?.text}
                   </Container>
                   <p className=' text-xl font-semibold text-[#43A8AA] min-w-[100px] text-end '>

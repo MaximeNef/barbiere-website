@@ -38,7 +38,7 @@ const CardBienLocation = (props) => {
               <div />
             ) : (
               <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
-                <Container className='relative min-w-[340] min-h-[206px] md:w-[400px] md:min-h-[230px]'>
+                <Container className='relative '>
                   <Container className='absolute z-10  top-[-2px] '>
                     {page.data.slices[0].primary.option ? (
                       <MyImage
@@ -56,9 +56,10 @@ const CardBienLocation = (props) => {
                         ? page.data.slices[0].primary.Image_bien?.url
                         : "/assets/logoB.svg"
                     }
-                    className='rounded-t-[20px] md:w-[420px] md:h-[230px]'
+                    className='rounded-t-[20px]'
                     w={340}
-                    h={206}
+                    h={230}
+                    objectFit={"cover"}
                     sizes='(max-width: 400px) 100vw,
                       (max-width: 200px) 50vw,
                       33vw'
@@ -101,7 +102,7 @@ const CardBienLocation = (props) => {
                     )}
                   </Container>
                 </Container>
-                <Container className='p-3 h-full'>
+                <Container className='p-3 h-[150px]'>
                   <Flex justify='between'>
                     <Container className=' text-xl font-bold '>
                       {page.data.slices[0].primary.nom_bien[0]?.text}

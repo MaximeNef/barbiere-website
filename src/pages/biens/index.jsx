@@ -7,12 +7,12 @@ import H1 from "../../components/shared/h1";
 import H3 from "../../components/shared/h3";
 import { createClient } from "../../../prismicio";
 import CardBienVendu from "../../components/biens/cardBiensVendu";
-import CardBienLocation from "../../components/biens/CardBienLocation";
 import MotionBottom from "../../components/shared/motion-bottom";
 import MotionRight from "../../components/shared/motion-CardRight";
 import Head from "next/head";
 import CardDesktop from "../../components/shared/card-cta-desktop";
 export default function Biens({ pages, locations, vendu, loué }) {
+  console.log(vendu, "?");
   return (
     <NavPage current='Nos biens'>
       <Head>
@@ -61,8 +61,7 @@ export default function Biens({ pages, locations, vendu, loué }) {
         </Flex>
       </MotionBottom>
       <Flex className='md:w-[100%]  container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px]  md:mr-auto'>
-        <CardBienLocation pages={locations} />
-        {/* <Container className='  w-[100px] flex-shrink-0 h-[200px] flex items-center justify-center mx-10  md:hidden  '></Container> */}
+        <CardBien pages={locations} />
       </Flex>{" "}
       <MotionBottom
         initial='hidden'
@@ -95,6 +94,7 @@ export async function getStaticProps({ previewData }) {
   const locationsFilter = locations.filter(
     (location) => location.data.slices[0].primary.vendu !== true
   );
+
   return {
     props: {
       pages: pagesFilter,
