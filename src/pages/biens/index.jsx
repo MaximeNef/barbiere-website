@@ -36,7 +36,7 @@ export default function Biens({ pages, locations, vendu, loué }) {
         </Flex>{" "}
       </MotionBottom>
       <Flex className='md:w-[100%]   container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px]  md:mr-[-60px] '>
-        <CardBien pages={pages} />
+        <CardBien pages={pages} bieneAvendre={true} />
       </Flex>
       <Container className='my-10'>
         <MotionRight
@@ -60,7 +60,7 @@ export default function Biens({ pages, locations, vendu, loué }) {
         </Flex>
       </MotionBottom>
       <Flex className='md:w-[100%]  container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px]  md:mr-auto'>
-        <CardBien pages={locations} />
+        <CardBien pages={locations} bieneAvendre={false} />
       </Flex>{" "}
       <MotionBottom
         initial='hidden'

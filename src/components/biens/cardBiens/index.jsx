@@ -31,7 +31,13 @@ const CardBien = (props) => {
         className='  w-full flex'
       >
         {props.pages.map((page, i) => (
-          <Link href={`/a-vendre/${page.uid}`} key={page.uid} passHref>
+          <Link
+            href={
+              bieneAvendre ? `/a-vendre/${page.uid}` : `/a-louer/${page.uid}`
+            }
+            key={page.uid}
+            passHref
+          >
             <Container className=' rounded-[20px] shadow-cardinfo w-full snap-always snap-center flex-shrink-0 m-2 mx-auto md:max-w-[400px] mr-3 cursor-pointer'>
               <Container className='relative '>
                 <Container className='absolute z-10  top-[-2px] '>
