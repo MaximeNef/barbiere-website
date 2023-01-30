@@ -33,7 +33,9 @@ const CardBien = (props) => {
         {props.pages.map((page, i) => (
           <Link
             href={
-              bieneAvendre ? `/a-vendre/${page.uid}` : `/a-louer/${page.uid}`
+              props.bieneAvendre
+                ? `/a-vendre/${page.uid}`
+                : `/a-louer/${page.uid}`
             }
             key={page.uid}
             passHref
