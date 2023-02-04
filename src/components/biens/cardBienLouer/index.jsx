@@ -20,15 +20,15 @@ const CardBienLouer = (props) => {
       {props.postalValue !== "all" || props.filterValue !== "all" ? (
         <div>
           <Container className='md:flex md:flex-row md:flex-wrap md:w-fit justify-center'>
-            <BienAvendre pages={props.pages} />
-            <BienOptions pages={props.pages} />
-            <BienVendu pages={props.pages} />
+            <BienAvendre pages={props.pages} louer={true} />
+            <BienOptions pages={props.pages} louer={true} />
+            <BienVendu pages={props.pages} louer={true} />
           </Container>
         </div>
       ) : (
         <div>
           <Container className='md:flex md:flex-row md:flex-wrap md:w-fit justify-center'>
-            <BienAvendre pages={props.pages} />
+            <BienAvendre pages={props.pages} louer={true} />
           </Container>
         </div>
       )}
