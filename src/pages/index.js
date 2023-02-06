@@ -126,7 +126,7 @@ export default function Home({ pages }) {
         </MotionRight>
       </Flex>
       <Flex className='md:w-[100%] container-snap snap-x snap-mandatory overflow-scroll  pr-10 pb-5 mx-[-20px] pl-[10px] md:pl-[20px] md:mr-auto md:my-5'>
-        <CardBien pages={pages} />
+        <CardBien pages={pages} bieneAvendre={true} />
       </Flex>
       <MotionBottom
         initial='hidden'
