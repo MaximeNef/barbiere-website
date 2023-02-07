@@ -1,8 +1,4 @@
 import * as React from "react";
-
-import { motion, AnimatePresence } from "framer-motion";
-import { wrap } from "popmotion";
-import Image from "next/image";
 import { useState } from "react";
 import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -99,7 +95,7 @@ export default function detailsImage(props) {
                     layout='fill'
                     objectFit='cover'
                     className='animate-fadeIn rounded-[20px] w-full hover:scale-110 transition duration-700 ease-in-out'
-                  />
+                  />{" "}
                   {showModal && (
                     <Container className='  top-0 left-0 w-screen h-screen flex justify-center items-center bg-black/90 overflow-hidden  fixed'>
                       <Container className=' w-full md:w-[80%] md:h-[80%] mt-[5%]'>
