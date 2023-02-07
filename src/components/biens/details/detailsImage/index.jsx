@@ -67,7 +67,7 @@ export default function detailsImage(props) {
       >
         {showModal ? (
           <Container
-            className='absolute right-0 md:top-8 md:right-16 text-3xl text-white cursor-pointer z-30'
+            className='fixed right-8 md:top16 md:right-16 text-3xl text-white cursor-pointer z-30'
             onClick={() => {
               setShowModal(false);
             }}
@@ -95,7 +95,7 @@ export default function detailsImage(props) {
                       source={item.autres_img.url}
                       layout='fill'
                       objectFit='cover'
-                      sizes='(max-width: 768px) 100vw,
+                      sizes='(max-width: 768px) 50vw,
                     (max-width: 1200px) 50vw,
                     33vw'
                       className='animate-fadeIn rounded-[20px] w-full hover:scale-110 transition duration-700 ease-in-out'

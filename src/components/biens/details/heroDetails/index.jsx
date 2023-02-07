@@ -11,16 +11,17 @@ const HeroDetails = (props) => {
         {props.details.data.slices[0].primary.nom_bien[0]?.text}
       </H1>
       <Container className=''>
+        {" "}
+        <p className=' text-[25px] font-semibold text-[#43A8AA] leading-[31px] mx-auto tracking-widest mt-[7px]'>
+          {props.details.data.slices[0].primary.prix_bien[0]?.text}
+          {"€"}
+        </p>
         <Flex justify=''>
           <MyImage source={"/assets/pin.svg"} h={"16"} w={"12"} />
           <Container className='ml-2 font-light text-[16px] leading-[18px]'>
             {props.details.data.slices[0].primary.adresse_bien[0]?.text}
           </Container>
         </Flex>
-        <p className=' text-[25px] font-semibold text-[#43A8AA] leading-[31px] mx-auto tracking-widest mt-[7px]'>
-          {props.details.data.slices[0].primary.prix_bien[0]?.text}
-          {"€"}
-        </p>
       </Container>
 
       <Flex justify='between' className='mt-[14px]'>
