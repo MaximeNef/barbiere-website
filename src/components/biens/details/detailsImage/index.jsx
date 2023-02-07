@@ -98,6 +98,7 @@ export default function detailsImage(props) {
                       sizes='(max-width: 768px) 50vw,
                     (max-width: 1200px) 50vw,
                     33vw'
+                      priority={true}
                       className='animate-fadeIn rounded-[20px] w-full hover:scale-110 transition duration-700 ease-in-out'
                     />{" "}
                   </div>
