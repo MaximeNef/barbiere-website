@@ -11,7 +11,6 @@ const MyImage = ({
   className,
   objectFit,
   layout,
-  imageProps,
   sizes,
   priority,
 }) => {

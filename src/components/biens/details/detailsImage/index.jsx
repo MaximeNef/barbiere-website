@@ -90,12 +90,17 @@ export default function detailsImage(props) {
             if (index === currentSlide) {
               return (
                 <>
-                  <MyImage
-                    source={item.autres_img.url}
-                    layout='fill'
-                    objectFit='cover'
-                    className='animate-fadeIn rounded-[20px] w-full hover:scale-110 transition duration-700 ease-in-out'
-                  />{" "}
+                  <div className='relative h-full'>
+                    <MyImage
+                      source={item.autres_img.url}
+                      layout='fill'
+                      objectFit='cover'
+                      sizes='(max-width: 768px) 100vw,
+                    (max-width: 1200px) 50vw,
+                    33vw'
+                      className='animate-fadeIn rounded-[20px] w-full hover:scale-110 transition duration-700 ease-in-out'
+                    />{" "}
+                  </div>
                   {showModal && (
                     <Container className='  top-0 left-0 w-screen h-screen flex justify-center items-center bg-black/90 overflow-hidden  fixed'>
                       <Container className=' w-full md:w-[80%] md:h-[80%] mt-[5%]'>
