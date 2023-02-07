@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const myLoader = ({ src, width, quality }) => {
-  return `${src}`;
-};
+// const myLoader = ({ src, width, quality }) => {
+//   return `${src}`;
+// };
 
 const MyImage = ({
   source,
@@ -16,9 +16,9 @@ const MyImage = ({
 }) => {
   return (
     <Image
-      loader={myLoader}
+      // loader={myLoader}
       src={source}
-      alt='Picture of the author'
+      alt='Picture of the house'
       width={w}
       height={h}
       unoptimized={true}
