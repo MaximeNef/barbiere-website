@@ -59,7 +59,7 @@ export default function VideoPlayer(props) {
           autoplay
           playsinline
           preload="none"
-        
+          priority={true}
          
         >
         <source src="${props.video}" type="video/mp4"  />
