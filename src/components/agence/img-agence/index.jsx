@@ -19,7 +19,7 @@ const ImgAgence = (props) => {
           <Container className=' rounded-[18px] relative  z-30 '>
             <MyImage
               source={props.src}
-              w={100}
+              w={340}
               h={400}
               className='rounded-[18px] '
               objectFit={"cover"}
