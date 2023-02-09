@@ -67,13 +67,22 @@ export default function Carousel(props) {
                     <MyImage source='/assets/LogoAgence.svg' w={300} h={400} />
                   </Container>
                   <Container className='  rounded-[20px]  w-full '>
-                    <Container className='  relative   z-30 '>
+                    <Container className='hidden md:inline-flex relative   z-30 '>
                       <MyImage
                         source={item}
                         w={300}
                         h={500}
                         objectFit='cover'
-                        className='animate-fadeIn  rounded-[16px] transition duration-700  shadow-cardinfo '
+                        className='  animate-fadeIn  rounded-[16px] transition duration-700  shadow-cardinfo '
+                      />
+                    </Container>
+                    <Container className=' inline-flex md:hidden  relative   z-30 '>
+                      <MyImage
+                        source={item}
+                        w={300}
+                        h={400}
+                        objectFit='cover'
+                        className='  animate-fadeIn  rounded-[16px] transition duration-700  shadow-cardinfo '
                       />
                     </Container>
                   </Container>{" "}
