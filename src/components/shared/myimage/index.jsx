@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const MyImage = ({
   source,
-  h,
-  w,
+  h = "300px",
+  w = "300px",
   className,
   objectFit,
   layout,

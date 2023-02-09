@@ -51,7 +51,7 @@ export default function Carousel(props) {
         `}
       />
       <div
-        className={`w-full h-[50vh] md:h-[65vh] flex overflow-hidden relative m-auto  rounded-[20px]`}
+        className={`w-full h-[55vh] md:h-[55vh] flex overflow-hidden relative m-auto  rounded-[20px]`}
       >
         <Swipe
           onSwipeLeft={handleNextSlide}
@@ -71,7 +71,7 @@ export default function Carousel(props) {
                       <MyImage
                         source={item}
                         w={300}
-                        h={450}
+                        h={500}
                         objectFit='cover'
                         className='animate-fadeIn  rounded-[16px] transition duration-700  shadow-cardinfo '
                       />
@@ -89,7 +89,7 @@ export default function Carousel(props) {
         className={` m-auto  inset-y-1/2 cursor-pointer text-[#1AD9D9] z-20 absolute right-0 text-5xl`}
       />
 
-      <div className='relative flex justify-center  p-2 '>
+      <div className='relative flex justify-center  p-2  '>
         {props.photo.map((_, index) => {
           return (
             <div
