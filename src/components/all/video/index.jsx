@@ -45,7 +45,7 @@ export default function VideoPlayer(props) {
   }, []);
 
   return shouldUseImage ? (
-    <img src={props.video} alt='Muted Video' priority={false} />
+    <img src={props.video} alt='Muted Video' priority={true} />
   ) : (
     <Container className='w-[100%] absolute md:bottom-0 '>
       <div
