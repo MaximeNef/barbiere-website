@@ -67,11 +67,10 @@ export default function Carousel(props) {
                     <MyImage source='/assets/LogoAgence.svg' w={300} h={400} />
                   </Container>
                   <Container className='  rounded-[20px]  w-full '>
-                    <Container className='  relative   z-30 '>
+                    <Container className='  relative h-[45vh] md:min-h-[60vh] w-[100%]   z-30 '>
                       <MyImage
                         source={item}
-                        w={300}
-                        h={450}
+                        layout={"fill"}
                         objectFit='cover'
                         className='animate-fadeIn  rounded-[16px] transition duration-700  shadow-cardinfo '
                       />
