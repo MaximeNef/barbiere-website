@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Btn2(props) {
   return (
-    <div className='w-full flex flex-col justify-center '>
+    <div className='w-full flex flex-col justify-center transition duration-300 ease-in-out hover:scale-125'>
       {" "}
       <Link href={props.src} passHref>
         <a className='flex flex-col items-center '>

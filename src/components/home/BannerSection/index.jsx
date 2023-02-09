@@ -11,7 +11,8 @@ const BannerSection = () => {
             <MyImage
               source={"/assets/team.webp"}
               objectFit={"cover"}
-              layout='fill'
+              h={500}
+              w={800}
             />
           </Container>
         </Container>
@@ -21,9 +22,9 @@ const BannerSection = () => {
         <Container className='my-auto'>
           <Container className='skew-x-[10deg] p-10 pl-20 pr-0 w-full h-full'>
             <Container className='space-y-5 ml-12 mr-[-100px]'>
-              <h1 className=' text-[36px] leading-[50px] text-left text-white flex flex-col mb-5 '>
+              <h2 className='  text-7xl leading-[100px] text-left text-white flex flex-col mb-5 '>
                 {"Besoin d'un conseil ?"}
-              </h1>
+              </h2>
               <Container className='mr-auto'>
                 <Btn2
                   src={"/agence"}
