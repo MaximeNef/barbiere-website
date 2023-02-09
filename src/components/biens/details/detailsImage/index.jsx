@@ -61,7 +61,7 @@ export default function detailsImage(props) {
         }`}
       />
       <div
-        className={`w-full h-[50vh] md:h-[65vh] flex overflow-hidden relative m-auto  rounded-[20px] ${
+        className={`w-full h-[420px] md:h-[65vh] flex overflow-hidden relative m-auto  rounded-[20px] ${
           showModal ? " " : ""
         }`}
       >
