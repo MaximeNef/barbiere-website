@@ -72,7 +72,7 @@ export default function Agence() {
       post: "Conseillère en immobilier",
       ipi: "Nr d’agréation IPI : 513512",
       region: "Huy / Héron / Burdinne / Andenne",
-      tel: "0473 29 00 70",
+      tel: "0492 55 69 36",
       mail: "zl@barbiere.be",
       bac: "Bachelière en Immobilier",
     },

@@ -134,7 +134,7 @@ const Footer = ({ current }) => {
             }
           </p>
           <p className='md:text-[13px] text-[11px] my-3 '>
-            {" 2022 © listri | Designed with passion by "}
+            {" 2022 © François Barbière & associés | Designed with passion by "}
             <span>
               <Link href='https://www.listri.digital/' passHref>
                 <a target='_blank' className='underline underline-offset-2'>
