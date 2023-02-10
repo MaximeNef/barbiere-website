@@ -11,7 +11,7 @@ const CardTeams = (props) => {
     <MotionRight
       initial='hidden'
       animate='visible'
-      transition={{ duration: 0.7, delay: 0.5 }}
+      transition={{ duration: 0.7 }}
     >
       <Container className='pt-[70px] md:w-[324px] md:mx-4 md:pb-10'>
         <Container className='border-[2px] border-teal-400 bg-white   rounded-[20px]  w-fit h-fit m-auto    mt-[-50px] shadow-2xl  '>
