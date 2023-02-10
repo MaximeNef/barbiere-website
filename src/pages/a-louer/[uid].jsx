@@ -36,19 +36,6 @@ export default function DetailsVendre({ details }) {
         </Container>{" "}
       </Container>
     </NavPage>
-
-    // <NavPage current='Nos biens'>
-    //   {/* <Container className='mr-auto mb-4'>
-    //     <Btn3 src='/biens' color='black' text='< Retour' />
-    //   </Container> */}
-    //   <DetailsImg details={details} />
-    //   <Container className=' space-y-[30px]'>
-    //     <HeroDetails details={details} />
-    //     <Description details={details} />
-    //     <Generales details={details} />
-    //     <Financier details={details} />
-    //   </Container>{" "}
-    // </NavPage>
   );
 }
 
