@@ -5,6 +5,7 @@ import { PrismicPreview } from "@prismicio/next";
 import { linkResolver } from "../../prismicio";
 import { repositoryName } from "../../prismicio";
 import { useEffect, useState } from "react";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
   const [state, setState] = useState(() => {
