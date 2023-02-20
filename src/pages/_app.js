@@ -18,17 +18,26 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return (
-    <PrismicProvider
-      linkResolver={linkResolver}
-      internalLinkComponent={({ href, children, ...props }) => (
-        <Link href={href} passHref>
-          <a {...props}>{children}</a>
-        </Link>
-      )}
-    >
-      <PrismicPreview repositoryName={repositoryName}>
-        <Component {...pageProps} />
-      </PrismicPreview>
-    </PrismicProvider>
+    <>
+      {/* <!-- Start cookieyes banner --> */}
+      <Script
+        id='cookieyes'
+        type='text/javascript'
+        src='https://cdn-cookieyes.com/client_data/9755d5482738a94b10622958/script.js'
+      ></Script>
+      {/* <!-- End cookieyes banner --> */}
+      <PrismicProvider
+        linkResolver={linkResolver}
+        internalLinkComponent={({ href, children, ...props }) => (
+          <Link href={href} passHref>
+            <a {...props}>{children}</a>
+          </Link>
+        )}
+      >
+        <PrismicPreview repositoryName={repositoryName}>
+          <Component {...pageProps} />
+        </PrismicPreview>
+      </PrismicProvider>
+    </>
   );
 }
