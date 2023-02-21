@@ -1,11 +1,9 @@
-import Link from "next/link";
 import { useState } from "react";
 import NavPage from "../../components/all/Nav-page";
 import Optionform from "../../components/contact/optionform";
 import Container from "../../components/shared/container";
 import Flex from "../../components/shared/flex";
 import H1 from "../../components/shared/h1";
-import H3 from "../../components/shared/h3";
 import P from "../../components/shared/p";
 import { useRouter } from "next/router";
 import Head from "next/head";
