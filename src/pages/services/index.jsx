@@ -6,6 +6,7 @@ import MotionTop from "../../components/shared/motion-top";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Carousel from "../../components/shared/carousel";
+import Link from "next/link";
 
 export default function Services() {
   const services = [
@@ -51,6 +52,13 @@ export default function Services() {
             <strong className='font-semibold'>
               permettant une valorisation optimale de votre bien.
             </strong>{" "}
+            <br />
+            Exemples de vidéos réalisées :{" "}
+            <Link href='https://www.youtube.com/@immobilierefrancoisbarbier1746/videos'>
+              <a passhref target='_blank' className=' text-blue-600 underline'>
+                Cliquez-ici
+              </a>
+            </Link>
           </li>
           <li className='pl-4 my-4'>
             la
