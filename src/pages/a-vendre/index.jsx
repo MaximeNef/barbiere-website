@@ -41,6 +41,7 @@ const Avendre = ({ pages }) => {
     });
   }
   const withoutDuplicates = [...new Set(newCodeList)];
+  withoutDuplicates.sort();
 
   const filteredProductList = newProductList.filter((page) => {
     if (filterValue === "all") {

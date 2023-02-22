@@ -7,7 +7,10 @@ const BienAvendre = (props) => {
   return (
     <>
       {props.pages.map((page, i) => (
-        <Container className='md:flex md:flex-row md:flex-wrap md:w-fit'>
+        <Container
+          key={i}
+          className='md:flex md:flex-row md:flex-wrap md:w-fit'
+        >
           <Link
             href={
               props.louer ? `/a-louer/${page.uid}` : `/a-vendre/${page.uid}`

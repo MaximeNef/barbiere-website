@@ -59,7 +59,7 @@ const Avendre = ({ pages, locations }) => {
     });
   }
   const withoutDuplicates = [...new Set(newCodeList)];
-
+  withoutDuplicates.sort();
   const filteredProductList = newProductList.filter((page) => {
     if (filterValue === "all") {
       if (postalValue === "all") {

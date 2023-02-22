@@ -1,8 +1,4 @@
 import Container from "../shared/container";
-import Flex from "../shared/flex";
-import H1 from "../shared/h1";
-import H2 from "../shared/h2";
-import MyImage from "../shared/myimage";
 
 const FilterProduct = (props) => {
   function onFilterValueChanged(event) {
@@ -54,27 +50,13 @@ const FilterProduct = (props) => {
           >
             {" "}
             <option value='all'>{"Localisation (code postal)"}</option>{" "}
-            {props.withoutDuplicates.map((codePostal) => {
-              return <option value={codePostal}>{codePostal}</option>;
-            })}
-            {/* {props.pages?.map((page) => {
-              return page.data.slices[0].primary.code_postal === null ? (
-                <></>
-              ) : (
-                <option value={`${page.data.slices[0].primary.code_postal}`}>
-                  {page.data.slices[0].primary.code_postal}
+            {props.withoutDuplicates.map((codePostal, i) => {
+              return (
+                <option key={i} value={codePostal}>
+                  {codePostal}
                 </option>
               );
             })}
-            {props.locations?.map((page) => {
-              return page.data.slices[0].primary.code_postal === null ? (
-                <></>
-              ) : (
-                <option value={`${page.data.slices[0].primary.code_postal}`}>
-                  {page.data.slices[0].primary.code_postal}
-                </option>
-              );
-            })} */}
           </select>
         </Container>{" "}
       </Container>

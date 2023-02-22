@@ -42,7 +42,7 @@ const Alouer = ({ pages }) => {
   }
 
   const withoutDuplicates = [...new Set(newCodeList)];
-
+  withoutDuplicates.sort();
   const filteredProductList = newProductList.filter((page) => {
     if (filterValue === "all") {
       if (postalValue === "all") {
