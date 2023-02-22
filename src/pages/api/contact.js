@@ -3,7 +3,7 @@ sgMail.setApiKey(process.env.SG_API_KEY);
 async function sendEmail(req, res) {
   try {
     await sgMail.send({
-      to: "maximenef1@gmail.com", // Your email where you'll receive emails
+      to: "info@barbiere.be", // Your email where you'll receive emails
       from: "barbiere@listri.digital", // your website email address here
       subject: `${req.body.vendre ? "Je veux VENDRE ma maison" : ""}${
         req.body.louer ? "Je veux LOUER ma maison" : ""
