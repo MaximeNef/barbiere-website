@@ -27,6 +27,17 @@ export default function App({ Component, pageProps }) {
         src='https://cdn-cookieyes.com/client_data/9755d5482738a94b10622958/script.js'
       ></Script>
       {/* <!-- End cookieyes banner --> */}
+      {/* DEBUT UXWIZZ script  */}
+      <Script id='uxwizz'>
+        UST_CT = []; UST = "
+        {"s: Date.now(), addTag: function(tag) {UST_CT.push(tag)} "}
+        ";UST.addEvent = UST.addTag;
+      </Script>
+      <Script
+        src='https://stats.listri.digital/server/ust.min.js?v=5.0.1'
+        async
+      ></Script>
+      {/* FIN UXWIZZ script  */}
       <PrismicProvider
         linkResolver={linkResolver}
         internalLinkComponent={({ href, children, ...props }) => (
