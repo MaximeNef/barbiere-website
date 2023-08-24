@@ -5,7 +5,7 @@ export default function Btn2(props) {
     <div className='w-full flex flex-col justify-center transition duration-300 ease-in-out hover:scale-125'>
       {" "}
       <Link href={props.src} passHref>
-        <a className='flex flex-col items-center '>
+        <div className='flex flex-col items-center '>
           <div
             onClick={props.onClick}
             id={props.id}
@@ -33,7 +33,7 @@ export default function Btn2(props) {
               {props.text}
             </p>{" "}
           </div>{" "}
-        </a>
+        </div>
       </Link>
     </div>
   );

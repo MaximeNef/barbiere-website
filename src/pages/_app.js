@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
         linkResolver={linkResolver}
         internalLinkComponent={({ href, children, ...props }) => (
           <Link href={href} passHref>
-            <a {...props}>{children}</a>
+            <div {...props}>{children}</div>
           </Link>
         )}
       >

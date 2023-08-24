@@ -86,7 +86,7 @@ export default function Home({ pages }) {
       <Container className=' 2xl:h-[1100px] md:max-h-[100vh] '>
         <DynamicVideo />
       </Container>
-      <a name='some' className=' absolute bottom-[22px]' />
+      <div name='some' className=' absolute bottom-[22px]' />
       <H3 className='mt-1 md:mt-0  ' id='Ancre'>
         {"Nous sommes actifs près de chez vous"}
       </H3>

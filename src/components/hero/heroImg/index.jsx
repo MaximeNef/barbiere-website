@@ -32,7 +32,7 @@ const HeroImg = () => {
         {" "}
         <HeroBtn />
       </Container>{" "}
-      <a href='#some'>
+      <div href='#some'>
         <Container className='absolute w-full bottom-[110px] md:bottom-[70px] md:relative animate-bounce'>
           <MyImage
             source={"/assets/arrow-down.svg"}
@@ -41,7 +41,7 @@ const HeroImg = () => {
             priority={true}
           />
         </Container>{" "}
-      </a>
+      </div>
     </Container>
   );
 };

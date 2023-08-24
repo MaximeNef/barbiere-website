@@ -26,18 +26,18 @@ const CardTeam = (props) => {
             {" "}
             <Container className='mr-auto'>
               <Link href={`tel:${props.tel}`} passHref>
-                <a className='flex'>
+                <div className='flex'>
                   <MyImage source='/assets/phone.svg' w={20} h={20} />
                   <P className='ml-1'>{props.tel}</P>
-                </a>
+                </div>
               </Link>
             </Container>
             <Container className='mr-auto'>
               <Link href={`mailto:${props.mail}`} passHref>
-                <a className='flex'>
+                <div className='flex'>
                   <MyImage source='/assets/mail.svg' w={20} h={20} />
                   <P className='ml-1'> {props.mail}</P>
-                </a>
+                </div>
               </Link>
             </Container>
           </Container>

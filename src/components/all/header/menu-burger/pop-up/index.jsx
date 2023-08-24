@@ -18,7 +18,7 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
         return (
           <Link href={link.href} key={link.page} passHref>
             {link.page == current ? (
-              <a
+              <div
                 onClick={handelClick2}
                 className='text-xl font-light   tracking-wide rounded-full pl-6 py-4 bg-[#41B8B8]/10 w-full'
               >
@@ -29,9 +29,9 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
                     <p className='ml-5 '>{link.page}</p>
                   </Flex>
                 </Flex>
-              </a>
+              </div>
             ) : (
-              <a
+              <div
                 onClick={handelClick2}
                 className='text-xl font-light	  tracking-wide pl-6  py-2'
               >
@@ -42,7 +42,7 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
                     <p className='ml-5 text-center'>{link.page}</p>
                   </Flex>
                 </Flex>
-              </a>
+              </div>
             )}
           </Link>
         );

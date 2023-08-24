@@ -87,9 +87,9 @@ const Menuburger = ({ current }) => {
       <Container className='fixed z-50 bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-70  w-full top-0  pb-2  '>
         <Container className=' m-auto  max-h-12  z-20  pt-1'>
           <Link href='/' passHref>
-            <a>
+            <div>
               <MyImage source='/assets/logoB.svg' w={100} h={50} />
-            </a>
+            </div>
           </Link>{" "}
         </Container>
         <Container

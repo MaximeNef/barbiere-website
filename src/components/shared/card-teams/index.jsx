@@ -38,14 +38,14 @@ const CardTeams = (props) => {
             <Flex className='mt-[15px] mx-auto space-y-2 flex-col '>
               <Container className='mr-auto'>
                 <Link href={`tel:${props.tel}`} passHref>
-                  <a className='flex'>
+                  <div className='flex'>
                     {props.tel ? (
                       <MyImage source='/assets/Phone.svg' w={20} h={20} />
                     ) : (
                       <div />
                     )}
                     <P className='ml-2'>{props.tel}</P>
-                  </a>
+                  </div>
                 </Link>
                 {props.nom == "Philippe Gatz" ? (
                   <>
@@ -59,14 +59,14 @@ const CardTeams = (props) => {
               {props.nom == "Philippe Gatz" ? (
                 <Container className='mr-auto'>
                   <Link href={`tel:${props.tel}`} passHref>
-                    <a className='flex'>
+                    <div className='flex'>
                       {props.tel ? (
                         <MyImage source='/assets/Phone.svg' w={20} h={20} />
                       ) : (
                         <div />
                       )}
                       <P className='ml-2'>0473 29 00 70</P>
-                    </a>
+                    </div>
                   </Link>
                   <div className='text-center mr-3 font-light'>après 17h</div>
                 </Container>
@@ -75,14 +75,14 @@ const CardTeams = (props) => {
               )}
               <Container className='mr-auto'>
                 <Link href={`mailto:${props.mail}`} passHref>
-                  <a className='flex'>
+                  <div className='flex'>
                     {props.tel ? (
                       <MyImage source='/assets/mail.svg' w={20} h={20} />
                     ) : (
                       <div />
                     )}
                     <P className='ml-2'> {props.mail}</P>
-                  </a>
+                  </div>
                 </Link>
                 {props.nom == "Philippe Gatz" ? (
                   <div className='text-center mr-5 font-light'>Part-Time</div>

@@ -38,32 +38,30 @@ const CardInfo = (props) => {
             </div>
             {props.href && (
               <Link href={props.href.desc} passHref>
-                <a className='underline underline-offset-1 pb-2  '>
+                <div className='underline underline-offset-1 pb-2  '>
                   {props.href.name}
-                </a>
+                </div>
               </Link>
             )}
             {props.href1 && (
               <Link href={props.href1.desc} passHref>
-                <a className='underline underline-offset-1 pb-2 '>
+                <div className='underline underline-offset-1 pb-2 '>
                   {props.href1.name}
-                </a>
+                </div>
               </Link>
             )}
             {props.href2 && (
               <Link href={props.href2.desc} passHref>
-                <a>
-                  <p className='underline underline-offset-1 pb-2 '>
-                    {props.href2.name}
-                  </p>
-                </a>
+                <div className='underline underline-offset-1 pb-2 '>
+                  {props.href2.name}
+                </div>
               </Link>
             )}
             {props.href3 && (
               <Link href={props.href3.desc} passHref>
-                <a className='underline underline-offset-1  overflow-hidden'>
+                <div className='underline underline-offset-1  overflow-hidden'>
                   {props.href3.name}
-                </a>
+                </div>
               </Link>
             )}
           </Container>{" "}
@@ -71,10 +69,10 @@ const CardInfo = (props) => {
             <div
               className={`text-[#E78DB1]  text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
             >
-              <a href='mailto:no-one@snai1mai1.com?subject=Agent Immobilier'>
+              <div href='mailto:no-one@snai1mai1.com?subject=Agent Immobilier'>
                 {" "}
-                <p>{props.btn}</p>
-              </a>
+                {props.btn}
+              </div>
 
               <div
                 className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#E78DB1] to-[#E78DB1]`}
@@ -85,7 +83,7 @@ const CardInfo = (props) => {
               <div
                 className={` text-[#E78DB1] text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
               >
-                {height ? <p>{"En savoir moins"}</p> : <p>{props.btn}</p>}
+                {height ? <>{"En savoir moins"}</> : <>{props.btn}</>}
                 <div
                   className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#E78DB1] to-[#E78DB1]`}
                 />

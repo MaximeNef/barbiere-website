@@ -15,11 +15,11 @@ const CardContact = () => {
         }
       </p>
       <Link href='/contact'>
-        <a>
+        <div>
           <Container className='bg-[#43A8AA] rounded-[10px] mt-4'>
             <p className='mx-auto text-white py-2 '>{"contactez-nous"}</p>
           </Container>
-        </a>
+        </div>
       </Link>
     </Container>
   );

@@ -78,12 +78,7 @@ const CarteBelgique = () => {
   return (
     <Container className='md:flex md:flex-row md:justify-around'>
       <Container className=' h-[350px] w-full md:h-[600px] md:w-[600px] relative'>
-        <MyImage
-          source={isHovering}
-          layout='fill'
-          objectFit='contain'
-          className={""}
-        />
+        <MyImage source={isHovering} objectFit='contain' className={""} />
       </Container>
       <Container className='my-auto md:pt-[10px] '>
         {adresses.map((adresse, i) => {
@@ -120,9 +115,9 @@ const CarteBelgique = () => {
                   </p>
                 </Flex>
                 <Container className='md:ml-[150px] mt-0 text-center  cursor-pointer'>
-                  <a href={`tel:${adresse.num}`} className=' text-center '>
+                  <div href={`tel:${adresse.num}`} className=' text-center '>
                     <p className='text-center'> {adresse.num}</p>
-                  </a>
+                  </div>
                 </Container>
               </Flex>{" "}
             </Container>

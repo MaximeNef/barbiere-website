@@ -55,9 +55,13 @@ export default function Services() {
             <br />
             Exemples de vidéos réalisées :{" "}
             <Link href='https://www.youtube.com/@immobilierefrancoisbarbier1746/videos'>
-              <a passhref target='_blank' className=' text-blue-600 underline'>
+              <div
+                passhref
+                target='_blank'
+                className=' text-blue-600 underline'
+              >
                 Cliquez-ici
-              </a>
+              </div>
             </Link>
           </li>
           <li className='pl-4 my-4'>

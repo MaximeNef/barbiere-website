@@ -39,9 +39,7 @@ const CardJob = (props) => {
             <div
               className={`text-[#E78DB1]  text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
             >
-              <a href={props.mail}>
-                <p>{props.btn}</p>
-              </a>
+              <div href={props.mail}>{props.btn}</div>
 
               <div
                 className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#E78DB1] to-[#E78DB1]`}
@@ -52,7 +50,7 @@ const CardJob = (props) => {
               <div
                 className={`text-[#E78DB1]  text-[19px] font-semibold leading-6 text-center relative w-fit mx-auto  cursor-pointer`}
               >
-                <p>{props.btn}</p>
+                {props.btn}
                 <div
                   className={` w-full absolute bottom-[1px] h-[1px] bg-gradient-to-r from-[#E78DB1] to-[#E78DB1]`}
                 />

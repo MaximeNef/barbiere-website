@@ -23,7 +23,7 @@ export default function Btn3(props) {
     <div className=' flex flex-col justify-center '>
       {" "}
       <Link href={props.src} passHref>
-        <a className='flex flex-col items-center '>
+        <div className='flex flex-col items-center '>
           <div
             onClick={props.onClick}
             id={props.id}
@@ -48,7 +48,7 @@ export default function Btn3(props) {
               // objectFit={"contain"}
             />
           </div>{" "}
-        </a>
+        </div>
       </Link>
     </div>
   );
