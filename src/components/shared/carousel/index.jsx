@@ -82,7 +82,7 @@ export default function Carousel(props) {
                         w={300}
                         h={400}
                         objectFit='cover'
-                        className='  animate-fadeIn  rounded-[16px] transition duration-700  shadow-cardinfo '
+                        className='  rounded-[16px] transition duration-700  shadow-cardinfo '
                       />
                     </Container>
                   </Container>{" "}
