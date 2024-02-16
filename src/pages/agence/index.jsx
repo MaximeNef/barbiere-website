@@ -47,7 +47,7 @@ export default function AgenceTest() {
       bac: "Bachelière en Immobilier Architecte d'intérieur",
     },
     {
-      img: "/assets/gatz.webp",
+      img: "/assets/NewGatz.webp",
       nom: "Philippe Gatz",
       post: "Agent Immobilier - Associé",
       ipi: "Nr d’agréation IPI : 510912",
