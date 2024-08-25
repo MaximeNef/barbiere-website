@@ -56,36 +56,36 @@ export default function AgenceTest() {
       mail: "pg@barbiere.be",
       bac: "",
     },
-    {
-      img: "/assets/pers1test.webp",
-      nom: "Zoé Livron",
-      post: "Agent immobilier",
-      ipi: "Nr d’agréation IPI : 513512",
-      region: "Huy / Héron / Burdinne / Andenne",
-      tel: "0492 55 69 36",
-      mail: "zl@barbiere.be",
-      bac: "Bachelière en Immobilier",
-    },
-    {
-      img: "/assets/lisa.webp",
-      nom: "Lisa Yodts",
-      post: "Stagiaire en Immobilier",
-      ipi: "",
-      region: "",
-      tel: "019 30 57 32",
-      mail: "ly@barbiere.be",
-      bac: "",
-    },
-    {
-      img: "/assets/Valerie.webp",
-      nom: "Valérie Crahay",
-      post: "Conseillère en Immobilier",
-      ipi: "Nr d’agréation IPI : 514538",
-      region: "Namur / Beauraing / Dinant / Wasseiges",
-      tel: "0498 71 40 57",
-      mail: "vc@barbiere.be",
-      bac: "",
-    },
+    // {
+    //   img: "/assets/pers1test.webp",
+    //   nom: "Zoé Livron",
+    //   post: "Agent immobilier",
+    //   ipi: "Nr d’agréation IPI : 513512",
+    //   region: "Huy / Héron / Burdinne / Andenne",
+    //   tel: "0492 55 69 36",
+    //   mail: "zl@barbiere.be",
+    //   bac: "Bachelière en Immobilier",
+    // },
+    // {
+    //   img: "/assets/lisa.webp",
+    //   nom: "Lisa Yodts",
+    //   post: "Stagiaire en Immobilier",
+    //   ipi: "",
+    //   region: "",
+    //   tel: "019 30 57 32",
+    //   mail: "ly@barbiere.be",
+    //   bac: "",
+    // },
+    // {
+    //   img: "/assets/Valerie.webp",
+    //   nom: "Valérie Crahay",
+    //   post: "Conseillère en Immobilier",
+    //   ipi: "Nr d’agréation IPI : 514538",
+    //   region: "Namur / Beauraing / Dinant / Wasseiges",
+    //   tel: "0498 71 40 57",
+    //   mail: "vc@barbiere.be",
+    //   bac: "",
+    // },
   ];
 
   return (
@@ -141,7 +141,7 @@ export default function AgenceTest() {
           className={"  rounded-2xl"}
         />
       </Container>
-      <Container className='space-y-[20px]   sm:space-y-0 md:justify-start   mt-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-5  '>
+      <Container className='space-y-[20px]   sm:space-y-0 md:justify-start   mt-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4  '>
         {Teams.map((team, i) => {
           return (
             <CardTeams

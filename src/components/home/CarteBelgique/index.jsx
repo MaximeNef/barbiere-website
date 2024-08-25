@@ -37,14 +37,14 @@ const CarteBelgique = () => {
       img: "/assets/People.svg",
       imgHover: "/assets/PeopleHover.svg",
       adresse: "Burdinne / Andenne",
-      num: "0492/55.69.36",
+      num: "0477 75 44 10",
       carte: "/assets/carte5.svg",
     },
     {
       img: "/assets/cartehome.svg",
       imgHover: "/assets/homeHover.svg",
       adresse: "Wasseiges / Namur / Dinant",
-      num: "0498/71.40.57",
+      num: "0493 193 003",
       carte: "/assets/carte6.svg",
     },
     {
