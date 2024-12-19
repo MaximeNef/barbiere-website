@@ -15,7 +15,7 @@ export default function AgenceTest() {
 
   const Teams = [
     {
-      img: "/assets/barbiere.webp",
+      img: "/assets/Mrbarbiere.webp",
       nom: "François Barbière ",
       post: "Agent Immobilier - Gérant",
       ipi: "Nr d’agréation IPI : 506259",
@@ -55,6 +55,26 @@ export default function AgenceTest() {
       tel: "0473 29 00 70",
       mail: "pg@barbiere.be",
       bac: "",
+    },
+    {
+      img: "/assets/kenzacopie.webp",
+      nom: "Kenza Haddioui",
+      post: "Conseillère en Immobilier",
+      ipi: "Nr d’agréation IPI : en attente",
+      region: "",
+      tel: "019 30 57 32",
+      mail: "kh@barbiere.be",
+      bac: "Bachelière en Immobilier",
+    },
+    {
+      img: "/assets/corinne.webp",
+      nom: "Corinne Genon",
+      post: "Agent Immobilier",
+      ipi: "Ordre des Architectes : 1700803",
+      region: "Waremme – Geer",
+      tel: "019 30 57 32",
+      mail: "cg@barbiere.be",
+      bac: "Architecte",
     },
     // {
     //   img: "/assets/pers1test.webp",
@@ -125,20 +145,20 @@ export default function AgenceTest() {
       </h3>
       <Container className='md:hidden mt-4'>
         <MyImage
-          source='/assets/team.webp'
+          source='/assets/teambarbiere.webp'
           w='100'
-          h='200'
+          h='300'
           objectFit='cover'
           className={" rounded-2xl"}
         />
       </Container>
-      <Container className='hidden md:inline-flex'>
+      <Container className='hidden md:inline-flex relative h-[600px]'>
         <MyImage
-          source='/assets/teamDesktop.webp'
+          source='/assets/teambarbiereCrop.webp'
           w='100'
           h='600'
           objectFit='cover'
-          className={"  rounded-2xl"}
+          className={"  rounded-2xl "}
         />
       </Container>
       <Container className='space-y-[20px]   sm:space-y-0 md:justify-start   mt-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4  '>

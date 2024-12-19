@@ -9,13 +9,13 @@ import P from "../p";
 const CardTeams = (props) => {
   return (
     <Container className='pt-[70px]  sm:mx-2   md:pb-10'>
-      <Container className='border-[2px] border-teal-400 bg-white   rounded-[20px]  h-fit     mt-[-50px] shadow-2xl  '>
+      <Container className='border-[2px] border-teal-400 bg-white   rounded-[20px]  h-fit     mt-[-50px] shadow-2xl   overflow-hidden '>
         <MyImage
           source={props.img}
           w={334}
           h={520}
           objectFit={"cover"}
-          className={`   rounded-[18px] object-top `}
+          className={`   rounded-[18px] object-bottom `}
         />
       </Container>{" "}
       <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] drop-shadow-lg z-10 mt-[-50px] max-w-full h-fit'>
