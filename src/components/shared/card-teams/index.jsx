@@ -15,7 +15,7 @@ const CardTeams = (props) => {
           w={334}
           h={520}
           objectFit={"cover"}
-          className={`   rounded-[18px] object-bottom `}
+          className={`${props.classname}`}
         />
       </Container>{" "}
       <Container className='p-[2px] bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] rounded-[20px] drop-shadow-lg z-10 mt-[-50px] max-w-full h-fit'>

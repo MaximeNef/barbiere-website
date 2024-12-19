@@ -23,6 +23,7 @@ export default function AgenceTest() {
       tel: "019 30 57 32",
       mail: "fb@barbiere.be",
       bac: "Expert Immobilier IFAPME  Licencié HEC Lg ",
+      classname: " rounded-[18px] object-top  ",
     },
 
     {
@@ -34,6 +35,7 @@ export default function AgenceTest() {
       tel: "0477 75 44 10",
       mail: "sb@barbiere.be",
       bac: "Bachelier en Immobilier",
+      classname: "rounded-[18px] bottom-[80px]",
     },
 
     {
@@ -45,9 +47,10 @@ export default function AgenceTest() {
       tel: "0479 54 76 01",
       mail: "gv@barbiere.be",
       bac: "Bachelière en Immobilier Architecte d'intérieur",
+      classname: " rounded-[18px] object-top  ",
     },
     {
-      img: "/assets/NewGatz.webp",
+      img: "/assets/NewGatz.png",
       nom: "Philippe Gatz",
       post: "Agent Immobilier - Associé",
       ipi: "Nr d’agréation IPI : 510912",
@@ -55,6 +58,7 @@ export default function AgenceTest() {
       tel: "0473 29 00 70",
       mail: "pg@barbiere.be",
       bac: "",
+      classname: " rounded-[18px] object-top  ",
     },
     {
       img: "/assets/kenzacopie.webp",
@@ -65,6 +69,7 @@ export default function AgenceTest() {
       tel: "019 30 57 32",
       mail: "kh@barbiere.be",
       bac: "Bachelière en Immobilier",
+      classname: " rounded-[18px] object-top  ",
     },
     {
       img: "/assets/corinne.webp",
@@ -75,6 +80,7 @@ export default function AgenceTest() {
       tel: "019 30 57 32",
       mail: "cg@barbiere.be",
       bac: "Architecte",
+      classname: " rounded-[18px] object-top  ",
     },
     // {
     //   img: "/assets/pers1test.webp",
@@ -174,6 +180,7 @@ export default function AgenceTest() {
               tel={team.tel}
               mail={team.mail}
               bac={team.bac}
+              classname={team.classname}
             />
           );
         })}
