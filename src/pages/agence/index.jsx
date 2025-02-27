@@ -64,7 +64,7 @@ export default function AgenceTest() {
       img: "/assets/kenzacopie.webp",
       nom: "Kenza Haddioui",
       post: "Conseillère en Immobilier",
-      ipi: "Nr d’agréation IPI : en attente",
+      ipi: "Nr d’agréation IPI : 519095",
       region: "",
       tel: "019 30 57 32",
       mail: "kh@barbiere.be",
