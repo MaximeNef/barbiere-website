@@ -11,6 +11,7 @@ const nextConfig = {
     path: "",
     domains: ["images.prismic.io"],
   },
+  swcMinify: true, // Assure-toi d'utiliser SWC sans WebAssembly
 };
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
