@@ -136,9 +136,9 @@ const Footer = ({ current }) => {
           <p className='md:text-[13px] text-[11px] my-3 '>
             {" 2022 © François Barbière & associés | Designed with passion by "}
             <span>
-              <Link href='https://www.listri.digital/' passHref>
+              <Link href='https://www.evolvia.agency/' passHref>
                 <a target='_blank' className='underline underline-offset-2'>
-                  {"LISTRI"}
+                  {"Evolvia"}
                 </a>
               </Link>
             </span>
