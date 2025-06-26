@@ -3,9 +3,22 @@ import Flex from "../../../shared/flex";
 import H3 from "../../../shared/h3";
 
 const InfoFinanciere = (props) => {
+  // Détection du type de bien
+  const typeBien =
+    props.details.type ||
+    props.details.data?.type ||
+    props.details.data?.slices[0]?.primary?.typeFiltre ||
+    "";
+
+  const isLocation =
+    typeBien === "location" ||
+    typeBien === "à louer" ||
+    typeBien === "a-louer" ||
+    typeBien === "louer";
+
   const generales = [
     {
-      name: "Loyer",
+      name: isLocation ? "Loyer" : "Prix",
       info: props.details.data.slices[0].primary.prix_bien[0]?.text,
       carac: "€",
     },
