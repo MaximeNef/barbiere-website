@@ -11,6 +11,7 @@ const Header = ({ current }) => {
     { page: "Nos biens", href: "/biens", selected: false },
     { page: "Agence / Équipe", href: "/agence", selected: false },
     { page: "Emplois", href: "/emplois", selected: false },
+    { page: "Contact", href: "/contact", selected: false },
   ]);
 
   return (
@@ -18,7 +19,7 @@ const Header = ({ current }) => {
       <Container className='z-50 hidden lg:inline-flex'>
         <MenuDesktop current={current} link={link} />
       </Container>
-      <Container className='  md:hidden'>
+      <Container className='lg:hidden'>
         <Menuburger current={current} link={link} />
       </Container>
     </Container>

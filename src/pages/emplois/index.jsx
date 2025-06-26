@@ -16,10 +16,10 @@ export default function Emplois() {
     },
     {
       img: "/assets/serviceVendre.svg",
-      h2: "Candidature spontanée",
-      p: "Pour toute demande de candidature spontanée, n’hésitez pas à nous contacter pour plus d'informations et à nous transmettre votre curriculum vitae, vos références, ainsi qu’une lettre de motivation, à l’adresse suivante: fb@barbiere.be. A très bientôt !",
+      h2: "Candidature de stage",
+      p: "Pour toute demande de stage, n’hésitez pas à nous contacter pour plus d'informations et à nous transmettre votre curriculum vitae, vos références, ainsi qu’une lettre de motivation, à l’adresse suivante: fb@barbiere.be. A très bientôt !",
       btn: "Je postule",
-      mail: "mailto:fb@barbiere.be?subject=Candidature spontanée",
+      mail: "mailto:fb@barbiere.be?subject=Candidature de stage",
     },
   ];
   return (

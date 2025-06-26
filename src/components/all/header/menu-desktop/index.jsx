@@ -37,10 +37,10 @@ const MenuDesktop = ({ link, current }) => {
                       </a>
                     </Flex>
 
-                    <Container className='border-b-4 border-[#41B8B8]  rounded-[4px] min-w-[24px] mt-[2px] shadow-cardDetails '></Container>
+                    <Container className='border-b-2 border-[#41B8B8]  rounded-[4px] min-w-[24px] mt-[2px] shadow-cardDetails '></Container>
                   </Container>
                 ) : (
-                  <a className=' pt-4  font-semibold text-[17px] text-center text-default min-w-[38px] hover:transform hover:-translate-y-1 hover:duration-700 duration-500	 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] '>
+                  <a className=' pt-4  font-medium text-[17px] text-center text-default min-w-[38px] hover:transform hover:-translate-y-1 hover:duration-700 duration-500\t hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] '>
                     {p.page}
                   </a>
                 )}

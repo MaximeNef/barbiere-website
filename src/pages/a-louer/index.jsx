@@ -10,57 +10,64 @@ import CardDesktop from "../../components/shared/card-cta-desktop";
 import FilterProduct from "../../components/FilterProduct";
 import { useState } from "react";
 
-const Alouer = ({ pages }) => {
+const Alouer = ({ pages, allBiens }) => {
   const [newProductList, setNewProductList] = useState(pages);
   const [filterValue, setFilterValue] = useState("all");
   const [postalValue, setPostalValue] = useState("all");
   const [newCodeList, setNewCodeList] = useState([]);
-  // Trier le tableau en fonction de la valeur de la clé 'ordres'
-  pages.sort((a, b) => {
-    if (
-      a.data.slices[0].primary.ordres === null &&
-      b.data.slices[0].primary.ordres === null
-    ) {
-      0;
-    }
-    if (a.data.slices[0].primary.ordres === null) {
-      return 1;
-    }
-    if (b.data.slices[0].primary.ordres === null) {
-      return -1;
-    }
-    return a.data.slices[0].primary.ordres - b.data.slices[0].primary.ordres;
-  });
-  {
-    pages.map((page) => {
-      if (
-        newCodeList.text !== page?.data.slices[0].primary.postal_type[0]?.text
-      ) {
-        newCodeList.push(page?.data.slices[0].primary.postal_type[0]?.text);
-      }
-    });
-  }
 
-  const withoutDuplicates = [...new Set(newCodeList)];
-  withoutDuplicates.sort();
-  const filteredProductList = newProductList.filter((page) => {
-    if (filterValue === "all") {
-      if (postalValue === "all") {
-        return page;
-      }
-      if (postalValue === page?.data.slices[0].primary.postal_type[0]?.text) {
-        return page;
-      }
-    }
-    if (filterValue === page?.data.slices[0].primary.typeFiltre) {
-      if (postalValue === "all") {
-        return page;
-      }
-      if (postalValue === page?.data.slices[0].primary.postal_type[0]?.text) {
-        return page;
-      }
+  // Construire la liste des codes postaux à partir de tous les biens à louer (disponibles + loués)
+  const codePostalSet = new Set();
+  const withoutDuplicates = [];
+  allBiens.forEach((page) => {
+    const raw = page?.data.slices[0].primary.postal_type?.[0]?.text || "";
+    const normalized = raw.replace(/\s+/g, "").toLowerCase();
+    if (normalized && !codePostalSet.has(normalized)) {
+      codePostalSet.add(normalized);
+      withoutDuplicates.push(raw);
     }
   });
+  withoutDuplicates.sort((a, b) => {
+    const numA = parseInt(a);
+    const numB = parseInt(b);
+    if (!isNaN(numA) && !isNaN(numB)) {
+      return numA - numB;
+    }
+    return a.localeCompare(b);
+  });
+
+  // Filtrage avancé : si aucun bien dispo pour le code postal, afficher les loués
+  const filteredProductList = (() => {
+    if (postalValue === "all") {
+      return newProductList.filter((page) =>
+        filterValue === "all"
+          ? true
+          : filterValue === page?.data.slices[0].primary.typeFiltre
+      );
+    }
+    // 1. Biens disponibles pour ce code postal
+    const biensDispo = newProductList.filter(
+      (page) =>
+        page?.data.slices[0].primary.postal_type?.[0]?.text === postalValue &&
+        (filterValue === "all" ||
+          filterValue === page?.data.slices[0].primary.typeFiltre)
+    );
+    if (biensDispo.length > 0) {
+      return biensDispo;
+    }
+    // 2. Sinon, biens loués pour ce code postal
+    return allBiens
+      .filter(
+        (page) =>
+          page?.data.slices[0].primary.postal_type?.[0]?.text === postalValue &&
+          page.data.slices[0].primary.vendu === true
+      )
+      .filter(
+        (page) =>
+          filterValue === "all" ||
+          filterValue === page?.data.slices[0].primary.typeFiltre
+      );
+  })();
 
   function onFilterValueSelected(filterValue) {
     setFilterValue(filterValue);
@@ -72,7 +79,7 @@ const Alouer = ({ pages }) => {
     <NavPage current='Nos biens'>
       <H1>{"Nos biens à louer"}</H1>
       <FilterProduct
-        pages={pages}
+        pages={allBiens}
         withoutDuplicates={withoutDuplicates}
         filterValueSelected={onFilterValueSelected}
         postalValueSelected={onPostalValueSelected}
@@ -99,11 +106,47 @@ export default Alouer;
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
-  const pages = await client.getAllByType("location");
+  // 1. Récupérer tous les biens à vendre et à louer
+  const allVendre = await client.getAllByType("vendre");
+  const allLocation = await client.getAllByType("location");
+  const allBiens = [...allVendre, ...allLocation];
+
+  // 2. Récupérer le document d'ordre
+  let ordreDoc = null;
+  try {
+    ordreDoc = await client.getSingle("ordre_biens");
+  } catch (e) {
+    ordreDoc = null;
+  }
+
+  // 3. Extraire les IDs des biens dans l'ordre
+  const orderedIds = ordreDoc
+    ? ordreDoc.data.liste_biens.map((item) => item.bien.id)
+    : [];
+
+  // 4. Construire la liste ordonnée
+  const orderedBiens = [];
+  const remainingBiens = [...allBiens];
+
+  orderedIds.forEach((id) => {
+    const idx = remainingBiens.findIndex((bien) => bien.id === id);
+    if (idx !== -1) {
+      orderedBiens.push(remainingBiens[idx]);
+      remainingBiens.splice(idx, 1);
+    }
+  });
+  const finalBiens = [...orderedBiens, ...remainingBiens];
+
+  // 5. Filtrer pour n'afficher que les biens à louer non loués
+  const pages = finalBiens.filter(
+    (bien) =>
+      bien.type === "location" && bien.data.slices[0].primary.vendu !== true
+  );
 
   return {
     props: {
       pages,
+      allBiens: finalBiens.filter((bien) => bien.type === "location"),
     },
   };
 }

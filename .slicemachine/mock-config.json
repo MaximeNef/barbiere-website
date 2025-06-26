@@ -173,6 +173,7 @@
   },
   "_cts": {
     "location": {},
-    "vendre": {}
+    "vendre": {},
+    "ordre_biens": {}
   }
 }

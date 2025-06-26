@@ -1,0 +1,32 @@
+{
+  "id": "ordre_biens",
+  "label": "Ordre des biens",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "liste_biens": {
+        "type": "Group",
+        "config": {
+          "label": "Liste des biens",
+          "fields": {
+            "bien": {
+              "type": "Link",
+              "config": {
+                "label": "Bien",
+                "select": "document"
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

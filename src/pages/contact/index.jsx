@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavPage from "../../components/all/Nav-page";
 import Optionform from "../../components/contact/optionform";
 import Container from "../../components/shared/container";
@@ -8,6 +8,7 @@ import P from "../../components/shared/p";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import MyImage from "../../components/shared/myimage";
+
 export default function Contact() {
   // router
   const router = useRouter();
@@ -23,6 +24,21 @@ export default function Contact() {
   const [prenom, setPrenom] = useState("");
   const [mail, setMail] = useState("");
   const [telephone, setTelephone] = useState("");
+  const [description, setDescription] = useState("");
+  const [bienUid, setBienUid] = useState("");
+
+  useEffect(() => {
+    if (router && router.query) {
+      if (router.query.bien) {
+        setDescription(
+          `Je vous contacte concernant le bien: ${router.query.bien}`
+        );
+      }
+      if (router.query.uid) {
+        setBienUid(router.query.uid);
+      }
+    }
+  }, [router.query]);
 
   const handleClick = (value) => () => {
     if (value == "vendre") {
@@ -88,6 +104,8 @@ export default function Contact() {
         acheter: acheter,
         expertise: expertise,
         estimation: estimation,
+        description: description,
+        bienUid: bienUid,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -174,7 +192,7 @@ export default function Contact() {
                 onChange={(e) => {
                   setNom(e.target.value);
                 }}
-                className='w-[45%] md:w-[48%] h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 focus:outline-none '
+                className='w-[45%] md:w-[48%] h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/70 focus:outline-none bg-[#f2fbfa]'
               />
               <input
                 type='text'
@@ -184,7 +202,7 @@ export default function Contact() {
                 onChange={(e) => {
                   setPrenom(e.target.value);
                 }}
-                className='w-[45%] md:w-[48%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+                className='w-[45%] md:w-[48%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/70 outline-0\tfocus:outline-none bg-[#f2fbfa]'
               />
               <input
                 type='email'
@@ -194,7 +212,7 @@ export default function Contact() {
                 onChange={(e) => {
                   setMail(e.target.value);
                 }}
-                className='w-[95%] md:w-[48%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+                className='w-[95%] md:w-[48%]  h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/70 outline-0\tfocus:outline-none bg-[#f2fbfa]'
               />
               <input
                 type='number'
@@ -204,8 +222,15 @@ export default function Contact() {
                 onChange={(e) => {
                   setTelephone(e.target.value);
                 }}
-                className='w-[95%] md:w-[48%] h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+                className='w-[95%] md:w-[48%] h-[60px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/70 outline-0\tfocus:outline-none'
               />{" "}
+              <textarea
+                name='description'
+                placeholder='objet de la demande'
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                className='w-[95%] md:w-[97%]  h-[100px] border-[#41B8B8] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/70 outline-0 focus:outline-none bg-[#f2fbfa] resize-none'
+              />
               <Flex justify='center' className='mt-5 relative'>
                 <button
                   type='submit'
