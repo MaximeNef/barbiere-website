@@ -25,7 +25,10 @@ export default function DetailsVendre({ details }) {
           <Generales details={details} />
           <Container className=' space-y-[30px] md:space-y-0 md:space-x-[30px]  md:flex md:flex-row'>
             <InfoFinanciere details={details} />
-            <CardContact />
+            <CardContact
+              title={details.data.slices[0].primary.nom_bien[0]?.text}
+              uid={details.uid}
+            />
           </Container>
           <Equipement details={details} />
           <Container className=' space-y-[30px] md:space-y-0 md:space-x-[30px]  md:flex md:flex-row'>

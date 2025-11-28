@@ -10,57 +10,41 @@ import CardDesktop from "../../components/shared/card-cta-desktop";
 import FilterProduct from "../../components/FilterProduct";
 import { useState } from "react";
 
-const Alouer = ({ pages }) => {
-  const [newProductList, setNewProductList] = useState(pages);
+const Alouer = ({ finalBiens, withoutDuplicates }) => {
   const [filterValue, setFilterValue] = useState("all");
   const [postalValue, setPostalValue] = useState("all");
-  const [newCodeList, setNewCodeList] = useState([]);
-  // Trier le tableau en fonction de la valeur de la clé 'ordres'
-  pages.sort((a, b) => {
-    if (
-      a.data.slices[0].primary.ordres === null &&
-      b.data.slices[0].primary.ordres === null
-    ) {
-      0;
-    }
-    if (a.data.slices[0].primary.ordres === null) {
-      return 1;
-    }
-    if (b.data.slices[0].primary.ordres === null) {
-      return -1;
-    }
-    return a.data.slices[0].primary.ordres - b.data.slices[0].primary.ordres;
-  });
-  {
-    pages.map((page) => {
-      if (
-        newCodeList.text !== page?.data.slices[0].primary.postal_type[0]?.text
-      ) {
-        newCodeList.push(page?.data.slices[0].primary.postal_type[0]?.text);
-      }
-    });
-  }
 
-  const withoutDuplicates = [...new Set(newCodeList)];
-  withoutDuplicates.sort();
-  const filteredProductList = newProductList.filter((page) => {
-    if (filterValue === "all") {
-      if (postalValue === "all") {
-        return page;
-      }
-      if (postalValue === page?.data.slices[0].primary.postal_type[0]?.text) {
-        return page;
-      }
+  // Filtrage dynamique sur la liste ordonnée complète
+  const filteredList = (() => {
+    let filtered = finalBiens.filter((bien) => bien.type === "location");
+    if (postalValue !== "all") {
+      filtered = filtered.filter(
+        (bien) =>
+          bien.data.slices[0].primary.postal_type?.[0]?.text === postalValue
+      );
     }
-    if (filterValue === page?.data.slices[0].primary.typeFiltre) {
-      if (postalValue === "all") {
-        return page;
-      }
-      if (postalValue === page?.data.slices[0].primary.postal_type[0]?.text) {
-        return page;
-      }
+    if (filterValue !== "all") {
+      filtered = filtered.filter(
+        (bien) => bien.data.slices[0].primary.typeFiltre === filterValue
+      );
     }
-  });
+    // Si aucun bien dispo/sous option, fallback sur les loués pour ce code postal
+    const dispoOrOption = filtered.filter(
+      (bien) =>
+        !bien.data.slices[0].primary.vendu || bien.data.slices[0].primary.option
+    );
+    if (postalValue !== "all" && dispoOrOption.length === 0) {
+      return finalBiens.filter(
+        (bien) =>
+          bien.type === "location" &&
+          bien.data.slices[0].primary.postal_type?.[0]?.text === postalValue &&
+          bien.data.slices[0].primary.vendu === true &&
+          (filterValue === "all" ||
+            bien.data.slices[0].primary.typeFiltre === filterValue)
+      );
+    }
+    return filtered;
+  })();
 
   function onFilterValueSelected(filterValue) {
     setFilterValue(filterValue);
@@ -72,7 +56,7 @@ const Alouer = ({ pages }) => {
     <NavPage current='Nos biens'>
       <H1>{"Nos biens à louer"}</H1>
       <FilterProduct
-        pages={pages}
+        pages={finalBiens.filter((bien) => bien.type === "location")}
         withoutDuplicates={withoutDuplicates}
         filterValueSelected={onFilterValueSelected}
         postalValueSelected={onPostalValueSelected}
@@ -86,7 +70,7 @@ const Alouer = ({ pages }) => {
         <CardDesktop />
       </MotionRight>
       <CardBienLouer
-        pages={filteredProductList}
+        pages={filteredList}
         filterValue={filterValue}
         postalValue={postalValue}
       />
@@ -98,12 +82,53 @@ export default Alouer;
 
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
-
-  const pages = await client.getAllByType("location");
-
+  const allVendre = await client.getAllByType("vendre");
+  const allLocation = await client.getAllByType("location");
+  const allBiens = [...allVendre, ...allLocation];
+  let ordreDoc = null;
+  try {
+    ordreDoc = await client.getSingle("ordre_biens");
+  } catch (e) {
+    ordreDoc = null;
+  }
+  const orderedIds = ordreDoc
+    ? ordreDoc.data.liste_biens.map((item) => item.bien.id)
+    : [];
+  const orderedBiens = [];
+  const remainingBiens = [...allBiens];
+  orderedIds.forEach((id) => {
+    const idx = remainingBiens.findIndex((bien) => bien.id === id);
+    if (idx !== -1) {
+      orderedBiens.push(remainingBiens[idx]);
+      remainingBiens.splice(idx, 1);
+    }
+  });
+  const finalBiens = [...orderedBiens, ...remainingBiens];
+  // Codes postaux sans doublons
+  const codePostalSet = new Set();
+  const withoutDuplicates = [];
+  finalBiens.forEach((page) => {
+    if (page.type === "location") {
+      const raw = page?.data.slices[0].primary.postal_type?.[0]?.text || "";
+      const normalized = raw.replace(/\s+/g, "").toLowerCase();
+      if (normalized && !codePostalSet.has(normalized)) {
+        codePostalSet.add(normalized);
+        withoutDuplicates.push(raw);
+      }
+    }
+  });
+  withoutDuplicates.sort((a, b) => {
+    const numA = parseInt(a);
+    const numB = parseInt(b);
+    if (!isNaN(numA) && !isNaN(numB)) {
+      return numA - numB;
+    }
+    return a.localeCompare(b);
+  });
   return {
     props: {
-      pages,
+      finalBiens,
+      withoutDuplicates,
     },
   };
 }

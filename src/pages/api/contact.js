@@ -30,6 +30,8 @@ async function sendEmail(req, res) {
               <h2>Voici mon Numero de téléphone :</h2>
               <p style="color:blue;">${req.body.telephone}</p> 
               <br>
+              <h2>Object de la demande: </h2>
+              <p style="color:blue;" > Contact pour / via le bien ${req.body.bienUid}. ${req.body.description}</p>
               </div>
       </body>
       </html>`,

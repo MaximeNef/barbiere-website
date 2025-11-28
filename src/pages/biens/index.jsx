@@ -85,21 +85,61 @@ export default function Biens({ pages, locations, vendu, loué }) {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
-  const pages = await client.getAllByType("vendre");
-  const locations = await client.getAllByType("location");
-  const pagesFilter = pages.filter(
-    (page) => page.data.slices[0].primary.vendu !== true
+  // 1. Récupérer tous les biens à vendre et à louer
+  const allVendre = await client.getAllByType("vendre");
+  const allLocation = await client.getAllByType("location");
+  const allBiens = [...allVendre, ...allLocation];
+
+  // 2. Récupérer le document d'ordre
+  let ordreDoc = null;
+  try {
+    ordreDoc = await client.getSingle("ordre_biens");
+  } catch (e) {
+    ordreDoc = null;
+  }
+
+  // 3. Extraire les IDs des biens dans l'ordre
+  const orderedIds = ordreDoc
+    ? ordreDoc.data.liste_biens.map((item) => item.bien.id)
+    : [];
+
+  // 4. Construire la liste ordonnée
+  const orderedBiens = [];
+  const remainingBiens = [...allBiens];
+
+  orderedIds.forEach((id) => {
+    const idx = remainingBiens.findIndex((bien) => bien.id === id);
+    if (idx !== -1) {
+      orderedBiens.push(remainingBiens[idx]);
+      remainingBiens.splice(idx, 1);
+    }
+  });
+  const finalBiens = [...orderedBiens, ...remainingBiens];
+
+  // 5. Filtrer pour chaque catégorie
+  const pages = finalBiens.filter(
+    (bien) =>
+      bien.type === "vendre" && bien.data.slices[0].primary.vendu !== true
   );
-  const locationsFilter = locations.filter(
-    (location) => location.data.slices[0].primary.vendu !== true
+  const locations = finalBiens.filter(
+    (bien) =>
+      bien.type === "location" && bien.data.slices[0].primary.vendu !== true
+  );
+  const vendu = finalBiens.filter(
+    (bien) =>
+      bien.type === "vendre" && bien.data.slices[0].primary.vendu === true
+  );
+  const loue = finalBiens.filter(
+    (bien) =>
+      bien.type === "location" && bien.data.slices[0].primary.vendu === true
   );
 
   return {
     props: {
-      pages: pagesFilter,
-      locations: locationsFilter,
-      vendu: pages,
-      loué: locations,
+      pages,
+      locations,
+      vendu,
+      loué: loue,
     },
   };
 }

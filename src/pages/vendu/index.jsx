@@ -16,50 +16,36 @@ const Avendre = ({ pages, locations }) => {
   const [newLocationList, setNewLocationList] = useState(locations);
   const [filterValue, setFilterValue] = useState("all");
   const [postalValue, setPostalValue] = useState("all");
-  const [newCodeList, setNewCodeList] = useState([]);
-  // Trier le tableau en fonction de la valeur de la clé 'ordres'
-  pages.sort((a, b) => {
-    if (
-      a.data.slices[0].primary.ordres === null &&
-      b.data.slices[0].primary.ordres === null
-    ) {
-      0;
+
+  // Nouvelle logique de codes postaux sans doublons (normalisation)
+  const codePostalMap = new Map();
+  pages.forEach((page) => {
+    if (page.data.slices[0].primary.vendu === true) {
+      const raw = page?.data.slices[0].primary.postal_type?.[0]?.text || "";
+      const normalized = raw.trim().toLowerCase();
+      if (normalized && !codePostalMap.has(normalized)) {
+        codePostalMap.set(normalized, raw);
+      }
     }
-    if (a.data.slices[0].primary.ordres === null) {
-      return 1;
-    }
-    if (b.data.slices[0].primary.ordres === null) {
-      return -1;
-    }
-    return a.data.slices[0].primary.ordres - b.data.slices[0].primary.ordres;
   });
-  {
-    pages.map((page) => {
-      if (page.data.slices[0].primary.vendu === true) {
-        if (
-          newCodeList.text !== page?.data.slices[0].primary.postal_type[0]?.text
-        ) {
-          newCodeList.push(page?.data.slices[0].primary.postal_type[0]?.text);
-        }
+  locations.forEach((location) => {
+    if (location.data.slices[0].primary.vendu === true) {
+      const raw = location?.data.slices[0].primary.postal_type?.[0]?.text || "";
+      const normalized = raw.trim().toLowerCase();
+      if (normalized && !codePostalMap.has(normalized)) {
+        codePostalMap.set(normalized, raw);
       }
-    });
-  }
-  {
-    locations.map((location) => {
-      if (location.data.slices[0].primary.vendu === true) {
-        if (
-          newCodeList.text !==
-          location?.data.slices[0].primary.postal_type[0]?.text
-        ) {
-          newCodeList.push(
-            location?.data.slices[0].primary.postal_type[0]?.text
-          );
-        }
-      }
-    });
-  }
-  const withoutDuplicates = [...new Set(newCodeList)];
-  withoutDuplicates.sort();
+    }
+  });
+  const withoutDuplicates = Array.from(codePostalMap.values());
+  withoutDuplicates.sort((a, b) => {
+    const numA = parseInt(a);
+    const numB = parseInt(b);
+    if (!isNaN(numA) && !isNaN(numB)) {
+      return numA - numB;
+    }
+    return a.localeCompare(b);
+  });
   const filteredProductList = newProductList.filter((page) => {
     if (filterValue === "all") {
       if (postalValue === "all") {

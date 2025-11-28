@@ -209,7 +209,7 @@ export default function Services() {
           </span>
           <span>
             {
-              "Nous confier votre bien, c’est la garantie de la vente de votre bien dans des conditions optimales et en totale sérénité."
+              " Nous confier votre bien, c’est la garantie de le vendre au meilleur prix, dans des conditions optimales et en totale sérénité"
             }
           </span>
         </h3>

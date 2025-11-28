@@ -29,6 +29,7 @@ const CardBienLouer = (props) => {
         <div>
           <Container className='md:flex md:flex-row md:flex-wrap md:w-fit justify-center'>
             <BienAvendre pages={props.pages} louer={true} />
+            <BienOptions pages={props.pages} louer={true} />
           </Container>
         </div>
       )}

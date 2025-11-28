@@ -3,7 +3,7 @@ import { useState } from "react";
 import Container from "../../../shared/container";
 import H3 from "../../../shared/h3";
 
-const CardContact = () => {
+const CardContact = ({ title, uid }) => {
   return (
     <Container className={` p-5 rounded-[12px] shadow-cardDetails md:w-full `}>
       <H3>{"Réservez votre bien "}</H3>
@@ -14,7 +14,15 @@ const CardContact = () => {
           "Vous souhaitez plus de renseignements et/ou prendre rendez-vous pour visiter ce bien ?"
         }
       </p>
-      <Link href='/contact'>
+      <Link
+        href={
+          title && uid
+            ? `/contact?bien=${encodeURIComponent(
+                title
+              )}&uid=${encodeURIComponent(uid)}`
+            : "/contact"
+        }
+      >
         <a>
           <Container className='bg-[#43A8AA] rounded-[10px] mt-4'>
             <p className='mx-auto text-white py-2 '>{"contactez-nous"}</p>
