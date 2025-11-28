@@ -22,20 +22,8 @@ export default function AgenceTest() {
       region: "Hannut / Waremme & leurs villages",
       tel: "019 30 57 32",
       mail: "fb@barbiere.be",
-      bac: "Expert Immobilier IFAPME  Licencié HEC Lg ",
+      bac: "Expert Immobilier IFAPME - Licencié HEC Lg ",
       classname: " rounded-[18px] object-top  ",
-    },
-
-    {
-      img: "/assets/ste.webp",
-      nom: "Stéphane Beaujot ",
-      post: "Agent immobilier - Associé",
-      ipi: "Nr d’agréation IPI : 510059",
-      region: "Liège / Embourg / Beaufays",
-      tel: "0477 75 44 10",
-      mail: "sb@barbiere.be",
-      bac: "Bachelier en Immobilier",
-      classname: "rounded-[18px] bottom-[80px]",
     },
 
     {
@@ -46,7 +34,7 @@ export default function AgenceTest() {
       region: "Braives / Brabant Wallon",
       tel: "0479 54 76 01",
       mail: "gv@barbiere.be",
-      bac: "Bachelière en Immobilier Architecte d'intérieur",
+      bac: "Bachelière en Immobilier - Architecte d'intérieur",
       classname: " rounded-[18px] object-top  ",
     },
     {
@@ -81,6 +69,18 @@ export default function AgenceTest() {
       mail: "cg@barbiere.be",
       bac: "Architecte",
       classname: " rounded-[18px] object-top  ",
+    },
+
+    {
+      img: "/assets/Sacha.webp",
+      nom: "Sacha Pierard ",
+      post: "Conseiller en immobilier",
+      ipi: "",
+      region: "",
+      tel: "019 30 57 32",
+      mail: " sp@barbiere.be",
+      bac: "",
+      classname: "rounded-[18px] object-top",
     },
     // {
     //   img: "/assets/pers1test.webp",
@@ -151,7 +151,7 @@ export default function AgenceTest() {
       </h3>
       <Container className='md:hidden mt-4'>
         <MyImage
-          source='/assets/teambarbiere.webp'
+          source='/assets/team-barbiere.webp'
           w='100'
           h='300'
           objectFit='cover'
@@ -160,11 +160,11 @@ export default function AgenceTest() {
       </Container>
       <Container className='hidden md:inline-flex relative h-[600px]'>
         <MyImage
-          source='/assets/teambarbiereCrop.webp'
+          source='/assets/team-barbiere.webp'
           w='100'
           h='600'
           objectFit='cover'
-          className={"  rounded-2xl "}
+          className={"  rounded-2xl , object-top"}
         />
       </Container>
       <Container className='space-y-[20px]   sm:space-y-0 md:justify-start   mt-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4  '>
