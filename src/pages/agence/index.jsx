@@ -49,15 +49,15 @@ export default function AgenceTest() {
       classname: " rounded-[18px] object-top  ",
     },
     {
-      img: "/assets/kenzacopie.webp",
-      nom: "Kenza Haddioui",
+      img: "/assets/lauura.webp",
+      nom: "Laura Scandella Decelle",
       post: "Conseillère en Immobilier",
-      ipi: "Nr d’agréation IPI : 519095",
+      ipi: "",
       region: "",
       tel: "019 30 57 32",
-      mail: "kh@barbiere.be",
-      bac: "Bachelière en Immobilier",
-      classname: " rounded-[18px] object-top  ",
+      mail: "ls@barbiere.be",
+      bac: "",
+      classname: " rounded-[18px] object-top !top-[153px] scale-[1.5] ",
     },
     {
       img: "/assets/corinne.webp",
@@ -80,7 +80,7 @@ export default function AgenceTest() {
       tel: "019 30 57 32",
       mail: " sp@barbiere.be",
       bac: "",
-      classname: "rounded-[18px] object-top",
+      classname: "rounded-[18px] object-top scale-[1.5] top-[10px]",
     },
     // {
     //   img: "/assets/pers1test.webp",
@@ -151,7 +151,7 @@ export default function AgenceTest() {
       </h3>
       <Container className='md:hidden mt-4'>
         <MyImage
-          source='/assets/team-barbiere.webp'
+          source='/assets/Barbiere-photo-Group.webp'
           w='100'
           h='300'
           objectFit='cover'
@@ -160,7 +160,7 @@ export default function AgenceTest() {
       </Container>
       <Container className='hidden md:inline-flex relative h-[600px]'>
         <MyImage
-          source='/assets/team-barbiere.webp'
+          source='/assets/Barbiere-photo-Group.webp'
           w='100'
           h='600'
           objectFit='cover'

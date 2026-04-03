@@ -13,8 +13,8 @@ import dynamic from "next/dynamic";
 import BannerSection from "../components/home/BannerSection";
 const DynamicCarte = dynamic(() => import("../components/home/CarteBelgique"));
 const DynamicVideo = dynamic(() => import("../components/hero/heroImg"));
-const DynamicChiffre = dynamic(() =>
-  import("../components/home/chiffre-agence")
+const DynamicChiffre = dynamic(
+  () => import("../components/home/chiffre-agence"),
 );
 const DynamicCardCTA = dynamic(() => import("../components/shared/card-Cta"));
 const DynamicAvis = dynamic(() => import("../components/shared/cardAvis"));
@@ -105,7 +105,7 @@ export default function Home({ pages }) {
             src='/biens'
           />{" "}
         </MotionRight>{" "}
-        <Container className='absolute w-full'>
+        <Container className='absolute overflow-hidden w-full'>
           <BannerSection />
         </Container>
       </Container>
@@ -210,7 +210,7 @@ export async function getStaticProps({ previewData }) {
   // 5. Filtrer pour n'afficher que les biens à vendre non vendus
   const pages = finalBiens.filter(
     (bien) =>
-      bien.type === "vendre" && bien.data.slices[0].primary.vendu !== true
+      bien.type === "vendre" && bien.data.slices[0].primary.vendu !== true,
   );
 
   return {
