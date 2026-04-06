@@ -38,6 +38,20 @@ export default function App({ Component, pageProps }) {
         async
       ></Script>
       {/* FIN UXWIZZ script  */}
+      {/* Google Analytics */}
+      <Script
+        src='https://www.googletagmanager.com/gtag/js?id=G-RSLXMDDZ6Q'
+        strategy='afterInteractive'
+      />
+      <Script id='google-analytics' strategy='afterInteractive'>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RSLXMDDZ6Q');
+        `}
+      </Script>
+      {/* Fin Google Analytics */}
       <PrismicProvider
         linkResolver={linkResolver}
         internalLinkComponent={({ href, children, ...props }) => (

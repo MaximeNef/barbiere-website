@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Flex from "../components/shared/flex";
-import H3 from "../components/shared/h3";
+import H2 from "../components/shared/h2";
 import Btn3 from "../components/shared/btn3";
 import NavPage from "../components/all/Nav-page";
 import Container from "../components/shared/container";
@@ -19,8 +19,8 @@ const DynamicChiffre = dynamic(
 const DynamicCardCTA = dynamic(() => import("../components/shared/card-Cta"));
 const DynamicAvis = dynamic(() => import("../components/shared/cardAvis"));
 
-export default function Home({ pages }) {
-  const avis = [
+export default function Home({ pages, avis: avisFromCMS }) {
+  const avisFallback = [
     {
       txt: "Nous avions tenté de gérer la mise en vente de notre habitation en direct avec les potentiels acheteurs. Cela s'est très vite évéré extrêmement contraignant, et davantage complexe que nous l'avions pensé. L'agence Barbière nous a proposé ses services, et, nous a tout de suite mis en confiance, malgré nos aprioris sur les agences immobilières.Après quelques entrevues, et un accord signé, les choses se sont très vite activées. Ils ont été hyper professionnels du début à la fin. Aucun tracas pour nous et une habitation vendue très rapidement !  En résumé ?   Professionnels, honnêtes et transparents. Nous restons en contact !",
       user: "B.D. & K.D.",
@@ -73,6 +73,8 @@ export default function Home({ pages }) {
     },
   ];
 
+  const avis = avisFromCMS && avisFromCMS.length > 0 ? avisFromCMS : avisFallback;
+
   return (
     <NavPage current='Accueil'>
       <Head>
@@ -87,9 +89,12 @@ export default function Home({ pages }) {
         <DynamicVideo />
       </Container>
       <a name='some' className=' absolute bottom-[22px]' />
-      <H3 className='mt-1 md:mt-0  ' id='Ancre'>
+      <H2
+        className='mt-1 md:mt-0 !text-left !items-start text-[1.5rem] md:text-[2rem]'
+        id='Ancre'
+      >
         {"Nous sommes actifs près de chez vous"}
-      </H3>
+      </H2>
       <DynamicCarte />
       <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full md:min-h-[350px] md:mb-[60px] '>
         <MotionRight
@@ -101,7 +106,7 @@ export default function Home({ pages }) {
           <DynamicCardCTA
             text1={"Tous nos biens se trouvent ici"}
             text2={"Découvrez tous nos biens à vendre & louer."}
-            text3={"Nos biens >"}
+            text3={"Nos biens"}
             src='/biens'
           />{" "}
         </MotionRight>{" "}
@@ -115,7 +120,9 @@ export default function Home({ pages }) {
           animate='visible'
           transition={{ duration: 0.3 }}
         >
-          <H3 className=''>{"Nos nouveautés"}</H3>{" "}
+          <H2 className='!text-left !items-start text-[1.5rem] md:text-[2rem]'>
+            {"Nos nouveautés"}
+          </H2>{" "}
         </MotionRight>
         <MotionRight
           initial='hidden'
@@ -133,9 +140,9 @@ export default function Home({ pages }) {
         animate='visible'
         transition={{ duration: 0.3 }}
       >
-        <H3 className='mt-12 mb-6 md:mb-8 '>
+        <H2 className='mt-12 mb-6 md:mb-8 !text-left !items-start text-[1.5rem] md:text-[2rem]'>
           {"Notre agence en quelques chiffres"}
-        </H3>
+        </H2>
       </MotionBottom>
       <DynamicChiffre />
       <Container className='space-y-[20px] mt-12 '>
@@ -144,7 +151,9 @@ export default function Home({ pages }) {
           animate='visible'
           transition={{ duration: 0.3 }}
         >
-          <H3 className=''>{"Ils parlent de nous ... "}</H3>
+          <H2 className='!text-left !items-start text-[1.5rem] md:text-[2rem]'>
+            {"Ils parlent de nous ... "}
+          </H2>
         </MotionBottom>
         <Flex className=' container-snap snap-x snap-mandatory overflow-scroll mx-[-15px] md:mx-[-60px] pr-10 pb-5 '>
           <Container className='w-[60px]  snap-always snap-center flex-shrink-0 hidden md:inline-flex' />
@@ -175,6 +184,16 @@ export default function Home({ pages }) {
 
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
+
+  // Récupérer les avis clients depuis Prismic
+  const avisDocs = await client.getAllByType("avis").catch(() => []);
+  const avisItems = avisDocs
+    .map((doc) => ({
+      txt: doc.data?.txt ?? "",
+      user: doc.data?.user ?? "",
+      region: doc.data?.region ?? "",
+    }))
+    .filter((a) => a.txt);
 
   // 1. Récupérer tous les biens à vendre et à louer
   const allVendre = await client.getAllByType("vendre");
@@ -216,6 +235,7 @@ export async function getStaticProps({ previewData }) {
   return {
     props: {
       pages,
+      avis: avisItems,
     },
   };
 }

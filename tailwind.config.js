@@ -15,6 +15,17 @@ module.exports = {
       colors: {
         default: "#646464",
       },
+      keyframes: {
+        'arrow-slide': {
+          '0%':   { transform: 'translateX(0)' },
+          '40%':  { transform: 'translateX(6px)', opacity: '0' },
+          '41%':  { transform: 'translateX(-6px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'arrow-slide': 'arrow-slide 0.4s ease-in-out',
+      },
       boxShadow: {
         cardcta: "3px 4px 20px rgba(76, 73, 85, 0.2)",
         cardinfo: "3px 4px 20px rgba(76, 73, 85, 0.2)",

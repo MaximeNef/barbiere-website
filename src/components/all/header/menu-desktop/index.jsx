@@ -48,11 +48,15 @@ const MenuDesktop = ({ link, current }) => {
             );
           })}
 
-          <Link href='/contact' passHref>
-            <a>
-              <Container className=' text-center rounded-[50px] mx-10 bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9]  text-white font-normal m-auto p-2 px-6 mt-[6px] text-[15px]'>
-                {"Estimez votre bien"}
-              </Container>
+          <Link href='/estimation' passHref>
+            <a className='group'>
+              <div className='text-center rounded-[50px] mx-10 bg-gradient-to-r from-[#41B8B8] to-[#1AD9D9] text-white font-normal m-auto p-2 px-6 mt-[6px] text-[15px]'>
+                <span className='relative flex flex-row items-center gap-2'>
+                  {"Estimez votre bien"}
+                  <span className='inline-block group-hover:animate-arrow-slide'>→</span>
+                  <span className='absolute bottom-[-1px] left-0 h-[1px] w-0 group-hover:w-full transition-all duration-500 bg-white' />
+                </span>
+              </div>
             </a>
           </Link>
         </Flex>

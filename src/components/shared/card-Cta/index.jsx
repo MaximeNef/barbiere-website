@@ -23,7 +23,7 @@ const CardCTA = (props) => {
       >
         <H2 className='text-white md:px-5 px-3    '> {props.text1}</H2>{" "}
         <P className='text-white md:px-5 px-3 '>{props.text2}</P>{" "}
-        <Btn2 src={props.src} color='white' text={props.text3} />{" "}
+        <Btn2 src={props.src} color='white-border' text={props.text3} />{" "}
       </Flex>
     </Container>
   );
