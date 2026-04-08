@@ -8,8 +8,8 @@ export default async function handler(req, res) {
   const { nom, prenom, mail, telephone, description, bienUid } = req.body;
 
   const { error } = await resend.emails.send({
-    from: "Contact <onboarding@resend.dev>",
-    to: "maximenef1@gmail.com", // TEST - à remettre sur info@barbiere.be après vérification du domaine
+    from: "Barbiere Immo <contact@barbiere.be>",
+    to: "contact@barbiere.be",
     subject: `Nouveau message de ${nom} ${prenom}`,
     html: `
       <div style="font-family: helvetica, sans-serif; margin: 20px; font-size: 16px;">
