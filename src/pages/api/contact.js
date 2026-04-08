@@ -25,5 +25,21 @@ export default async function handler(req, res) {
   });
 
   if (error) return res.status(500).json({ error: error.message });
+
+  await resend.emails.send({
+    from: "Barbiere Immo <contact@barbiere.be>",
+    to: mail,
+    subject: "Nous avons bien reçu votre message",
+    html: `
+      <div style="font-family: helvetica, sans-serif; margin: 20px; font-size: 16px; color: #333;">
+        <h2 style="color: #0b2528;">Bonjour ${prenom},</h2>
+        <p>Merci pour votre message. Nous l'avons bien reçu et reviendrons vers vous dans les plus brefs délais.</p>
+        <p><strong>Votre message :</strong></p>
+        <p style="color: #555; border-left: 3px solid #41B8B8; padding-left: 12px;">${description}</p>
+        <br/>
+        <p>Cordialement,<br/><strong>L'équipe Barbiere Immo</strong></p>
+      </div>
+    `,
+  });
   return res.status(200).json({ error: "" });
 }
