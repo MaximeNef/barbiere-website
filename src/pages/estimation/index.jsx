@@ -25,10 +25,8 @@ export default function Estimation() {
 
         <div className='flex flex-col md:flex-row gap-8 w-full max-w-6xl'>
           {/* Card Estimation en ligne */}
+          <Link href='/estimation/en-ligne' passHref>
           <a
-            href='https://www.propteo.be'
-            target='_blank'
-            rel='noopener noreferrer'
             className='group flex-1 bg-white rounded-[20px] shadow-[2px_3px_12px_rgba(76,73,85,0.10)] overflow-hidden flex flex-col cursor-pointer'
           >
             <div className='relative'>
@@ -69,6 +67,7 @@ export default function Estimation() {
               </div>
             </div>
           </a>
+          </Link>
 
           {/* Séparateur */}
           <div className='flex md:flex-col items-center justify-center gap-3'>
