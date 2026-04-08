@@ -1,0 +1,17 @@
+{
+  "user": {
+    "__TYPE__": "FieldContent",
+    "value": "stream",
+    "type": "Text"
+  },
+  "region": {
+    "__TYPE__": "FieldContent",
+    "value": "helpful",
+    "type": "Text"
+  },
+  "txt": {
+    "__TYPE__": "FieldContent",
+    "value": "temperature",
+    "type": "Text"
+  }
+}
