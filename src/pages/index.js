@@ -104,13 +104,13 @@ export default function Home({
       />
 
       <a name='some' className=' absolute bottom-[22px]' />
-      <H2
+      {/* <H2
         className='mt-1 md:mt-20 !text-left !items-start text-[1.5rem] md:text-[2rem]'
         id='Ancre'
       >
         {"Nous sommes actifs près de chez vous"}
       </H2>
-      <DynamicCarte />
+      <DynamicCarte /> */}
       <Container className='mt-5 md:mt-20 md:flex md:flex-row md:m-auto md:justify-around md:w-full md:min-h-[400px] 2xl:md:min-h-[500px] md:mb-[80px] '>
         <MotionRight
           initial='hidden'
