@@ -49,7 +49,7 @@ export default function Estimation() {
               </h2>
               <p className='text-[#646464] text-[15px] mb-1 flex-1'>
                 Obtenez une <strong>estimation sommaire et rapide</strong> de
-                votre bien grâce à notre outil en ligne Propteo.
+                votre bien grâce à notre outil en ligne.
               </p>
               <p className='text-[#999] text-[13px] italic mb-6'>
                 ⚠️ Le résultat est basé sur des données de marché automatisées.

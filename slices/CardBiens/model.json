@@ -427,6 +427,15 @@
             "allowTargetBlank": true,
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
+        },
+        "afficher_carte_vendu": {
+          "type": "Boolean",
+          "config": {
+            "label": "Bien vendu d'exception à afficher sur la carte des biens vendus",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
         }
       },
       "items": {

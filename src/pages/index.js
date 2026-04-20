@@ -18,8 +18,17 @@ const DynamicChiffre = dynamic(
 );
 const DynamicCardCTA = dynamic(() => import("../components/shared/card-Cta"));
 const DynamicAvis = dynamic(() => import("../components/shared/cardAvis"));
+const DynamicVenduMap = dynamic(
+  () => import("../components/home/VenduMapSection"),
+  { ssr: false },
+);
 
-export default function Home({ pages, avis: avisFromCMS }) {
+export default function Home({
+  pages,
+  avis: avisFromCMS,
+  venduPages,
+  venduLocations,
+}) {
   const avisFallback = [
     {
       txt: "Nous avions tenté de gérer la mise en vente de notre habitation en direct avec les potentiels acheteurs. Cela s'est très vite évéré extrêmement contraignant, et davantage complexe que nous l'avions pensé. L'agence Barbière nous a proposé ses services, et, nous a tout de suite mis en confiance, malgré nos aprioris sur les agences immobilières.Après quelques entrevues, et un accord signé, les choses se sont très vite activées. Ils ont été hyper professionnels du début à la fin. Aucun tracas pour nous et une habitation vendue très rapidement !  En résumé ?   Professionnels, honnêtes et transparents. Nous restons en contact !",
@@ -73,7 +82,8 @@ export default function Home({ pages, avis: avisFromCMS }) {
     },
   ];
 
-  const avis = avisFromCMS && avisFromCMS.length > 0 ? avisFromCMS : avisFallback;
+  const avis =
+    avisFromCMS && avisFromCMS.length > 0 ? avisFromCMS : avisFallback;
 
   return (
     <NavPage current='Accueil'>
@@ -88,15 +98,20 @@ export default function Home({ pages, avis: avisFromCMS }) {
       <Container className=' 2xl:h-[1100px] md:max-h-[100vh] '>
         <DynamicVideo />
       </Container>
+      <DynamicVenduMap
+        venduPages={venduPages}
+        venduLocations={venduLocations}
+      />
+
       <a name='some' className=' absolute bottom-[22px]' />
       <H2
-        className='mt-1 md:mt-0 !text-left !items-start text-[1.5rem] md:text-[2rem]'
+        className='mt-1 md:mt-20 !text-left !items-start text-[1.5rem] md:text-[2rem]'
         id='Ancre'
       >
         {"Nous sommes actifs près de chez vous"}
       </H2>
       <DynamicCarte />
-      <Container className='mt-5 md:mt-12 md:flex md:flex-row md:m-auto md:justify-around md:w-full md:min-h-[350px] md:mb-[60px] '>
+      <Container className='mt-5 md:mt-20 md:flex md:flex-row md:m-auto md:justify-around md:w-full md:min-h-[400px] 2xl:md:min-h-[500px] md:mb-[80px] '>
         <MotionRight
           initial='hidden'
           animate='visible'
@@ -114,7 +129,7 @@ export default function Home({ pages, avis: avisFromCMS }) {
           <BannerSection />
         </Container>
       </Container>
-      <Flex justify='between' className='mt-12 mb-5 md:mt-[150px]'>
+      <Flex justify='between' className='mt-12 mb-5 md:mt-20'>
         <MotionRight
           initial='hidden'
           animate='visible'
@@ -140,12 +155,12 @@ export default function Home({ pages, avis: avisFromCMS }) {
         animate='visible'
         transition={{ duration: 0.3 }}
       >
-        <H2 className='mt-12 mb-6 md:mb-8 !text-left !items-start text-[1.5rem] md:text-[2rem]'>
+        <H2 className='mt-12 md:mt-20 mb-6 md:mb-8 !text-left !items-start text-[1.5rem] md:text-[2rem]'>
           {"Notre agence en quelques chiffres"}
         </H2>
       </MotionBottom>
       <DynamicChiffre />
-      <Container className='space-y-[20px] mt-12 '>
+      <Container className='space-y-[20px] mt-12 md:mt-20'>
         <MotionBottom
           initial='hidden'
           animate='visible'
@@ -178,6 +193,11 @@ export default function Home({ pages, avis: avisFromCMS }) {
           </MotionCardRight>
         </Flex>
       </Container>
+
+      <DynamicVenduMap
+        venduPages={venduPages}
+        venduLocations={venduLocations}
+      />
     </NavPage>
   );
 }
@@ -232,10 +252,23 @@ export async function getStaticProps({ previewData }) {
       bien.type === "vendre" && bien.data.slices[0].primary.vendu !== true,
   );
 
+  const venduPages = allVendre.filter(
+    (b) =>
+      b.data.slices[0].primary.vendu === true &&
+      b.data.slices[0].primary.afficher_carte_vendu === true,
+  );
+  const venduLocations = allLocation.filter(
+    (b) =>
+      b.data.slices[0].primary.vendu === true &&
+      b.data.slices[0].primary.afficher_carte_vendu === true,
+  );
+
   return {
     props: {
       pages,
       avis: avisItems,
+      venduPages,
+      venduLocations,
     },
   };
 }
