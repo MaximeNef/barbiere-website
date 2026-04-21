@@ -41,24 +41,6 @@
       .bubble {
         cursor: pointer;
       }
-      #tooltip {
-        position: fixed;
-        background: rgba(5, 14, 38, 0.95);
-        border: 1px solid #29b6d4;
-        color: #fff;
-        padding: 9px 13px;
-        border-radius: 5px;
-        font-size: 13px;
-        pointer-events: none;
-        display: none;
-        z-index: 100;
-        white-space: nowrap;
-      }
-      #tooltip strong {
-        color: #55d8ee;
-        display: block;
-        margin-bottom: 2px;
-      }
     </style>
   </head>
   <body>
@@ -71,9 +53,7 @@
       </svg>
     </div>
 
-    <div id="tooltip"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
     <script>
       // ── Province GeoJSON embarqué directement (pas de CDN) ─────────
       const PROVINCES = {
@@ -2172,20 +2152,6 @@
         .domain([1, maxVal])
         .range([0.42, 0.8]);
 
-      // ── Tooltip ────────────────────────────────────────────────────
-      const tooltip = document.getElementById("tooltip");
-      function showTip(e, d) {
-        tooltip.style.display = "block";
-        tooltip.innerHTML = `<strong>${d.Commune}</strong>${d.Nombre} bien${d.Nombre > 1 ? "s" : ""} vendu${d.Nombre > 1 ? "s" : ""}`;
-        moveTip(e);
-      }
-      function moveTip(e) {
-        tooltip.style.left = e.clientX + 16 + "px";
-        tooltip.style.top = e.clientY - 12 + "px";
-      }
-      function hideTip() {
-        tooltip.style.display = "none";
-      }
 
       // ── Rendu ──────────────────────────────────────────────────────
       (function init() {
@@ -2229,9 +2195,6 @@
             .attr("stroke", "#55d8ee")
             .attr("stroke-width", d.Nombre > 10 ? 1.0 : 0.7)
             .attr("stroke-opacity", 0)
-            .on("mouseover", (e) => showTip(e, d))
-            .on("mousemove", moveTip)
-            .on("mouseout", hideTip)
             .transition()
             .delay(i * 130)
             .duration(380)
