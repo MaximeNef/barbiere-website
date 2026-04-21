@@ -13,7 +13,7 @@ function CardVenduMini({ page, href }) {
 
   return (
     <Link href={href} passHref>
-      <Container className='rounded-[20px] shadow-cardinfo w-full flex-shrink-0 mx-2 md:max-w-[400px] cursor-pointer'>
+      <Container className='rounded-[20px] shadow-cardinfo flex-shrink-0 mx-2 w-[340px] cursor-pointer'>
         <Container className='relative'>
           <Container className='absolute z-10 top-[-2px]'>
             <MyImage source={bannerSrc} h={98} w={98} />
@@ -95,29 +95,49 @@ export default function VenduMapSection({
 
   return (
     <section className='mt-16 md:mt-20 mb-0 overflow-hidden relative'>
-      <h2 className='text-[1.5rem] md:text-[4rem] font-bold absolute w-[52%] leading-[1.2] text-[#0b2528] '>
+      {/* Titre — flux normal sur mobile, absolute sur desktop */}
+      <h2 className='text-[1.5rem] md:text-[4rem] font-bold md:absolute w-full md:w-[52%] leading-[1.2] text-[#0b2528] mb-4 md:mb-0'>
         Et si le prochain bien vendu était le vôtre ?{" "}
       </h2>
 
+      {/* Carte mobile — sous le titre, au-dessus du slider */}
+      <div
+        className='md:hidden w-full rounded-[16px] overflow-hidden'
+        style={{ height: 280 }}
+      >
+        <iframe
+          src='/map-belgique.html'
+          className='w-full h-full border-0'
+          title='Carte des biens vendus'
+        />
+      </div>
+
       {/*
-        Layout :
+        Layout desktop :
         - Le slider occupe toute la largeur (z-index 1)
         - La carte est positionnée en absolute sur la droite (z-index 2)
           → les cards passent "sous" la carte
         - Un dégradé blanc sur le bord gauche de la carte assure la transition
       */}
-      <div className='relative min-h-[320px] '>
+      <div className='relative md:min-h-[320px] mt-4 md:mt-0'>
         {/* ── Slider infini ── */}
         <div
-          className='absolute overflow-hidden py-3 bottom-0'
+          className='md:absolute overflow-hidden py-3 md:bottom-0'
           style={{ zIndex: 1 }}
         >
           {/* Dégradé bord gauche */}
           <div
-            className='absolute left-0 top-0 bottom-0 w-8 pointer-events-none'
+            className='absolute left-0 top-0 bottom-0 w-4 pointer-events-none'
             style={{
-              background:
-                "linear-gradient(to right, white 0%, transparent 100%)",
+              background: "linear-gradient(to right, white 0%, transparent 100%)",
+              zIndex: 10,
+            }}
+          />
+          {/* Dégradé bord droit */}
+          <div
+            className='absolute right-0 top-0 bottom-0 w-4 pointer-events-none'
+            style={{
+              background: "linear-gradient(to left, white 0%, transparent 100%)",
               zIndex: 10,
             }}
           />
@@ -147,7 +167,7 @@ export default function VenduMapSection({
           )}
         </div>
 
-        {/* ── Carte Belgique (desktop) ── */}
+        {/* ── Carte Belgique (desktop uniquement) ── */}
         <div
           className='hidden md:block relative w-[60%] rounded-l-[24px] ml-[auto]'
           style={{
@@ -162,18 +182,6 @@ export default function VenduMapSection({
             style={{ background: "transparent" }}
             scrolling='no'
             allowTransparency='true'
-            title='Carte des biens vendus'
-          />
-        </div>
-
-        {/* ── Carte Belgique (mobile) ── */}
-        <div
-          className='md:hidden mt-4 w-full rounded-[16px] overflow-hidden'
-          style={{ height: 280 }}
-        >
-          <iframe
-            src='/map-belgique.html'
-            className='w-full h-full border-0'
             title='Carte des biens vendus'
           />
         </div>

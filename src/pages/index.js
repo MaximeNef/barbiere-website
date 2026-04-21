@@ -193,11 +193,6 @@ export default function Home({
           </MotionCardRight>
         </Flex>
       </Container>
-
-      <DynamicVenduMap
-        venduPages={venduPages}
-        venduLocations={venduLocations}
-      />
     </NavPage>
   );
 }
